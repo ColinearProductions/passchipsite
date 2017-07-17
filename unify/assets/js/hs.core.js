@@ -9,6 +9,7 @@
 
   'use strict';
 
+  //noinspection JSAnnotator
   $.HSCore = {
 
     /**
