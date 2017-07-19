@@ -20007,7 +20007,7 @@ input[type="radio"]:checked + * .g-show-check {
   bottom: 0.71429rem;
   left: 0.71429rem;
   display: block;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgb(0, 0, 0);
   z-index: 1; }
 
 /*------------------------------------
