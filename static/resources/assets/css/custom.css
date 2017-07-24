@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'PasschipFont'; /*a name to be used later*/
+    src: url('../../fonts/passchip/freeserif.ttf'); /*URL to font*/
+}
+
+.passchip_font {
+    font-family: "PasschipFont", serif;
+}
+
+.g-bg-primary {
+    background-color: #00666a !important;
+}
+
+.u-btn-primary {
+    background-color: #00666a !important;
+    color:white!important;
+}
+
+.u-btn-primary:hover {
+    background-color: #007f84 !important;
+    color:white!important;
+    border: 1px solid #007f84;
+}
+
+.u-btn-outline-primary {
+    border: 1px solid #007f84;
+    color: #007f84;
+}
+
+.u-btn-outline-primary:hover {
+    background-color: #007f84 !important;
+}
+
+
+.u-heading-v2-1--bottom::after, .u-heading-v2-1--top::before, .u-heading-v2-2--bottom::after, .u-heading-v2-2--top::before, .u-heading-v2-3--bottom::after, .u-heading-v2-3--top::before, .u-heading-v2-4--bottom::after, .u-heading-v2-4--top::before, .u-heading-v2-5--bottom::after, .u-heading-v2-5--top::before, .u-heading-v2-6--bottom::after, .u-heading-v2-6--top::before, .u-heading-v2-7--bottom::after, .u-heading-v2-7--top::before {
+
+}
+
+.g-color-primary {
+    color: #007f84 !important;
+}
+
+.g-color-primary--hover:hover{
+    color: #00A1A6 !important;
+}
+
+.g-brd-primary{
+    border-color:#007f84 !important;
+}
+
+.g-brd-primary--hover:hover, .g-brd-primary--active.active{
+    border-color:#007f84 !important;
+}
+
+.g-bg-primary--hover:hover{
+    background-color: #007f84 !important;
+}
+
+
+a{
+    color:#007f84 ;
+}
+
+a:focus, a:hover{
+    color: #00A1A6;
+}
+
+
+.u-block-hover.u-block-hover__additional--jump:hover {
+    transform: none;
+}
+
+.nav-link.active{
+    background-color: #007f84 !important;
+}
+
+::selection{
+    color: white !important;
+    background-color: #007f84 !important;
+}
+

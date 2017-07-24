@@ -1,9 +1,0 @@
-{
-  "ignoreFolders": [
-    ".git",
-    ".idea",
-    "resources"
-  ],
-  "sourceFolder": "passchipsite",
-  "destinationFolder": "static"
-}

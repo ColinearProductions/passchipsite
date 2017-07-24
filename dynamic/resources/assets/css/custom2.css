@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'PasschipFont'; /*a name to be used later*/
+    src: url('../../fonts/passchip/freeserif.ttf'); /*URL to font*/
+}
+
+.passchip_font {
+    font-family: "PasschipFont", serif;
+}
+
+
+.g-bg-primary {
+    background: -moz-linear-gradient(90deg, rgba(11, 151, 156, 1) 0%, rgba(11, 151, 156, 1) 1%, rgba(0, 128, 128, 1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 128, 128, 1)), color-stop(99%, rgba(11, 151, 156, 1)), color-stop(100%, rgba(11, 151, 156, 1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(90deg, rgba(11, 151, 156, 1) 0%, rgba(11, 151, 156, 1) 1%, rgba(0, 128, 128, 1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(90deg, rgba(11, 151, 156, 1) 0%, rgba(11, 151, 156, 1) 1%, rgba(0, 128, 128, 1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(90deg, rgba(11, 151, 156, 1) 0%, rgba(11, 151, 156, 1) 1%, rgba(0, 128, 128, 1) 100%); /* ie10+ */
+    background: linear-gradient(0deg, rgba(11, 151, 156, 1) 0%, rgba(11, 151, 156, 1) 1%, rgba(0, 128, 128, 1) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#008080', endColorstr='#0B979C', GradientType=0); /* ie6-9 */
+}
+
+.u-btn-primary {
+    background: -moz-linear-gradient(90deg, rgba(11, 151, 156, 1) 0%, rgba(11, 151, 156, 1) 1%, rgba(0, 128, 128, 1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 128, 128, 1)), color-stop(99%, rgba(11, 151, 156, 1)), color-stop(100%, rgba(11, 151, 156, 1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(90deg, rgba(11, 151, 156, 1) 0%, rgba(11, 151, 156, 1) 1%, rgba(0, 128, 128, 1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(90deg, rgba(11, 151, 156, 1) 0%, rgba(11, 151, 156, 1) 1%, rgba(0, 128, 128, 1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(90deg, rgba(11, 151, 156, 1) 0%, rgba(11, 151, 156, 1) 1%, rgba(0, 128, 128, 1) 100%); /* ie10+ */
+    background: linear-gradient(0deg, rgba(11, 151, 156, 1) 0%, rgba(11, 151, 156, 1) 1%, rgba(0, 128, 128, 1) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#008080', endColorstr='#0B979C', GradientType=0); /* ie6-9 */
+
+}
+
+.u-btn-primary {
+    border: none !important;
+}
+
+.u-btn-outline-primary {
+    border-color: rgba(11, 151, 156, 1);
+    color: rgba(11, 151, 156, 1);
+}
+
+.u-btn-outline-primary:hover {
+    background: -moz-linear-gradient(90deg, rgba(11, 151, 156, 1) 0%, rgba(11, 151, 156, 1) 1%, rgba(0, 128, 128, 1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 128, 128, 1)), color-stop(99%, rgba(11, 151, 156, 1)), color-stop(100%, rgba(11, 151, 156, 1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(90deg, rgba(11, 151, 156, 1) 0%, rgba(11, 151, 156, 1) 1%, rgba(0, 128, 128, 1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(90deg, rgba(11, 151, 156, 1) 0%, rgba(11, 151, 156, 1) 1%, rgba(0, 128, 128, 1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(90deg, rgba(11, 151, 156, 1) 0%, rgba(11, 151, 156, 1) 1%, rgba(0, 128, 128, 1) 100%); /* ie10+ */
+    background: linear-gradient(0deg, rgba(11, 151, 156, 1) 0%, rgba(11, 151, 156, 1) 1%, rgba(0, 128, 128, 1) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#008080', endColorstr='#0B979C', GradientType=0); /* ie6-9 */
+}
+
+.u-heading-v2-1--bottom::after, .u-heading-v2-1--top::before, .u-heading-v2-2--bottom::after, .u-heading-v2-2--top::before, .u-heading-v2-3--bottom::after, .u-heading-v2-3--top::before, .u-heading-v2-4--bottom::after, .u-heading-v2-4--top::before, .u-heading-v2-5--bottom::after, .u-heading-v2-5--top::before, .u-heading-v2-6--bottom::after, .u-heading-v2-6--top::before, .u-heading-v2-7--bottom::after, .u-heading-v2-7--top::before {
+    border-color: rgba(11, 151, 156, 1);
+}
+
+
+.g-color-primary{
+    color: rgba(11, 151, 156, 1) !important;
+}
