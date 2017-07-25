@@ -83,3 +83,16 @@ a:focus, a:hover{
     background-color: #007f84 !important;
 }
 
+.nav-link.active{
+    color:white !important;
+}
+
+
+/* header links were too big */
+.navbar .u-main-nav-v3 .nav-link {
+    color: #333;
+    padding: 1.85714rem 1.57143rem 1.57143rem;
+    border-bottom: 4px solid transparent;
+}
+
+

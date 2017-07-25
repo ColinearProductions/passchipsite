@@ -1,0 +1,9 @@
+{
+  "ignoreFolders": [
+    ".git",
+    ".idea",
+    "resources"
+  ],
+  "sourceFolder": "dynamic",
+  "destinationFolder": "static"
+}

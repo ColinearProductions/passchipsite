@@ -29,6 +29,9 @@
     <link rel="stylesheet" href="resources/assets/vendor/slick-carousel/slick/slick.css">
     <link rel="stylesheet" href="resources/assets/vendor/hs-megamenu/src/hs.megamenu.css">
     <link rel="stylesheet" href="resources/assets/vendor/hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" href="resources/assets/vendor/dzsparallaxer/dzsparallaxer.css">
+    <link rel="stylesheet" href="resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+    <link rel="stylesheet" href="resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
 
     <link rel="stylesheet" href="resources/assets/vendor/icon-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="resources/assets/vendor/icon-line/css/simple-line-icons.css">
@@ -47,22 +50,52 @@
 <main>
     <%include file="header.html"/>
 
-    <section class="container g-py-70 ">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="d-inline-block g-width-80 g-height-4 g-bg-black mb-3"></div>
-                <h2 class="g-color-black g-font-weight-700 g-font-size-50 g-line-height-1 mb-4">Downloads </h2>
-                <p class="mb-0">
-                    Here you can download datasheets for all our products (todo add a search box)
-                </p>
 
+    <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall"
+             data-options="{direction: 'reverse', settings_mode_oneelement_max_offset: '150'}">
+        <!-- Parallax Image -->
+        <div class="divimage dzsparallaxer--target w-100 g-bg-repeat g-bg-black"
+             style="height: 150%; background-image: url('resources/images/generic_background.png'); transform: translate3d(0px, -120.362px, 0px);"></div>
+        <!-- End Parallax Image -->
+
+        <div class="g-z-index-1 g-py-50" style="background-color:rgba(255,241,248,0);color:black">
+            <div class="container">
+                <div class="row">
+                    <div class="info-v3-4 col-lg-6" style="background-color:rgba(255,255,255,0.87);padding: 40px;">
+                        <div class="d-inline-block g-width-80 g-height-4 g-bg-black mb-3"></div>
+                        <h2 class="g-font-weight-700 g-font-size-50 g-line-height-1 mb-4">Downloads </h2>
+                        <p class="mb-0"><strong>
+                            Here you can download datasheets for all our products <!--todo add a search box--></strong>
+                        </p>
+
+                    </div>
+
+
+                </div>
             </div>
-
-
         </div>
     </section>
 
-    <section class="g-py-20 g-mb-100">
+    <!--
+    <div style="width:100%;background-color:red">
+        <section class="container g-py-30 ">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="d-inline-block g-width-80 g-height-4 g-bg-black mb-3"></div>
+                    <h2 class="g-color-black g-font-weight-700 g-font-size-50 g-line-height-1 mb-4">Downloads </h2>
+                    <p class="mb-0">
+                        Here you can download datasheets for all our products (todo add a search box)
+                    </p>
+
+                </div>
+
+
+            </div>
+        </section>
+    </div>
+    -->
+
+    <section class="g-py-20 g-mb-100 g-mt-40">
         <div class="container">
             <!-- Tab v1-1 (slide-up-down) -->
             <section>
@@ -108,35 +141,30 @@
                                     <br><br>
                                     <h1><strong>English</strong></h1><br>
 
-                                    <a href="#" class="g-font-size-27">Data Sheet </a> <br>
-                                    <a href="#" class="g-font-size-27">Technical Description </a> <br>
-                                    <a href="#" class="g-font-size-27"><span class="passchip_font"> PASSCHIP</span>
+                                    <a href="resources/Files/Data-Sheet_EN__PASSCHIP.pdf" class="g-font-size-27">Data Sheet </a> <br>
+                                    <a href="resources/Files/Technical-description_EN_PASSCHIP.pdf" class="g-font-size-27">Technical Description </a> <br>
+                                    <a href="resources/Files/PASSCHIP-_-SOLUTION-PRESENTATION-BT.pdf" class="g-font-size-27"><span class="passchip_font"> PASSCHIP</span>
                                         solution presentation </a> <br>
-                                    <a href="#" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP</span>
+                                    <a href="resources/Files/PASSCHIP-Matrix.pdf" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP</span>
                                         Matrix </a> <br>
-                                    <a href="#" class="g-font-size-27"> RPiShield PINOUT </a> <br>
-                                    <a href="#" class="g-font-size-27"> Chip Reader Documentation </a> <br>
-                                    <a href="#" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP</span>
+                                    <a href="resources/Files/RPiShield-Pinout.pdf" class="g-font-size-27"> RPiShield PINOUT </a> <br>
+                                    <a href="resources/Files/CHIP-READER-AE-DOCUMENTATION.pdf" class="g-font-size-27"> Chip Reader Documentation </a> <br>
+                                    <a href="resources/Files/PASSCHIP-Models-v5.pdf" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP</span>
                                         Configuration </a> <br><br><br><br>
 
 
                                     <h1><strong>Deutsche</strong></h1> <br>
-                                    <a href="#" class="g-font-size-27">Datenblatt </a> <br>
-                                    <a href="#" class="g-font-size-27">Technische Beschreibung </a> <br>
-                                    <a href="#" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP</span>
+                                    <a href="resources/Files/Datenblatt_PASSCHIP-.pdf" class="g-font-size-27">Datenblatt </a> <br>
+                                    <a href="resources/Files/Technische-Beschreibung_PASSCHIP.pdf" class="g-font-size-27">Technische Beschreibung </a> <br>
+                                    <a href="resources/Files/PASSCHIP-Models-v5.pdf" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP</span>
                                         Konfiguration </a> <br><br><br><br>
 
                                     <h1><strong>Français</strong></h1> <br>
-                                    <a href="#" class="g-font-size-27">Description technique du produit </a> <br>
-                                    <a href="#" class="g-font-size-27">Fiche technique </a> <br>
-                                    <a href="#" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP</span>
+                                    <a href="resources/Files/Description-technique-du-produit-PASSCHIP.pdf" class="g-font-size-27">Description technique du produit </a> <br>
+                                    <a href="resources/Files/Fiche-technique_PASSCHIP.pdf" class="g-font-size-27">Fiche technique </a> <br>
+                                    <a href="resources/Files/PASSCHIP-Models-v5.pdf" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP</span>
                                         Configuration </a> <br><br><br><br>
 
-                                    <h1><strong>Romana</strong></h1>  <br>
-                                    <a href="#" class="g-font-size-27">Brosura </a> <br>
-                                    <a href="#" class="g-font-size-27">Documentatie Tehnica </a> <br>
-                                    <a href="#" class="g-font-size-27"> Configurare<span
-                                            class="passchip_font"> PASSCHIP</span></a> <br><br><br><br>
 
 
                                 </div>
@@ -146,7 +174,7 @@
                                     <br><br>
                                     <h1><strong>English</strong></h1><br>
 
-                                    <a href="#" class="g-font-size-27">Data Sheet </a> <br>
+                                    <a href="resources/Files/Data_sheet_EN_PASSCON.pdf" class="g-font-size-27">Data Sheet </a> <br>
                                 </div>
 
 
@@ -154,15 +182,15 @@
                                      aria-expanded="false">
                                     <br><br>
                                     <h1><strong>Datasheets</strong></h1>  <br>
-                                    <a href="#" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP </span>Intercom
+                                    <a href="resources/Files/Data_Sheet_EN_PASSCHIP-intercom.pdf" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP </span>Intercom
                                     </a> <br>
-                                    <a href="#" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP </span>Access
+                                    <a href="resources/Files/Data_Sheet_EN_PASSCHIP-Acces-Control.pdf" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP </span>Access
                                         Control </a> <br>
-                                    <a href="#" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP </span>Automotive
+                                    <a href="resources/Files/Data_Sheet_EN_PASSCHIP-Automotive-rev-1.pdf" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP </span>Automotive
                                     </a> <br>
-                                    <a href="#" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP </span>LPR
+                                    <a href="resources/Files/Data_Sheet_EN_PASSCHIP-LPR.pdf" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP </span>LPR
                                         Reader </a> <br>
-                                    <a href="#" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP </span>Time
+                                    <a href="resources/Files/Data_sheet_EN_PASSCHIP-TIME.pdf" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP </span>Time
                                         and Attendance </a> <br>
 
 
@@ -171,9 +199,9 @@
                                 <div class="tab-pane fade" id="nav-1-1-default-hor-left-underline--4" role="tabpanel"
                                      aria-expanded="false">
                                     <br><br>
-                                    <a href="#" class="g-font-size-27"> GENERAL TERMS AND CONDITIONS - <span
+                                    <a href="resources/Files/GENERAL-TERMS-AND-CONDITIONS-PASSCHIP.pdf" class="g-font-size-27"> GENERAL TERMS AND CONDITIONS - <span
                                             class="passchip_font"> PASSCHIP </span> </a> <br>
-                                    <a href="#" class="g-font-size-27"> AFTER SALES CONDITIONS - <span
+                                    <a href="resources/Files/AFTER-SALES-CONDITIONS-PASSCHIP.pdf" class="g-font-size-27"> AFTER SALES CONDITIONS - <span
                                             class="passchip_font"> PASSCHIP </span> </a> <br>
                                 </div>
 
@@ -184,7 +212,7 @@
                                         <!-- Flat Buttons -->
                                         <div class="col-md-3">
                                             <!-- XXL Button -->
-                                            <a href="#"
+                                            <a href="ftp://conicdesign.ddns.net/PASSCHIP"
                                                class="btn btn-block btn-xxl u-btn-primary u-btn-content g-letter-spacing-0_5 text-uppercase g-mr-10 g-mb-15">
                                                 Go To FTP
 
@@ -226,6 +254,10 @@
 <script src="resources/assets/vendor/slick-carousel/slick/slick.js"></script>
 <script src="resources/assets/vendor/fancybox/jquery.fancybox.min.js"></script>
 <script src="resources/assets/vendor/appear.js"></script>
+
+<script src="resources/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+<script src="resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+<script src="resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
 
 <!-- JS Unify -->
 <script src="resources/assets/js/hs.core.js"></script>
@@ -269,6 +301,19 @@
             $.HSCore.components.HSPopup.init('.js-fancybox');
 
             var counters = $.HSCore.components.HSCounter.init('[class*="js-counter"]');
+
+            // Parallax
+            dzsas_init('#as0', {
+                settings_mode: 'onlyoneitem',
+                design_arrowsize: '0',
+                settings_swipe: 'on',
+                settings_swipeOnDesktopsToo: 'on',
+                settings_slideshow: 'on',
+                settings_slideshowTime: '300',
+                settings_autoHeight: 'off',
+                settings_transition: 'fade',
+                settings_centeritems: false
+            });
 
         });
     })(jQuery);
