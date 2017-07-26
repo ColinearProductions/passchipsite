@@ -41,13 +41,34 @@
 
     <!-- CSS Customization -->
     <link rel="stylesheet" href="../resources/assets/css/custom.css">
+
+
+    <link rel="stylesheet" href="../resources/assets/vendor/dzsparallaxer/dzsparallaxer.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
 </head>
 
 <body>
 <main>
     <%include file="1-in-header.html"/>
 
+    <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall"
+             data-options="{direction: 'reverse', settings_mode_oneelement_max_offset: '150'}">
+        <!-- Parallax Image -->
+        <div class="divimage dzsparallaxer--target w-100 g-bg-repeat g-bg-black"
+             style="height: 150%; background-image: url('../resources/images/car (Large).jpeg'); transform: translate3d(0px, -120.362px, 0px);"></div>
+        <!-- End Parallax Image -->
 
+        <div class="g-z-index-1 g-py-50" style="background-color:rgba(255,241,248,0);color:black">
+            <div class="container">
+                <div class="row g-min-height-25vh">
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="container  g-py-80">
 
         <div class="row">
@@ -55,7 +76,7 @@
 
             <div class="col-md-6">
                 <div class="d-inline-block g-width-80 g-height-4 g-bg-black mb-3"></div>
-                <h2 class="g-color-black g-font-weight-700 g-font-size-50 g-line-height-1 mb-4">Automotive</h2>
+                <h2 class="g-color-black g-font-weight-700 g-font-size-50 g-line-height-1 mb-4"><span class="passchip_font">PASSCHIP </span> Automotive</h2>
 
 
                 <!--
@@ -69,7 +90,7 @@
                     <div class="mb-5 g-py-50 ">
                         <!-- <h3 class="h1 g-color-black mb-4">The <span class="passchip_font">PASSCHIP </span> Reader</h3> -->
                         <p class="g-color-gray-dark-v4 g-font-size-18">
-                            PASSCHIP Automotive is a mobile solution that
+                            <span class="passchip_font">PASSCHIP </span> Automotive is a mobile solution that
                             replaces the need of using a physical car key. The
                             Key is replaced by the smartphone app running on
                             the customer’s phone or tablet that communicates
@@ -262,6 +283,10 @@
 <script src="../resources/assets/js/helpers/hs.focus-state.js"></script>
 <script src="../resources/assets/js/components/hs.counter.js"></script>
 
+
+<script src="../resources/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+<script src="../resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+<script src="../resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
 
 <!-- JS Customization -->
 <script src="../resources/assets/js/custom.js"></script>

@@ -41,12 +41,34 @@
 
     <!-- CSS Customization -->
     <link rel="stylesheet" href="../resources/assets/css/custom.css">
+
+    <link rel="stylesheet" href="../resources/assets/vendor/dzsparallaxer/dzsparallaxer.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
 </head>
 
 <body>
 <main>
 
  <%include file="1-in-header.html"/>
+
+    <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall"
+             data-options="{direction: 'reverse', settings_mode_oneelement_max_offset: '150'}">
+        <!-- Parallax Image -->
+        <div class="divimage dzsparallaxer--target w-100 g-bg-repeat g-bg-black"
+             style="height: 150%; background-image: url('../resources/images/code-2434271.jpg'); transform: translate3d(0px, -120.362px, 0px);"></div>
+        <!-- End Parallax Image -->
+
+        <div class="g-z-index-1 g-py-50" style="background-color:rgba(255,241,248,0);color:black">
+            <div class="container">
+                <div class="row g-min-height-25vh">
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="container  g-py-80">
 
@@ -276,6 +298,12 @@
 <script src="../resources/assets/js/helpers/hs.hamburgers.js"></script>
 <script src="../resources/assets/js/helpers/hs.focus-state.js"></script>
 <script src="../resources/assets/js/components/hs.counter.js"></script>
+
+
+<script src="../resources/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+<script src="../resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+<script src="../resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+
 
 
 <!-- JS Customization -->

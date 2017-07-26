@@ -41,12 +41,35 @@
 
     <!-- CSS Customization -->
     <link rel="stylesheet" href="../resources/assets/css/custom.css">
+
+
+    <link rel="stylesheet" href="../resources/assets/vendor/dzsparallaxer/dzsparallaxer.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
 </head>
 
 <body>
 <main>
 
  <%include file="1-in-header.html"/>
+
+    <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall"
+             data-options="{direction: 'reverse', settings_mode_oneelement_max_offset: '150'}">
+        <!-- Parallax Image -->
+        <div class="divimage dzsparallaxer--target w-100 g-bg-repeat g-bg-black"
+             style="height: 150%; background-image: url('../resources/images/ethernet.jpg'); transform: translate3d(0px, -120.362px, 0px);"></div>
+        <!-- End Parallax Image -->
+
+        <div class="g-z-index-1 g-py-50" style="background-color:rgba(255,241,248,0);color:black">
+            <div class="container">
+                <div class="row g-min-height-25vh">
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="container  g-py-80">
 
@@ -55,7 +78,7 @@
 
             <div class="col-md-6">
                 <div class="d-inline-block g-width-80 g-height-4 g-bg-black mb-3"></div>
-                <h2 class="g-color-black g-font-weight-700 g-font-size-50 g-line-height-1 mb-4">Intercom</h2>
+                <h2 class="g-color-black g-font-weight-700 g-font-size-50 g-line-height-1 mb-4"><span class="passchip_font">PASSCHIP </span> IP Intercom</h2>
 
 
                 <!--
@@ -196,7 +219,7 @@
                                             IP Video Intercom with up to 1000 Intercom Panels
                                         </li>
                                         <li>
-                                            Integration with PASSCHIP® ACCESS CONTROL systems
+                                            Integration with <span class="passchip_font">PASSCHIP </span> ACCESS CONTROL systems
 
                                         </li>
                                         <li>
@@ -233,7 +256,7 @@
                                     <br><br>
 
 
-                                    <a href="../resources/Files/Data_Sheet_EN_PASSCHIP-intercom.pdf" class="g-font-size-27">PASSCHIP Intercom </a>
+                                    <a href="../resources/Files/Data_Sheet_EN_PASSCHIP-intercom.pdf" class="g-font-size-27"><span class="passchip_font">PASSCHIP </span> ip Intercom </a>
                                     <br>
                                     <br><br><br><br>
 
@@ -287,6 +310,10 @@
 
 <!-- JS Customization -->
 <script src="../resources/assets/js/custom.js"></script>
+
+<script src="../resources/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+<script src="../resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+<script src="../resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
 
 <!-- JS Plugins Init. -->
 <script>
