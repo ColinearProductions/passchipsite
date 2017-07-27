@@ -5,5 +5,5 @@
     "resources"
   ],
   "sourceFolder": "dynamic",
-  "destinationFolder": "static"
+  "destinationFolder": "docs"
 }
