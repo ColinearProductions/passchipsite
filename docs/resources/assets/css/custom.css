@@ -1,10 +1,7 @@
-@font-face {
-    font-family: 'PasschipFont'; /*a name to be used later*/
-    src: url('../../fonts/passchip/freeserif.ttf'); /*URL to font*/
-}
+
 
 .passchip_font {
-    font-family: "PasschipFont", serif;
+    font-family: "Times New Roman", Times, serif;
 }
 
 .g-bg-primary {
