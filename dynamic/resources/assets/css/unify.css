@@ -26753,13 +26753,7 @@ pre[class*="language-"] .toolbar-item a {
 .g-height-100vh {
   height: 100vh !important; }
 
-
-
 /* Min Height in Viewport Height (vh) */
-
-.g-min-height-25vh {
-    min-height: 25vh; }
-
 .g-min-height-50vh {
   min-height: 50vh; }
 

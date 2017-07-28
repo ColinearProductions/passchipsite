@@ -21,8 +21,9 @@
                         <div id="mc_embed_signup_scroll" class="input-group border-0">
 
 
-
-                            <input type="email" value="" name="EMAIL" class="required email form-control border-0 rounded-0 g-px-12 g-py-8 "  placeholder="Email address" id="mce-EMAIL">
+                            <input type="email" value="" name="EMAIL"
+                                   class="required email form-control border-0 rounded-0 g-px-12 g-py-8 "
+                                   placeholder="Email address" id="mce-EMAIL">
 
                             <div id="mce-responses" class="clear">
                                 <div class="response" id="mce-error-response" style="display:none"></div>
@@ -37,7 +38,8 @@
                             </div>
 
                             <div class="clear">
-                                <input type="submit" value="Subscribe" name="subscribe"id="mc-embedded-subscribe" class="btn u-btn-primary rounded-0 g-px-12 g-py-8">
+                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+                                       class="btn u-btn-primary rounded-0 g-px-12 g-py-8">
                             </div>
                         </div>
                     </form>
@@ -49,7 +51,7 @@
             </div>
             <!-- End Footer Content -->
 
-            <!-- Footer Content -->
+            <!-- old BEFORE ADDING THE MAP
             <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
                 <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
                     <h2 class="u-heading-v2__title h6 text-uppercase mb-0">Popular Tags</h2>
@@ -90,9 +92,7 @@
                     </li>
                 </ul>
             </div>
-            <!-- End Footer Content -->
 
-            <!-- Footer Content -->
             <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
                 <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
                     <h2 class="u-heading-v2__title h6 text-uppercase mb-0">Useful Links</h2>
@@ -102,47 +102,88 @@
                     <ul class="list-unstyled g-mt-minus-10 mb-0">
                         <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
                             <h4 class="h6 g-pr-20 mb-0">
-                                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="../products/passchip-reader.html"><span class="passchip_font">PASSCHIP</span> reader</a>
+                                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="products/passchip-reader.html"><span class="passchip_font">PASSCHIP</span> reader</a>
                                 <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
                             </h4>
                         </li>
                         <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
                             <h4 class="h6 g-pr-20 mb-0">
-                                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="../products/index.html">Our Products</a>
+                                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="products/index.html">Our Products</a>
                                 <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
                             </h4>
                         </li>
                         <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
                             <h4 class="h6 g-pr-20 mb-0">
-                                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="../about_us.html">About Us</a>
+                                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="about_us.html">About Us</a>
                                 <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
                             </h4>
                         </li>
                         <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
                             <h4 class="h6 g-pr-20 mb-0">
-                                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="../blog/page1.html">Blog</a>
+                                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="blog/page1.html">Blog</a>
                                 <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
                             </h4>
                         </li>
                         <li class="g-pos-rel g-py-10">
                             <h4 class="h6 g-pr-20 mb-0">
-                                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="../contacts.html">Contact</a>
+                                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="contacts.html">Contact</a>
                                 <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
                             </h4>
                         </li>
                     </ul>
                 </nav>
             </div>
-            <!-- End Footer Content -->
+             -->
+
+
+            <!-- Map Content -->
+            <div class="col-lg-6 col-md-6 g-mb-40 g-mb-0--lg">
+
+
+                <!-- Google Map -->
+                <div id="GMapCustomized-dark" class="js-g-map embed-responsive embed-responsive-21by9 g-height-280"
+                     data-type="custom"
+                     data-lat="44.480"
+                     data-lng="26.071"
+                     data-zoom="12"
+                     data-title="Agency"
+                     data-styles='[["", "", [{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]], ["", "labels", [{"visibility":"on"}]], ["water", "", [{"color":"#bac6cb"}]] ]'
+                     data-pin="true"
+                     data-pin-icon="resources/assets/img/icons/pin/teal.png">
+                </div>
+                <!-- End Google Map -->
+
+                <a href="https://maps.google.com/?q=44.480,26.071" class="visible-xs visible-sm">
+                    <strong>Open in google maps</strong>
+                </a>
+            </div>
+            <!-- End Map Content -->
+
+            <!-- needed imports for gmaps:
+            <script src="resources/assets/vendor/gmaps/gmaps.min.js"></script>
+            <script src="resources/assets/js/components/gmap/hs.map.js"></script>
+            <script>
+                $(document).on('ready', function () {
+                    $('[data-toggle="tooltip"]').tooltip();
+                });
+                function initMap() {
+                    $.HSCore.components.HSGMap.init('.js-g-map');
+                }
+            </script>
+
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtt1z99GtrHZt_IcnK-wryNsQ30A112J0&callback=initMap" async defer>
+            </script>
+
+            -->
 
             <!-- Footer Content -->
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 text-center">
                 <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-10">
                     <h2 class="u-heading-v2__title h6 text-uppercase mb-0">Our Contacts</h2>
                 </div>
 
                 <address class="g-bg-no-repeat g-line-height-2 g-mt-minus-4"
-                         style="background-image: url(../resources/assets/img/maps/map2.png);">
+                         style="background: url(../resources/assets/img/maps/map2.png);   background-position: center; ">
                     1 Piata Presei Libere<br>
                     C1 Building, 2nd Floor<br>
                     1st District Bucharest, Romania
@@ -186,8 +227,10 @@
 <!-- Copyright Footer -->
 <footer class="g-bg-gray-dark-v1 g-color-white-opacity-0_8 text-center g-py-20">
     <div class="container">
-        <small class="g-font-size-default g-mr-10 g-mb-10 g-mb-0--md">2017 © All Rights Reserved. <span class="passchip_font">PASSCHIP </span>, a
-            <a href="http://conicdesign.ro">ConicDesign </a> brand</small>
+        <small class="g-font-size-default g-mr-10 g-mb-10 g-mb-0--md">2017 © All Rights Reserved. <span
+                class="passchip_font">PASSCHIP </span>, a
+            <a href="http://conicdesign.ro"><img src="../resources/images/small_conic.png"></a> brand
+        </small>
     </div>
 </footer>
 <!-- End Copyright Footer -->

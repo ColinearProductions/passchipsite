@@ -2,7 +2,10 @@
 <html lang="en" class="font-primary">
 <head>
     <!-- Title -->
-    <title>Home Page 7 | Unify - Responsive Website Template</title>
+    <title>PASCHIP</title>
+    <meta name="description" content='description here, keep single quotation -- for some reason'>
+
+
 
     <!-- Required Meta Tags Always Come First -->
     <meta charset="utf-8">
@@ -21,21 +24,32 @@
 
     <!-- CSS Implementing Plugins -->
     <link rel="stylesheet" href="../resources/assets/vendor/icon-awesome/css/font-awesome.min.css">
-
-
+    <link rel="stylesheet" href="../resources/assets/vendor/icon-line-pro/style.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/icon-hs/style.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/animate.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/cubeportfolio-full/cubeportfolio/css/cubeportfolio.min.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/slick-carousel/slick/slick.css">
     <link rel="stylesheet" href="../resources/assets/vendor/hs-megamenu/src/hs.megamenu.css">
     <link rel="stylesheet" href="../resources/assets/vendor/hamburgers/hamburgers.min.css">
-
     <link rel="stylesheet" href="../resources/assets/vendor/icon-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../resources/assets/vendor/icon-line/css/simple-line-icons.css">
-
+    <link rel="stylesheet" href="../resources/assets/vendor/icon-line-pro/style.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/icon-etlinefont/style.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/icon-hs/style.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/dzsparallaxer/dzsparallaxer.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
 
     <!-- CSS Unify -->
     <link rel="stylesheet" href="../resources/assets/css/unify.css">
 
     <!-- CSS Customization -->
     <link rel="stylesheet" href="../resources/assets/css/custom.css">
+
+
 </head>
+
 
 <body>
 <main>
@@ -388,6 +402,16 @@
 <!-- JS Customization -->
 <script src="../resources/assets/js/custom.js"></script>
 
+
+<!-- JS Implementing Plugins -->
+<script src="../resources/assets/vendor/gmaps/gmaps.min.js"></script>
+<script src="../resources/assets/js/components/gmap/hs.map.js"></script>
+
+<script src="../resources/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+<script src="../resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+<script src="../resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+
+
 <!-- JS Plugins Init. -->
 <script>
     ;(function ($) {
@@ -421,5 +445,19 @@
 </script>
 
 
+<script>
+    // Toolttips
+    $(document).on('ready', function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+
+    // Maps
+    function initMap() {
+        $.HSCore.components.HSGMap.init('.js-g-map');
+    }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtt1z99GtrHZt_IcnK-wryNsQ30A112J0&callback=initMap" async
+        defer></script>
 </body>
 </html>
