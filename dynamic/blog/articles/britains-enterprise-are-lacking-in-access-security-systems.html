@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" class="font-primary">
+<head>
+    <!-- Title -->
+    <title>Blog Single Item 1 | Unify - Responsive Website Template</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Fav-->
+    <link rel="shortcut icon" href="../../resources/favicon.ico">
+
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,500,600,700%7Csubset=cyrillic,latin"
+          rel="stylesheet" type="text/css">
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="../../resources/assets/vendor/bootstrap/bootstrap.min.css">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../../resources/assets/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/icon-line-pro/style.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/icon-hs/style.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/animate.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/icon-line/css/simple-line-icons.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/hamburgers/hamburgers.min.css">
+
+    <!-- CSS Unify -->
+    <link rel="stylesheet" href="../../resources/assets/css/unify.css">
+
+
+</head>
+
+<body>
+<main>
+    <%include file="2-in-header.html"/>
+
+
+    <!-- Blog Minimal Blocks -->
+    <div class="container g-pt-0 g-pb-20">
+        <div class="row justify-content-between">
+            <div class="col-lg-9 g-mb-80">
+                <div class="g-pr-20--lg">
+                    <!-- Big Article -->
+                    <article class="g-mx-15 u-block-hover">
+                        <div class="g-px-100--md g-py-30--md">
+                            <ul class="list-inline g-color-gray-dark-v4 g-font-weight-600 g-font-size-12">
+
+                                <!-- Author -->
+                                <li class="list-inline-item mr-0">Admin</li>
+                                <li class="list-inline-item mx-2">&#183;</li>
+                                <!-- Date -->
+                                <li class="list-inline-item">5 June 2017</li>
+                            </ul>
+                            <!-- Title -->
+                            <h2 class="h2 g-color-black g-font-weight-600 mb-4">
+                                <p class="u-link-v5 g-color-black ">
+
+                                    Britain’s enterprises are lacking in access security systems</p>
+                            </h2>
+                        </div>
+
+                        <!-- Thumbnail -->
+                        <div class="g-overflow-hidden">
+                            <img class="img-fluid w-100 "
+                                 src="../images/city.jpg" alt="Image Description">
+                        </div>
+                        <div class="g-px-100--md g-py-30--md">
+                            <div class="mb-4">
+                                <!-- Excerpt -->
+                                <p class="g-font-size-18 g-line-height-2 ">
+                                    According to a new survey issued at the begging of this year, over 59 percent of UK
+                                    SMEs are exposed to a security breach as they do not invest in access security
+                                    systems.
+
+                                </p>
+                                <p class="g-font-size-18 g-line-height-2 ">
+                                    The survey, which was conducted by Digital ID company, discovered that 23 percent of
+                                    UK businesses have very little visitor security. Other 36 percent of English
+                                    companies have no visitor security systems at all. Overall, 59 percent of small and
+                                    medium enterprises have only locks on doors and security lights. However, over half
+                                    of the enterprises questioned admit that these two minimal security systems are not
+                                    even in use during the working hours.
+
+                                </p>
+                                <p class="g-font-size-18 g-line-height-2 ">
+                                    This lack of security systems represents a real threat not only to the employees and
+                                    other enterprise assets but to the cyber data that represents the vital core of the
+                                    enterprise. It is not just the equipment that can be stolen, but also the
+                                    intellectual property.
+
+                                </p>
+                                <p class="g-font-size-18 g-line-height-2 ">
+                                    A good example of such catastrophic security breach would be the TalkTalk platform.
+                                    In this case, cyber data was ISP TalkTalk witnessed a huge customer exodus following
+                                    a high-profile hack attack on its systems late last year. TalkTalk said 95,000
+                                    subscribers had vanished from the ISP in direct response to the hack attack. In
+                                    total during the company’s third quarter, which ended on December 31 last year,
+                                    TalkTalk lost 155,000 customers.
+
+                                </p>
+
+
+                            </div>
+
+                        </div>
+                    </article>
+                    <!-- End Big Article -->
+                    <hr class="g-mb-60 g-mx-15">
+
+
+                </div>
+            </div>
+            <%include file="sidebar.html"/>
+        </div>
+    </div>
+
+
+    <%include file="2-in-footer.html"/>
+</main>
+
+<!-- JS Global Compulsory -->
+<script src="../../resources/assets/vendor/jquery/jquery.min.js"></script>
+<script src="../../resources/assets/vendor/tether.min.js"></script>
+<script src="../../resources/assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+<!-- JS Implementing Plugins -->
+<script src="../../resources/assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+
+<!-- JS Unify -->
+<script src="../../resources/assets/js/hs.core.js"></script>
+<script src="../../resources/assets/js/components/hs.header.js"></script>
+<script src="../../resources/assets/js/helpers/hs.hamburgers.js"></script>
+<script src="../../resources/assets/js/components/hs.tabs.js"></script>
+<script src="../../resources/assets/js/components/hs.sticky-block.js"></script>
+
+<!-- JS Customization -->
+<script src="../../resources/assets/js/custom.js"></script>
+
+<!-- JS Plugins Init. -->
+<script>
+    // Header
+    $(document).on('ready', function () {
+        $.HSCore.components.HSHeader.init($('#js-header'));
+        $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+        // Initialization of HSMegaMenu plugin
+        $('.js-mega-menu').HSMegaMenu({
+            event: 'hover',
+            pageContainer: $('.container'),
+            breakpoint: 991
+        });
+    });
+</script>
+
+<script>
+    $(document).on('ready', function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+
+    ;(function ($) {
+        'use strict';
+        $(window).on('load', function () {
+            $.HSCore.components.HSStickyBlock.init('.js-sticky-block');
+        });
+    })(jQuery);
+</script>
+</body>
+</html>

@@ -20,30 +20,55 @@
 
     <!-- CSS Implementing Plugins -->
     <link rel="stylesheet" href="resources/assets/vendor/icon-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="resources/assets/vendor/icon-line/css/simple-line-icons.css">
+
 
     <!-- CSS Unify -->
     <link rel="stylesheet" href="resources/assets/css/unify.css">
 
     <!-- CSS Customization -->
     <link rel="stylesheet" href="resources/assets/css/custom.css">
+
+    <style>
+
+        body {
+            margin: 0;
+            background: #000;
+        }
+        video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            transform: translateX(-50%) translateY(-50%);
+            background: url('resources/video/code-screenshot.png') no-repeat;
+            background-size: cover;
+            transition: 1s opacity;
+        }
+
+
+
+
+    </style>
 </head>
 
 <body>
-<main class="g-min-height-100vh g-flex-centered g-bg-size-cover g-bg-cover g-bg-bluegray-opacity-0_3--after g-pa-15"
-      style="background-color:black">
+<main class="g-min-height-100vh g-flex-centered ">
 
+    <video poster="resources/video/code-screenshot.png" id="bgvid" playsinline autoplay muted loop>
+        <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+
+        <source src="resources/video/code.mp4" type="video/mp4">
+    </video>
     <div class="text-center g-max-width-700 g-flex-centered-item g-z-index-1 g-color-white">
         <h1 class="display-3 g-mb-30">Coming Soon</h1>
-        <p class="g-font-size-22 g-mb-50">This page is under construction !right now!</p>
-        <p class="g-font-size-22 g-mb-50"> We know you are probably not a doctor, but please have patience </p>
-
-        <h2 class="h2 g-color-black g-font-weight-600 mb-4">
-            <a class="u-link-v5 g-color-white g-color-primary--hover passchip_font g-font-size-76" href="index.html">Passchip</a>
-        </h2>
+        <p class="g-font-size-22 g-mb-50">This page is under construction right now!</p>
 
         <div class="js-countdown row g-z-index-1"
-             data-end-date="2017/08/09"
+             data-end-date="2017/08/19"
              data-month-format="%m"
              data-days-format="%D"
              data-hours-format="%H"
@@ -87,8 +112,45 @@
 <script src="resources/assets/js/custom.js"></script>
 
 <script>
-    ;(function ($) {
-        $(function () {
+    var vid = document.getElementById("bgvid");
+
+
+    if (window.matchMedia('(prefers-reduced-motion)').matches) {
+        vid.removeAttribute("autoplay");
+        vid.pause();
+
+    }
+
+    function vidFade() {
+        vid.classList.add("stopfade");
+    }
+
+    vid.addEventListener('ended', function()
+    {
+// only functional if "loop" is removed
+        vid.pause();
+// to capture IE10
+        vidFade();
+    });
+
+
+    pauseButton.addEventListener("click", function() {
+        vid.classList.toggle("stopfade");
+        if (vid.paused) {
+            vid.play();
+            pauseButton.innerHTML = "Pause";
+        } else {
+            vid.pause();
+            pauseButton.innerHTML = "Paused";
+        }
+    })
+
+
+</script>
+
+<script>
+    ;(function($){
+        $(function(){
             // initialiation of countdowns
             var countdowns = $.HSCore.components.HSCountdown.init('.js-countdown', {
                 yearsElSelector: '.js-cd-years',

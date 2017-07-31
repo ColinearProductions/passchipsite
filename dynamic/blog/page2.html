@@ -30,6 +30,10 @@
     <link rel="stylesheet" href="../resources/assets/vendor/hs-megamenu/src/hs.megamenu.css">
     <link rel="stylesheet" href="../resources/assets/vendor/hamburgers/hamburgers.min.css">
 
+    <link rel="stylesheet" href="../resources/assets/vendor/dzsparallaxer/dzsparallaxer.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
+
     <link rel="stylesheet" href="../resources/assets/vendor/icon-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../resources/assets/vendor/icon-line/css/simple-line-icons.css">
     <link rel="stylesheet" href="../resources/assets/vendor/icon-line-pro/style.css">
@@ -48,18 +52,28 @@
 
     <%include file="1-in-header.html"/>
 
-    <section class="container g-py-10 ">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="d-inline-block g-width-80 g-height-4 g-bg-black mb-3"></div>
-                <h2 class="g-color-black g-font-weight-700 g-font-size-50 g-line-height-1 mb-4">Blog </h2>
-                <p class="mb-0">
-                    Description Here
-                </p>
+    <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall"
+             data-options="{direction: 'reverse', settings_mode_oneelement_max_offset: '150'}">
+        <!-- Parallax Image -->
+        <div class="divimage dzsparallaxer--target w-100 g-bg-repeat g-bg-black"
+             style="height: 150%; background-image: url('../resources/images/vintage-print-letters.jpeg'); transform: translate3d(0px, -120.362px, 0px);"></div>
+        <!-- End Parallax Image -->
 
+        <div class="g-z-index-1 g-py-50" style="background-color:rgba(255,241,248,0);color:black">
+            <div class="container">
+                <div class="row">
+                    <div class="info-v3-4 col-lg-6" style="background-color:rgba(255,255,255,0.87);padding: 40px;">
+                        <div class="d-inline-block g-width-80 g-height-4 g-bg-black mb-3"></div>
+                        <h2 class="g-font-weight-700 g-font-size-50 g-line-height-1 mb-4">Blog </h2>
+                        <p class="mb-0"><strong>
+                            A curated list of relevant articles<!--todo add a search box--></strong>
+                        </p>
+
+                    </div>
+
+
+                </div>
             </div>
-
-
         </div>
     </section>
 
@@ -82,7 +96,7 @@
                             </ul>
                             <!-- Title -->
                             <h2 class="h2 g-color-black g-font-weight-600 mb-4">
-                                <a class="u-link-v5 g-color-black g-color-primary--hover" href="../coming-soon.html">The Public Workers in
+                                <a class="u-link-v5 g-color-black g-color-primary--hover" href="articles/public-workers-in-singapore-are-banned.html">The Public Workers in
                                     Singapore are banned to use the Internet at the office for security reasons</a>
                             </h2>
                         </div>
@@ -102,7 +116,7 @@
                                 </p>
                             </div>
                             <a class="g-color-gray-dark-v2 g-color-primary--hover g-font-weight-600 g-font-size-12 g-text-underline--none--hover text-uppercase"
-                               href="../coming-soon.html">Read more ...</a>
+                               href="articles/public-workers-in-singapore-are-banned.html">Read more ...</a>
                         </div>
                     </article>
                     <!-- End Big Article -->
@@ -124,11 +138,11 @@
                                     <li class="list-inline-item">5 June 2017</li>
                                 </ul>
                                 <h2 class="h3 g-color-black g-font-weight-600 mb-4">
-                                    <a class="u-link-v5 g-color-black g-color-primary--hover" href="../coming-soon.html">Smart access
+                                    <a class="u-link-v5 g-color-black g-color-primary--hover" href="articles/smart-access-systems-buldings-of-the-future.html">Smart access
                                         systems: Buildings of the Future and security against hackers</a>
                                 </h2>
                                 <a class="g-color-gray-dark-v2 g-color-primary--hover g-font-weight-600 g-font-size-12 g-text-underline--none--hover text-uppercase"
-                                   href="../coming-soon.html">Read more ...</a>
+                                   href="articles/smart-access-systems-buldings-of-the-future.html">Read more ...</a>
                             </div>
                         </div>
                     </article>
@@ -152,11 +166,11 @@
                                     <li class="list-inline-item">5 June 2017</li>
                                 </ul>
                                 <h2 class="h3 g-color-black g-font-weight-600 mb-4">
-                                    <a class="u-link-v5 g-color-black g-color-primary--hover" href="../coming-soon.html">Business
+                                    <a class="u-link-v5 g-color-black g-color-primary--hover" href="articles/business-security-how-to-use-your-employees.html">Business
                                         Security: How to Use Your Emplyees in the Phishing War</a>
                                 </h2>
                                 <a class="g-color-gray-dark-v2 g-color-primary--hover g-font-weight-600 g-font-size-12 g-text-underline--none--hover text-uppercase"
-                                   href="../coming-soon.html">Read more ...</a>
+                                   href="articles/business-security-how-to-use-your-employees.html">Read more ...</a>
                             </div>
                         </div>
                     </article>
@@ -176,7 +190,7 @@
                             </ul>
                             <!-- Title -->
                             <h2 class="h2 g-color-black g-font-weight-600 mb-4">
-                                <a class="u-link-v5 g-color-black g-color-primary--hover" href="../coming-soon.html">Corporate access
+                                <a class="u-link-v5 g-color-black g-color-primary--hover" href="articles/corporate-access-systems-management.html">Corporate access
                                     systems management: 3 issues to pay attention to</a>
                             </h2>
                         </div>
@@ -196,7 +210,7 @@
                                 </p>
                             </div>
                             <a class="g-color-gray-dark-v2 g-color-primary--hover g-font-weight-600 g-font-size-12 g-text-underline--none--hover text-uppercase"
-                               href="../coming-soon.html">Read more ...</a>
+                               href="articles/corporate-access-systems-management.html">Read more ...</a>
                         </div>
                     </article>
                     <!-- End Big Article -->
@@ -218,10 +232,10 @@
                                     <li class="list-inline-item">5 June 2017</li>
                                 </ul>
                                 <h2 class="h3 g-color-black g-font-weight-600 mb-4">
-                                    <a class="u-link-v5 g-color-black g-color-primary--hover" href="../coming-soon.html">Britain’s enterprises are lacking in access security systems</a>
+                                    <a class="u-link-v5 g-color-black g-color-primary--hover" href="articles/britains-enterprise-are-lacking-in-access-security-systems.html">Britain’s enterprises are lacking in access security systems</a>
                                 </h2>
                                 <a class="g-color-gray-dark-v2 g-color-primary--hover g-font-weight-600 g-font-size-12 g-text-underline--none--hover text-uppercase"
-                                   href="../coming-soon.html">Read more ...</a>
+                                   href="articles/britains-enterprise-are-lacking-in-access-security-systems.html">Read more ...</a>
                             </div>
                         </div>
                     </article>
@@ -251,7 +265,7 @@
                                             <p class="g-color-gray-dark-v4">
                                                 Are Cardless ATMs The Way Of The Future? About The NFC System’s Increasing Popularity
                                             </p>
-                                            <a class="btn u-btn-outline-primary g-font-size-11 g-rounded-25" href="../coming-soon.html">Read</a>
+                                            <a class="btn u-btn-outline-primary g-font-size-11 g-rounded-25" href="articles/are_cardless-atms-the-way.html">Read</a>
                                         </div>
                                     </article>
                                 </li>
@@ -261,7 +275,7 @@
                                         <div class="media-body">
 
                                             <p class="g-color-gray-dark-v4">Biometric access, more and more popular among bank customers</p>
-                                            <a class="btn u-btn-outline-primary g-font-size-11 g-rounded-25" href="../coming-soon.html">Read</a>
+                                            <a class="btn u-btn-outline-primary g-font-size-11 g-rounded-25" href="articles/biometric-access-more-and-more.html">Read</a>
                                         </div>
                                     </article>
                                 </li>
@@ -271,7 +285,7 @@
                                         <div class="media-body">
 
                                             <p class="g-color-gray-dark-v4">Researchers hacked new Tesla car model. They took control of the brakes remotely</p>
-                                            <a class="btn u-btn-outline-primary g-font-size-11 g-rounded-25" href="../coming-soon.html">Read</a>
+                                            <a class="btn u-btn-outline-primary g-font-size-11 g-rounded-25" href="articles/researchers-hacked-new-tesla-car-model.html">Read</a>
                                         </div>
                                     </article>
                                 </li>
@@ -287,69 +301,69 @@
                             <ul class="u-list-inline mb-0">
                                 <li class="list-inline-item g-mb-10">
                                     <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15"
-                                       href="#">Access Control Systems</a>
+                                       >Access Control Systems</a>
                                 </li>
                                 <li class="list-inline-item g-mb-10">
                                     <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15"
-                                       href="#">Bank Access</a>
+                                       >Bank Access</a>
                                 </li>
                                 <li class="list-inline-item g-mb-10">
                                     <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15"
-                                       href="#">Bank Security</a>
+                                       >Bank Security</a>
                                 </li>
                                 <li class="list-inline-item g-mb-10">
                                     <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15"
-                                       href="#">Bank Fire Drills</a>
+                                       >Bank Fire Drills</a>
                                 </li>
                                 <li class="list-inline-item g-mb-10">
                                     <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15"
-                                       href="#">Bank Hacking</a>
+                                       >Bank Hacking</a>
                                 </li>
                                 <li class="list-inline-item g-mb-10">
                                     <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15"
-                                       href="#">Corporate Access Systems</a>
+                                       >Corporate Access Systems</a>
                                 </li>
                                 <li class="list-inline-item g-mb-10">
                                     <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15"
-                                       href="#">Biometric Access</a>
-                                </li>
-
-
-                                <li class="list-inline-item g-mb-10">
-                                    <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15"
-                                       href="#">Cyber Security</a>
-                                </li>
-                                <li class="list-inline-item g-mb-10">
-                                    <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15"
-                                       href="#">Employees</a>
-                                </li>
-                                <li class="list-inline-item g-mb-10">
-                                    <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15"
-                                       href="#">Great Britain</a>
-                                </li>
-                                <li class="list-inline-item g-mb-10">
-                                    <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15"
-                                       href="#">Internet Ban</a>
-                                </li>
-                                <li class="list-inline-item g-mb-10">
-                                    <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15"
-                                       href="#">NFC Systems</a>
+                                       >Biometric Access</a>
                                 </li>
 
 
                                 <li class="list-inline-item g-mb-10">
                                     <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15"
-                                       href="#">Security Access Systems</a>
+                                       >Cyber Security</a>
+                                </li>
+                                <li class="list-inline-item g-mb-10">
+                                    <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15"
+                                       >Employees</a>
+                                </li>
+                                <li class="list-inline-item g-mb-10">
+                                    <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15"
+                                       >Great Britain</a>
+                                </li>
+                                <li class="list-inline-item g-mb-10">
+                                    <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15"
+                                       >Internet Ban</a>
+                                </li>
+                                <li class="list-inline-item g-mb-10">
+                                    <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15"
+                                       >NFC Systems</a>
+                                </li>
+
+
+                                <li class="list-inline-item g-mb-10">
+                                    <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15"
+                                       >Security Access Systems</a>
                                 </li>
 
                                 <li class="list-inline-item g-mb-10">
                                     <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15"
-                                       href="#">Singapore</a>
+                                       >Singapore</a>
                                 </li>
 
                                 <li class="list-inline-item g-mb-10">
                                     <a class="u-tags-v1 g-color-gray-dark-v4 g-color-white--hover g-bg-gray-light-v5 g-bg-primary--hover g-font-size-12 g-rounded-50 g-py-4 g-px-15"
-                                       href="#">Smart Access Systems</a>
+                                       >Smart Access Systems</a>
                                 </li>
 
                             </ul>
@@ -396,8 +410,8 @@
                             <a class="u-pagination-v1__item u-pagination-v1-4 g-rounded-50 g-pa-7-14" href="page1.html">1</a>
                         </li>
                         <li class="list-inline-item">
-                            <a class="u-pagination-v1__item u-pagination-v1-4 u-pagination-v1-4--active g-rounded-50 g-pa-7-14"
-                               href="#">2</a>
+                            <a class="u-pagination-v1__item u-pagination-v1-4 u-pagination-v1-4--active g-rounded-50 g-pa-7-14" href="#"
+                               >2</a>
                         </li>
 
                         <li class="list-inline-item float-right hidden-xs-down">
@@ -428,6 +442,11 @@
 <!-- JS Implementing Plugins -->
 <script src="../resources/assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
 
+
+<script src="../resources/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+<script src="../resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+<script src="../resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+
 <!-- JS Unify -->
 <script src="../resources/assets/js/hs.core.js"></script>
 <script src="../resources/assets/js/components/hs.header.js"></script>
@@ -457,6 +476,20 @@
 <script>
     $(document).on('ready', function () {
         $('[data-toggle="tooltip"]').tooltip();
+
+
+        // Parallax
+        dzsas_init('#as0', {
+            settings_mode: 'onlyoneitem',
+            design_arrowsize: '0',
+            settings_swipe: 'on',
+            settings_swipeOnDesktopsToo: 'on',
+            settings_slideshow: 'on',
+            settings_slideshowTime: '300',
+            settings_autoHeight: 'off',
+            settings_transition: 'fade',
+            settings_centeritems: false
+        });
     });
 
     ;(function ($) {
