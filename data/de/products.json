@@ -1,0 +1,193 @@
+{
+  "passchipReader": {
+    "liteDescription": "",
+    "shortDescription": "Dieser Stand der Technik access-control-chip-Leser ist speziell für den erweiterten ID-Banking-filtering-Prozesse, self-service-Bereichen oder hohen Sicherheits-Räume. Die security-Plattform ist entworfen für einen sicheren access-control-Prozesses mit dem CHIP-acces-Karten (Kreditkarten oder einfach smart cards) allein oder in Kombination mit PIN-und Biometrie-Technologie.",
+    "fulLDescriptionParagraphList": [
+      "Diese Beschaffenheit des Zugangskontrollchiplesers ist speziell entworfen für fortgeschrittene ID Banking Filterprozesse für Selbstbedienungsbereiche oder Hochsicherheitsräume. Unser Filteralgorithmen elauben den Zugang programmierbaren Nutzergruppen, die vom Systemadministrator bestimmt wurden.",
+      " Die Sicherheitsplattform ist für einen sicheren Zugriffskontrollprozess entworfen unter Verwendung der CHIP Zugangskarte (Kreditkarten oder einfache Chipkarten) einzeln oder kombiniert mit PIN und biometrischer Technologie.",
+      " Dieses Produkt ist hauptsächlich für Banken und Finanzinstitutionen bestimmt. Es besteht jedoch die Möglichkeit, dass das Produkt von Strafverfolgungsbehörden (Vollzugsbehörden), Fernmeldedienstanbieter, geschlossenen Institutionen/ Clubs und anderen Organisationen für einen sicheren und effizienten Zugang zu sensiblen Bereichen verwendet werden kann, wenn moderne Kontaktchipleser Technologien angewendet werden.",
+      "  Das Produkt kann an jede Zugangskontrollplattform angeschlossen werden unter Anwendung der meist gebräulichen Datenformate, wie RS232, Takt und Daten oder Wiegand bis zu 64 Datenbits.",
+      " Die Standardlieferung umfasst eine feste TCP/IP Schnittstelle für schnelle und kontinuierliche Kommunikation mit dem zentralisieten Sicherheitszentrum, um online upgedated und vom Systemadministrator kontrolliert zu werden."
+    ],
+    "functionsBulletList": [
+      "Banking automation filter gegen unbefugten Zugang in die self-service-Gebiete oder andere geschützte Gebiete",
+      "Fortschrittliches design für die integration in das klassische oder moderne Fassade",
+      "Optionales slim-line-Installation Säule Kompakten Abmessungen mit einer revisionssicheren massivem Edelstahl Fall-Pinsel finishing oder lackiert",
+      "Farbe oder Monochrom-LCD-Bildschirm Bereit-praktisch für die Anzeige von text, Sprache, piktogramme und animation je nach der software-Anpassung",
+      "Optische und akustische Signale für die Verbindung mit dem Benutzer",
+      "Zentralisiertes Netzwerk aktualisierbar, während die Ausführung mit einer benutzerfreundlichen Schnittstelle",
+      "Skimming-Schutz und Münze proof-Konstruktion mit mechanischen Verschluss"
+    ],
+    "benefitsBulletList": [
+      "Schutz der Kunden im self-service Verfahren",
+      "Schutz von Geldautomaten und banking-Vermögenswerte gegen unberechtigte Nutzung",
+      "Äußerst zuverlässiges Produkt mit einem exzellenten ROI-rate",
+      "Bewährte long life service Kann integriert werden in neue oder bestehende access-control-Installationen",
+      "Können verbunden werden und integriert mit CCTV -, Feuer-und intrusion-detection-durch eine integrierte security-Plattform",
+      "Ausgezeichneter Ersatz für die menschliche Patrouillen-Dienst"
+    ]
+  },
+  "accessController": {
+    "liteDescription": "Anpassbare Access Control-Lösung",
+    "shortDescription": "Eine vernetzte Tür-Modul mit den Vorteilen der IP-zentrale Steuerung und event-Berichterstattung. Es ist vor allem für große Bürogebäude und Industrieanlagen, mit den Möglichkeiten der Verwendung in Banken, Handels -, Strafverfolgungs -, Telekommunikations-und andere Organisationen für einen sicheren und effizienten Zugang in sensible Bereiche",
+    "fulLDescriptionParagraphList": [
+      "Eine vernetzte Tür-Modul mit den Vorteilen der IP-zentrale Steuerung und event-Berichterstattung. Es ist vor allem für große Bürogebäude und Industrieanlagen, mit den Möglichkeiten der Verwendung in Banken, Handels -, Strafverfolgungs -, Telekommunikations-und andere Organisationen für einen sicheren und effizienten Zugang in sensible Bereiche"
+    ],
+    "functionsBulletList": [
+      "Automatischer Schutz gegen den Zugriff Unbefugter in empfindliche Gebiete oder andere geschützte Gebiete",
+      "Kompakte Abmessungen im inneren installierten tamper-proof-robustes Metallgehäuse mit 12V Stromquelle",
+      " Bereit, in 2 Türen oder 4 Türen Varianten<ul> <li>Jede Tür kann 2 Wiegand-Kartenleser (1IN/1OUT)</ul>",
+      "Dedizierte leistungsstarke management-software",
+      "Die zentrale IP-Netzwerk",
+      "Benutzerfreundliche Schnittstelle"
+    ],
+    "benefitsBulletList": [
+      "Schutz von Menschen und Sachwerten",
+      "Äußerst zuverlässiges Produkt mit einem exzellenten ROI-rate",
+      "Bewährte long life service",
+      "Kann integriert werden in neue oder bestehende access-control-Installationen",
+      "Verbunden sein können und direkt integriert mit PASSCHIP Intercom für eine effiziente Tür-zu-Tür oder Tür-zu dispatch center-Kommunikation",
+      "Zentralisierte integration mit Feuer-detection-system für automatische Türöffner",
+      "Ausgezeichneter Ersatz für die menschliche Patrouillen-Dienste, VPNs"
+    ]
+  },
+  "passcon": {
+    "liteDescription": "",
+    "shortDescription": "Zentrale Ethernet-Verwaltung, mit der einzigartigen PASSCON software-Funktionen für alle Netzwerk; bedeutende Einsparungen gemacht werden, in Bezug auf die Zeit und den spezifischen Ressourcen des security managers. Ermöglicht die integration mit CCTV -, Feuer-und intrusion-detection-durch eine integrierte Sicherheits-Plattform, Wiegand, Ethernet und Serielle Schnittstelle.",
+    "fulLDescriptionParagraphList": [
+      "Dieses Produkt ist die vollständige management-Lösung für PASSCHIP ATM Eintrag lobby/Vestibül Leserinnen und Leser, die Integration der Echtzeit-überwachung mit der Einrichtungs-und Konfigurations-Funktionen.",
+      "Es ist vor allem angesichts der großen Zahl der site-Installationen.",
+      "Es können mehrere Hierarchie-Ebene Klassifikationen (zB. Umgebung, Stadt, Straße und Ort).",
+      "Bietet eine leistungsstarke und dennoch intuitive Benutzeroberfläche zur Verwaltung und überwachung der PASSCHIP Leser."
+    ],
+    "functionsBulletList": [
+      "Client-Server-Architektur",
+      "PASSCHIP überwachung",
+      "PASSCHIP Konfiguration",
+      "PASSCHIP Zentrale Log-Sammlung und-management",
+      "PASSCON Benutzer-Rechte und-management",
+      "E-Mail-Benachrichtigungen"
+    ],
+    "benefitsBulletList": [
+      "Zentrale Verwaltung von PASSCHIP ATM Eintrag lobby/Vestibül",
+      "Einfache änderungen an der Konfiguration mithilfe von PASSCHIP-Konfiguration-Profile",
+      "Remote-firmware-updates Zusammengefasst monitoring-Informationen",
+      "Unterschiedliche Benutzer können unterschiedliche Zugriffsrechte",
+      "Die sichere Kommunikation zwischen PASSCON Server und PASSSCHIP"
+    ]
+  },
+  "passconBasic": {
+    "liteDescription": "",
+    "shortDescription": "Stellt eine erweiterte Programmier-und Konfigurationstool für PASSCHIP Reihe von self-service-ID-chip-Leser. Es bietet eine benutzerfreundliche Schnittstelle, die vereinfacht die Kontrolle PASSCHIP",
+    "fulLDescriptionParagraphList": [
+      "Stellt eine erweiterte Programmier-und Konfigurationstool für PASSCHIP Reihe von self-service-ID-chip-Leser. Es bietet eine benutzerfreundliche Schnittstelle, die vereinfacht die Kontrolle PASSCHIP",
+      "Bietet einen zentralen Ethernet-administration, die mit einzigartigen software-Funktionen für alle Netzwerk; bedeutende Einsparungen gemacht werden, in Bezug auf die Zeit und den spezifischen Ressourcen des security Manager",
+      "Erleichtert PASSCHIP integration mit CCTV -, Feuer-und intrusion detection durch Wiegand, Ethernet und Serielle Schnittstelle."
+    ],
+    "functionsBulletList": [
+      "Vollständige IP-control: Konfiguration, Administration, Benutzer-Verwaltung, - Überwachung und-Aufzeichnung",
+      "Die zentralisierte Netzwerk-upgrade der Leser während der Ausführung mithilfe einer benutzerfreundlichen Schnittstelle",
+      "Zentraler Zugriff auf interne PASSCHIP Geschichte-Ressourcen, einschließlich sincronized Zeitstempel",
+      "Zentrale Karten' management, einschließlich der SCHWARZEN LISTE"
+    ],
+    "benefitsBulletList": [
+      "Schutz der Kunden im self-service Verfahren",
+      "Schutz von Geldautomaten und banking-Vermögenswerte gegen unberechtigte Nutzung",
+      "Äußerst zuverlässiges Produkt mit einem exzellenten ROI-rate",
+      "Bewährte long life service",
+      "Eingebunden werden können mit dem Dritten Sicherheits-Software, einschließlich biometrischer Anwendungen",
+      "Können verbunden werden und integriert mit CCTV -, Feuer-und intrusion detection",
+      "Ausgezeichneter Ersatz für die menschliche Patrouillen-Dienst"
+    ]
+  },
+  "timeAndAttendance": {
+    "liteDescription": "Mitarbeiter Zeit-management-Lösung",
+    "shortDescription": "Bietet eine leistungsstarke, moderne und flexible workforce-management-Lösung, die eine Verbindung zu einem beliebigen Typ des access control system",
+    "fulLDescriptionParagraphList": [
+      "Bietet eine leistungsstarke, moderne und flexible workforce-management-Lösung, die eine Verbindung zu einem beliebigen Typ des access control system"
+    ],
+    "functionsBulletList": [
+      "Tracks Arbeitszeiten, Fehlzeiten und überstunden",
+      "Entwerfen und verwalten Sie die Arbeit planen",
+      "Vorfälle (krankenstand, Urlaub, Arzt, etc.)",
+      "Gibt eine Globale Sicht der Mitarbeiter die Aktivität auf der Website.",
+      "Optional erlaubt es Mitarbeitern, um zu sehen, Ihren eigenen Zeitplan und Informationen, oder team-Manager zu verwalten Ihr team planen.",
+      "Generiert Berichte, die angezeigt werden können auf der Plattform oder exportiert .xls-format, die angepasst werden können, um die Bedürfnisse des Benutzers"
+    ],
+    "benefitsBulletList": [
+      "Maßgeschneiderte Lösung für die Integration mit der aktuellen access control system",
+      "Bewährte long life service",
+      "Eingebunden werden können mit dem Dritten Sicherheits-software, einschließlich biometrischer Anwendungen",
+      "Ausgezeichneter Ersatz für die menschliche Patrouillen-Dienste",
+      "Kann gehostet werden komplett vor Ort"
+    ]
+  },
+  "intercom": {
+    "liteDescription": "IP-Video-Intercom-Lösung",
+    "shortDescription": "Unsere IP-video-Gegensprechanlage-Produktlinie gewidmet ist, Gewerbe -, Büro-und Wohngebäude großen Projekten, sorgt für mehr Sicherheit und Komfort im Vergleich zu herkömmlichen analogen intercom-Systemen durch die Bemerkenswerte Flexibilität und freundlich zu verwenden.",
+    "fulLDescriptionParagraphList": [
+      "Unsere IP-video-Gegensprechanlage-Produktlinie gewidmet ist, Gewerbe -, Büro-und Wohngebäude großen Projekten, sorgt für mehr Sicherheit und Komfort im Vergleich zu herkömmlichen analogen intercom-Systemen durch die Bemerkenswerte Flexibilität und freundlich zu verwenden."
+    ],
+    "functionsBulletList": [
+      "Voice-und Video-Anrufe zwischen Sprechstellen innerhalb des gleichen LAN.",
+      "Gebürstetem Edelstahl bauen",
+      "Annehmen/ablehnen von eingehenden anrufen",
+      "Anruf einleiten, basic panel / video-panel",
+      "Begrenzte Gesprächsdauer – max. 5 min",
+      "<li>Kamera:<ul><li>kann nur angezeigt werden, durch peer-video-panel während des Telefonats für Video-Panels</li><li>kann angezeigt werden, indem mehrere video-panels</li></ul></li>",
+      "Auto-eingehenden Anruf beantworten",
+      "1 Ausgang gesteuert durch peer-video-panel während des Telefonats",
+      "2-Wege-video-Anruf mit einem anderen video-panel"
+    ],
+    "benefitsBulletList": [
+      "IP-Video-Gegensprechanlage mit bis zu 1000 Sprechstellen",
+      "Integration mit PASSCHIP ACCESS CONTROL-Systeme",
+      "Entsperren der Tür aus intercom",
+      "Wiegand integration mit access control system, indem Sie die intercom-zu handeln, wie ein wiegand-Leser, senden, um die access control system die wiegand-Karten-ID, im Zusammenhang mit der peer-intercom-panel.",
+      "Management: überwachung und Konfiguration",
+      "Netzwerk Sicherheit erreichbar über verschlüsselte VPNs",
+      "Netzwerk kann erweitert werden, um mehrere Websites mit layer2-VPNs"
+    ]
+  },
+  "lprReader": {
+    "liteDescription": "Licence Plate Recognition system",
+    "shortDescription": "Unsere License Plate Reader bietet einen automatic number plate reading kombiniert mit wiegand-Kommunikation. Die LPR-reader verwandelt nahtlos integrierte license plate reading in ein wiegand-Karte-ID-reader-Ausgabe",
+    "fulLDescriptionParagraphList": [
+      "Unsere License Plate Reader bietet einen automatic number plate reading kombiniert mit wiegand-Kommunikation. Die LPR-reader verwandelt nahtlos integrierte license plate reading in ein wiegand-Karte-ID-reader-Ausgabe"
+    ],
+    "functionsBulletList": [
+      "Ist ein all-in-one-system, bettet die Kamera -, Projektor-und-Verarbeitung in einem kompakten, wetterfesten Gehäuse. ",
+      "Verwaltung erfolgt über einen integrierten web-browser-Schnittstelle, über die vorhandene Ethernet-Verbindung",
+      "Hohe Genauigkeit durch die adaptive und hochqualifizierten unserer algorithmen und hohe Qualitäts-image-sensoren",
+      "Einfaches setup und einfache Bereitstellung"
+    ],
+    "benefitsBulletList": [
+      "Der web-browser-Schnittstelle ermöglicht auch den integrator zu konfigurieren, die übertragen wiegand ID-strings von der ALPR-reader. Nach dem Lesen der Kennzeichen der ALPR-Einheit beziehen sich auf die Datenbank und übermitteln Sie die entsprechenden wiegand-ID verwenden gewählt wiegand-format, um den Zugriff auf die Systemsteuerung.",
+      "Wenn die wiegand-ID autorisiert ist, dann der Zugriff erlaubt ist.",
+      "Die LPR-reader ist ausgestattet mit einer internen Datenbank, die Spiele der Lizenz-Platte zu einem bestimmten gültig-Wiegand-Karten-ID (also die bereits vorhandene Karte Nummer der person, die das Auto fährt). Diese übereinstimmung kann leicht getan werden und von einem entfernten Standort über das web-browser-Schnittstelle."
+    ]
+  },
+  "automotive": {
+    "liteDescription": "Smart key-software",
+    "shortDescription": "PASSCHIP Automotive ist eine mobile Lösung ersetzt, die die Notwendigkeit einer physischen Autoschlüssel. Der Schlüssel wird ersetzt durch die smartphone-app läuft auf dem Kunden-Telefon oder-tablet kommuniziert mit PASSCHIP – installiert in der Kabine.",
+    "fulLDescriptionParagraphList": [
+      "PASSCHIP Automotive ist eine mobile Lösung ersetzt, die die Notwendigkeit einer physischen Autoschlüssel. Der Schlüssel wird ersetzt durch die smartphone-app läuft auf dem Kunden-Telefon oder-tablet kommuniziert mit PASSCHIP – installiert in der Kabine."
+    ],
+    "functionsBulletList": [
+      "Starten und Stoppen des Motors – Main Modul",
+      "Türen Sperren und Entsperren – Main Modul",
+      "Ermächtigen, Motor – start- Hauptmodul",
+      "WiFi-AP – Optionales Modul",
+      "Ereignisprotokoll – Optionales Modul",
+      "Das Key management erfolgt über Bluetooth und SMS – Haupt-Modul (kein zentraler server erforderlich)"
+    ],
+    "benefitsBulletList": [
+      "Eliminiert die Notwendigkeit für mehrere physische Tasten",
+      "Erhöhen Sie die Anzahl der möglichen Benutzer",
+      "Mobile App",
+      "Die keys werden versendet / empfangen durch Telefon, SMS, WhatsApp -> Hohe Verfügbarkeit",
+      "Die vollständige Verwaltung der Benutzer und Autos",
+      "Ausgezeichnete schedule-matrix"
+    ]
+  }
+}

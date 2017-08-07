@@ -9,44 +9,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="../resources/favicon.ico">
+    <link rel="shortcut icon" href="../../resources/favicon.ico">
+    <link rel="stylesheet" href="../../resources/assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/flag-icon-css-master/css/flag-icon.min.css">
 
-    <!-- Google Fonts -->
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,500,600,700%7Csubset=cyrillic,latin"
-          rel="stylesheet" type="text/css">
+    <!-- Icon for header -->
+    <link rel="stylesheet" href="../../resources/assets/vendor/icon-hs/style.css">
 
-    <!-- CSS Global Compulsory -->
-    <link rel="stylesheet" href="../resources/assets/vendor/bootstrap/bootstrap.min.css">
-
-    <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="../resources/assets/vendor/icon-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/icon-line-pro/style.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/icon-hs/style.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/animate.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/cubeportfolio-full/cubeportfolio/css/cubeportfolio.min.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/fancybox/jquery.fancybox.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/slick-carousel/slick/slick.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/hs-megamenu/src/hs.megamenu.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/hamburgers/hamburgers.min.css">
-
-    <link rel="stylesheet" href="../resources/assets/vendor/icon-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/icon-line/css/simple-line-icons.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/icon-line-pro/style.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/icon-etlinefont/style.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/icon-hs/style.css">
+    <!-- Mobile hamburger -->
+    <link rel="stylesheet" href="../../resources/assets/vendor/animate.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/hamburgers/hamburgers.min.css">
 
     <!-- CSS Unify -->
-    <link rel="stylesheet" href="../resources/assets/css/unify.css">
+    <link rel="stylesheet" href="../../resources/assets/css/unify.css">
 
     <!-- CSS Customization -->
-    <link rel="stylesheet" href="../resources/assets/css/custom.css">
+    <link rel="stylesheet" href="../../resources/assets/css/custom.css">
+
 </head>
 
 <body>
 <main>
-
- <%include file="1-in-header.html"/>
+    <% product = data["products"]["passchipReader"] %>
+    <%include file="1-in-header.html"/>
 
     <section class="container  g-py-80">
 
@@ -57,44 +43,13 @@
                 <div class="d-inline-block g-width-80 g-height-4 g-bg-black mb-3"></div>
                 <h2 class="g-color-black g-font-weight-700 g-font-size-50 g-line-height-1 mb-4"><span
                         class="passchip_font">PASSCHIP</span> Reader</h2>
-
-
-                <!--
-                <div class="g-font-size-23">
-                    <a href="#passchip_reader">PASSCHIP Reader</a> •
-                    <a href="#passcon">PASSCON</a> •
-                    <a href="#tanda">Time And Attendance</a>
-                </div> -->
-
                 <div class="">
                     <div class="mb-5 g-py-50 ">
-                        <!-- <h3 class="h1 g-color-black mb-4">The <span class="passchip_font">PASSCHIP </span> Reader</h3> -->
+                        % for paragraph in product["fulLDescriptionParagraphList"]:
                         <p class="g-color-gray-dark-v4 g-font-size-18">
-                            This state of the art access control chip reader is specially designed for advanced ID
-                            Banking filtering processes to self service areas or high security spaces. Our filtering
-                            algorithms may let access to programmable groups of users as decided by system’s
-                            administrator.
+                            ${paragraph}
                         </p>
-                        <p class="g-color-gray-dark-v4 g-font-size-18">
-                            The security platform is designed for a secure access control process using the CHIP acces
-                            cards (credit cards or simply smart cards) alone or combined with PIN and biometric
-                            technology.
-                        </p>
-                        <p class="g-color-gray-dark-v4 g-font-size-18">
-                            This product is mainly dedicated to banks and financial institutions, with possibilities of
-                            usage in law enforcement agencies, telecom providers, closed circuit institutions/clubs and
-                            other organizations for a secure and efficient access in sensitive areas using advanced
-                            contact chip reader technology.
-                        </p>
-                        <p class="g-color-gray-dark-v4 g-font-size-18">
-                            It can be connected to any access control platform using the most commonly used data formats
-                            like RS232, Clock and Data or Wiegand with up to 64 bits of data.
-                        </p>
-                        <p class="g-color-gray-dark-v4 g-font-size-18">
-                            It is standard delivered with a solid TCP/IP interface for fast and continuous communication
-                            with the centralized security center in order to be online updated and controlled by
-                            system’s administrator.
-                        </p>
+                        % endfor
                     </div>
 
                 </div>
@@ -105,10 +60,10 @@
                     <div class="u-shadow-v19 g-bg-white text-center">
 
 
-
-
-                        <a class="js-fancybox" href="../resources/images/pass-vertical.jpg" data-fancybox-animate-in="zoomIn" data-fancybox-animate-out="zoomOut" data-fancybox-speed="1000" data-fancybox-blur-bg="blur" data-fancybox-bg="rgba(0,0,0, 1)">
-                            <img class="img-fluid" src="../resources/images/pass-vertical.jpg" alt="Image Description">
+                        <a class="js-fancybox" href="../../resources/images/pass-vertical.jpg"
+                           data-fancybox-animate-in="zoomIn" data-fancybox-animate-out="zoomOut"
+                           data-fancybox-speed="1000" data-fancybox-blur-bg="blur" data-fancybox-bg="rgba(0,0,0, 1)">
+                            <img class="img-fluid" src="../../resources/images/pass-vertical.jpg" alt="Image Description">
                         </a>
 
                     </div>
@@ -160,38 +115,13 @@
                                     <h1><strong>Functions</strong></h1><br>
 
                                     <ul class="g-font-size-20">
+
+                                        % for function in product["functionsBulletList"]:
                                         <li>
-                                            Banking automation filter against unauthorized
-                                            access in the self-service zones or any other
-                                            protected areas
+                                            ${function}
                                         </li>
-                                        <li>
-                                            Advanced design for integration in any classical
-                                            or modern façade
-                                        </li>
-                                        <li>
-                                            Available optional slim-line installing pillar
-                                            Compact dimensions with tamper-proof solid
-                                            stainless steel case-brush finishing or painted
-                                        </li>
-                                        <li>
-                                            Full color or monochrome LCD screen
-                                            Ready for virtually displaying any text language,
-                                            pictograms and animation depending of the
-                                            software customization
-                                        </li>
-                                        <li>
-                                            Visual and acoustic signals for interfacing with
-                                            the user
-                                        </li>
-                                        <li>
-                                            Centralized network upgradable while running
-                                            using an user friendly interface
-                                        </li>
-                                        <li>
-                                            Antiskimming and coin proof construction with
-                                            mechanical shutter
-                                        </li>
+
+                                        % endfor
                                     </ul>
 
 
@@ -204,32 +134,12 @@
                                     <h1><strong>Benefits</strong></h1><br>
 
                                     <ul class="g-font-size-20">
+                                        % for benefit in product["benefitsBulletList"]:
                                         <li>
-                                            Protection of customers during self-service
-                                            procedures
+                                            ${benefit}
                                         </li>
-                                        <li>
-                                            Protection of ATMs and banking assets against
-                                            unauthorized usage
-                                        </li>
-                                        <li>
-                                            Extremely reliable product with an
-                                            excellent ROI rate
-                                        </li>
-                                        <li>
-                                            Proven long life service
-                                            May be integrated in new or existing
-                                            access control installations
-                                        </li>
-                                        <li>
-                                            May be linked and integrated with CCTV,
-                                            fire and intrusion detection through any
-                                            integrated security platform
-                                        </li>
-                                        <li>
-                                            Excellent substitute to human guard patrol
-                                            service
-                                        </li>
+
+                                        % endfor
                                     </ul>
 
 
@@ -240,34 +150,47 @@
                                     <br><br>
                                     <h1><strong>English</strong></h1><br>
 
-                                    <a href="../resources/Files/Data-Sheet_EN__PASSCHIP.pdf" class="g-font-size-27">Data Sheet </a> <br>
-                                    <a href="../resources/Files/Technical-description_EN_PASSCHIP.pdf" class="g-font-size-27">Technical Description </a> <br>
-                                    <a href="../resources/Files/PASSCHIP-_-SOLUTION-PRESENTATION-BT.pdf" class="g-font-size-27"><span class="passchip_font"> PASSCHIP</span>
+                                    <a href="../../resources/Files/Data-Sheet_EN__PASSCHIP.pdf" class="g-font-size-27">Data
+                                        Sheet </a> <br>
+                                    <a href="../../resources/Files/Technical-description_EN_PASSCHIP.pdf"
+                                       class="g-font-size-27">Technical Description </a> <br>
+                                    <a href="../../resources/Files/PASSCHIP-_-SOLUTION-PRESENTATION-BT.pdf"
+                                       class="g-font-size-27"><span class="passchip_font"> PASSCHIP</span>
                                         solution presentation </a> <br>
-                                    <a href="../resources/Files/PASSCHIP-Matrix.pdf" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP</span>
+                                    <a href="../../resources/Files/PASSCHIP-Matrix.pdf" class="g-font-size-27"> <span
+                                            class="passchip_font"> PASSCHIP</span>
                                         Matrix </a> <br>
-                                    <a href="../resources/Files/RPiShield-Pinout.pdf" class="g-font-size-27"> RPiShield PINOUT </a> <br>
-                                    <a href="../resources/Files/CHIP-READER-AE-DOCUMENTATION.pdf" class="g-font-size-27"> Chip Reader Documentation </a> <br>
-                                    <a href="../resources/Files/PASSCHIP-Models-v5.pdf" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP</span>
+                                    <a href="../../resources/Files/RPiShield-Pinout.pdf" class="g-font-size-27"> RPiShield
+                                        PINOUT </a> <br>
+                                    <a href="../../resources/Files/CHIP-READER-AE-DOCUMENTATION.pdf"
+                                       class="g-font-size-27"> Chip Reader Documentation </a> <br>
+                                    <a href="../../resources/Files/PASSCHIP-Models-v5.pdf" class="g-font-size-27"> <span
+                                            class="passchip_font"> PASSCHIP</span>
                                         Configuration </a> <br><br><br><br>
 
 
                                     <h1><strong>Deutsche</strong></h1> <br>
-                                    <a href="../resources/Files/Datenblatt_PASSCHIP-.pdf" class="g-font-size-27">Datenblatt </a> <br>
-                                    <a href="../resources/Files/Technische-Beschreibung_PASSCHIP.pdf" class="g-font-size-27">Technische Beschreibung </a> <br>
-                                    <a href="../resources/Files/PASSCHIP-Models-v5.pdf" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP</span>
+                                    <a href="../../resources/Files/Datenblatt_PASSCHIP-.pdf" class="g-font-size-27">Datenblatt </a>
+                                    <br>
+                                    <a href="../../resources/Files/Technische-Beschreibung_PASSCHIP.pdf"
+                                       class="g-font-size-27">Technische Beschreibung </a> <br>
+                                    <a href="../../resources/Files/PASSCHIP-Models-v5.pdf" class="g-font-size-27"> <span
+                                            class="passchip_font"> PASSCHIP</span>
                                         Konfiguration </a> <br><br><br><br>
 
                                     <h1><strong>Français</strong></h1> <br>
-                                    <a href="../resources/Files/Description-technique-du-produit-PASSCHIP.pdf" class="g-font-size-27">Description technique du produit </a> <br>
-                                    <a href="../resources/Files/Fiche-technique_PASSCHIP.pdf" class="g-font-size-27">Fiche technique </a> <br>
-                                    <a href="../resources/Files/PASSCHIP-Models-v5.pdf" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP</span>
+                                    <a href="../../resources/Files/Description-technique-du-produit-PASSCHIP.pdf"
+                                       class="g-font-size-27">Description technique du produit </a> <br>
+                                    <a href="../../resources/Files/Fiche-technique_PASSCHIP.pdf" class="g-font-size-27">Fiche
+                                        technique </a> <br>
+                                    <a href="../../resources/Files/PASSCHIP-Models-v5.pdf" class="g-font-size-27"> <span
+                                            class="passchip_font"> PASSCHIP</span>
                                         Configuration </a> <br><br><br><br>
 
                                 </div>
 
                                 <!-- JS Unify -->
-                                <script type="text/plain" src="../resources/assets/js/components/hs.tabs.js"></script>
+                                <script type="text/plain" src="../../resources/assets/js/components/hs.tabs.js"></script>
 
                                 <!-- JS Plugins Init. -->
 
@@ -281,51 +204,49 @@
         </div>
     </section>
 
- <%include file="1-in-footer.html"/>
+    <%include file="1-in-footer.html"/>
 
 </main>
 
 <!-- JS Global Compulsory -->
-<script src="../resources/assets/vendor/jquery/jquery.min.js"></script>
-<script src="../resources/assets/vendor/tether.min.js"></script>
-<script src="../resources/assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="../../resources/assets/vendor/jquery/jquery.min.js"></script>
+<script src="../../resources/assets/vendor/tether.min.js"></script>
+<script src="../../resources/assets/vendor/bootstrap/bootstrap.min.js"></script>
 
 <!-- JS Implementing Plugins -->
-<script src="../resources/assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
-<script src="../resources/assets/vendor/cubeportfolio-full/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
-<script src="../resources/assets/vendor/gmaps/gmaps.min.js"></script>
-<script src="../resources/assets/vendor/slick-carousel/slick/slick.js"></script>
-<script src="../resources/assets/vendor/fancybox/jquery.fancybox.min.js"></script>
-<script src="../resources/assets/vendor/appear.js"></script>
+<script src="../../resources/assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+<script src="../../resources/assets/vendor/cubeportfolio-full/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+<script src="../../resources/assets/vendor/gmaps/gmaps.min.js"></script>
+<script src="../../resources/assets/vendor/slick-carousel/slick/slick.js"></script>
+<script src="../../resources/assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+<script src="../../resources/assets/vendor/appear.js"></script>
 
 <!-- JS Unify -->
-<script src="../resources/assets/js/hs.core.js"></script>
-<script src="../resources/assets/js/components/hs.header.js"></script>
-<script src="../resources/assets/js/helpers/hs.hamburgers.js"></script>
-<script src="../resources/assets/js/components/hs.tabs.js"></script>
-<script src="../resources/assets/js/components/hs.cubeportfolio.js"></script>
-<script src="../resources/assets/js/components/hs.carousel.js"></script>
-<script src="../resources/assets/js/components/hs.popup.js"></script>
-<script src="../resources/assets/js/components/hs.header.js"></script>
-<script src="../resources/assets/js/helpers/hs.hamburgers.js"></script>
-<script src="../resources/assets/js/helpers/hs.focus-state.js"></script>
-<script src="../resources/assets/js/components/hs.counter.js"></script>
-
+<script src="../../resources/assets/js/hs.core.js"></script>
+<script src="../../resources/assets/js/components/hs.header.js"></script>
+<script src="../../resources/assets/js/helpers/hs.hamburgers.js"></script>
+<script src="../../resources/assets/js/components/hs.tabs.js"></script>
+<script src="../../resources/assets/js/components/hs.cubeportfolio.js"></script>
+<script src="../../resources/assets/js/components/hs.carousel.js"></script>
+<script src="../../resources/assets/js/components/hs.popup.js"></script>
+<script src="../../resources/assets/js/components/hs.header.js"></script>
+<script src="../../resources/assets/js/helpers/hs.hamburgers.js"></script>
+<script src="../../resources/assets/js/helpers/hs.focus-state.js"></script>
+<script src="../../resources/assets/js/components/hs.counter.js"></script>
 
 
 <!-- JS Implementing Plugins -->
-<script src="../resources/assets/vendor/gmaps/gmaps.min.js"></script>
-<script src="../resources/assets/js/components/gmap/hs.map.js"></script>
+<script src="../../resources/assets/vendor/gmaps/gmaps.min.js"></script>
+<script src="../../resources/assets/js/components/gmap/hs.map.js"></script>
 
 
-
-<script src="../resources/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
-<script src="../resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
-<script src="../resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+<script src="../../resources/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+<script src="../../resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+<script src="../../resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
 
 
 <!-- JS Customization -->
-<script src="../resources/assets/js/custom.js"></script>
+<script src="../../resources/assets/js/custom.js"></script>
 
 <!-- JS Plugins Init. -->
 <script>

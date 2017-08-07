@@ -10,52 +10,54 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../resources/favicon.ico">
+    <link rel="shortcut icon" href="../../resources/favicon.ico">
 
     <!-- Google Fonts -->
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,500,600,700%7Csubset=cyrillic,latin"
           rel="stylesheet" type="text/css">
 
     <!-- CSS Global Compulsory -->
-    <link rel="stylesheet" href="../resources/assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/flag-icon-css-master/css/flag-icon.min.css">
 
     <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="../resources/assets/vendor/icon-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/icon-line-pro/style.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/icon-hs/style.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/animate.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/cubeportfolio-full/cubeportfolio/css/cubeportfolio.min.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/fancybox/jquery.fancybox.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/slick-carousel/slick/slick.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/hs-megamenu/src/hs.megamenu.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/icon-line-pro/style.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/icon-hs/style.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/animate.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/cubeportfolio-full/cubeportfolio/css/cubeportfolio.min.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/hamburgers/hamburgers.min.css">
 
-    <link rel="stylesheet" href="../resources/assets/vendor/icon-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/icon-line/css/simple-line-icons.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/icon-line-pro/style.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/icon-etlinefont/style.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/icon-hs/style.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/icon-line/css/simple-line-icons.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/icon-line-pro/style.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/icon-etlinefont/style.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/icon-hs/style.css">
 
     <!-- CSS Unify -->
-    <link rel="stylesheet" href="../resources/assets/css/unify.css">
+    <link rel="stylesheet" href="../../resources/assets/css/unify.css">
 
     <!-- CSS Customization -->
-    <link rel="stylesheet" href="../resources/assets/css/custom.css">
+    <link rel="stylesheet" href="../../resources/assets/css/custom.css">
 
-    <link rel="stylesheet" href="../resources/assets/vendor/dzsparallaxer/dzsparallaxer.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/dzsparallaxer/dzsparallaxer.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
 </head>
 
 <body>
 <main>
+    <% product = data["products"]["lprReader"] %>
  <%include file="1-in-header.html"/>
 
     <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall"
              data-options="{direction: 'reverse', settings_mode_oneelement_max_offset: '150'}">
         <!-- Parallax Image -->
         <div class="divimage dzsparallaxer--target w-100 g-bg-repeat g-bg-black"
-             style="height: 150%; background-image: url('../resources/images/license-plate (Large).jpeg'); transform: translate3d(0px, -120.362px, 0px);"></div>
+             style="height: 150%; background-image: url('../../resources/images/license-plate (Large).jpeg'); transform: translate3d(0px, -120.362px, 0px);"></div>
         <!-- End Parallax Image -->
 
         <div class="g-z-index-1 g-py-150" style="background-color:rgba(255,241,248,0);color:black">
@@ -78,24 +80,13 @@
                 <div class="d-inline-block g-width-80 g-height-4 g-bg-black mb-3"></div>
                 <h2 class="g-color-black g-font-weight-700 g-font-size-50 g-line-height-1 mb-4"><span class="passchip_font">PASSCHIP </span>LPR Reader</h2>
 
-
-                <!--
-                <div class="g-font-size-23">
-                    <a href="#passchip_reader">PASSCHIP Reader</a> •
-                    <a href="#passcon">PASSCON</a> •
-                    <a href="#tanda">Time And Attendance</a>
-                </div> -->
-
                 <div class="">
                     <div class="mb-5 g-py-50 ">
-                        <!-- <h3 class="h1 g-color-black mb-4">The <span class="passchip_font">PASSCHIP </span> Reader</h3> -->
+                        % for paragraph in product["fulLDescriptionParagraphList"]:
                         <p class="g-color-gray-dark-v4 g-font-size-18">
-                            Our License Plate Reader offers automatic number
-                            plate reading combined with wiegand
-                            communication. The LPR reader transforms
-                            seamlessly integrated license plate reading into a
-                            wiegand card ID reader output
+                            ${paragraph}
                         </p>
+                        % endfor
                     </div>
 
                 </div>
@@ -104,10 +95,10 @@
             <div class="col-md-4 offset-md-2 g-py-50--lg">
                 <div class="  ">
                     <div class="u-shadow-v19 g-bg-white text-center">
-                        <a class="js-fancybox" href="../resources/images/lpr_900x600.png"
+                        <a class="js-fancybox" href="../../resources/images/lpr_900x600.png"
                            data-fancybox-animate-in="zoomIn" data-fancybox-animate-out="zoomOut"
                            data-fancybox-speed="1000" data-fancybox-blur-bg="blur" data-fancybox-bg="rgba(0,0,0, 1)">
-                            <img class="img-fluid" src="../resources/images/lpr_900x600.png" alt="Image Description">
+                            <img class="img-fluid" src="../../resources/images/lpr_900x600.png" alt="Image Description">
                         </a>
                     </div>
                 </div>
@@ -158,22 +149,13 @@
                                     <h1><strong>Functions</strong></h1><br>
 
                                     <ul class="g-font-size-20">
+
+                                        % for function in product["functionsBulletList"]:
                                         <li>
-                                            Our License Plate Reader is an all-in-one system that embeds camera,
-                                            projector and processing in a compact weatherproof housing. Management is
-                                            simple using an embedded web browser interface, through the available
-                                            Ethernet connection. Accuracy of plate reading is very high due to the high
-                                            resolution image sensor and advanced and extensively trained detection
-                                            algorithm.
-                                        </li>
-                                        <li>
-                                            The LPR unit allows for simple set up and easy deployment. The embedded
-                                            browser based interface is supplied for initial configuration and on-going
-                                            management. The module provides plate detection and notification
-                                            information.
+                                            ${function}
                                         </li>
 
-
+                                        % endfor
                                     </ul>
 
 
@@ -186,38 +168,24 @@
                                     <h1><strong>Benefits</strong></h1><br>
 
                                     <ul class="g-font-size-20">
-
+                                        % for benefit in product["benefitsBulletList"]:
                                         <li>
-                                            The web browser interface also allows the integrator to configure the
-                                            transmitted wiegand ID strings of the ALPR reader. Upon reading of the
-                                            license plate the ALPR unit will refer to the database and transmit the
-                                            corresponding wiegand ID using chosen wiegand format to the access control
-                                            panel.
-                                        </li>
-                                        <li>
-                                            If the wiegand ID is authorized then access is permitted.
-
-                                        </li>
-                                        <li>
-                                            The LPR reader is featured with an internal database that matches the
-                                            license plate to a specific valid Wiegand card ID (i.e. the already existing
-                                            card number of the person that drives the car). This matching can be done
-                                            easily and from a remote location using the web browser interface.
-
+                                            ${benefit}
                                         </li>
 
-
+                                        % endfor
                                     </ul>
 
 
                                 </div>
+
 
                                 <div class="tab-pane fade" id="nav-1-1-default-hor-left-underline--3" role="tabpanel"
                                      aria-expanded="false">
                                     <br><br>
 
 
-                                    <a href="../resources/Files/Data_Sheet_EN_PASSCHIP-LPR.pdf" class="g-font-size-27"><span class="passchip_font">PASSCHIP </span> LPR Reader </a>
+                                    <a href="../../resources/Files/Data_Sheet_EN_PASSCHIP-LPR.pdf" class="g-font-size-27"><span class="passchip_font">PASSCHIP </span> LPR Reader </a>
                                     <br>
                                     <br><br><br><br>
 
@@ -225,7 +193,7 @@
                                 </div>
 
                                 <!-- JS Unify -->
-                                <script type="text/plain" src="../resources/assets/js/components/hs.tabs.js"></script>
+                                <script type="text/plain" src="../../resources/assets/js/components/hs.tabs.js"></script>
 
                                 <!-- JS Plugins Init. -->
 
@@ -244,46 +212,46 @@
 </main>
 
 <!-- JS Global Compulsory -->
-<script src="../resources/assets/vendor/jquery/jquery.min.js"></script>
-<script src="../resources/assets/vendor/tether.min.js"></script>
-<script src="../resources/assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="../../resources/assets/vendor/jquery/jquery.min.js"></script>
+<script src="../../resources/assets/vendor/tether.min.js"></script>
+<script src="../../resources/assets/vendor/bootstrap/bootstrap.min.js"></script>
 
 <!-- JS Implementing Plugins -->
-<script src="../resources/assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
-<script src="../resources/assets/vendor/cubeportfolio-full/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
-<script src="../resources/assets/vendor/gmaps/gmaps.min.js"></script>
-<script src="../resources/assets/vendor/slick-carousel/slick/slick.js"></script>
-<script src="../resources/assets/vendor/fancybox/jquery.fancybox.min.js"></script>
-<script src="../resources/assets/vendor/appear.js"></script>
+<script src="../../resources/assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+<script src="../../resources/assets/vendor/cubeportfolio-full/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+<script src="../../resources/assets/vendor/gmaps/gmaps.min.js"></script>
+<script src="../../resources/assets/vendor/slick-carousel/slick/slick.js"></script>
+<script src="../../resources/assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+<script src="../../resources/assets/vendor/appear.js"></script>
 
 <!-- JS Unify -->
-<script src="../resources/assets/js/hs.core.js"></script>
-<script src="../resources/assets/js/components/hs.header.js"></script>
-<script src="../resources/assets/js/helpers/hs.hamburgers.js"></script>
-<script src="../resources/assets/js/components/hs.tabs.js"></script>
-<script src="../resources/assets/js/components/hs.cubeportfolio.js"></script>
-<script src="../resources/assets/js/components/hs.carousel.js"></script>
-<script src="../resources/assets/js/components/hs.popup.js"></script>
-<script src="../resources/assets/js/components/hs.header.js"></script>
-<script src="../resources/assets/js/helpers/hs.hamburgers.js"></script>
-<script src="../resources/assets/js/helpers/hs.focus-state.js"></script>
-<script src="../resources/assets/js/components/hs.counter.js"></script>
+<script src="../../resources/assets/js/hs.core.js"></script>
+<script src="../../resources/assets/js/components/hs.header.js"></script>
+<script src="../../resources/assets/js/helpers/hs.hamburgers.js"></script>
+<script src="../../resources/assets/js/components/hs.tabs.js"></script>
+<script src="../../resources/assets/js/components/hs.cubeportfolio.js"></script>
+<script src="../../resources/assets/js/components/hs.carousel.js"></script>
+<script src="../../resources/assets/js/components/hs.popup.js"></script>
+<script src="../../resources/assets/js/components/hs.header.js"></script>
+<script src="../../resources/assets/js/helpers/hs.hamburgers.js"></script>
+<script src="../../resources/assets/js/helpers/hs.focus-state.js"></script>
+<script src="../../resources/assets/js/components/hs.counter.js"></script>
 
 
 
 <!-- JS Implementing Plugins -->
-<script src="../resources/assets/vendor/gmaps/gmaps.min.js"></script>
-<script src="../resources/assets/js/components/gmap/hs.map.js"></script>
+<script src="../../resources/assets/vendor/gmaps/gmaps.min.js"></script>
+<script src="../../resources/assets/js/components/gmap/hs.map.js"></script>
 
 
-<script src="../resources/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
-<script src="../resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
-<script src="../resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+<script src="../../resources/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+<script src="../../resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+<script src="../../resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
 
 
 
 <!-- JS Customization -->
-<script src="../resources/assets/js/custom.js"></script>
+<script src="../../resources/assets/js/custom.js"></script>
 
 <!-- JS Plugins Init. -->
 <script>

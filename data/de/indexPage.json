@@ -1,0 +1,53 @@
+{
+  "comment":"DONE",
+  "motto": "Schützen Sie Ihre Kunden",
+  "motto2": "Unterstützung von Banken schützen Ihre Kunden",
+  "faqDescription": "Wir wollen hoch konzentriert auf den Aufbau von Beziehungen mit unseren Kunden und der Gemeinschaft.",
+  "faqs": [
+    {
+      "q": "Wo kann das PASSCHIP -System verwendet werden?",
+      "a": "Das PASSCHIP-System ist ideal für die Banken, für die Finanzinstituten, für Rechenzentren, für lebenswichtige Infrastrukturen und für die Militär und Strafverfolgungsbehörden ."
+    },
+    {
+      "q": "Wie ist PASSCHIP unterscheidet sich von anderen Sicherheitssystemen ?",
+      "a": "PASSCHIP ist das erste Zugangssystem der Welt eine Reihe von Lesern für Self-Service- Bereiche zu verwenden, die mit Chip- Kreditkarten funktionieren."
+    },
+    {
+      "q": "Kann ich integrieren, Sie mit unseren bereits vorhandenen Zutrittskontroll-system?",
+      "a": "Die PASSCHIP Leser kann sich bedienen wie eine standard-26bit wiegand-Leser"
+    },
+    {
+      "q": "Welche Kreditkarten werden unterstützt?",
+      "a": "Standard-Kredit-Karte (visa, mastercard, etc..) werden unterstützt und neue Kreditkarten-Typen können Hinzugefügt werden, wie gebraucht"
+    },
+    {
+      "q": "Kann ich konfigurieren, damit es mit einem Zeitplan?",
+      "a": "PASSCHIP unterstützt die software den vorgegebenen Zeitplan sowie externen hardware-Trigger"
+    },
+    {
+      "q": "Kann den Begrüßungstext individuell angepasst werden?",
+      "a": "PASSCHIP unterstützt den gesamten unicode - Zeichensatz, wir können die display-Meldungen in die lateinische, Arabische, chinesische alphabet"
+    }
+  ],
+  "aboutUs": "Als CONIC DESIGN in 2006 gegründet wurde, haben die Gründer sich eine Firma vorgestellt, deren Ziel ist, Lösungen für die elektronischen Hochsicherheitsanforderungen zu finden und eine allumfassende Kundenbetreuung sicherzustellen. Unsere Firma hat ihren Einzug auf den Markt mit der weltweit ersten Bank ID Smart Access Chipreihe von Kartenlesern für Selbstbedienungsbereiche gemacht.",
+  "ourMission": "Unsere Aufgabe ist Spitzentechnologie zu entwerfen, entwickeln und unseren Kunden bereitzustellen, um ihre eigene Sicherheit zu verbessern und ihre Sicherheitsaufgaben besser erfüllen zu können. Wir haben uns hohen ethischen Standards, wie Redlichkeit, Ehrlichkeit und Entgegenkommen in unseren Geschäften und Beziehungen verschrieben. Unsere Mission und Grundwerte sind das Fundament, auf das wir nach unseren Kräften die beste Gesellschaft aufbauen.",
+  "counters": [
+    {
+      "label": "Passchip Leser verkauft",
+      "count": "500"
+    },
+    {
+      "label": "PASSCHIP Software Lizenzen",
+      "count": "500"
+    },
+    {
+      "label": "% Zufriedenheit",
+      "count": "100"
+    }
+  ],
+  "testimonial": {
+    "text": "Wir haben 2012 und die unabhängige Rumänische Firma KONISCHEN DESIGN legte den Grundstein für eine starke Partnerschaft in unserem sicheren und security-Aktivitäten durch die Etablierung einer globalen Vereinbarung für die Installation der hochmodernen KONISCHEN DESIGN der neuen access control-Lösungen für die Sicherung unserer gesamten Netz von Vertretungen in insgesamt mehr als 200 Filialen. Die technische Lösung besteht aus der Installation der sehr ausgeklügelten Eingang system PASSCHIP entwickelt von KONISCHEN DESIGN, um sicherzustellen, daß alle Eintritte in die \"private-banking-Zonen\", die von IP-bank smart-card-chip-Leser. Das Projekt befindet sich derzeit mitten in der Umsetzungsphase, und in dieser Phase bewerten wir, dass unsere Anforderungen voll erfüllt, sogar übertrifft unsere ursprünglichen Erwartungen angefordert, die in den Ausschreibungsunterlagen, unsere Kunden feedbacks sind sehr ermutigend. Unsere erhöhte Sicherheitsstufe beweist nun, dass unsere Investitionen und das Gesicht geschützt werden, indem eine der stärksten und stabilsten access control-Plattform, die wir je getestet haben, bietet uns die detaillierten Berichte und Gesamt-IP-Kontrolle-über den Zugang der öffentlichkeit Zahlungsverkehr finden Sie in unseren Agenturen. Die Umsetzung PASSCHIP angeboten von KONISCHEN DESIGN, wir zählen Bemerkenswerte Einsparungen und reduziert unsere Kosten mit Wachen, transport, customer care-Abteilung und andere Aufwendungen, die zur gleichen Zeit die Verbesserung unserer Sicherheits-und client-Komfort während Ihres self-banking-Aktivitäten in unseren Agenturen. Wir empfehlen das Produkt PASSCHIP als mit advanced access control-Funktionen, hohe Flexibilität, sofortige und aufgezeichnet alarm monitoring, information-security-integration und robuste IP-management-Funktionalitäten.",
+    "by": "- Bank Security Manager"
+  },
+  "callbackClarification": "Würde Sie gerne sprechen Sie mit einem unserer Spezialisten über das Telefon? Stellen Sie einfach Ihre Angaben und wir werden uns in Kürze. Sie können auch mailen Sie uns, wenn Sie bevorzugen würden. Haben Sie Fragen dazu, wie PASSCHIP Ihrem Unternehmen helfen kann? Senden Sie uns eine Nachricht und wir werden uns in Kürze"
+}

@@ -13,39 +13,40 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../resources/favicon.ico">
+    <link rel="shortcut icon" href="../../resources/favicon.ico">
 
     <!-- Google Fonts -->
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,500,600,700%7Csubset=cyrillic,latin"
           rel="stylesheet" type="text/css">
 
     <!-- CSS Global Compulsory -->
-    <link rel="stylesheet" href="../resources/assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/flag-icon-css-master/css/flag-icon.min.css">
 
     <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="../resources/assets/vendor/icon-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/icon-line-pro/style.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/icon-hs/style.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/animate.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/cubeportfolio-full/cubeportfolio/css/cubeportfolio.min.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/fancybox/jquery.fancybox.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/slick-carousel/slick/slick.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/hs-megamenu/src/hs.megamenu.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/hamburgers/hamburgers.min.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/icon-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/icon-line/css/simple-line-icons.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/icon-line-pro/style.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/icon-etlinefont/style.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/icon-hs/style.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/dzsparallaxer/dzsparallaxer.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
-    <link rel="stylesheet" href="../resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/icon-line-pro/style.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/icon-hs/style.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/animate.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/cubeportfolio-full/cubeportfolio/css/cubeportfolio.min.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/icon-line/css/simple-line-icons.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/icon-line-pro/style.css">
+    <link rel="stylesheet" href="../../resources/assets/ve ndor/icon-etlinefont/style.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/icon-hs/style.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/dzsparallaxer/dzsparallaxer.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
 
     <!-- CSS Unify -->
-    <link rel="stylesheet" href="../resources/assets/css/unify.css">
+    <link rel="stylesheet" href="../../resources/assets/css/unify.css">
 
     <!-- CSS Customization -->
-    <link rel="stylesheet" href="../resources/assets/css/custom.css">
+    <link rel="stylesheet" href="../../resources/assets/css/custom.css">
 
 
 </head>
@@ -58,7 +59,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="d-inline-block g-width-80 g-height-4 g-bg-black mb-3"></div>
-                <h2 class="g-color-black g-font-weight-700 g-font-size-50 g-line-height-1 mb-4">Our Products</h2>
+                <h2 class="g-color-black g-font-weight-700 g-font-size-50 g-line-height-1 mb-4">${data['words']['ourProducts']}</h2>
                 <div class="g-font-size-23">
                     <a href="#passchip_reader">PASSCHIP Reader</a> &bull;
                     <a href="#passcon">PASSCON</a> &bull;
@@ -83,7 +84,7 @@
                 <!-- Article Image -->
                 <div class="col-md-5">
                     <a href="passchip-reader.html">
-                        <img class="img-fluid w-100 g-mb-20 g-mb-0--md" src="../resources/images/pass_transparent.png"
+                        <img class="img-fluid w-100 g-mb-20 g-mb-0--md" src="../../resources/images/pass_transparent.png"
                              alt="Image Description">
                     </a>
                 </div>
@@ -101,13 +102,13 @@
 
 
                     <!-- Article Text -->
-                    <p>This state of the art access control chip reader is specially designed for advanced ID Banking
-                        filtering processes to self service areas or high security spaces. The security platform is
-                        designed for a secure access control process using the CHIP acces cards (credit cards or simply
-                        smart cards) alone or combined with PIN and biometric technology.</p>
+                    <p>
+                        ${data["products"]["passchipReader"]["shortDescription"]}
+
+                    </p>
                     <!-- End Article Text -->
 
-                    <a class="g-font-size-25"  href="passchip-reader.html">Read More...</a>
+                    <a class="g-font-size-25"  href="passchip-reader.html">${data['words']['readMore']}...</a>
                 </div>
                 <!-- End Article Content -->
             </div>
@@ -124,7 +125,7 @@
                 <!-- Article Image -->
                 <div class="col-md-5">
                     <a href="passcon.html">
-                        <img class="img-fluid w-100 g-mb-20 g-mb-0--md" src="../resources/images/passcon_screenshot.jpg"
+                        <img class="img-fluid w-100 g-mb-20 g-mb-0--md" src="../../resources/images/passcon_screenshot.jpg"
                              alt="Image Description">
                     </a>
                 </div>
@@ -142,13 +143,13 @@
 
 
                     <!-- Article Text -->
-                    <p>Centralized Ethernet administration, using the unique PASSCON software functions for all the
-                        network; important savings are made in terms of time and specific resources of the security
-                        managers. Facilitates integration with CCTV, fire and intrusion detection through any integrated
-                        security platform through Wiegand, Ethernet and Serial interface.</p>
+                    <p>
+
+                        ${data["products"]["passcon"]["shortDescription"]}
+                    </p>
                     <!-- End Article Text -->
 
-                    <a class="g-font-size-25"  href="passcon.html">Read More...</a>
+                    <a class="g-font-size-25"  href="passcon.html">${data['words']['readMore']}...</a>
                 </div>
                 <!-- End Article Content -->
             </div>
@@ -166,7 +167,7 @@
                 <!-- Article Image -->
                 <div class="col-md-5">
                     <a href="time-and-attendance.html">
-                        <img class="img-fluid w-100 g-mb-20 g-mb-0--md" src="../resources/images/time_and_a_900x600.png"
+                        <img class="img-fluid w-100 g-mb-20 g-mb-0--md" src="../../resources/images/time_and_a_900x600.png"
                              style="background-color: transparent"
                              alt="Image Description"> </a>
 
@@ -186,11 +187,12 @@
 
 
                     <!-- Article Text -->
-                    <p>Provides a powerful, modern and flexible workforce management solution that connects to any type
-                        of access control system.</p>
+                    <p>
+                        ${data["products"]["timeAndAttendance"]["shortDescription"]}
+                    </p>
                     <!-- End Article Text -->
 
-                    <a class="g-font-size-25"  href="time-and-attendance.html">Read More...</a>
+                    <a class="g-font-size-25"  href="time-and-attendance.html">${data['words']['readMore']}...</a>
                 </div>
                 <!-- End Article Content -->
             </div>
@@ -207,7 +209,7 @@
                 <!-- Article Image -->
                 <div class="col-md-5">
                     <a href="intercom.html">
-                        <img class="img-fluid w-100 g-mb-20 g-mb-0--md" src="../resources/images/intercom_900x600.png"
+                        <img class="img-fluid w-100 g-mb-20 g-mb-0--md" src="../../resources/images/intercom_900x600.png"
                              alt="Image Description">
                     </a>
                 </div>
@@ -225,13 +227,12 @@
 
 
                     <!-- Article Text -->
-                    <p>Our IP video intercom product line is dedicated to commercial, office buildings and residential
-                        large projects, ensures increased levels of security and comfort compared to conventional analog
-                        intercom
-                        systems due to its remarkable flexibility and friendly use.</p>
+                    <p>
+                        ${data["products"]["intercom"]["shortDescription"]}
+                    </p>
                     <!-- End Article Text -->
 
-                    <a class="g-font-size-25" href="intercom.html">Read More...</a>
+                    <a class="g-font-size-25" href="intercom.html">${data['words']['readMore']}...</a>
                 </div>
                 <!-- End Article Content -->
             </div>
@@ -250,7 +251,7 @@
                 <!-- Article Image -->
                 <div class="col-md-5">
                     <a href="lpr-reader.html">
-                        <img class="img-fluid w-100 g-mb-20 g-mb-0--md" src="../resources/images/lpr_900x600.png"
+                        <img class="img-fluid w-100 g-mb-20 g-mb-0--md" src="../../resources/images/lpr_900x600.png"
                              alt="Image Description">
                     </a>
                 </div>
@@ -268,12 +269,12 @@
 
 
                     <!-- Article Text -->
-                    <p>Our License Plate Reader offers automatic number plate reading combined with wiegand
-                        communication. The LPR reader transforms seamlessly integrated license plate reading into a
-                        wiegand card ID reader output</p>
+                    <p>
+                        ${data["products"]["lprReader"]["shortDescription"]}
+                    </p>
                     <!-- End Article Text -->
 
-                    <a class="g-font-size-25"  href="lpr-reader.html">Read More...</a>
+                    <a class="g-font-size-25"  href="lpr-reader.html">${data['words']['readMore']}...</a>
                 </div>
                 <!-- End Article Content -->
             </div>
@@ -291,7 +292,7 @@
                 <!-- Article Image -->
                 <div class="col-md-5">
                     <a href="access-control.html">
-                        <img class="img-fluid w-100 g-mb-20 g-mb-0--md" src="../resources/images/access_control_900x600.png"
+                        <img class="img-fluid w-100 g-mb-20 g-mb-0--md" src="../../resources/images/controll_board.png"
                              alt="Image Description">
                     </a>
                 </div>
@@ -309,14 +310,12 @@
 
 
                     <!-- Article Text -->
-                    <p>This product is a powerful networked door module giving the advantages of IP centralized control
-                        and event reporting. It is mainly dedicated to large office buildings and industrial plants,
-                        with possibilities of usage in banks, commercial, law enforcement agencies, telecom and other
-                        organizations for secure and
-                        efficient access in sensitive areas</p>
+                    <p>
+                        ${data["products"]["accessController"]["shortDescription"]}
+                    </p>
                     <!-- End Article Text -->
 
-                    <a class="g-font-size-25" href="access-control.html">Read More...</a>
+                    <a class="g-font-size-25" href="access-control.html">${data['words']['readMore']}...</a>
                 </div>
                 <!-- End Article Content -->
             </div>
@@ -334,7 +333,7 @@
                 <!-- Article Image -->
                 <div class="col-md-5">
                     <a href="automotive.html">
-                        <img class="img-fluid w-100 g-mb-20 g-mb-0--md" src="../resources/images/automotive_900x600_gray.png"
+                        <img class="img-fluid w-100 g-mb-20 g-mb-0--md" src="../../resources/images/automotive_900x600_gray.png"
                              alt="Image Description">
                     </a>
                 </div>
@@ -353,14 +352,12 @@
 
 
                     <!-- Article Text -->
-                    <p><span class="passchip_font">PASSCHIP </span> Automotive is a mobile solution that replaces the need of using a physical car key. The
-                        Key is replaced by the smartphone app running on the customer’s phone or tablet that
-                        communicates with PASSCHIP – installed inside the cabin.
-                        Read more
+                    <p>
+                        ${data["products"]["automotive"]["shortDescription"]}
                     </p>
                     <!-- End Article Text -->
 
-                    <a class="g-font-size-25"  href="automotive.html">Read More...</a>
+                    <a class="g-font-size-25"  href="automotive.html">${data['words']['readMore']}...</a>
                 </div>
                 <!-- End Article Content -->
             </div>
@@ -373,43 +370,43 @@
 </main>
 
 <!-- JS Global Compulsory -->
-<script src="../resources/assets/vendor/jquery/jquery.min.js"></script>
-<script src="../resources/assets/vendor/tether.min.js"></script>
-<script src="../resources/assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="../../resources/assets/vendor/jquery/jquery.min.js"></script>
+<script src="../../resources/assets/vendor/tether.min.js"></script>
+<script src="../../resources/assets/vendor/bootstrap/bootstrap.min.js"></script>
 
 <!-- JS Implementing Plugins -->
-<script src="../resources/assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
-<script src="../resources/assets/vendor/cubeportfolio-full/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
-<script src="../resources/assets/vendor/gmaps/gmaps.min.js"></script>
-<script src="../resources/assets/vendor/slick-carousel/slick/slick.js"></script>
-<script src="../resources/assets/vendor/fancybox/jquery.fancybox.min.js"></script>
-<script src="../resources/assets/vendor/appear.js"></script>
+<script src="../../resources/assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+<script src="../../resources/assets/vendor/cubeportfolio-full/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+<script src="../../resources/assets/vendor/gmaps/gmaps.min.js"></script>
+<script src="../../resources/assets/vendor/slick-carousel/slick/slick.js"></script>
+<script src="../../resources/assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+<script src="../../resources/assets/vendor/appear.js"></script>
 
 <!-- JS Unify -->
-<script src="../resources/assets/js/hs.core.js"></script>
-<script src="../resources/assets/js/components/hs.header.js"></script>
-<script src="../resources/assets/js/helpers/hs.hamburgers.js"></script>
-<script src="../resources/assets/js/components/hs.tabs.js"></script>
-<script src="../resources/assets/js/components/hs.cubeportfolio.js"></script>
-<script src="../resources/assets/js/components/hs.carousel.js"></script>
-<script src="../resources/assets/js/components/hs.popup.js"></script>
-<script src="../resources/assets/js/components/hs.header.js"></script>
-<script src="../resources/assets/js/helpers/hs.hamburgers.js"></script>
-<script src="../resources/assets/js/helpers/hs.focus-state.js"></script>
-<script src="../resources/assets/js/components/hs.counter.js"></script>
+<script src="../../resources/assets/js/hs.core.js"></script>
+<script src="../../resources/assets/js/components/hs.header.js"></script>
+<script src="../../resources/assets/js/helpers/hs.hamburgers.js"></script>
+<script src="../../resources/assets/js/components/hs.tabs.js"></script>
+<script src="../../resources/assets/js/components/hs.cubeportfolio.js"></script>
+<script src="../../resources/assets/js/components/hs.carousel.js"></script>
+<script src="../../resources/assets/js/components/hs.popup.js"></script>
+<script src="../../resources/assets/js/components/hs.header.js"></script>
+<script src="../../resources/assets/js/helpers/hs.hamburgers.js"></script>
+<script src="../../resources/assets/js/helpers/hs.focus-state.js"></script>
+<script src="../../resources/assets/js/components/hs.counter.js"></script>
 
 
 <!-- JS Customization -->
-<script src="../resources/assets/js/custom.js"></script>
+<script src="../../resources/assets/js/custom.js"></script>
 
 
 <!-- JS Implementing Plugins -->
-<script src="../resources/assets/vendor/gmaps/gmaps.min.js"></script>
-<script src="../resources/assets/js/components/gmap/hs.map.js"></script>
+<script src="../../resources/assets/vendor/gmaps/gmaps.min.js"></script>
+<script src="../../resources/assets/js/components/gmap/hs.map.js"></script>
 
-<script src="../resources/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
-<script src="../resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
-<script src="../resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+<script src="../../resources/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+<script src="../../resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+<script src="../../resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
 
 
 <!-- JS Plugins Init. -->

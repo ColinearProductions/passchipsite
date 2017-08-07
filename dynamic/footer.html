@@ -5,10 +5,11 @@
             <!-- Footer Content -->
             <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
                 <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-10">
-                    <h2 class="u-heading-v2__title h6 text-uppercase mb-0">Subscribe to our Newsletter</h2>
+
+                    <h2 class="u-heading-v2__title h6 text-uppercase mb-0"> ${data['footer']['subscribeToOurNewsletter']}</h2>
                 </div>
 
-                <p>Subscribe to our newsletter and stay up to date with the latest news and deals!</p>
+                <p> ${data['footer']['subscribeMessage']}</p>
 
 
                 <!-- Begin MailChimp Signup Form -->
@@ -23,7 +24,7 @@
 
                             <input type="email" value="" name="EMAIL"
                                    class="required email form-control border-0 rounded-0 g-px-12 g-py-8 "
-                                   placeholder="Email address" id="mce-EMAIL">
+                                   placeholder=" ${data['footer']['emailAddress']}" id="mce-EMAIL">
 
                             <div id="mce-responses" class="clear">
                                 <div class="response" id="mce-error-response" style="display:none"></div>
@@ -38,7 +39,7 @@
                             </div>
 
                             <div class="clear">
-                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+                                <input type="submit" value=" ${data['footer']['subscribe']}" name="subscribe" id="mc-embedded-subscribe"
                                        class="btn u-btn-primary rounded-0 g-px-12 g-py-8">
                             </div>
                         </div>
@@ -149,19 +150,19 @@
                      data-title="Agency"
                      data-styles='[["", "", [{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]], ["", "labels", [{"visibility":"on"}]], ["water", "", [{"color":"#bac6cb"}]] ]'
                      data-pin="true"
-                     data-pin-icon="resources/assets/img/icons/pin/teal.png">
+                     data-pin-icon="../resources/assets/img/icons/pin/teal.png">
                 </div>
                 <!-- End Google Map -->
 
                 <a href="https://maps.google.com/?q=44.480,26.071" class="visible-xs visible-sm">
-                    <strong>Open in google maps</strong>
+                    <strong> ${data['footer']['openInGoogleMaps']}</strong>
                 </a>
             </div>
             <!-- End Map Content -->
 
             <!-- needed imports for gmaps:
-            <script src="resources/assets/vendor/gmaps/gmaps.min.js"></script>
-            <script src="resources/assets/js/components/gmap/hs.map.js"></script>
+            <script src="../resources/assets/vendor/gmaps/gmaps.min.js"></script>
+            <script src="../resources/assets/js/components/gmap/hs.map.js"></script>
             <script>
                 $(document).on('ready', function () {
                     $('[data-toggle="tooltip"]').tooltip();
@@ -179,15 +180,15 @@
             <!-- Footer Content -->
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-10">
-                    <h2 class="u-heading-v2__title h6 text-uppercase mb-0">Our Contacts</h2>
+                    <h2 class="u-heading-v2__title h6 text-uppercase mb-0"> ${data['footer']['ourContacts']}</h2>
                 </div>
 
                 <address class="g-bg-no-repeat g-line-height-2 g-mt-minus-4"
-                         style="background: url(resources/assets/img/maps/map2.png);   background-position: center; ">
+                         style="background: url(../resources/assets/img/maps/map2.png);   background-position: center; ">
                     1 Piata Presei Libere<br>
                     C1 Building, 2nd Floor<br>
                     1st District Bucharest, Romania
-                    <br> Phone: 004 0745 342 887
+                    <br>  ${data['footer']['phone']}: 004 0745 342 887
                     <br> Email: <a href="mailto:office@passchip.com" class="">office@passchip.com</a>
                 </address>
 
@@ -228,7 +229,7 @@
 <footer class="g-bg-gray-dark-v1 g-color-white-opacity-0_8 text-center g-py-20">
     <div class="container">
         <small class="g-font-size-default g-mr-10 g-mb-10 g-mb-0--md">
-            <span class="passchip_font">PASSCHIP </span> ® is a registered trademark of  <a href="http://conicdesign.ro"><img src="resources/images/small_conic.png"></a>
+            <span class="passchip_font">PASSCHIP </span> ®  ${data['footer']['isARegisteredTrademark']}  <a href="http://conicdesign.ro"><img src="../resources/images/small_conic.png"></a>
         </small>
     </div>
 </footer>

@@ -13,39 +13,40 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="resources/favicon.ico">
+    <link rel="shortcut icon" href="../resources/favicon.ico">
 
     <!-- Google Fonts -->
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,500,600,700%7Csubset=cyrillic,latin"
           rel="stylesheet" type="text/css">
 
     <!-- CSS Global Compulsory -->
-    <link rel="stylesheet" href="resources/assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/bootstrap/bootstrap.min.css">
 
     <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="resources/assets/vendor/icon-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="resources/assets/vendor/icon-line-pro/style.css">
-    <link rel="stylesheet" href="resources/assets/vendor/icon-hs/style.css">
-    <link rel="stylesheet" href="resources/assets/vendor/animate.css">
-    <link rel="stylesheet" href="resources/assets/vendor/cubeportfolio-full/cubeportfolio/css/cubeportfolio.min.css">
-    <link rel="stylesheet" href="resources/assets/vendor/fancybox/jquery.fancybox.css">
-    <link rel="stylesheet" href="resources/assets/vendor/slick-carousel/slick/slick.css">
-    <link rel="stylesheet" href="resources/assets/vendor/hs-megamenu/src/hs.megamenu.css">
-    <link rel="stylesheet" href="resources/assets/vendor/hamburgers/hamburgers.min.css">
-    <link rel="stylesheet" href="resources/assets/vendor/icon-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="resources/assets/vendor/icon-line/css/simple-line-icons.css">
-    <link rel="stylesheet" href="resources/assets/vendor/icon-line-pro/style.css">
-    <link rel="stylesheet" href="resources/assets/vendor/icon-etlinefont/style.css">
-    <link rel="stylesheet" href="resources/assets/vendor/icon-hs/style.css">
-    <link rel="stylesheet" href="resources/assets/vendor/dzsparallaxer/dzsparallaxer.css">
-    <link rel="stylesheet" href="resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
-    <link rel="stylesheet" href="resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/icon-line-pro/style.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/icon-hs/style.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/animate.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/cubeportfolio-full/cubeportfolio/css/cubeportfolio.min.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/icon-line/css/simple-line-icons.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/icon-line-pro/style.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/icon-etlinefont/style.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/icon-hs/style.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/dzsparallaxer/dzsparallaxer.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
 
     <!-- CSS Unify -->
-    <link rel="stylesheet" href="resources/assets/css/unify.css">
+    <link rel="stylesheet" href="../resources/assets/css/unify.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/flag-icon-css-master/css/flag-icon.min.css">
 
     <!-- CSS Customization -->
-    <link rel="stylesheet" href="resources/assets/css/custom.css">
+    <link rel="stylesheet" href="../resources/assets/css/custom.css">
 
 
 </head>
@@ -53,7 +54,7 @@
 <body>
 <main>
 
-
+    <% page_data = data['aboutUsPage'] %>
     <%include file="header.html"/>
 
 
@@ -63,13 +64,13 @@
                 <div class="d-inline-block g-width-80 g-height-4 g-bg-black mb-3"></div>
                 <h2 class="g-color-black g-font-weight-700 g-font-size-50 g-line-height-1 mb-4">About us</h2>
                 <div class="g-font-size-23">
-                    <a href="#history">History</a> &bull;
-                    <a href="#mission">Our Mission</a> &bull;
-                    <a href="#quality">Quality</a> &bull;
+                    <a href="#history">${data['words']['history']}</a> &bull;
+                    <a href="#mission">${data['words']['ourMission']}</a> &bull;
+                    <a href="#quality">${data['words']['quality']}</a> &bull;
                     <a href="#randd">R & D</a> &bull;
-                    <a href="#customer_service">Customer Service</a> &bull;
-                    <a href="#marketing">Marketing</a> &bull;
-                    <a href="#TOS">Terms of service</a>
+                    <a href="#customer_service">${data['words']['customerService']}</a> &bull;
+                    <a href="#marketing">${data['words']['marketing']}</a> &bull;
+                    <a href="#TOS">${data['words']['tos']}</a>
                 </div>
 
 
@@ -86,27 +87,22 @@
         <section id="history">
             <!-- Item -->
             <div class="text-center g-mb-30">
-                <h2 class="h1 g-font-weight-300">History</h2>
+                <h2 class="h1 g-font-weight-300">${data['words']['history']}</h2>
             </div>
 
             <div class="row ">
                 <div class="col-lg-6 g-mb-30">
-                    <img class="img-fluid w-100" src="resources/images/bank-passchip1.jpg" alt="Image Description">
+                    <img class="img-fluid w-100" src="../resources/images/bank-passchip1.jpg" alt="Image Description">
                 </div>
                 <div class="col-lg-6">
 
+                    %for paragraph in page_data['historyText'] :
                     <blockquote class="lead g-font-style-italic g-line-height-2 g-pl-30 g-mb-30">
-                        When <a href="http://conicdesign.ro"><img src="resources/images/small_conic_no_cone.png"> </a>  was founded in 2006, its founders envisioned a company dedicated to solving
-                        high
-                        electronic security needs and comprehensive support for its clients. Our company made its first
-                        entry into the market with the world’s first bank ID smart access chip range of readers for self
-                        service areas.
+                        ${paragraph}
                     </blockquote>
-                    <blockquote class="lead g-font-style-italic g-line-height-2 g-pl-30 g-mb-30">
-                        As a reward for our extensive technical research, design and product development, PASSCHIP is
-                        still
-                        the most advanced self service access control solution worldwide.
-                    </blockquote>
+                    %endfor
+
+
 
                 </div>
             </div>
@@ -118,25 +114,20 @@
         <section id="mission">
             <!-- Item -->
             <div class="text-center g-mb-30">
-                <h2 class="h1 g-font-weight-300">Our Mission</h2>
+                <h2 class="h1 g-font-weight-300">${data['words']['ourMission']}</h2>
             </div>
             <div class="row ">
                 <div class="col-lg-6 g-mb-30">
 
+                    %for paragraph in page_data['ourMissionText'] :
                     <blockquote class="lead g-font-style-italic g-line-height-2 g-pl-30 g-mb-30">
-                        To design, develop and deliver high technology that enable our customers to improve their own
-                        security and better achieve their security procedures.
+                        ${paragraph}
                     </blockquote>
-                    <blockquote class="lead g-font-style-italic g-line-height-2 g-pl-30 g-mb-30">
-                        We are committed to high ethical standards, integrity, honesty and good will in our dealings and
-                        relationships. Our mission and core values are the foundation, upon which we are building the
-                        best
-                        company we can
-                    </blockquote>
+                    %endfor
 
                 </div>
                 <div class="col-lg-5">
-                    <img class="img-fluid w-100" src="resources/images/bank-passchip1.jpg" alt="Image Description">
+                    <img class="img-fluid w-100" src="../resources/images/bank-passchip1.jpg" alt="Image Description">
                 </div>
 
             </div>
@@ -148,29 +139,20 @@
         <section id="quality">
             <!-- Item -->
             <div class="text-center g-mb-30">
-                <h2 class="h1 g-font-weight-300">Quality</h2>
+                <h2 class="h1 g-font-weight-300">${data['words']['quality']}</h2>
             </div>
 
             <div class="row ">
                 <div class="col-lg-6 g-mb-30">
-                    <img class="img-fluid w-100" src="resources/images/m3.jpg" alt="Image Description">
+                    <img class="img-fluid w-100" src="../resources/images/m3.jpg" alt="Image Description">
                 </div>
                 <div class="col-lg-6">
 
+                    %for paragraph in page_data['qualityText'] :
                     <blockquote class="lead g-font-style-italic g-line-height-2 g-pl-30 g-mb-30">
-                        Our commitment to full implementation of the ISO Standards 9001 involves daily efforts and
-                        concern
-                        in establishing and maintaining efficient quality procedures for producing our entire range of
-                        products. For our company, quality is an attribute of excelence.
+                        ${paragraph}
                     </blockquote>
-                    <blockquote class="lead g-font-style-italic g-line-height-2 g-pl-30 g-mb-30">
-                        All our efforts converge in using the best possible technologies for manufacturing the best and
-                        most
-                        reliable products, both hardware and software. Every single product that leaves our factory is
-                        extensive tested and approved by our quality control team. PASSCHIP is worldwide recognized as
-                        an
-                        example of excelence.
-                    </blockquote>
+                    %endfor
 
                 </div>
             </div>
@@ -187,24 +169,15 @@
             <div class="row ">
                 <div class="col-lg-6 g-mb-30">
 
+                    %for paragraph in page_data['researchAndDevelomentText'] :
                     <blockquote class="lead g-font-style-italic g-line-height-2 g-pl-30 g-mb-30">
-                        Our research team constantly develope patented technologies for maintaining the unicity of our
-                        products. The inovation is our strategy since the very beginning of our company. As a reward for
-                        our
-                        extensive technical research, design and product development, PASSCHIP is still the most
-                        advanced
-                        self service acess control solution worldwide.
+                        ${paragraph}
                     </blockquote>
-                    <blockquote class="lead g-font-style-italic g-line-height-2 g-pl-30 g-mb-30">
-                        Our advanced software evaluation algorithms makes PASSCHIP not only the best equipment in the
-                        self
-                        service access control industry, but maintaines it as a unique and most stable solution in it’s
-                        range.
-                    </blockquote>
+                    %endfor
 
                 </div>
                 <div class="col-lg-5">
-                    <img class="img-fluid w-100" src="resources/images/research.jpg" alt="Image Description">
+                    <img class="img-fluid w-100" src="../resources/images/research.jpg" alt="Image Description">
                 </div>
 
             </div>
@@ -216,29 +189,21 @@
         <section id="customer_service">
             <!-- Item -->
             <div class="text-center g-mb-30">
-                <h2 class="h1 g-font-weight-300">Customer Service</h2>
+                <h2 class="h1 g-font-weight-300">${data['words']['customerService']}</h2>
             </div>
 
             <div class="row ">
                 <div class="col-lg-6 g-mb-30">
-                    <img class="img-fluid w-100" src="resources/images/custommerservicepasschip.jpg"
+                    <img class="img-fluid w-100" src="../resources/images/custommerservicepasschip.jpg"
                          alt="Image Description">
                 </div>
                 <div class="col-lg-6">
 
+                    %for paragraph in page_data['customerServiceText'] :
                     <blockquote class="lead g-font-style-italic g-line-height-2 g-pl-30 g-mb-30">
-                        We strongly believe that “Customer” is an inestimable resource of every company.
+                        ${paragraph}
                     </blockquote>
-                    <blockquote class="lead g-font-style-italic g-line-height-2 g-pl-30 g-mb-30">
-
-                        We serve our customers with the best possible products and services, including extensive
-                        after-sale
-                        technical support and trainings, manuals, e-learning support, seminars and webinars.
-                    </blockquote>
-
-                    <blockquote class="lead g-font-style-italic g-line-height-2 g-pl-30 g-mb-30">
-                        The RMA procedure is part of our General Terms and Conditions.
-                    </blockquote>
+                    %endfor
 
                 </div>
             </div>
@@ -250,31 +215,20 @@
         <section id="marketing">
             <!-- Item -->
             <div class="text-center g-mb-30">
-                <h2 class="h1 g-font-weight-300">Marketing</h2>
+                <h2 class="h1 g-font-weight-300">${data['words']['marketing']}</h2>
             </div>
             <div class="row ">
                 <div class="col-lg-6 g-mb-30">
 
+                    %for paragraph in page_data['marketingText'] :
                     <blockquote class="lead g-font-style-italic g-line-height-2 g-pl-30 g-mb-30">
-                        Our marketing team can quickly adjust to market changes thanks to specifically qualified skills
-                        and
-                        maximum organizational flexibility. Care and concern for the requirements of our customers is
-                        our
-                        mission. A tight cooperation with all our partners is essential to understand and forecast all
-                        their
-                        needs and provide a fast reaction to their requests.
+                        ${paragraph}
                     </blockquote>
-                    <blockquote class="lead g-font-style-italic g-line-height-2 g-pl-30 g-mb-30">
-                        Our efforts aim at increasing the value and visibility of PASSCHIP corporate branding on the
-                        global
-                        market by ways of integrated communication protocols in accordance with our company’s mission
-                        and
-                        policies.
-                    </blockquote>
+                    %endfor
 
                 </div>
                 <div class="col-lg-5">
-                    <img class="img-fluid w-100" src="resources/images/marketing.jpeg" alt="Image Description">
+                    <img class="img-fluid w-100" src="../resources/images/marketing.jpeg" alt="Image Description">
                 </div>
 
             </div>
@@ -286,12 +240,12 @@
         <section id="TOS">
             <!-- Item -->
             <div class="text-center g-mb-30">
-                <h2 class="h1 g-font-weight-300">Terms Of Service for <span class="passchip_font"> PASSCHIP </span> </h2>
+                <h2 class="h1 g-font-weight-300">${data['words']['tos']} <span class="passchip_font"> PASSCHIP </span> </h2>
             </div>
 
             <div class="row ">
                 <div class="col-lg-6 g-mb-30">
-                    <img class="img-fluid w-100" src="resources/images/TOS.jpeg"
+                    <img class="img-fluid w-100" src="../resources/images/TOS.jpeg"
                          alt="Image Description">
                 </div>
                 <div class="col-lg-6">
@@ -299,12 +253,12 @@
 
 
                     <blockquote class="   g-pl-30 g-mb-30">
-                        <a href="resources/Files/GENERAL-TERMS-AND-CONDITIONS-PASSCHIP.pdf" class="g-font-size-27"> GENERAL TERMS AND CONDITIONS - <span class="passchip_font"> PASSCHIP </span> <i class="fa fa-download" aria-hidden="true"></i> </a>
+                        <a href="../resources/Files/GENERAL-TERMS-AND-CONDITIONS-PASSCHIP.pdf" class="g-font-size-27"> ${data['words']['generalTermsAndConditions']} - <span class="passchip_font"> PASSCHIP </span> <i class="fa fa-download" aria-hidden="true"></i> </a>
 
                     </blockquote>
                     <blockquote class="   g-pl-30 g-mb-30">
 
-                        <a href="resources/Files/AFTER-SALES-CONDITIONS-PASSCHIP.pdf" class="g-font-size-27"> AFTER SALES CONDITIONS - <span class="passchip_font"> PASSCHIP </span> <i class="fa fa-download" aria-hidden="true"></i></a>
+                        <a href="../resources/Files/AFTER-SALES-CONDITIONS-PASSCHIP.pdf" class="g-font-size-27"> ${data['words']['afterSalesConditions']}  - <span class="passchip_font"> PASSCHIP </span> <i class="fa fa-download" aria-hidden="true"></i></a>
                     </blockquote>
 
 
@@ -324,39 +278,39 @@
 </main>
 
 <!-- JS Global Compulsory -->
-<script src="resources/assets/vendor/jquery/jquery.min.js"></script>
-<script src="resources/assets/vendor/tether.min.js"></script>
-<script src="resources/assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="../resources/assets/vendor/jquery/jquery.min.js"></script>
+<script src="../resources/assets/vendor/tether.min.js"></script>
+<script src="../resources/assets/vendor/bootstrap/bootstrap.min.js"></script>
 
 <!-- JS Implementing Plugins -->
-<script src="resources/assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
-<script src="resources/assets/vendor/cubeportfolio-full/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
-<script src="resources/assets/vendor/slick-carousel/slick/slick.js"></script>
-<script src="resources/assets/vendor/fancybox/jquery.fancybox.min.js"></script>
-<script src="resources/assets/vendor/appear.js"></script>
+<script src="../resources/assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+<script src="../resources/assets/vendor/cubeportfolio-full/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+<script src="../resources/assets/vendor/slick-carousel/slick/slick.js"></script>
+<script src="../resources/assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+<script src="../resources/assets/vendor/appear.js"></script>
 
 <!-- JS Unify -->
-<script src="resources/assets/js/hs.core.js"></script>
-<script src="resources/assets/js/components/hs.header.js"></script>
-<script src="resources/assets/js/helpers/hs.hamburgers.js"></script>
-<script src="resources/assets/js/components/hs.tabs.js"></script>
-<script src="resources/assets/js/components/hs.cubeportfolio.js"></script>
-<script src="resources/assets/js/components/hs.carousel.js"></script>
-<script src="resources/assets/js/components/hs.popup.js"></script>
-<script src="resources/assets/js/components/hs.header.js"></script>
-<script src="resources/assets/js/helpers/hs.hamburgers.js"></script>
-<script src="resources/assets/js/helpers/hs.focus-state.js"></script>
-<script src="resources/assets/js/components/hs.counter.js"></script>
+<script src="../resources/assets/js/hs.core.js"></script>
+<script src="../resources/assets/js/components/hs.header.js"></script>
+<script src="../resources/assets/js/helpers/hs.hamburgers.js"></script>
+<script src="../resources/assets/js/components/hs.tabs.js"></script>
+<script src="../resources/assets/js/components/hs.cubeportfolio.js"></script>
+<script src="../resources/assets/js/components/hs.carousel.js"></script>
+<script src="../resources/assets/js/components/hs.popup.js"></script>
+<script src="../resources/assets/js/components/hs.header.js"></script>
+<script src="../resources/assets/js/helpers/hs.hamburgers.js"></script>
+<script src="../resources/assets/js/helpers/hs.focus-state.js"></script>
+<script src="../resources/assets/js/components/hs.counter.js"></script>
 
 <!-- JS Implementing Plugins -->
-<script src="resources/assets/vendor/gmaps/gmaps.min.js"></script>
-<script src="resources/assets/js/components/gmap/hs.map.js"></script>
+<script src="../resources/assets/vendor/gmaps/gmaps.min.js"></script>
+<script src="../resources/assets/js/components/gmap/hs.map.js"></script>
 
-<script src="resources/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
-<script src="resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
-<script src="resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+<script src="../resources/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+<script src="../resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+<script src="../resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
 <!-- JS Customization -->
-<script src="resources/assets/js/custom.js"></script>
+<script src="../resources/assets/js/custom.js"></script>
 
 <!-- JS Plugins Init. -->
 <script>

@@ -1,0 +1,52 @@
+{
+  "motto": "Protecting your customers",
+  "motto2": "Helping Banks<span class='g-color-primary g-ml-5'>protect</span> their Customers",
+  "faqDescription": "We aim high at being focused on building relationships with our clients and community.",
+  "faqs": [
+    {
+      "q": "Where can the PASSCHIP System be used?",
+      "a": "The PASSCHIP System is ideal for banks that need a 24 Hour Self Entrance, for financial institutions, for data centers, for vital infrastructures and for Military and Law Enforcement Agencies."
+    },
+    {
+      "q": "How is PASSCHIP different from other security systems",
+      "a": "PASSCHIP is the world’s first access system to use a range of readers for self service areas which will work with chip credit cards."
+    },
+    {
+      "q": "Can I integrate it with our already existing access control system?",
+      "a": "The PASSCHIP Reader can operate as a standard 26bit wiegand reader"
+    },
+    {
+      "q": "What credit cards are supported?",
+      "a": "Standard credit card types (visa, mastercard, etc..) are supported and new credit card types can be added as needed"
+    },
+    {
+      "q": "Can I configure it with a time schedule?",
+      "a": "PASSCHIP supports software defined time schedule as well as external hardware triggers"
+    },
+    {
+      "q": "Can the welcoming message be customised?",
+      "a": "PASSCHIP supports the entire unicode character set - we can display messages in the latin, arabic, chinese alphabet"
+    }
+  ],
+  "aboutUs":"When CONIC DESIGN was founded in 2006, its founders envisioned a company dedicated to solving high electronic security needs and comprehensive support for its clients. Our company made its first entry into the market with the world’s first bank ID smart access chip range of readers for self-service areas. As a reward for our extensive technical research, design and product development, PASSCHIP is still the most advanced self-service access control solution worldwide.",
+  "ourMission":"To design, develop and deliver high technology that enable our customers to improve their own security and better achieve their security procedures.We are committed to high ethical standards, integrity, honesty and good will in our dealings and relationships. Our mission and core values are the foundation, upon which we are building the best company we can.",
+  "counters":[
+    {
+      "label":"Passchip readers sold",
+      "count":"500"
+    },
+    {
+      "label":"Passchip Software Licenses In Use",
+      "count":"500"
+    },
+    {
+      "label":"% Satisfaction",
+      "count":"100"
+    }
+  ],
+  "testimonial":{
+    "text":"In 2012, we and the independent Romanian company CONIC DESIGN laid the foundation for a strong partnership in our safe and security activity by establishing a global agreement for installing the state of the art CONIC DESIGN’s new access control solutions for securing our entire network of agencies, in total over 200 branches. The technical solution consists of installing the very sophisticated entrance system PASSCHIP developed by CONIC DESIGN in order to secure all the entrances in the „private banking zones” by IP bank smart card chip readers. The project is now in the middle of the implementation phase, and in this stage we evaluate that our requirements are fully met, even exceeds our initial expectations requested in the tender documentation, our clients’ feedbacks are very encouraging. Our increased security level proves now that our investment and front image are protected by one of the strongest and most stable access control platform we ever tested, offering us the detailed reports and total IP control about the public access transactions in our agencies. Implementing PASSCHIP offered by CONIC DESIGN, we count remarkable savings, significantly reducing our costs with guards, transport, customer care department and other related expenses, at the same time improving our security and client’s comfort during their self-banking activity in our agencies. We recommend the product PASSCHIP as offering advanced access control features, great flexibility, instant and recorded alarm monitoring, information security integration and robust IP management functionalities.",
+    "by":"- Bank Security Manager"
+  },
+  "callbackClarification":"Would you like to speak to one of our specialists over the phone? Just submit your details and we’ll be in touch shortly. You can also email us if you would prefer. Do you have questions about how PASSCHIP can help your company? Send us a message and we’ll get in touch shortly"
+}

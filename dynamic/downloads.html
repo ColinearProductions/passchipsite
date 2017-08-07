@@ -13,39 +13,40 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="resources/favicon.ico">
+    <link rel="shortcut icon" href="../resources/favicon.ico">
 
     <!-- Google Fonts -->
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,500,600,700%7Csubset=cyrillic,latin"
           rel="stylesheet" type="text/css">
 
     <!-- CSS Global Compulsory -->
-    <link rel="stylesheet" href="resources/assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/bootstrap/bootstrap.min.css">
 
     <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="resources/assets/vendor/icon-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="resources/assets/vendor/icon-line-pro/style.css">
-    <link rel="stylesheet" href="resources/assets/vendor/icon-hs/style.css">
-    <link rel="stylesheet" href="resources/assets/vendor/animate.css">
-    <link rel="stylesheet" href="resources/assets/vendor/cubeportfolio-full/cubeportfolio/css/cubeportfolio.min.css">
-    <link rel="stylesheet" href="resources/assets/vendor/fancybox/jquery.fancybox.css">
-    <link rel="stylesheet" href="resources/assets/vendor/slick-carousel/slick/slick.css">
-    <link rel="stylesheet" href="resources/assets/vendor/hs-megamenu/src/hs.megamenu.css">
-    <link rel="stylesheet" href="resources/assets/vendor/hamburgers/hamburgers.min.css">
-    <link rel="stylesheet" href="resources/assets/vendor/icon-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="resources/assets/vendor/icon-line/css/simple-line-icons.css">
-    <link rel="stylesheet" href="resources/assets/vendor/icon-line-pro/style.css">
-    <link rel="stylesheet" href="resources/assets/vendor/icon-etlinefont/style.css">
-    <link rel="stylesheet" href="resources/assets/vendor/icon-hs/style.css">
-    <link rel="stylesheet" href="resources/assets/vendor/dzsparallaxer/dzsparallaxer.css">
-    <link rel="stylesheet" href="resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
-    <link rel="stylesheet" href="resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/icon-line-pro/style.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/icon-hs/style.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/animate.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/cubeportfolio-full/cubeportfolio/css/cubeportfolio.min.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/icon-line/css/simple-line-icons.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/icon-line-pro/style.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/icon-etlinefont/style.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/icon-hs/style.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/dzsparallaxer/dzsparallaxer.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
 
     <!-- CSS Unify -->
-    <link rel="stylesheet" href="resources/assets/css/unify.css">
+    <link rel="stylesheet" href="../resources/assets/css/unify.css">
+    <link rel="stylesheet" href="../resources/assets/vendor/flag-icon-css-master/css/flag-icon.min.css">
 
     <!-- CSS Customization -->
-    <link rel="stylesheet" href="resources/assets/css/custom.css">
+    <link rel="stylesheet" href="../resources/assets/css/custom.css">
 
 
 </head>
@@ -59,7 +60,7 @@
              data-options="{direction: 'reverse', settings_mode_oneelement_max_offset: '150'}">
         <!-- Parallax Image -->
         <div class="divimage dzsparallaxer--target w-100 g-bg-repeat g-bg-black"
-             style="height: 150%; background-image: url('resources/images/ethernet-small.jpg'); transform: translate3d(0px, -120.362px, 0px);"></div>
+             style="height: 150%; background-image: url('../resources/images/ethernet-small.jpg'); transform: translate3d(0px, -120.362px, 0px);"></div>
         <!-- End Parallax Image -->
 
         <div class="g-z-index-1 g-py-50" style="background-color:rgba(255,241,248,0);color:black">
@@ -67,9 +68,9 @@
                 <div class="row">
                     <div class="info-v3-4 col-lg-6" style="background-color:rgba(255,255,255,0.87);padding: 40px;">
                         <div class="d-inline-block g-width-80 g-height-4 g-bg-black mb-3"></div>
-                        <h2 class="g-font-weight-700 g-font-size-50 g-line-height-1 mb-4">Downloads </h2>
+                        <h2 class="g-font-weight-700 g-font-size-50 g-line-height-1 mb-4"> ${data['words']['downloads']} </h2>
                         <p class="mb-0"><strong>
-                            Here you can download datasheets for all our products <!--todo add a search box--></strong>
+                            ${data['downloadsPage']['pageDescription']}</strong>
                         </p>
 
                     </div>
@@ -79,25 +80,6 @@
             </div>
         </div>
     </section>
-
-    <!--
-    <div style="width:100%;background-color:red">
-        <section class="container g-py-30 ">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="d-inline-block g-width-80 g-height-4 g-bg-black mb-3"></div>
-                    <h2 class="g-color-black g-font-weight-700 g-font-size-50 g-line-height-1 mb-4">Downloads </h2>
-                    <p class="mb-0">
-                        Here you can download datasheets for all our products (todo add a search box)
-                    </p>
-
-                </div>
-
-
-            </div>
-        </section>
-    </div>
-    -->
 
     <section class="g-py-20 g-mb-100 g-mt-40">
         <div class="container">
@@ -124,15 +106,15 @@
                                 </li>
                                 <li class="nav-item  g-font-size-20">
                                     <a class="nav-link" data-toggle="tab" href="#nav-1-1-default-hor-left-underline--3"
-                                       role="tab" aria-expanded="false">Other Products</a>
+                                       role="tab" aria-expanded="false"> ${data['downloadsPage']['newProducts']}</a>
                                 </li>
                                 <li class="nav-item  g-font-size-20">
                                     <a class="nav-link" data-toggle="tab" href="#nav-1-1-default-hor-left-underline--4"
-                                       role="tab" aria-expanded="false">Legal Documentation</a>
+                                       role="tab" aria-expanded="false"> ${data['downloadsPage']['legalDocumentation']}</a>
                                 </li>
                                 <li class="nav-item  g-font-size-20">
                                     <a class="nav-link" data-toggle="tab" href="#nav-1-1-default-hor-left-underline--5"
-                                       role="tab" aria-expanded="false">Partner Zone</a>
+                                       role="tab" aria-expanded="false"> ${data['downloadsPage']['partnerZone']}</a>
                                 </li>
                             </ul>
                             <!-- End Nav tabs -->
@@ -145,28 +127,28 @@
                                     <br><br>
                                     <h1><strong>English</strong></h1><br>
 
-                                    <a href="resources/Files/Data-Sheet_EN__PASSCHIP.pdf" class="g-font-size-27">Data Sheet <i class="fa fa-download" aria-hidden="true"></i></a> <br>
-                                    <a href="resources/Files/Technical-description_EN_PASSCHIP.pdf" class="g-font-size-27">Technical Description <i class="fa fa-download" aria-hidden="true"></i></a> <br>
-                                    <a href="resources/Files/PASSCHIP-_-SOLUTION-PRESENTATION-BT.pdf" class="g-font-size-27"><span class="passchip_font"> PASSCHIP</span>
+                                    <a href="../resources/Files/Data-Sheet_EN__PASSCHIP.pdf" class="g-font-size-27">Data Sheet <i class="fa fa-download" aria-hidden="true"></i></a> <br>
+                                    <a href="../resources/Files/Technical-description_EN_PASSCHIP.pdf" class="g-font-size-27">Technical Description <i class="fa fa-download" aria-hidden="true"></i></a> <br>
+                                    <a href="../resources/Files/PASSCHIP-_-SOLUTION-PRESENTATION-BT.pdf" class="g-font-size-27"><span class="passchip_font"> PASSCHIP</span>
                                         solution presentation <i class="fa fa-download" aria-hidden="true"></i></a> <br>
-                                    <a href="resources/Files/PASSCHIP-Matrix.pdf" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP</span>
+                                    <a href="../resources/Files/PASSCHIP-Matrix.pdf" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP</span>
                                         Matrix <i class="fa fa-download" aria-hidden="true"></i></a> <br>
-                                    <a href="resources/Files/RPiShield-Pinout.pdf" class="g-font-size-27"> RPiShield PINOUT <i class="fa fa-download" aria-hidden="true"></i></a> <br>
-                                    <a href="resources/Files/CHIP-READER-AE-DOCUMENTATION.pdf" class="g-font-size-27"> Chip Reader Documentation <i class="fa fa-download" aria-hidden="true"></i></a> <br>
-                                    <a href="resources/Files/PASSCHIP-Models-v5.pdf" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP</span>
+                                    <a href="../resources/Files/RPiShield-Pinout.pdf" class="g-font-size-27"> RPiShield PINOUT <i class="fa fa-download" aria-hidden="true"></i></a> <br>
+                                    <a href="../resources/Files/CHIP-READER-AE-DOCUMENTATION.pdf" class="g-font-size-27"> Chip Reader Documentation <i class="fa fa-download" aria-hidden="true"></i></a> <br>
+                                    <a href="../resources/Files/PASSCHIP-Models-v5.pdf" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP</span>
                                         Configuration <i class="fa fa-download" aria-hidden="true"></i></a> <br><br><br><br>
 
 
                                     <h1><strong>Deutsche</strong></h1> <br>
-                                    <a href="resources/Files/Datenblatt_PASSCHIP-.pdf" class="g-font-size-27">Datenblatt <i class="fa fa-download" aria-hidden="true"></i></a> <br>
-                                    <a href="resources/Files/Technische-Beschreibung_PASSCHIP.pdf" class="g-font-size-27">Technische Beschreibung <i class="fa fa-download" aria-hidden="true"></i></a> <br>
-                                    <a href="resources/Files/PASSCHIP-Models-v5.pdf" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP</span>
+                                    <a href="../resources/Files/Datenblatt_PASSCHIP-.pdf" class="g-font-size-27">Datenblatt <i class="fa fa-download" aria-hidden="true"></i></a> <br>
+                                    <a href="../resources/Files/Technische-Beschreibung_PASSCHIP.pdf" class="g-font-size-27">Technische Beschreibung <i class="fa fa-download" aria-hidden="true"></i></a> <br>
+                                    <a href="../resources/Files/PASSCHIP-Models-v5.pdf" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP</span>
                                         Konfiguration <i class="fa fa-download" aria-hidden="true"></i></a> <br><br><br><br>
 
                                     <h1><strong>Français</strong></h1> <br>
-                                    <a href="resources/Files/Description-technique-du-produit-PASSCHIP.pdf" class="g-font-size-27">Description technique du produit <i class="fa fa-download" aria-hidden="true"></i></a> <br>
-                                    <a href="resources/Files/Fiche-technique_PASSCHIP.pdf" class="g-font-size-27">Fiche technique <i class="fa fa-download" aria-hidden="true"></i></a> <br>
-                                    <a href="resources/Files/PASSCHIP-Models-v5.pdf" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP</span>
+                                    <a href="../resources/Files/Description-technique-du-produit-PASSCHIP.pdf" class="g-font-size-27">Description technique du produit <i class="fa fa-download" aria-hidden="true"></i></a> <br>
+                                    <a href="../resources/Files/Fiche-technique_PASSCHIP.pdf" class="g-font-size-27">Fiche technique <i class="fa fa-download" aria-hidden="true"></i></a> <br>
+                                    <a href="../resources/Files/PASSCHIP-Models-v5.pdf" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP</span>
                                         Configuration <i class="fa fa-download" aria-hidden="true"></i></a> <br><br><br><br>
 
 
@@ -178,8 +160,8 @@
                                     <br><br>
                                     <h1><strong>English</strong></h1><br>
 
-                                    <a href="resources/Files/Data_sheet_EN_PASSCON.pdf" class="g-font-size-27">PASSCON GUI Data Sheet <i class="fa fa-download" aria-hidden="true"></i></a> <br>
-                                    <a href="resources/Files/Data_sheet_EN_PASSCON.pdf" class="g-font-size-27">PASSCON BASIC Data Sheet <i class="fa fa-download" aria-hidden="true"></i></a> <br>
+                                    <a href="../resources/Files/Data_sheet_EN_PASSCON.pdf" class="g-font-size-27">PASSCON GUI Data Sheet <i class="fa fa-download" aria-hidden="true"></i></a> <br>
+                                    <a href="../resources/Files/Data_sheet_EN_PASSCON.pdf" class="g-font-size-27">PASSCON BASIC Data Sheet <i class="fa fa-download" aria-hidden="true"></i></a> <br>
                                 </div>
 
 
@@ -187,15 +169,15 @@
                                      aria-expanded="false">
                                     <br><br>
                                     <h1><strong>Datasheets</strong></h1>  <br>
-                                    <a href="resources/Files/Data_Sheet_EN_PASSCHIP-intercom.pdf" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP </span>Intercom
+                                    <a href="../resources/Files/Data_Sheet_EN_PASSCHIP-intercom.pdf" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP </span>Intercom
                                     <i class="fa fa-download" aria-hidden="true"></i></a> <br>
-                                    <a href="resources/Files/Data_Sheet_EN_PASSCHIP-Acces-Control.pdf" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP </span>Access
+                                    <a href="../resources/Files/Data_Sheet_EN_PASSCHIP-Acces-Control.pdf" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP </span>Access
                                         Control <i class="fa fa-download" aria-hidden="true"></i></a> <br>
-                                    <a href="resources/Files/Data_Sheet_EN_PASSCHIP-Automotive-rev-1.pdf" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP </span>Automotive
+                                    <a href="../resources/Files/Data_Sheet_EN_PASSCHIP-Automotive-rev-1.pdf" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP </span>Automotive
                                     <i class="fa fa-download" aria-hidden="true"></i></a> <br>
-                                    <a href="resources/Files/Data_Sheet_EN_PASSCHIP-LPR.pdf" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP </span>LPR
+                                    <a href="../resources/Files/Data_Sheet_EN_PASSCHIP-LPR.pdf" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP </span>LPR
                                         Reader <i class="fa fa-download" aria-hidden="true"></i></a> <br>
-                                    <a href="resources/Files/Data_sheet_EN_PASSCHIP-TIME.pdf" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP </span>Time
+                                    <a href="../resources/Files/Data_sheet_EN_PASSCHIP-TIME.pdf" class="g-font-size-27"> <span class="passchip_font"> PASSCHIP </span>Time
                                         and Attendance <i class="fa fa-download" aria-hidden="true"></i></a> <br>
 
 
@@ -204,9 +186,9 @@
                                 <div class="tab-pane fade" id="nav-1-1-default-hor-left-underline--4" role="tabpanel"
                                      aria-expanded="false">
                                     <br><br>
-                                    <a href="resources/Files/GENERAL-TERMS-AND-CONDITIONS-PASSCHIP.pdf" class="g-font-size-27"> GENERAL TERMS AND CONDITIONS - <span
+                                    <a href="../resources/Files/GENERAL-TERMS-AND-CONDITIONS-PASSCHIP.pdf" class="g-font-size-27">   ${data['words']['generalTermsAndConditions']} <span
                                             class="passchip_font"> PASSCHIP </span> <i class="fa fa-download" aria-hidden="true"></i></a> <br>
-                                    <a href="resources/Files/AFTER-SALES-CONDITIONS-PASSCHIP.pdf" class="g-font-size-27"> AFTER SALES CONDITIONS - <span
+                                    <a href="../resources/Files/AFTER-SALES-CONDITIONS-PASSCHIP.pdf" class="g-font-size-27"> ${data['words']['afterSalesConditions']}  - <span
                                             class="passchip_font"> PASSCHIP </span> <i class="fa fa-download" aria-hidden="true"></i></a> <br>
                                 </div>
 
@@ -219,7 +201,7 @@
                                             <!-- XXL Button -->
                                             <a href="ftp://conicdesign.ddns.net/PASSCHIP"
                                                class="btn btn-block btn-xxl u-btn-primary u-btn-content g-letter-spacing-0_5 text-uppercase g-mr-10 g-mb-15">
-                                                Go To FTP
+                                                ${data['downloadsPage']['goToFtp']}
 
                                             </a>
                                             <!-- End XXL Button -->
@@ -230,7 +212,7 @@
                                 <!-- End Tab panes -->
 
                                 <!-- JS Unify -->
-                                <script type="text/plain" src="resources/assets/js/components/hs.tabs.js"></script>
+                                <script type="text/plain" src="../resources/assets/js/components/hs.tabs.js"></script>
 
                                 <!-- JS Plugins Init. -->
 
@@ -249,39 +231,39 @@
 </main>
 
 <!-- JS Global Compulsory -->
-<script src="resources/assets/vendor/jquery/jquery.min.js"></script>
-<script src="resources/assets/vendor/tether.min.js"></script>
-<script src="resources/assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="../resources/assets/vendor/jquery/jquery.min.js"></script>
+<script src="../resources/assets/vendor/tether.min.js"></script>
+<script src="../resources/assets/vendor/bootstrap/bootstrap.min.js"></script>
 
 <!-- JS Implementing Plugins -->
-<script src="resources/assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
-<script src="resources/assets/vendor/cubeportfolio-full/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
-<script src="resources/assets/vendor/slick-carousel/slick/slick.js"></script>
-<script src="resources/assets/vendor/fancybox/jquery.fancybox.min.js"></script>
-<script src="resources/assets/vendor/appear.js"></script>
+<script src="../resources/assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+<script src="../resources/assets/vendor/cubeportfolio-full/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+<script src="../resources/assets/vendor/slick-carousel/slick/slick.js"></script>
+<script src="../resources/assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+<script src="../resources/assets/vendor/appear.js"></script>
 
 <!-- JS Unify -->
-<script src="resources/assets/js/hs.core.js"></script>
-<script src="resources/assets/js/components/hs.header.js"></script>
-<script src="resources/assets/js/helpers/hs.hamburgers.js"></script>
-<script src="resources/assets/js/components/hs.tabs.js"></script>
-<script src="resources/assets/js/components/hs.cubeportfolio.js"></script>
-<script src="resources/assets/js/components/hs.carousel.js"></script>
-<script src="resources/assets/js/components/hs.popup.js"></script>
-<script src="resources/assets/js/components/hs.header.js"></script>
-<script src="resources/assets/js/helpers/hs.hamburgers.js"></script>
-<script src="resources/assets/js/helpers/hs.focus-state.js"></script>
-<script src="resources/assets/js/components/hs.counter.js"></script>
+<script src="../resources/assets/js/hs.core.js"></script>
+<script src="../resources/assets/js/components/hs.header.js"></script>
+<script src="../resources/assets/js/helpers/hs.hamburgers.js"></script>
+<script src="../resources/assets/js/components/hs.tabs.js"></script>
+<script src="../resources/assets/js/components/hs.cubeportfolio.js"></script>
+<script src="../resources/assets/js/components/hs.carousel.js"></script>
+<script src="../resources/assets/js/components/hs.popup.js"></script>
+<script src="../resources/assets/js/components/hs.header.js"></script>
+<script src="../resources/assets/js/helpers/hs.hamburgers.js"></script>
+<script src="../resources/assets/js/helpers/hs.focus-state.js"></script>
+<script src="../resources/assets/js/components/hs.counter.js"></script>
 
 <!-- JS Implementing Plugins -->
-<script src="resources/assets/vendor/gmaps/gmaps.min.js"></script>
-<script src="resources/assets/js/components/gmap/hs.map.js"></script>
+<script src="../resources/assets/vendor/gmaps/gmaps.min.js"></script>
+<script src="../resources/assets/js/components/gmap/hs.map.js"></script>
 
-<script src="resources/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
-<script src="resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
-<script src="resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+<script src="../resources/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+<script src="../resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+<script src="../resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
 <!-- JS Customization -->
-<script src="resources/assets/js/custom.js"></script>
+<script src="../resources/assets/js/custom.js"></script>
 
 <!-- JS Plugins Init. -->
 <script>
