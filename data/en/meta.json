@@ -1,4 +1,14 @@
 {
   "description":"Access Control System with Chip Bank Credit Cards.",
-  "language":"EN"
+  "language":"en",
+  "address":"1 Piata Presei Libere<br>  C1 Building, 2nd Floor<br>  1st District Bucharest, Romania",
+  "phoneNumber":"004 0745 342 887",
+  "emailAddress":"office@passchip.com",
+  "facebookUrl":"https://www.facebook.com/passchipconicdesign/",
+  "linkedInUrl":"https://www.linkedin.com/company/conic-design",
+  "twitterUrl":"https://twitter.com/passchipreader",
+  "googlePlusUrl":"https://plus.google.com/111949209843358236826",
+  "lon":"26.071",
+  "lat":"44.480",
+  "analyticsId":"UA-103088784-1"
 }

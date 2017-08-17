@@ -1,1 +1,44 @@
-{"learnMore":"Erfahren Sie Mehr","ourMainProducts":"Unsere wichtigsten Produkte","ourNewProducts":"Unsere neuen Produkte","ourProducts":"Unsere Produkte","frequentlyAskedQuestions":"Häufig Gestellte Fragen","aboutUs":"Über Uns","ourMission":"Unsere Mission","someOfOurClients":"Einige unserer Kunden","testimonial":"Testimonial","requestACallback":"Bitte um Rückruf","sendMessage":"Nachricht Senden","history":"Geschichte","quality":"Qualität","researchAndDevelopment":"Forschung Und Entwicklung","customerService":"Kundenservice","marketing":"Marketing","tos":"Nutzungsbedingungen","yourName":"Ihr Name","yourPhone":"Ihre Telefon-Nummer","yourCompanyName":"Den Namen der Firma","message":"Nachricht","readMore":"Lesen Sie Mehr","home":"Home","products":"Produkte","downloads":"Downloads","blog":"Blog","contactUs":"Kontaktieren Sie Uns","generalTermsAndConditions":"Allgemeine Terrms und Bedingungen","afterSalesConditions":" After-Sales-Bedingungen"}
+{
+  "learnMore": "Erfahren Sie Mehr",
+  "ourMainProducts": "Unsere wichtigsten Produkte",
+  "ourNewProducts": "Unsere neuen Produkte",
+  "ourProducts": "Unsere Produkte",
+  "frequentlyAskedQuestions": "Häufig Gestellte Fragen",
+  "aboutUs": "Über Uns",
+  "ourMission": "Unsere Mission",
+  "someOfOurClients": "Einige unserer Kunden",
+  "testimonial": "Testimonial",
+  "requestACallback": "Bitte um Rückruf",
+  "sendMessage": "Nachricht Senden",
+  "history": "Geschichte",
+  "quality": "Qualität",
+  "researchAndDevelopment": "Forschung Und Entwicklung",
+  "customerService": "Kundenservice",
+  "marketing": "Marketing",
+  "tos": "Nutzungsbedingungen",
+  "yourName": "Ihr Name",
+  "yourPhone": "Ihre Telefon-Nummer",
+  "yourCompanyName": "Den Namen der Firma",
+  "message": "Nachricht",
+  "readMore": "Lesen Sie Mehr",
+  "home": "Home",
+  "products": "Produkte",
+  "downloads": "Downloads",
+  "blog": "Blog",
+  "contactUs": "Kontaktieren Sie Uns",
+  "generalTermsAndConditions": "Allgemeine Terrms und Bedingungen",
+  "afterSalesConditions": " After-Sales-Bedingungen",
+
+
+
+
+  "phoneNumber":"Phone Number",
+  "subscribeToOurNewsletter": "Abonnieren Sie Unseren Newsletter",
+  "subscribeMessage": "Abonnieren Sie unseren newsletter und bleiben Sie up to date mit den neuesten Nachrichten und Angebote!",
+  "openInGoogleMaps": "Öffnen Sie in google maps",
+  "ourContacts": "Unsere Kontakte",
+  "phone": "Telefon",
+  "emailAddress": "E-Mail-Adresse",
+  "subscribe": "abonnieren",
+  "isARegisteredTrademark": " ist eine eingetragene Marke der "
+}

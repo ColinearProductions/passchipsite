@@ -53,7 +53,7 @@
 </head>
 
 <body>
-<main>
+<main class="g-bg-secondary">
 
     <%include file="header.html"/>
 
@@ -140,9 +140,9 @@
     <!-- PASSCHIP reader -->
 
     <!-- PASSCON software -->
-    <section class="container-fluid g-px-0">
+    <section class="container-fluid g-px-0 u-shadow-v21">
 
-        <div class="row align-items-center no-gutters">
+        <div class="row align-items-center no-gutters g-bg-white">
             <div class="col-md-6 flex-md-unordered">
                 <div class="text-center g-pa-15x">
                     <div class="mb-5">
@@ -169,194 +169,179 @@
     </section>
     <!-- PASSCON software -->
 
-    <!-- Other Products -->
-    <section class="g-py-60 g-mb-40">
-        <div class="container">
-
-            <div class="text-center g-mb-50">
-                <h1 class="h1">${data['words']['ourNewProducts']}</h1>
-            </div>
-
-            <div class="row">
+<div class="container">
+    <div class="text-center g-mb-50 g-mt-50">
+        <h1 class="h1">${data['words']['ourNewProducts']}</h1>
+    </div>
+</div>
 
 
-                <!-- Time and attendance -->
-                <div class="col-md-4 g-mb-30">
-                    <!-- Article -->
-                    <article
-                            class="text-center u-block-hover u-block-hover__additional--jump g-brd-around g-bg-gray-light-v5 g-brd-gray-light-v4 g-color-gray-dark-v5">
-                        <!-- Article Header -->
-                        <header class="g-bg-primary g-color-white-opacity-0_7 g-pa-20">
-                            <h3 class="g-color-white g-mb-5">Time And
-                                Attendance</h3>
-                            <em class="g-font-style-normal">${data["products"]["timeAndAttendance"]["liteDescription"]}</em>
-                        </header>
-                        <!-- End Article Header -->
-
-                        <!-- Article Image -->
-
-                            <img class="w-100"  src="../resources/images/time_and_a_900x600.png" alt="Image Description">
-
-                        <!-- End Article Image -->
-
-                        <!-- Article Content -->
-                        <div class="g-pa-40 ">
-                            <p class="g-mb-30 g-min-height-200">
-                                ${data["products"]["timeAndAttendance"]["shortDescription"]}
 
 
-                            </p>
-                            <a class="btn text-uppercase u-btn-primary g-rounded-50 g-font-size-12 g-font-weight-700 g-pa-15-30"
-                               href="products/time-and-attendance.html">${data['words']['readMore']}</a>
-                        </div>
-                        <!-- End Article Content -->
-                    </article>
-                    <!-- End Article -->
+
+
+    <section class="g-pt-20 g-py-10">
+        <div class="container u-shadow-v21 g-bg-white rounded g-pa-60--lg">
+
+            <div class="row g-pa-20">
+
+                <div class="col-md-6 align-self-center g-mb-50--md g-mb-0--md">
+                    <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
+                        <h2 class="h1 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-700">Time And Attendance</h2>
+                    </div>
+
+                    <div class="g-font-size-18 g-line-height-2 g-mb-30">
+                        <p>
+                            ${data["products"]["timeAndAttendance"]["shortDescription"]}</p>
+                    </div>
+
+                    <a href="#" class="btn u-btn-primary g-font-size-12 text-uppercase g-font-weight-600 g-rounded-50 g-py-15 g-px-25 g-mr-15 g-mb-10 g-mb-0--sm">
+                        ${data['words']['readMore']}
+                    </a>
+
                 </div>
 
-                <!-- Intercom -->
-                <div class="col-md-4 g-mb-30">
-                    <!-- Article -->
-                    <article
-                            class="text-center u-block-hover u-block-hover__additional--jump g-brd-around g-bg-gray-light-v5 g-brd-gray-light-v4 g-color-gray-dark-v5">
-                        <!-- Article Header -->
-                        <header class="g-bg-primary g-color-white-opacity-0_7 g-pa-20">
-                            <h3 class="g-color-white g-mb-5"><span class="passchip_font">PASSCHIP </span> IP
-                                Intercom
-                            </h3>
-                            <em class="g-font-style-normal">${data["products"]["intercom"]["liteDescription"]}</em>
-                        </header>
-                        <!-- End Article Header -->
-
-                        <!-- Article Image -->
-                        <img class="w-100" src="../resources/images/intercom_900x600.png" alt="Image Description">
-                        <!-- End Article Image -->
-
-                        <!-- Article Content -->
-                        <div class="g-pa-40">
-                            <p class="g-mb-30 g-min-height-200">
-                                ${data["products"]["intercom"]["shortDescription"]}
-
-                            </p>
-                            <a class="btn text-uppercase u-btn-primary g-rounded-50 g-font-size-12 g-font-weight-700 g-pa-15-30"
-                               href="products/intercom.html">${data['words']['readMore']}</a>
-                        </div>
-                        <!-- End Article Content -->
-                    </article>
-                    <!-- End Article -->
-                </div>
-
-                <!-- LPR Reader -->
-                <div class="col-md-4 g-mb-30">
-                    <!-- Article -->
-                    <article
-                            class="text-center u-block-hover u-block-hover__additional--jump g-brd-around g-bg-gray-light-v5 g-brd-gray-light-v4 g-color-gray-dark-v5">
-                        <!-- Article Header -->
-                        <header class="g-bg-primary g-color-white-opacity-0_7 g-pa-20">
-                            <h3 class="g-color-white g-mb-5"><span class="passchip_font">PASSCHIP </span>LPR Reader
-                            </h3>
-                            <em class="g-font-style-normal">${data["products"]["lprReader"]["liteDescription"]}</em>
-                        </header>
-                        <!-- End Article Header -->
-
-                        <!-- Article Image -->
-                        <img class="w-100" src="../resources/images/lpr_900x600.png" alt="Image Description">
-                        <!-- End Article Image -->
-
-                        <!-- Article Content -->
-                        <div class="g-pa-40">
-                            <p class="g-mb-30 g-min-height-200">
-
-                                ${data["products"]["lprReader"]["shortDescription"]}
-                            </p>
-                            <a class="btn text-uppercase u-btn-primary g-rounded-50 g-font-size-12 g-font-weight-700 g-pa-15-30"
-                               href="products/lpr-reader.html">${data['words']['readMore']}</a>
-                        </div>
-                        <!-- End Article Content -->
-                    </article>
-                    <!-- End Article -->
-                </div>
-
-
-                <!-- offset -->
-                <div class="col-md-2"></div>
-                <!-- offset -->
-
-
-                <!-- Access Control -->
-                <div class="col-md-4 g-mb-30">
-                    <!-- Article -->
-                    <article
-                            class="text-center u-block-hover u-block-hover__additional--jump g-brd-around g-bg-gray-light-v5 g-brd-gray-light-v4 g-color-gray-dark-v5">
-                        <!-- Article Header -->
-                        <header class="g-bg-primary g-color-white-opacity-0_7 g-pa-20">
-                            <h3 class="g-color-white g-mb-5"><span class="passchip_font">PASSCHIP </span>Access
-                                Control
-                            </h3>
-                            <em class="g-font-style-normal">${data["products"]["accessController"]["liteDescription"]}</em>
-                        </header>
-                        <!-- End Article Header -->
-
-                        <!-- Article Image -->
-                        <img class="w-100" src="../resources/images/controll_board.png"
-                             alt="Image Description" style="padding:20px;padding-top:60px;padding-bottom:10px">
-                        <!-- End Article Image -->
-
-                        <!-- Article Content -->
-                        <div class="g-pa-40">
-
-                            <p class="g-mb-30 g-min-height-200">
-                                ${data["products"]["accessController"]["shortDescription"]}
-
-                            </p>
-                            <a class="btn text-uppercase u-btn-primary g-rounded-50 g-font-size-12 g-font-weight-700 g-pa-15-30"
-                               href="products/access-control.html">${data['words']['readMore']}</a>
-                        </div>
-                        <!-- End Article Content -->
-                    </article>
-                    <!-- End Article -->
-                </div>
-
-
-                <!-- Automotive -->
-                <div class="col-md-4 g-mb-30">
-                    <!-- Article -->
-                    <article
-                            class="text-center u-block-hover u-block-hover__additional--jump g-brd-around g-bg-gray-light-v5 g-brd-gray-light-v4 g-color-gray-dark-v5">
-                        <!-- Article Header -->
-                        <header class="g-bg-primary g-color-white-opacity-0_7 g-pa-20">
-                            <h3 class="g-color-white g-mb-5"><span class="passchip_font">PASSCHIP </span>Automotive
-                            </h3>
-                            <em class="g-font-style-normal">  ${data["products"]["automotive"]["liteDescription"]}</em>
-                        </header>
-                        <!-- End Article Header -->
-
-                        <!-- Article Image -->
-                        <img class="w-100" src="../resources/images/automotive_900x600_gray.png"
-                             alt="Image Description">
-                        <!-- End Article Image -->
-
-                        <!-- Article Content -->
-                        <div class="g-pa-40">
-
-                            <p class="g-mb-30 g-min-height-200">
-                                ${data["products"]["automotive"]["shortDescription"]}
-
-                            </p>
-                            <a class="btn text-uppercase u-btn-primary g-rounded-50 g-font-size-12 g-font-weight-700 g-pa-15-30"
-                               href="products/automotive.html">${data['words']['readMore']}</a>
-                        </div>
-                        <!-- End Article Content -->
-                    </article>
-                    <!-- End Article -->
+                <div class="col-md-5 offset-md-1 g-mt-50" >
+                    <img class="img-fluid" src="../resources/images/time_and_a_900x600.png"
+                         alt="Image Description">
                 </div>
 
 
             </div>
+
         </div>
-
-
     </section>
+
+    <section class="g-py-10">
+        <div class="container u-shadow-v21 g-bg-white rounded g-pa-60--lg">
+
+            <div class="row g-pa-20">
+
+                <div class="col-md-6 align-self-center g-mb-50--md g-mb-0--md">
+                    <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
+                        <h2 class="h1 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-700"><span class="passchip_font">PASSCHIP </span> IP Intercom</h2>
+                    </div>
+
+                    <div class="g-font-size-18 g-line-height-2 g-mb-30">
+                        <p>
+                            ${data["products"]["intercom"]["shortDescription"]}</p>
+                    </div>
+
+                    <a href="#" class="btn u-btn-primary g-font-size-12 text-uppercase g-font-weight-600 g-rounded-50 g-py-15 g-px-25 g-mr-15 g-mb-10 g-mb-0--sm">
+                        ${data['words']['readMore']}
+                    </a>
+
+                </div>
+
+                <div class="col-md-5 offset-md-1 g-mt-50" >
+                    <img class="img-fluid" src="../resources/images/intercom_900x600.png"
+                         alt="Image Description">
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="g-py-10">
+        <div class="container u-shadow-v21 g-bg-white rounded g-pa-60--lg">
+
+            <div class="row g-pa-20">
+
+                <div class="col-md-6 align-self-center g-mb-50--md g-mb-0--md">
+                    <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
+                        <h2 class="h1 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-700"><span class="passchip_font">PASSCHIP </span> LPR Reader</h2>
+                    </div>
+
+                    <div class="g-font-size-18 g-line-height-2 g-mb-30">
+                        <p>
+                            ${data["products"]["lprReader"]["shortDescription"]}</p>
+                    </div>
+
+                    <a href="#" class="btn u-btn-primary g-font-size-12 text-uppercase g-font-weight-600 g-rounded-50 g-py-15 g-px-25 g-mr-15 g-mb-10 g-mb-0--sm">
+                        ${data['words']['readMore']}
+                    </a>
+
+                </div>
+
+                <div class="col-md-5 offset-md-1 g-mt-50" >
+                    <img class="img-fluid" src="../resources/images/lpr_900x600.png"
+                         alt="Image Description">
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="g-py-10">
+        <div class="container u-shadow-v21 g-bg-white rounded g-pa-60--lg">
+
+            <div class="row g-pa-20">
+
+                <div class="col-md-6 align-self-center g-mb-50--md g-mb-0--md">
+                    <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
+                        <h2 class="h1 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-700"><span class="passchip_font">PASSCHIP </span> Access Control</h2>
+                    </div>
+
+                    <div class="g-font-size-18 g-line-height-2 g-mb-30">
+                        <p>
+                            ${data["products"]["accessController"]["shortDescription"]}</p>
+                    </div>
+
+                    <a href="#" class="btn u-btn-primary g-font-size-12 text-uppercase g-font-weight-600 g-rounded-50 g-py-15 g-px-25 g-mr-15 g-mb-10 g-mb-0--sm">
+                        ${data['words']['readMore']}
+                    </a>
+
+                </div>
+
+                <div class="col-md-5 offset-md-1 g-mt-50" >
+                    <img class="img-fluid" src="../resources/images/controll_board.png"
+                         alt="Image Description">
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="g-pb-50 g-py-10">
+        <div class="container u-shadow-v21 g-bg-white rounded g-pa-60--lg">
+
+            <div class="row g-pa-20">
+
+                <div class="col-md-6 align-self-center g-mb-50--md g-mb-0--md">
+                    <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
+                        <h2 class="h1 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-700"><span class="passchip_font">PASSCHIP </span> Automotive</h2>
+                    </div>
+
+                    <div class="g-font-size-18 g-line-height-2 g-mb-30">
+                        <p>
+                            ${data["products"]["automotive"]["shortDescription"]}</p>
+                    </div>
+
+                    <a href="#" class="btn u-btn-primary g-font-size-12 text-uppercase g-font-weight-600 g-rounded-50 g-py-15 g-px-25 g-mr-15 g-mb-10 g-mb-0--sm">
+                        ${data['words']['readMore']}
+                    </a>
+
+                </div>
+
+                <div class="col-md-5 offset-md-1 g-mt-50" >
+                    <img class="img-fluid" src="../resources/images/automotive_900x600_gray.png"
+                         alt="Image Description">
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+
 
 
     <!-- FAQ -->
