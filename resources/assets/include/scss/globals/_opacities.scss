@@ -107,6 +107,7 @@
 }
 
 .g-opacity-1 {
+  .u-block-hover:hover &--hover,
   &--hover:hover {
     opacity: 1 !important;
   }

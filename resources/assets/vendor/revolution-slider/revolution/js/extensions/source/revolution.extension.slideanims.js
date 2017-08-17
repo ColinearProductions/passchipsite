@@ -1,6 +1,6 @@
 /************************************************
- * REVOLUTION 5.3 EXTENSION - SLIDE ANIMATIONS
- * @version: 1.6 (17.11.2016)
+ * REVOLUTION 5.4.2 EXTENSION - SLIDE ANIMATIONS
+ * @version: 1.8 (17.05.2017)
  * @requires jquery.themepunch.revolution.js
  * @author ThemePunch
 ************************************************/
@@ -9,8 +9,8 @@
 var _R = jQuery.fn.revolution,
 	extension = {	alias:"SlideAnimations Min JS",
 					name:"revolution.extensions.slideanims.min.js",
-					min_core: "5.0",
-					version:"1.6"
+					min_core: "5.4.5",
+					version:"1.8"
 			  };
 
 	///////////////////////////////////////////
@@ -278,7 +278,7 @@ var getSliderTransitionParameters = function(container,comingtransition,nextsh,s
 							 ['cube-horizontal', 23, 0,20,500,'vertical',false,true,25,p2o,p2o,500,1],
 							 ['incube-horizontal', 24, 0,20,500,'vertical',false,true,26,p2io,p2io,500,1],
 							 ['turnoff-vertical', 25, 0,1,200,'horizontal',false,true,27,p2io,p2io,500,1],
-							 ['fadefromright', 14, 1,1,0,'horizontal',true,true,28,p2io,p2io,1000,1],
+							 ['fadefromright', 12, 1,1,0,'horizontal',true,true,28,p2io,p2io,1000,1],
 							 ['fadefromleft', 15, 1,1,0,'horizontal',true,true,29,p2io,p2io,1000,1],
 							 ['fadefromtop', 14, 1,1,0,'horizontal',true,true,30,p2io,p2io,1000,1],
 							 ['fadefrombottom', 13, 1,1,0,'horizontal',true,true,31,p2io,p2io,1000,1],
@@ -308,7 +308,15 @@ var getSliderTransitionParameters = function(container,comingtransition,nextsh,s
 							 ['parallaxright', 15, 3,1,0,'horizontal',true,true,55,p2io,p2i,1500,1],
 							 ['parallaxleft', 12, 3,1,0,'horizontal',true,true,56,p2io,p2i,1500,1],
 							 ['parallaxup', 14, 3,1,0,'horizontal',true,true,57,p2io,p1i,1500,1],
-							 ['parallaxdown', 13, 3,1,0,'horizontal',true,true,58,p2io,p1i,1500,1],							 
+							 ['parallaxdown', 13, 3,1,0,'horizontal',true,true,58,p2io,p1i,1500,1],	
+							 ['grayscale', 11, 5, 1 ,300,'horizontal',true,null,11,p2io,p2io,1000,1],
+							 ['grayscalecross', 11, 6, 1 ,300,'horizontal',true,null,11,p2io,p2io,1000,1],
+							 ['brightness', 11, 7, 1 ,300,'horizontal',true,null,11,p2io,p2io,1000,1],
+							 ['brightnesscross', 11, 8, 1 ,300,'horizontal',true,null,11,p2io,p2io,1000,1],
+							 ['blurlight', 11, 9, 1 ,300,'horizontal',true,null,11,p2io,p2io,1000,1],
+							 ['blurlightcross', 11, 10, 1 ,300,'horizontal',true,null,11,p2io,p2io,1000,1],
+							 ['blurstrong', 11, 9, 1 ,300,'horizontal',true,null,11,p2io,p2io,1000,1],
+							 ['blurstrongcross', 11, 10, 1 ,300,'horizontal',true,null,11,p2io,p2io,1000,1]
 						   ];
 
 	opt.duringslidechange = true;
@@ -458,9 +466,9 @@ var animateSlideIntern = function(nexttrans, comingtransition, container, nextli
 	//	SET THE ACTUAL AMOUNT OF SLIDES !!     //
 	//  SET A RANDOM AMOUNT OF SLOTS          //
 	///////////////////////////////////////////
-	opt.rotate = gSlideTransA(nextli.data('rotate'),ctid);
-	opt.rotate = opt.rotate==undefined || opt.rotate=="default" ? 0 : opt.rotate==999 || opt.rotate=="random" ? Math.round(Math.random()*360) : opt.rotate;
-	opt.rotate = (!jQuery.support.transition  || opt.ie || opt.ie9) ? 0 : opt.rotate;
+	opt.rotate = gSlideTransA(nextli.data('rotate'),ctid);	
+	opt.rotate = opt.rotate==undefined || opt.rotate=="default" ? 0 : opt.rotate==999 || opt.rotate=="random" ? Math.round(Math.random()*360) : opt.rotate;	
+	opt.rotate = (opt.ie || opt.ie9) ? 0 : opt.rotate;
 	
 	
 
@@ -907,14 +915,14 @@ var animateSlideIntern = function(nexttrans, comingtransition, container, nextli
 	////////////////////////////
 	if (nexttrans==11) {
 
-			if (specials>4) specials = 0;
-						
+			if (specials>12) specials = 0;
+								
 				var ssamount=0,
-					bgcol = specials == 2 ? "#000000" : specials == 3 ? "#ffffff" : "transparent";
-												
-				switch (specials) {
+					bgcol = specials == 2 ? "#000000" : specials == 3 ? "#ffffff" : "transparent";					
+																
+				switch (specials) {					
 					case 0: //FADE 						
-						mtl.add(punchgs.TweenLite.fromTo(nextsh,masterspeed/1000,{autoAlpha:0},{autoAlpha:1,force3D:"auto",ease:ei}),0);																
+						mtl.add(punchgs.TweenLite.fromTo(nextsh,masterspeed/1000,{autoAlpha:0},{autoAlpha:1,force3D:"auto",ease:ei}),0);
 					break;
 
 					case 1: // CROSSFADE						
@@ -930,6 +938,28 @@ var animateSlideIntern = function(nexttrans, comingtransition, container, nextli
 						mtl.add(punchgs.TweenLite.to(actsh,masterspeed/2000,{autoAlpha:0,force3D:"auto",ease:ei}),0);
 						mtl.add(punchgs.TweenLite.fromTo(nextsh,masterspeed/2000,{autoAlpha:0},{autoAlpha:1,force3D:"auto",ease:ei}),masterspeed/2000);																
 					break;
+					case 5: // GRAYSCALE
+					case 6: // GRAYSCALECROSS
+					case 7: // BRIGHTNESS					
+					case 8: // BRIGHTNESSCROSS
+					case 9: // BLUR LIGHT
+					case 10: // BLUR LIGHT CROSS
+					case 11: // BLUR STRONG
+					case 12: // BLUR STRONG CROSS
+
+						
+						var _blur = jQuery.inArray(specials,[9,10])>=0 ? 5 : jQuery.inArray(specials,[11,12])>=0 ? 10 : 0,
+							_gray = jQuery.inArray(specials,[5,6,7,8])>=0 ? 100 : 0,
+							_bright = jQuery.inArray(specials,[7,8])>=0 ? 300 : 0,
+							__ff = "blur("+_blur+"px) grayscale("+_gray+"%) brightness("+_bright+"%)",
+							__ft = "blur(0px) grayscale(0%) brightness(100%)";
+
+						mtl.add(punchgs.TweenLite.fromTo(nextsh,masterspeed/1000,{autoAlpha:0,filter:__ff, "-webkit-filter":__ff},{autoAlpha:1,filter:__ft, "-webkit-filter":__ft,force3D:"auto",ease:ei}),0);
+						if (jQuery.inArray(specials,[6,8,10])>=0)
+							mtl.add(punchgs.TweenLite.fromTo(actsh,masterspeed/1000,{autoAlpha:1,filter:__ft, "-webkit-filter":__ft},{autoAlpha:0,force3D:"auto",ease:ei,filter:__ff, "-webkit-filter":__ff}),0);
+						
+					break;
+										
 					
 				}
 

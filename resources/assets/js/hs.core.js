@@ -5,11 +5,10 @@
  * @version 1.0
  */
 ;
-(function($) {
+(function ($) {
 
   'use strict';
 
-  //noinspection JSAnnotator
   $.HSCore = {
 
     /**
@@ -19,24 +18,27 @@
      *
      * @return
      */
-    init: function() {
+    init: function () {
 
-      $(document).ready(function(e) {
+      $(document).ready(function (e) {
         // Botostrap Tootltips
         $('[data-toggle="tooltip"]').tooltip();
 
         // Set Background Image Dynamically
-        if( $('[data-bg-img-src]').length ) $.HSCore.helpers.bgImage( $('[data-bg-img-src]') );
+        if ($('[data-bg-img-src]').length) $.HSCore.helpers.bgImage($('[data-bg-img-src]'));
 
         // Extends jQuery
         $.HSCore.helpers.extendjQuery();
+
+        // Detect Internet Explorer (IE)
+        $.HSCore.helpers.detectIE();
 
         // Bootstrap Navigation Options
         $.HSCore.helpers.bootstrapNavOptions.init();
 
       });
 
-      $(window).on('load', function(e) {
+      $(window).on('load', function (e) {
 
       });
 
@@ -56,29 +58,17 @@
      */
     helpers: {
 
-      Math: {
+        Math: {
 
-        /**
-         * Returns random value from [startPoint, endPoint] interval.
-         *
-         * @param Number startPoint
-         * @param Number endPoint
-         * @param Boolean fixed
-         *
-         * @return Number
-         */
-        getRandomValueFromRange(startPoint, endPoint, fixed) {
+          getRandomValueFromRange: function(startPoint, endPoint, fixed) {
 
-          fixed = fixed ? fixed : false;
+            var fixedInner = fixed ? fixed : false;
 
-          Math.random();
+            Math.random();
 
-          return fixed ?
+            return fixedInner ? (Math.random() * (endPoint - startPoint) + startPoint) : (Math.floor(Math.random() * (endPoint - startPoint + 1)) + startPoint);
 
-              (Math.random() * (endPoint - startPoint) + startPoint) :
-              (Math.floor(Math.random() * (endPoint - startPoint + 1)) + startPoint);
-
-        }
+          }
 
       },
 
@@ -89,16 +79,16 @@
        *
        * @return jQuery|undefined
        */
-      bgImage: function(collection) {
+      bgImage: function (collection) {
 
-        if( !collection || !collection.length ) return;
+        if (!collection || !collection.length) return;
 
-        return collection.each(function(i, el){
+        return collection.each(function (i, el) {
 
           var $el = $(el),
-              bgImageSrc = $el.data('bg-img-src');
+            bgImageSrc = $el.data('bg-img-src');
 
-          if(bgImageSrc) $el.css('background-image', 'url('+bgImageSrc+')');
+          if (bgImageSrc) $el.css('background-image', 'url(' + bgImageSrc + ')');
 
         });
 
@@ -118,24 +108,30 @@
            *
            * @return Deferred
            */
-          imagesLoaded : function () {
+          imagesLoaded: function () {
 
             var $imgs = this.find('img[src!=""]');
 
-            if (!$imgs.length) {return $.Deferred().resolve().promise();}
+            if (!$imgs.length) {
+              return $.Deferred().resolve().promise();
+            }
 
             var dfds = [];
 
-            $imgs.each(function(){
-                var dfd = $.Deferred();
-                dfds.push(dfd);
-                var img = new Image();
-                img.onload = function(){dfd.resolve();};
-                img.onerror = function(){dfd.resolve();};
-                img.src = this.src;
+            $imgs.each(function () {
+              var dfd = $.Deferred();
+              dfds.push(dfd);
+              var img = new Image();
+              img.onload = function () {
+                dfd.resolve();
+              };
+              img.onerror = function () {
+                dfd.resolve();
+              };
+              img.src = this.src;
             });
 
-            return $.when.apply($,dfds);
+            return $.when.apply($, dfds);
 
           }
 
@@ -143,58 +139,90 @@
 
       },
 
+
+      /**
+       * Detect Internet Explorer (IE)
+       *
+       * @return version of IE or false, if browser is not Internet Explorer
+       */
+
+      detectIE: function() {
+
+          var ua = window.navigator.userAgent;
+
+          var trident = ua.indexOf('Trident/');
+          if (trident > 0) {
+              // IE 11 => return version number
+              var rv = ua.indexOf('rv:');
+              var ieV = parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+              document.querySelector('body').className += ' IE';
+          }
+
+          var edge = ua.indexOf('Edge/');
+          if (edge > 0) {
+             // IE 12 (aka Edge) => return version number
+             var ieV = parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+              document.querySelector('body').className += ' IE';
+          }
+
+          // other browser
+          return false;
+
+      },
+
+
       /**
        * Bootstrap navigation options
        *
        */
       bootstrapNavOptions: {
-        init: function() {
+        init: function () {
           this.mobileHideOnScroll();
         },
 
-        mobileHideOnScroll: function() {
+        mobileHideOnScroll: function () {
           var $collection = $('.navbar');
-          if( !$collection.length ) return;
+          if (!$collection.length) return;
 
           var $w = $(window),
-          breakpointsMap = {
-            'sm': 576,
-            'md': 768,
-            'lg': 992,
-            'xl': 1200
-          };
+            breakpointsMap = {
+              'sm': 576,
+              'md': 768,
+              'lg': 992,
+              'xl': 1200
+            };
 
-          $('body').on('click.HSMobileHideOnScroll', '.navbar-toggler', function(e){
+          $('body').on('click.HSMobileHideOnScroll', '.navbar-toggler', function (e) {
             var $navbar = $(this).closest('.navbar');
 
-            if( $navbar.length ) {
+            if ($navbar.length) {
               $navbar.data('mobile-menu-scroll-position', $w.scrollTop());
             }
             e.preventDefault();
           });
 
-          $w.on('scroll.HSMobileHideOnScroll', function(e){
-            $collection.each(function(i,el){
+          $w.on('scroll.HSMobileHideOnScroll', function (e) {
+            $collection.each(function (i, el) {
               var $this = $(el), $toggler, $nav, offset, $hamburgers, breakpoint;
-              if( $this.hasClass('navbar-toggleable-xl') ) breakpoint = breakpointsMap['xl'];
-              else if( $this.hasClass('navbar-toggleable-lg') ) breakpoint = breakpointsMap['lg'];
-              else if( $this.hasClass('navbar-toggleable-md') ) breakpoint = breakpointsMap['md'];
-              else if( $this.hasClass('navbar-toggleable-xs') ) breakpoint = breakpointsMap['xs'];
+              if ($this.hasClass('navbar-toggleable-xl')) breakpoint = breakpointsMap['xl'];
+              else if ($this.hasClass('navbar-toggleable-lg')) breakpoint = breakpointsMap['lg'];
+              else if ($this.hasClass('navbar-toggleable-md')) breakpoint = breakpointsMap['md'];
+              else if ($this.hasClass('navbar-toggleable-xs')) breakpoint = breakpointsMap['xs'];
 
-              if( $w.width() > breakpoint ) return;
+              if ($w.width() > breakpoint) return;
 
               $toggler = $this.find('.navbar-toggler');
               $nav = $this.find('.navbar-collapse');
 
-              if(!$nav.data('mobile-scroll-hide')) return;
+              if (!$nav.data('mobile-scroll-hide')) return;
 
-              if($nav.length) {
+              if ($nav.length) {
                 offset = $this.data('mobile-menu-scroll-position');
 
-                if( Math.abs( $w.scrollTop() - offset ) > 40 && $nav.hasClass('show') ) {
+                if (Math.abs($w.scrollTop() - offset) > 40 && $nav.hasClass('show')) {
                   $toggler.trigger('click');
                   $hamburgers = $toggler.find('.is-active');
-                  if($hamburgers.length) {
+                  if ($hamburgers.length) {
                     $hamburgers.removeClass('is-active');
                   }
                 }

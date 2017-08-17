@@ -167,6 +167,9 @@
 }
 
 /* Margin Bottom */
+.g-mb-23 {
+  @include px-to-rem(margin-bottom, 23px);
+}
 .g-mb-28 {
   @include px-to-rem(margin-bottom, 28px);
 }

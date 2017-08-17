@@ -15,11 +15,11 @@
     },
     _renderMenu: function (ul, items) {
       var that = this,
-          currentCategory = '';
+        currentCategory = '';
       $.each(items, function (index, item) {
         var li;
 
-        if(!item.category) {
+        if (!item.category) {
           li = that._renderItemData(ul, item);
           return;
         }
@@ -69,7 +69,7 @@
       if (!$(selector).length) return;
 
       this.config = config && $.isPlainObject(config) ?
-          $.extend({}, this._baseConfig, config) : this._baseConfig;
+        $.extend({}, this._baseConfig, config) : this._baseConfig;
 
       this.config.itemSelector = selector;
 
@@ -82,27 +82,37 @@
     initAutocomplete: function () {
       //Variables
       var $self = this,
-          config = $self.config,
-          collection = $self.pageCollection;
+        config = $self.config,
+        collection = $self.pageCollection;
 
       //Actions
       this.collection.each(function (i, el) {
         var $this = $(el),
-            dataUrl = $this.data('url');
+          dataUrl = $this.data('url');
 
-        $this.catcomplete({
-          delay: 0,
-          source: dataUrl,
-          dataType: 'json',
-          minLength: config['minLength'],
-          select: function (event, ui) {
-            var currentItem = $(this);
+        $.getJSON(dataUrl, function (data) {
+          $this.catcomplete({
+            delay: 0,
+            source: data,
+            dataType: 'json',
+            minLength: config['minLength'],
+            select: function (event, ui) {
+              var currentItem = $(this);
 
-            setTimeout(function () {
-              var currentVal = currentItem.val();
-              $(currentItem).val($(currentVal).get(0).textContent);
-            }, 1);
-          }
+              setTimeout(function () {
+                var currentVal = currentItem.val();
+                $(currentItem).val($(currentVal).get(0).textContent);
+              }, 1);
+            },
+            focus: function (event, ui) {
+              var currentItem = $(this);
+
+              setTimeout(function () {
+                var currentVal = currentItem.val();
+                $(currentItem).val($(currentVal).get(0).textContent);
+              });
+            }
+          });
         });
 
         //Actions

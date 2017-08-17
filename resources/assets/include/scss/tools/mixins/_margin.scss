@@ -49,9 +49,9 @@
       margin-bottom: 0 !important;
     }
 
-    /* Margin X */
+    // Margin X
     $i: 1;
-    @while $i < 10 {
+    @while $i < 11 {
       .g-mx-#{$i}#{$media-type} {
         @include px-to-rem(margin-left, $i*1px !important);
         @include px-to-rem(margin-right, $i*1px !important);
@@ -67,9 +67,9 @@
       $i: $i + 5;
     }
 
-    /* Margin Y */
+    // Margin Y
     $i: 1;
-    @while $i < 10 {
+    @while $i < 11 {
       .g-my-#{$i}#{$media-type} {
         @include px-to-rem(margin-top, $i*1px !important);
         @include px-to-rem(margin-bottom, $i*1px !important);
@@ -85,7 +85,7 @@
       $i: $i + 5;
     }
 
-    /* Margin Top */
+    // Margin Top
     $i: 1;
     @while $i < 21 {
       .g-mt-#{$i}#{$media-type} {
@@ -107,7 +107,7 @@
       $i: $i + 5;
     }
 
-    /* Margin Bottom */
+    // Margin Bottom
     $i: 1;
     @while $i < 21 {
       .g-mb-#{$i}#{$media-type} {
@@ -126,9 +126,9 @@
       $i: $i + 5;
     }
 
-    /* Margin Left */
+    // Margin Left
     $i: 1;
-    @while $i < 10 {
+    @while $i < 11 {
       .g-ml-#{$i}#{$media-type} {
         @include px-to-rem(margin-left, $i*1px !important);
       }
@@ -148,9 +148,9 @@
       $i: $i + 5;
     }
 
-    /* Margin Right */
+    // Margin Right
     $i: 1;
-    @while $i < 10 {
+    @while $i < 11 {
       .g-mr-#{$i}#{$media-type} {
         @include px-to-rem(margin-right, $i*1px !important);
       }

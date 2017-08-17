@@ -109,7 +109,7 @@
 
 				appear: function(el) {
 
-					console.log( $(el).data('ProgressBar'), $(el).data('value') );
+					// console.log( $(el).data('ProgressBar'), $(el).data('value') );
 
 					$(el).data('ProgressBar').update($(el).data('value'));
 

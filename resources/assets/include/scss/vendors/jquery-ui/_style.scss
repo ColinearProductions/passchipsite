@@ -8,6 +8,7 @@
     max-height: 200px;
     overflow-y: auto;
     overflow-x: hidden;
+    padding-bottom: 1px;
 
     .left {
       float: left;
@@ -18,32 +19,40 @@
     }
 
     .ui-menu-item {
-      padding: 5px 15px;
+      padding: 0;
 
       &-wrapper {
+        display: block;
         color: inherit;
         background-color: transparent;
         border-color: transparent;
-        padding: 0;
-      }
+        padding: 5px 15px;
 
-      &:hover {
-        color: $g-color-white;
-        background-color: $g-color-primary;
-
-        .ui-menu-item {
-          &-wrapper {
-            background-color: transparent;
-            border-color: transparent;
-          }
+        // &.ui-state-active,
+        &:hover {
+          color: $g-color-white;
+          background-color: $g-color-primary;
+          text-decoration: none;
         }
       }
+
+      // &:hover {
+      //   color: $g-color-white;
+      //   background-color: $g-color-primary;
+
+      //   .ui-menu-item {
+      //     &-wrapper {
+      //       background-color: transparent;
+      //       border-color: transparent;
+      //     }
+      //   }
+      // }
     }
 
     &-category {
-      font-weight: bold;
-      padding: 5px 10px;
+      padding: 5px 15px;
       margin: 0;
+      font-weight: bold;
     }
   }
 }

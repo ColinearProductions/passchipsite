@@ -3,6 +3,7 @@
 ------------------------------------*/
 html {
   font-size: $g-font-primary-size;
+  overflow-x: hidden; // R
 }
 
 body {
@@ -44,10 +45,11 @@ figure {
 /*------------------------------------
   Headings
 ------------------------------------*/
-.h1, .h2, .h3, .h4, .h5, .h6, .h7
+.h1, .h2, .h3, .h4, .h5, .h6, .h7,
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.4;
 }
+
 .h7 {
   font-size: .75rem;
 }

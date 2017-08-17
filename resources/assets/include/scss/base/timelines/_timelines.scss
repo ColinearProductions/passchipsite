@@ -1,7 +1,6 @@
 /*------------------------------------
   Time Lines
 ------------------------------------*/
-
 [class*="u-timeline-v1-wrap"],
 [class*="u-timeline-v2-wrap"],
 [class*="u-timeline-v3-wrap"] {
@@ -15,11 +14,3 @@
     display: block;
   }
 }
-
-//
-// Imports
-//
-
-@import "timelines-v1";
-@import "timelines-v2";
-@import "timelines-v3";

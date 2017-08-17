@@ -30,6 +30,7 @@
 	z-index: 2;
 	margin-top: 5px;
 	visibility: hidden;
+  opacity: 0;
 	/* width: 100%; */
 	background-color: #fff;
 }
@@ -42,6 +43,7 @@
 .hs-sub-menu-opened > .hs-sub-menu,
 .hs-mega-menu-opened > .hs-mega-menu {
 	visibility: visible;
+  opacity: 1;
 }
 
 .hs-sub-menu {

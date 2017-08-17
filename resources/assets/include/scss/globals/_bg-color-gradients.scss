@@ -168,6 +168,12 @@
   @include gradient-y-top($start-color: rgba($g-color-bluegray, .3), $end-color: rgba(#000, 0));
 }
 
+/* Bluegray Gradient */
+.g-bg-bluegray-gradient-opacity-v3,
+.g-bg-bluegray-gradient-opacity-v3--after::after {
+  @include gradient-directional($start-color: rgba(#6b7de0, .85), $end-color: rgba(#2A2734, 1), $deg: 150deg);
+}
+
 /* Radial Gradients (Ellipse)
 ------------------------------------*/
 /* Lightblue Gradient */

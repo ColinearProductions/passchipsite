@@ -86,7 +86,11 @@
           $tabsContentItem.removeAttr('style');
           context.off('click', '.js-tabs-mobile-control');
           context.off('click', '[role="tab"]');
-          context.find('.js-tabs-mobile-control').remove();
+          if (tabsType == 'accordion') {
+            $tabsContent.find('.js-tabs-mobile-control').remove();
+          } else {
+            context.find('.js-tabs-mobile-control').remove();
+          }
           return;
         }
 
@@ -151,17 +155,23 @@
 
         if ($(this).hasClass('active')) return;
 
+        var contextID = context.attr('id');
+
         context.find('.js-tabs-mobile-control').removeClass('active');
-        var $target = $(this).next();
+        console.log(contextID);
+        $('[data-target="' + contextID + '"]').find('.nav-link').removeClass('active');
+        var $target = $(this).next(),
+          targetID = $target.attr('id');
 
         if ($target.hasClass('fade')) {
           $(this).addClass('active');
+          $('[href="#' + targetID + '"]').addClass('active');
+
           $(menu)
-            .slideUp(200, function () {
-              $target.removeClass('show active');
-            });
+            .slideUp(200);
           $target
             .slideDown(200, function () {
+              context.find('[role="tabpanel"]').removeClass('show active');
               $target.addClass('show active');
             });
         } else {

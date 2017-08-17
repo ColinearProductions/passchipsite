@@ -3,7 +3,7 @@
 ------------------------------------*/
 
 %link-active-state {
-	color: $g-color-primary;
+	color: $g-color-primary !important;
 	background-color: transparent;
 	border: none;
 }
@@ -20,6 +20,7 @@
 				transform: translate3d(0, -50%, 0);
 			}
 
+			&.active > a,
 			&:active > a,
 			&:focus > a,
 			&:hover > a {
@@ -47,6 +48,7 @@
 			color: inherit;
 			padding: 0;
 
+			&.active,
 			&:active,
 			&:focus,
 			&:hover {

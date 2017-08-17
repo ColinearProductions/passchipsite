@@ -58,9 +58,11 @@
           type = $this.data('type'),
           showEffect = $this.data('show-effect'),
           position = JSON.parse(el.getAttribute('data-position')),
-          compensation = $($this.data('compensation')).outerHeight();
+          compensation = $($this.data('compensation')).outerHeight(),
+          offsetTop = $this.data('offset-top');
 
         $this.addClass('animated').css({
+          'display': 'inline-block',
           'position': type,
           'opacity': 0
         });
@@ -77,7 +79,7 @@
           }, 800);
         });
 
-        if (!$this.hasClass('u-animation-was-fired')) {
+        if (!$this.data('offset-top') && !$this.hasClass('u-animation-was-fired')) {
           if ($this.offset().top <= $(window).height()) {
             $this.addClass('u-animation-was-fired ' + showEffect).css({
               'opacity': ''
@@ -86,16 +88,30 @@
         }
 
         $(window).on('scroll', function () {
-          var thisOffsetTop = $this.offset().top;
-
-          if (!$this.hasClass('u-animation-was-fired')) {
-            if ($(window).scrollTop() >= thisOffsetTop - $(window).height()) {
+          if ($this.data('offset-top')) {
+            if ($(window).scrollTop() >= offsetTop && !$this.hasClass('u-animation-was-fired')) {
               $this.addClass('u-animation-was-fired ' + showEffect).css({
                 'opacity': ''
               });
+            } else if ($(window).scrollTop() <= offsetTop && $this.hasClass('u-animation-was-fired')) {
+              $this.removeClass('u-animation-was-fired ' + showEffect).css({
+                'opacity': 0
+              });
+            }
+          } else {
+            var thisOffsetTop = $this.offset().top;
+
+            if (!$this.hasClass('u-animation-was-fired')) {
+              if ($(window).scrollTop() >= thisOffsetTop - $(window).height()) {
+                $this.addClass('u-animation-was-fired ' + showEffect).css({
+                  'opacity': ''
+                });
+              }
             }
           }
         });
+
+        $(window).trigger('scroll');
 
         //Actions
         collection = collection.add($this);

@@ -1,135 +1,28 @@
 @font-face {
     font-family: 'PasschipFont'; /*a name to be used later*/
-    src: url('../../fonts/passchip/freeserif.ttf'); /*URL to font*/
+    src: url('freeserif.ttf'); /*URL to font*/
 }
 
 .passchip_font {
     font-family: "PasschipFont", serif;
 }
 
-.g-bg-primary {
-    background-color: #00666a !important;
-}
+.push-to-bottom {
+    position:absolute;
 
-.u-btn-primary {
-    background-color: #00666a !important;
-    color:white!important;
-}
-
-.u-btn-primary:hover {
-    background-color: #007f84 !important;
-    color:white!important;
-    border: 1px solid #007f84;
-}
-
-.u-btn-outline-primary {
-    border: 1px solid #007f84;
-    color: #007f84;
-}
-
-.u-btn-outline-primary:hover {
-    background-color: #007f84 !important;
+    bottom: 5%;
+    width: 100%;
 }
 
 
-.u-heading-v2-1--bottom::after, .u-heading-v2-1--top::before, .u-heading-v2-2--bottom::after, .u-heading-v2-2--top::before, .u-heading-v2-3--bottom::after, .u-heading-v2-3--top::before, .u-heading-v2-4--bottom::after, .u-heading-v2-4--top::before, .u-heading-v2-5--bottom::after, .u-heading-v2-5--top::before, .u-heading-v2-6--bottom::after, .u-heading-v2-6--top::before, .u-heading-v2-7--bottom::after, .u-heading-v2-7--top::before {
-
-}
-
-.g-color-primary {
-    color: #007f84 !important;
-}
-
-.g-color-primary--hover:hover{
-    color: #00A1A6 !important;
-}
-
-.g-brd-primary{
-    border-color:#007f84 !important;
-}
-
-.g-brd-primary--hover:hover, .g-brd-primary--active.active{
-    border-color:#007f84 !important;
-}
-
-.g-bg-primary--hover:hover{
-    background-color: #007f84 !important;
-}
-
-.g-brd-primary--focus:focus{
-    border-color:#007f84 !important;
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 
-a{
-    color:#007f84 ;
-}
-
-a:focus, a:hover{
-    color: #00A1A6;
-}
-
-
-.u-block-hover.u-block-hover__additional--jump:hover {
-    transform: none;
-}
-
-.nav-link.active{
-    background-color: #007f84 !important;
-}
-
-::selection{
-    color: white !important;
-    background-color: #007f84 !important;
-}
-
-.nav-link.active{
-    color:white !important;
-}
-
-
-/* header links were too big */
-.navbar .u-main-nav-v3 .nav-link {
-    color: #333;
-    padding: 1.85714rem 1.57143rem 1.57143rem;
-    border-bottom: 4px solid transparent;
-}
-
-
-
-
-
-
-
-
-
-/* REPLACE FA */
-
-.fa-google-plus:before {
-    content: "\f0d5"
-}
-
-
-.fa-twitter:before {
-    content: "\f099"
-}
-
-.fa-facebook-f:before,.fa-facebook:before {
-    content: "\f09a"
-}
-.fa-google-plus:before {
-    content: "\f0d5"
-}
-
-.fa-linkedin:before {
-    content: "\f0e1"
-}
-
-.fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
+.btn-link{
+    color: #009492;
 }

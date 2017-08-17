@@ -22,8 +22,9 @@
       collection.each(function () {
         var $this = $(this),
           $target = $this.data('calc-target');
-
-        $this.css('height', 'calc(100vh - ' + $($target).outerHeight() + 'px)');
+        $this.css({
+          'height': 'calc(100vh - ' + $($target).outerHeight() + 'px)',
+        });
       });
     }
   };

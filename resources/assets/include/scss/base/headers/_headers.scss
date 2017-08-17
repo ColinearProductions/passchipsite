@@ -1,13 +1,6 @@
 /*------------------------------------
   Headers
 ------------------------------------*/
-
-/* Import */
-@import "header-togglers";
-@import "header-fullscreen";
-@import "header-side";
-@import "headers-dropdown-margins";
-
 .u-header {
   position: relative;
   left: 0;
@@ -232,7 +225,7 @@
   &--shift.js-header-change-moment .navbar-nav:not([class*="u-main-nav-v"]) .active > .nav-link,
   &--shift.js-header-change-moment .navbar-nav:not([class*="u-main-nav-v"]) .nav-link.open,
   &--shift.js-header-change-moment .navbar-nav:not([class*="u-main-nav-v"]) .nav-link.active {
-    color: rgba($g-color-main, 1);
+    color: rgba($g-color-primary, 1);
   }
   & .navbar-toggler,
   &--shift.js-header-change-moment .navbar-toggler {
@@ -269,13 +262,13 @@
   }
   & .navbar-nav:not([class*="u-main-nav-v"]) .nav-link,
   &--shift.js-header-change-moment .navbar-nav:not([class*="u-main-nav-v"]) .nav-link {
-    color: $g-color-white;
+    color: rgba($g-color-white, .8);
   }
   & .navbar-nav:not([class*="u-main-nav-v"]) .nav-link:focus,
   & .navbar-nav:not([class*="u-main-nav-v"]) .nav-link:hover,
   &--shift.js-header-change-moment .navbar-nav:not([class*="u-main-nav-v"]) .nav-link:focus,
   &--shift.js-header-change-moment .navbar-nav:not([class*="u-main-nav-v"]) .nav-link:hover {
-    color: rgba($g-color-white, .9);
+    color: $g-color-white;
   }
   & .navbar-nav:not([class*="u-main-nav-v"]) .nav-link.disabled,
   &--shift.js-header-change-moment .navbar-nav:not([class*="u-main-nav-v"]) .nav-link.disabled {

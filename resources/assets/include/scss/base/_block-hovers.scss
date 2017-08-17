@@ -167,6 +167,11 @@
   -webkit-filter: grayscale(0%);
 }
 
+// White
+.u-block-hover__main--white {
+  filter: brightness(0) invert(1);
+}
+
 
 
 //

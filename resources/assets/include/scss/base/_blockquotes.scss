@@ -155,3 +155,30 @@
     margin-left: -18px;
   }
 }
+
+//
+// Blockquote v8
+//
+
+.u-blockquote-v8 {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 5px 6px 9px -6px rgba($g-color-main, .08);
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50px;
+    bottom: -15px;
+    display: block;
+    width: 0;
+    height: 0;
+    border: {
+      style: solid;
+      width: 15px 15px 0 0;
+      color: $g-color-white transparent transparent transparent;
+    }
+    -webkit-filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .05));
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .05));
+  }
+}

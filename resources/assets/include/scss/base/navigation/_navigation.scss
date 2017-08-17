@@ -70,11 +70,18 @@
 @import "navigation-dropdown-v3";
 @import "navigation-dropdown-v4";
 @import "navigation-dropdown-inline";
+@import "navigation-dropdown-columns";
 
 /* Main navigation behaviors */
 @import "navigation-overlay";
 @import "navigation-push";
 @import "navigation-smart";
+
+/* Secondary navigation styles */
+@import "navigation-secondary";
+
+/* Sidebar navigation styles */
+@import "navigation-sidebar";
 
 /* Override vendor stylesheets */
 .hamburger-inner::before,

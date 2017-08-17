@@ -111,6 +111,15 @@
   }
 }
 
+/* Main Colors */
+.g-brd-main {
+  border-color: $g-color-main !important;
+
+  &--hover:hover {
+    border-color: $g-color-main !important;
+  }
+}
+
 /* Black Colors */
 .g-brd-black {
   border-color: $g-color-black !important;

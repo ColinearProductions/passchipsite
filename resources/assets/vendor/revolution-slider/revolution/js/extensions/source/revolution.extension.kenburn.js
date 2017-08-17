@@ -1,17 +1,16 @@
 /********************************************
- * REVOLUTION 5.0 EXTENSION - KEN BURN
- * @version: 1.3 (15.02.2017)
+ * REVOLUTION 5.4.2 EXTENSION - KEN BURN
+ * @version: 1.3.1 (15.05.2017)
  * @requires jquery.themepunch.revolution.js
  * @author ThemePunch
 *********************************************/
-
 (function($) {
 "use strict";
 var _R = jQuery.fn.revolution,
 	extension = {	alias:"KenBurns Min JS",
 					name:"revolution.extensions.kenburn.min.js",
 					min_core: "5.4",
-					version:"1.2.0"
+					version:"1.3.1"
 			  };
 
 ///////////////////////////////////////////
@@ -48,7 +47,9 @@ jQuery.extend(true,_R, {
 	
 		// NO KEN BURN IMAGE EXIST YET
 		if (l.find('.tp-kbimg').length==0) {
-			l.append('<div class="tp-kbimg-wrap" style="z-index:2;width:100%;height:100%;top:0px;left:0px;position:absolute;"><img class="tp-kbimg" src="'+s+'" style="position:absolute;" width="'+d.owidth+'" height="'+d.oheight+'"></div>');
+			var mediafilter = i.data('mediafilter');
+			mediafilter = mediafilter === undefined ? "" : mediafilter;
+			l.append('<div class="tp-kbimg-wrap '+mediafilter+'" style="z-index:2;width:100%;height:100%;top:0px;left:0px;position:absolute;"><img class="tp-kbimg" src="'+s+'" style="position:absolute;" width="'+d.owidth+'" height="'+d.oheight+'"></div>');
 			l.data('kenburn',l.find('.tp-kbimg'));
 		}
 

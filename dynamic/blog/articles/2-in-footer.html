@@ -5,10 +5,11 @@
             <!-- Footer Content -->
             <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
                 <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-10">
-                    <h2 class="u-heading-v2__title h6 text-uppercase mb-0">Subscribe to our Newsletter</h2>
+
+                    <h2 class="u-heading-v2__title h6 text-uppercase mb-0"> ${data['words']['subscribeToOurNewsletter']}</h2>
                 </div>
 
-                <p>Subscribe to our newsletter and stay up to date with the latest news and deals!</p>
+                <p> ${data['words']['subscribeMessage']}</p>
 
 
                 <!-- Begin MailChimp Signup Form -->
@@ -23,7 +24,7 @@
 
                             <input type="email" value="" name="EMAIL"
                                    class="required email form-control border-0 rounded-0 g-px-12 g-py-8 "
-                                   placeholder="Email address" id="mce-EMAIL">
+                                   placeholder=" ${data['words']['emailAddress']}" id="mce-EMAIL">
 
                             <div id="mce-responses" class="clear">
                                 <div class="response" id="mce-error-response" style="display:none"></div>
@@ -38,7 +39,7 @@
                             </div>
 
                             <div class="clear">
-                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+                                <input type="submit" value=" ${data['words']['subscribe']}" name="subscribe" id="mc-embedded-subscribe"
                                        class="btn u-btn-primary rounded-0 g-px-12 g-py-8">
                             </div>
                         </div>
@@ -143,8 +144,8 @@
                 <!-- Google Map -->
                 <div id="GMapCustomized-dark" class="js-g-map embed-responsive embed-responsive-21by9 g-height-280"
                      data-type="custom"
-                     data-lat="44.480"
-                     data-lng="26.071"
+                     data-lat="${data['meta']['lat']}"
+                     data-lng="${data['meta']['lon']}"
                      data-zoom="12"
                      data-title="Agency"
                      data-styles='[["", "", [{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]], ["", "labels", [{"visibility":"on"}]], ["water", "", [{"color":"#bac6cb"}]] ]'
@@ -154,14 +155,14 @@
                 <!-- End Google Map -->
 
                 <a href="https://maps.google.com/?q=44.480,26.071" class="visible-xs visible-sm">
-                    <strong>Open in google maps</strong>
+                    <strong> ${data['words']['openInGoogleMaps']}</strong>
                 </a>
             </div>
             <!-- End Map Content -->
 
             <!-- needed imports for gmaps:
-            <script src="../resources/assets/vendor/gmaps/gmaps.min.js"></script>
-            <script src="../resources/assets/js/components/gmap/hs.map.js"></script>
+            <script src="../../../resources/assets/vendor/gmaps/gmaps.min.js"></script>
+            <script src="../../../resources/assets/js/components/gmap/hs.map.js"></script>
             <script>
                 $(document).on('ready', function () {
                     $('[data-toggle="tooltip"]').tooltip();
@@ -179,40 +180,38 @@
             <!-- Footer Content -->
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-10">
-                    <h2 class="u-heading-v2__title h6 text-uppercase mb-0">Our Contacts</h2>
+                    <h2 class="u-heading-v2__title h6 text-uppercase mb-0"> ${data['words']['ourContacts']}</h2>
                 </div>
 
                 <address class="g-bg-no-repeat g-line-height-2 g-mt-minus-4"
                          style="background: url(../../../resources/assets/img/maps/map2.png);   background-position: center; ">
-                    1 Piata Presei Libere<br>
-                    C1 Building, 2nd Floor<br>
-                    1st District Bucharest, Romania
-                    <br> Phone: 004 0745 342 887
-                    <br> Email: <a href="mailto:office@passchip.com" class="">office@passchip.com</a>
+                    ${data['meta']['address']}
+                    <br>  ${data['words']['phoneNumber']}: ${data['meta']['phoneNumber']}
+                    <br> Email: <a href="mailto:${data['meta']['emailAddress']}" class="">${data['meta']['emailAddress']}</a>
                 </address>
 
                 <ul class="list-inline mb-0">
                     <li class="list-inline-item g-mr-10">
                         <a class="u-icon-v3 u-icon-size--xs g-bg-white-opacity-0_1 g-bg-white-opacity-0_2--hover g-color-white-opacity-0_6"
-                           href="https://www.facebook.com/passchipconicdesign/">
+                           href="${data['meta']['facebookUrl']}">
                             <i class="fa fa-facebook"></i>
                         </a>
                     </li>
                     <li class="list-inline-item g-mr-10">
                         <a class="u-icon-v3 u-icon-size--xs g-bg-white-opacity-0_1 g-bg-white-opacity-0_2--hover g-color-white-opacity-0_6"
-                           href="https://www.linkedin.com/company/conic-design">
+                           href="${data['meta']['linkedInUrl']}">
                             <i class="fa fa-linkedin"></i>
                         </a>
                     </li>
                     <li class="list-inline-item g-mr-10">
                         <a class="u-icon-v3 u-icon-size--xs g-bg-white-opacity-0_1 g-bg-white-opacity-0_2--hover g-color-white-opacity-0_6"
-                           href="https://twitter.com/passchipreader">
+                           href="${data['meta']['twitterUrl']}">
                             <i class="fa fa-twitter"></i>
                         </a>
                     </li>
                     <li class="list-inline-item g-mr-10">
                         <a class="u-icon-v3 u-icon-size--xs g-bg-white-opacity-0_1 g-bg-white-opacity-0_2--hover g-color-white-opacity-0_6"
-                           href="https://plus.google.com/111949209843358236826">
+                           href="${data['meta']['googlePlusUrl']}">
                             <i class="fa fa-google-plus"></i>
                         </a>
                     </li>
@@ -224,12 +223,11 @@
 </div>
 <!-- End Footer -->
 
-
 <!-- Copyright Footer -->
 <footer class="g-bg-gray-dark-v1 g-color-white-opacity-0_8 text-center g-py-20">
     <div class="container">
         <small class="g-font-size-default g-mr-10 g-mb-10 g-mb-0--md">
-            <span class="passchip_font">PASSCHIP </span> ® is a registered trademark of  <a href="http://conicdesign.ro"><img src="../../../resources/images/small_conic.png"></a>
+            <span class="passchip_font">PASSCHIP </span> ®  ${data['words']['isARegisteredTrademark']}  <a href="http://conicdesign.ro"><img src="../../../resources/images/small_conic.png"></a>
         </small>
     </div>
 </footer>
@@ -240,7 +238,14 @@
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-103088784-1', 'auto');
+    ga('create', '${data['meta']['analyticsId']}', 'auto');
     ga('send', 'pageview');
 
 </script>
+
+<a class="js-go-to u-go-to-v1 animated u-animation-was-fired zoomIn" href="#" data-type="fixed" data-position="{
+           &quot;bottom&quot;: 15,
+           &quot;right&quot;: 15
+         }" data-offset-top="400" data-compensation="#js-header" data-show-effect="zoomIn" style="display: inline-block; position: fixed; bottom: 15px; right: 15px;border-radius:100%";>
+    <i class="hs-icon hs-icon-arrow-top"></i>
+</a>

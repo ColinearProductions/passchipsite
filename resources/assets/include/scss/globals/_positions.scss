@@ -6,16 +6,16 @@
     position: relative !important;
   }
 
-  &-fix {
-    position: fixed !important;
-  }
-
   &-abs {
     position: absolute !important;
   }
 
+  &-stc {
+  	position: static !important;
+  }
+
   &-fix {
-  	position: fixed !important;
+    position: fixed !important;
   }
 }
 
@@ -35,6 +35,14 @@
 
     &-fix--md {
       position: fixed !important;
+    }
+  }
+}
+
+@media (min-width: $g-lg) {
+  .g-pos {
+    &-abs--lg {
+      position: absolute !important;
     }
   }
 }

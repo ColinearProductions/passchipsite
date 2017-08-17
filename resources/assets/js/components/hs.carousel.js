@@ -96,7 +96,8 @@
           setOutEffect = $this.data('out-effect'),
           setInfinite = $this.data('infinite'),
           setDataTitlePosition = $this.data('title-pos-inside'),
-          setFocusOnSelect = $this.data('focus-on-select');
+          setFocusOnSelect = $this.data('focus-on-select'),
+          setLazyLoad = $this.data('lazy-load');
 
         $this.on('init', function (event, slick) {
           $(slick.$slides).css('height', 'auto');
@@ -162,6 +163,7 @@
           rtl: setRtl ? true : false,
           centerPadding: setCenterPadding ? setCenterPadding : 0,
           focusOnSelect: setFocusOnSelect ? true : false,
+          lazyLoad: setLazyLoad ? setLazyLoad : false,
 
           asNavFor: target ? target : false,
           prevArrow: arrowsClasses ? $prevMarkup : false,
@@ -232,7 +234,7 @@
      *
      * @return undefined
      */
-    initTextAnimation(carousel, textAnimationSelector) {
+    initTextAnimation: function(carousel, textAnimationSelector) {
 
       if (!window.TextFx || !window.anime || !carousel.length) return;
 

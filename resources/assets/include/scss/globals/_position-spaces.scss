@@ -151,6 +151,10 @@
   @include px-to-rem(top, -70px);
 }
 
+.g-top-minus-120 {
+  @include px-to-rem(top, -120px);
+}
+
 .g-top-minus-25x {
   top: -25%;
 }
@@ -450,6 +454,14 @@
   @include px-to-rem(bottom, 60px);
 }
 
+.g-bottom-80 {
+  @include px-to-rem(bottom, 80px);
+}
+
+.g-bottom-minus-20 {
+  @include px-to-rem(bottom, -20px);
+}
+
 .g-bottom-minus-30 {
   @include px-to-rem(bottom, -30px);
 }
@@ -474,6 +486,21 @@
   bottom: 100%;
 }
 
+/* Z */
+@media (min-width: $g-sm) {
+  .g-left-auto--sm {
+    left: auto;
+  }
+
+  .g-left-minus-20--sm {
+    left: -20px;
+  }
+
+  .g-right-minus-20--sm {
+    right: -20px;
+  }
+}
+
 /* O */
 @media (min-width: $g-md) {
   .g-right-0--md {
@@ -494,6 +521,10 @@
 
   .g-right-minus-25--md {
     @include px-to-rem(right, -25px);
+  }
+
+  .g-bottom-minus-50--md {
+    @include px-to-rem(bottom, -50px);
   }
 
   .g-left-auto--md {
@@ -530,11 +561,22 @@
 }
 
 @media (min-width: $g-lg) {
+  .g-top-0--lg {
+    top: 0;
+  }
+  .g-right-0--lg {
+    right: 0;
+  }
   .g-left-minus-35--lg {
     @include px-to-rem(left, -35px);
   }
-
+  .g-left-40--lg {
+    @include px-to-rem(left, 40px);
+  }
   .g-right-minus-35--lg {
     @include px-to-rem(right, -35px);
+  }
+  .g-right-40--lg {
+    @include px-to-rem(right, 40px);
   }
 }

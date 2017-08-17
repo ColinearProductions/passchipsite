@@ -13,7 +13,7 @@
 
 		/**
 		 * Base configuration of the wrapper.
-		 * 
+		 *
 		 * @protected
 		 */
 		_baseConfig: {
@@ -99,7 +99,7 @@
 					$gallery = $('[data-fancybox-hidden-gallery="' + $this.data('fancybox-hidden-gallery') + '"]');
 				}
 
-				
+
 				if( $gallery && $gallery.length ) {
 
 					index = $gallery.index( $this );
@@ -199,7 +199,7 @@
 
 				self._currentSlide = slide;
 				beforeMoveCallback.call(this, instance, slide);
-				
+
 			};
 
 			config.beforeClose = function( instance, slide ) {
@@ -298,7 +298,7 @@
 
 				this._blurBgTimeOut = setTimeout(function(){
 
-					self.$body.append( self.blurBgContainer.children() );	
+					self.$body.append( self.blurBgContainer.children() );
 				}, 10)
 
 			}

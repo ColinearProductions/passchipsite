@@ -137,19 +137,6 @@
 @import "tabs-v7";
 @import "tabs-v8";
 
-@import "OLD/tabs-v1";
-@import "OLD/tabs-v2";
-@import "OLD/tabs-v3";
-@import "OLD/tabs-v4";
-@import "OLD/tabs-v5";
-@import "OLD/tabs-v6";
-@import "OLD/tabs-v7";
-@import "OLD/tabs-v8";
-@import "OLD/tabs-v9";
-@import "OLD/tabs-v10";
-@import "OLD/tabs-v11";
-@import "OLD/tabs-v12";
-
 @media (max-width: #{$g-md}-1) {
   [data-tabs-mobile-type="slide-up-down"],
   [data-tabs-mobile-type="accordion"] {

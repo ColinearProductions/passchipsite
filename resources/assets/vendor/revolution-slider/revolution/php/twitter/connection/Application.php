@@ -69,8 +69,6 @@ class Application extends Base
 
             $response = $this->_callApi($options);
 
-            var_dump($options);
-
             if (isset($response["token_type"]) && $response["token_type"] == 'bearer') {
                 $this->_bearersToken = $response["access_token"];
             } else {

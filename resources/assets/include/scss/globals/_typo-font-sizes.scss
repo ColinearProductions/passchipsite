@@ -155,6 +155,18 @@ $i: 70;
 }
 
 @media (min-width: $g-sm) {
+  .g-font-size-20--sm {
+    @include px-to-rem(font-size, 20px !important);
+  }
+  .g-font-size-25--sm {
+    @include px-to-rem(font-size, 25px !important);
+  }
+  .g-font-size-40--sm {
+    @include px-to-rem(font-size, 40px !important);
+  }
+  .g-font-size-50--sm {
+    @include px-to-rem(font-size, 50px !important);
+  }
   .g-font-size-240--sm {
     @include px-to-rem(font-size, 240px !important);
   }

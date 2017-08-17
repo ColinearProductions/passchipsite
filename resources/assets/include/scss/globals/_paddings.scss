@@ -246,6 +246,10 @@
   @include px-to-rem(padding-top, 150px !important);
 }
 
+.g-pt-170 {
+  @include px-to-rem(padding-top, 170px !important);
+}
+
 .g-pt-195 {
   @include px-to-rem(padding-top, 195px !important);
 }
@@ -420,10 +424,12 @@
   .g-pt-150--md {
     @include px-to-rem(padding-top, 150px !important);
   }
+  .g-pt-170--md {
+    @include px-to-rem(padding-top, 170px !important);
+  }
   .g-pt-175--md {
     @include px-to-rem(padding-top, 175px !important);
   }
-
   .g-pb-70--md {
     @include px-to-rem(padding-bottom, 70px !important);
   }
@@ -452,8 +458,8 @@
     @include px-to-rem(padding-right, 200px !important);
   }
 
-  .g-pt-175--lg {
-    @include px-to-rem(padding-top, 175px !important);
+  .g-pt-170--lg {
+    @include px-to-rem(padding-top, 170px !important);
   }
 
   .g-pb-200--lg {

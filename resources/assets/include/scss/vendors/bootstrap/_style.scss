@@ -346,6 +346,7 @@
 // Dropdown menu
 .dropdown-menu {
   min-width: 15rem;
+  padding: 0;
 }
 
 .dropdown-toggle {
@@ -367,12 +368,12 @@
 
   &:focus,
   &:hover {
-    background: $g-color-gray-light-v5;
+    background: rgba($g-color-black, .03);
   }
 
   &.active,
   &:active {
-    background: inherit;
+    background: rgba($g-color-black, .05);
     color: inherit !important;
 
     & > a {
@@ -382,6 +383,9 @@
       &::after {
         background-color: $g-color-white;
       }
+    }
+    .u-header__section--dark & > a {
+      color: #fff !important;
     }
   }
 }
