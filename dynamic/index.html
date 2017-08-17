@@ -187,20 +187,24 @@
                             class="text-center u-block-hover u-block-hover__additional--jump g-brd-around g-bg-gray-light-v5 g-brd-gray-light-v4 g-color-gray-dark-v5">
                         <!-- Article Header -->
                         <header class="g-bg-primary g-color-white-opacity-0_7 g-pa-20">
-                            <h3 class="g-color-white g-mb-5"><span class="passchip_font">PASSCHIP </span>Time And
+                            <h3 class="g-color-white g-mb-5">Time And
                                 Attendance</h3>
                             <em class="g-font-style-normal">${data["products"]["timeAndAttendance"]["liteDescription"]}</em>
                         </header>
                         <!-- End Article Header -->
 
                         <!-- Article Image -->
-                        <img class="w-100" src="../resources/images/time_and_a_900x600.png" alt="Image Description">
+
+                            <img class="w-100"  src="../resources/images/time_and_a_900x600.png" alt="Image Description">
+
                         <!-- End Article Image -->
 
                         <!-- Article Content -->
-                        <div class="g-pa-40">
-                            <p class="g-mb-30">
+                        <div class="g-pa-40 ">
+                            <p class="g-mb-30 g-min-height-200">
                                 ${data["products"]["timeAndAttendance"]["shortDescription"]}
+
+
                             </p>
                             <a class="btn text-uppercase u-btn-primary g-rounded-50 g-font-size-12 g-font-weight-700 g-pa-15-30"
                                href="products/time-and-attendance.html">${data['words']['readMore']}</a>
@@ -230,7 +234,7 @@
 
                         <!-- Article Content -->
                         <div class="g-pa-40">
-                            <p class="g-mb-30">
+                            <p class="g-mb-30 g-min-height-200">
                                 ${data["products"]["intercom"]["shortDescription"]}
 
                             </p>
@@ -261,7 +265,7 @@
 
                         <!-- Article Content -->
                         <div class="g-pa-40">
-                            <p class="g-mb-30">
+                            <p class="g-mb-30 g-min-height-200">
 
                                 ${data["products"]["lprReader"]["shortDescription"]}
                             </p>
@@ -301,7 +305,7 @@
                         <!-- Article Content -->
                         <div class="g-pa-40">
 
-                            <p class="g-mb-30">
+                            <p class="g-mb-30 g-min-height-200">
                                 ${data["products"]["accessController"]["shortDescription"]}
 
                             </p>
@@ -335,7 +339,7 @@
                         <!-- Article Content -->
                         <div class="g-pa-40">
 
-                            <p class="g-mb-30">
+                            <p class="g-mb-30 g-min-height-200">
                                 ${data["products"]["automotive"]["shortDescription"]}
 
                             </p>
@@ -376,22 +380,20 @@
 
                         % for idx, qa in enumerate(data['indexPage']['faqs']):
                         <!-- Card -->
+
                         <div class="card g-brd-none rounded g-mb-20">
-                            <div id="accordion-heading-0${idx}" class="g-pa-0" role="tab">
+                            <div id="accordion-heading-${idx}" class="g-pa-0" role="tab">
                                 <h5 class="mb-0">
-                                    <a class="d-flex justify-content-between u-shadow-v19 g-color-main g-text-underline--none--hover rounded g-px-30 g-py-20 collapsed"
-                                       href="#accordion-body-0${idx}" data-toggle="collapse" data-parent="#accordion"
-                                       aria-expanded="false" aria-controls="accordion-body-0${idx}">
+                                    <a class="d-flex justify-content-between u-shadow-v19 g-color-main g-text-underline--none--hover rounded g-px-30 g-py-20 collapsed" href="#accordion-body-${idx}" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="accordion-body-${idx}">
                                         ${qa['q']}
-                                        <span lass="u-accordion__control-icon g-color-primary">
-                          <i class="fa fa-angle-down"></i>
-                          <i class="fa fa-angle-up"></i>
-                        </span>
+                                        <span class="u-accordion__control-icon g-color-primary">
+                                              <i class="fa fa-angle-down"></i>
+                                              <i class="fa fa-angle-up"></i>
+                                        </span>
                                     </a>
                                 </h5>
                             </div>
-                            <div id="accordion-body-0${idx}" class="collapse" role="tabpanel"
-                                 aria-labelledby="accordion-heading-0${idx}" aria-expanded="false">
+                            <div id="accordion-body-${idx}" class="collapse" role="tabpanel" aria-labelledby="accordion-heading-${idx}" aria-expanded="false">
                                 <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
                                     ${qa['a']}
                                 </div>
@@ -399,6 +401,11 @@
                         </div>
                         <!-- End Card -->
                         % endfor
+
+
+
+
+
 
 
 
