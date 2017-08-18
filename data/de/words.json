@@ -40,5 +40,11 @@
   "phone": "Telefon",
   "emailAddress": "E-Mail-Adresse",
   "subscribe": "abonnieren",
-  "isARegisteredTrademark": " ist eine eingetragene Marke der "
+  "isARegisteredTrademark": " ist eine eingetragene Marke der ",
+
+  "howShouldWeGetInTouch":"Wie sollen wir uns berühren?",
+  "byPhone":"Per Telefon",
+  "byEmail":"Per E-Mail",
+  "yourEmail":"Deine E-Mail"
+
 }

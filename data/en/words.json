@@ -39,7 +39,12 @@
   "phone":"Phone",
   "emailAddress":"Email Address",
   "subscribe":"subscribe",
-  "isARegisteredTrademark":" is a registered trademark of "
+  "isARegisteredTrademark":" is a registered trademark of ",
+
+  "howShouldWeGetInTouch":"How should we get in touch?",
+  "byPhone":"By phone",
+  "byEmail":"By E-Mail",
+  "yourEmail":"Your E-Mail"
 
 
 
