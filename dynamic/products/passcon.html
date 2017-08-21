@@ -48,13 +48,13 @@
     <link rel="stylesheet" href="../../resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
 </head>
 
-<body>
+<body id="mytop">
 <main>
 
     <% product = data["products"]["passcon"] %>
     <%include file="1-in-header.html"/>
 
-    <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall"
+    <section class="dzsparallaxer g-mt-75 g-mt-50 auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall"
              data-options="{direction: 'reverse', settings_mode_oneelement_max_offset: '150'}">
         <!-- Parallax Image -->
         <div class="divimage dzsparallaxer--target w-100 g-bg-repeat g-bg-black"
@@ -239,7 +239,7 @@
 <script src="../../resources/assets/js/helpers/hs.focus-state.js"></script>
 <script src="../../resources/assets/js/components/hs.counter.js"></script>
 
-
+<script src="../../resources/assets/js/components/hs.go-to.js"></script>
 <!-- JS Implementing Plugins -->
 <script src="../../resources/assets/vendor/gmaps/gmaps.min.js"></script>
 <script src="../../resources/assets/js/components/gmap/hs.map.js"></script>

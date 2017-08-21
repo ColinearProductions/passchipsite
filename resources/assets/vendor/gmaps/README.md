@@ -33,7 +33,7 @@ Quick Start
     }
   </style>
 </head>
-<body>
+<body id="mytop">
   <div id="map"></div>
   <script>
     var map = new GMaps({

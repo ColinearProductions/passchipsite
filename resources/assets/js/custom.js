@@ -1,17 +1,15 @@
 // The function actually applying the offset
 
 function offsetAnchor() {
-    if(location.hash.length !== 0) {
+    if (location.hash.length !== 0) {
         window.scrollTo(window.scrollX, window.scrollY - 80);
     }
 }
 
 
-
-
-$('a[href*=\\#].smoothscroll').on('click', function(event){
+$('a[href*=\\#].smoothscroll').on('click', function (event) {
     event.preventDefault();
-    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+    $('html,body').animate({scrollTop: $(this.hash).offset().top}, 500);
 });
 
 
@@ -24,12 +22,15 @@ window.addEventListener("hashchange", offsetAnchor);
 window.setTimeout(offsetAnchor, 1); // The delay of 1 is arbitrary and may not always work right (although it did in my testing)
 
 
-
 function on_question_clicked(element) {
 
     var subject = $(element).data("subject");
     $("#form-subject").val(subject);
 
 
-
 }
+
+
+$(document).on('ready', function () {
+    $.HSCore.components.HSGoTo.init('.js-go-to');
+});

@@ -51,54 +51,46 @@
 
 </head>
 
-<body>
-<main class="g-bg-secondary">
+<body id="mytop">
+<main class="g-bg-secondary" >
 
     <%include file="header.html"/>
 
 
-    <section
-            class="g-bg-cover g-bg-pos-top-center g-bg-img-hero g-bg-black-opacity-0_3--after g-min-height-100vh g-flex-centered g-py-100"
-            style="background-image: url(../resources/images/generic_background.jpeg);">
-        <div class="container g-color-white text-center g-z-index-1">
-            <div class="mb-5">
-                <h2 class="h2 g-letter-spacing-5  g-font-size-70 g-font-size-76--md passchip_font text-uppercase">
-                    Passchip</h2>
+    <section class="g-bg-img-hero " style="background-image: url(../resources/images/generic_background.png);">
+        <div class="container g-pos-rel g-z-index-1 g-py-150 g-mt-50">
+            <div class="g-mb-170">
 
-                <p class="g-font-size-24"> <span class="u-text-animation u-text-animation--typing"></span></p>
             </div>
 
-            <a class=" smoothscroll js-go-to btn u-btn-outline-white g-color-white g-bg-white-opacity-0_1 g-color-black--hover g-bg-white--hover g-font-weight-600 text-uppercase g-rounded-50 g-px-30 g-py-13 animated u-animation-was-fired undefined"
-               href="#our-main-products-title" data-target="#our-main-products-title" style="display: inline-block;">${data['words']['readMore']}</a>
+            <div class="g-absolute-centered w-100">
+                <div class="container text-center g-width-780"
+                     style="background-color:rgba(255,255,255,0.85);padding:0">
+                    <div class="info-v3-4 g-pa-20 g-pa-60--md">
+                        <div class="g-pos-rel g-z-index-3">
+                            <h3 class="h3 text-uppercase g-letter-spacing-3 g-font-size-default g-color-white g-mb-10"></h3>
+                            <h2 class="h2 text-uppercase g-color-black g-letter-spacing-5 g-font-weight-400 g-font-size-25 g-font-size-76--md passchip_font">
+                                PASSCHIP</h2>
+                            <p class="g-line-height-1_8 g-letter-spacing-3 g-color-black g-font-size-30--md g-mb-20">
+                                ${data['indexPage']['motto']}</p>
+                            <a href="about_us.html"
+                               class="btn text-uppercase g-font-size-25--md u-btn-outline-black rounded-0 cd-btn cd-modal-trigger">
+                                ${data['words']['learnMore']}
+                            </a>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
 
-    <!--
-
-    <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall"
-             data-options="{direction: &quot;reverse&quot;, settings_mode_oneelement_max_offset: &quot;150&quot;}">
-        <div class="divimage dzsparallaxer--target w-100"
-             style="height: 130%; background-image: url(../resources/images/generic_background.jpeg); transform: translate3d(0px, -77.0076px, 0px);"></div>
-
-        <div class="g-bg-cover g-bg-pos-center g-bg-img-hero g-bg-black-opacity-0_3--after">
-            <div class="container g-color-white text-center g-z-index-1 g-py-170">
-                <h2 class="h2 g-letter-spacing-5  g-font-size-40 g-font-size-76--md passchip_font text-uppercase">
-                    Passchip</h2>
-                <p class="g-font-size-24"> ${data['indexPage']['motto']}</p>
-
-                <div class="g-pos-abs g-bottom-30 g-left-0 g-right-0">
-                    <a class="js-go-to btn u-btn-outline-white g-color-white g-bg-white-opacity-0_1 g-color-black--hover g-bg-white--hover g-font-weight-600 text-uppercase g-rounded-50 g-px-30 g-py-11 animated u-animation-was-fired undefined"
-                       href="#our-main-products-title" data-target="#our-main-products-title" style="display: inline-block;"><i
-                            class="fa fa-angle-down"></i></a>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
 
     <!-- Our Main products title -->
-    <section class="text-center g-py-10 g-py-80--md g-py-80" id="our-main-products-title">
+    <section class="text-center g-py-10 g-pb-40 g-pt-80  g-bg-white">
         <div class="container">
             <div class="u-heading-v2-5--bottom g-brd-primary g-mb-30">
                 <h2 class="u-heading-v2__title text-uppercase g-font-weight-300 mb-0">
@@ -119,8 +111,8 @@
 
             <div class="col-md-6"
                  data-animation="fadeIn"
-                 data-animation-delay="600"
-                 data-animation-duration="2000">
+                 data-animation-delay="100"
+                 data-animation-duration="1000">
                 <div class="text-center g-pa-15x">
                     <div class="mb-5">
                         <h3 class="h1 g-color-black mb-4">The <span class="passchip_font">PASSCHIP </span> Reader
@@ -156,8 +148,8 @@
         <div class="row align-items-center no-gutters g-bg-white">
             <div class="col-md-6 flex-md-unordered"
                  data-animation="fadeIn"
-                 data-animation-delay="600"
-                 data-animation-duration="2000">
+                 data-animation-delay="100"
+                 data-animation-duration="1000">
                 <div class="text-center g-pa-15x">
                     <div class="mb-5">
                         <h3 class="h1 g-color-black mb-4">PASSCON Software</h3>
@@ -201,8 +193,8 @@
 
                 <div class="col-md-6 align-self-center g-mb-50--md g-mb-0--md"
                      data-animation="fadeIn"
-                     data-animation-delay="500"
-                     data-animation-duration="2000">
+                     data-animation-delay="100"
+                     data-animation-duration="1000">
                     <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
                         <h2 class="h1 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-700">Time
                             And Attendance</h2>
@@ -223,7 +215,7 @@
                 <div class="col-md-5 offset-md-1 g-mt-50"
                      data-animation="fadeInUp"
                      data-animation-delay="100"
-                     data-animation-duration="900">
+                     data-animation-duration="400">
                     <img class="img-fluid" src="../resources/images/time_and_a_900x600.png"
                          alt="Image Description">
                 </div>
@@ -241,8 +233,8 @@
 
                 <div class="col-md-6 align-self-center g-mb-50--md g-mb-0--md"
                      data-animation="fadeIn"
-                     data-animation-delay="500"
-                     data-animation-duration="2000">
+                     data-animation-delay="100"
+                     data-animation-duration="1000">
                     <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
                         <h2 class="h1 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-700"><span
                                 class="passchip_font">PASSCHIP </span> IP Intercom</h2>
@@ -263,7 +255,7 @@
                 <div class="col-md-5 offset-md-1 g-mt-50"
                      data-animation="fadeInUp"
                      data-animation-delay="100"
-                     data-animation-duration="900">
+                     data-animation-duration="400">
                     <img class="img-fluid" src="../resources/images/intercom_900x600.png"
                          alt="Image Description">
                 </div>
@@ -282,8 +274,8 @@
 
                 <div class="col-md-6 align-self-center g-mb-50--md g-mb-0--md"
                      data-animation="fadeIn"
-                     data-animation-delay="500"
-                     data-animation-duration="2000">
+                     data-animation-delay="100"
+                     data-animation-duration="1000">
                     <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
                         <h2 class="h1 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-700"><span
                                 class="passchip_font">PASSCHIP </span> LPR Reader</h2>
@@ -304,7 +296,7 @@
                 <div class="col-md-5 offset-md-1 g-mt-50"
                      data-animation="fadeInUp"
                      data-animation-delay="100"
-                     data-animation-duration="900">
+                     data-animation-duration="400">
                     <img class="img-fluid" src="../resources/images/lpr_900x600.png"
                          alt="Image Description">
                 </div>
@@ -322,8 +314,8 @@
 
                 <div class="col-md-6 align-self-center g-mb-50--md g-mb-0--md"
                      data-animation="fadeIn"
-                     data-animation-delay="500"
-                     data-animation-duration="2000">
+                     data-animation-delay="100"
+                     data-animation-duration="1000">
                     <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
                         <h2 class="h1 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-700"><span
                                 class="passchip_font">PASSCHIP </span> Access Control</h2>
@@ -344,7 +336,7 @@
                 <div class="col-md-5 offset-md-1 g-mt-50"
                      data-animation="fadeInUp"
                      data-animation-delay="100"
-                     data-animation-duration="900">
+                     data-animation-duration="400">
                     <img class="img-fluid" src="../resources/images/controll_board.png"
                          alt="Image Description">
                 </div>
@@ -362,8 +354,8 @@
 
                 <div class="col-md-6 align-self-center g-mb-50--md g-mb-0--md"
                      data-animation="fadeIn"
-                     data-animation-delay="500"
-                     data-animation-duration="2000">
+                     data-animation-delay="100"
+                     data-animation-duration="1000">
                     <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
                         <h2 class="h1 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-700"><span
                                 class="passchip_font">PASSCHIP </span> Automotive</h2>
@@ -384,7 +376,7 @@
                 <div class="col-md-5 offset-md-1 g-mt-50"
                      data-animation="fadeInUp"
                      data-animation-delay="100"
-                     data-animation-duration="900">
+                     data-animation-duration="400">
                     <img class="img-fluid" src="../resources/images/automotive_900x600_gray.png"
                          alt="Image Description">
                 </div>
@@ -460,7 +452,7 @@
                 <div class="col-lg-6 align-self-center g-pl-30--lg text-center"
                      data-animation="fadeIn"
                      data-animation-delay="200"
-                     data-animation-duration="1500">
+                     data-animation-duration="1000">
                     <header class="g-mb-30">
                         <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
                             <h2 class="h4 u-heading-v2__title g-color-white g-font-weight-600 text-uppercase">
@@ -480,7 +472,7 @@
                 <div class="col-lg-6 align-self-center g-pl-30--lg text-center"
                      data-animation="fadeIn"
                      data-animation-delay="200"
-                     data-animation-duration="1500">
+                     data-animation-duration="1000">
                     <header class="g-mb-30">
                         <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
                             <h2 class="h4 u-heading-v2__title g-color-white g-font-weight-600 text-uppercase">
@@ -541,8 +533,8 @@
     <section class="g-py-20">
         <div class="container">
             <div class="text-center g-mb-20 " data-animation="fadeIn"
-                 data-animation-delay="1400"
-                 data-animation-duration="1500">
+                 data-animation-delay="600"
+                 data-animation-duration="1000">
                 <h2 class="h4 g-font-size-40">${data['words']['someOfOurClients']}</h2>
             </div>
 
@@ -552,7 +544,7 @@
 
                         <div class=" col-md-2 px-0"
                              data-animation="fadeIn"
-                             data-animation-delay="200"
+                             data-animation-delay="100"
                              data-animation-duration="1000">
                             <div class="  g-brd-gray-light-v4 g-py-40">
                                 <h4 class="h5 g-color-gray-dark-v4">ING Bank</h4>
@@ -561,7 +553,7 @@
 
                         <div class="col-md-2 px-0"
                              data-animation="fadeIn"
-                             data-animation-delay="400"
+                             data-animation-delay="200"
                              data-animation-duration="1000">
                             <div class="  g-brd-gray-light-v4 g-py-40">
                                 <h4 class="h5 g-color-gray-dark-v4">UniCredit Bank</h4>
@@ -570,7 +562,7 @@
 
                         <div class="col-md-2 px-0"
                              data-animation="fadeIn"
-                             data-animation-delay="600"
+                             data-animation-delay="300"
                              data-animation-duration="1000">
                             <div class="  g-brd-gray-light-v4 g-py-40">
                                 <h4 class="h5 g-color-gray-dark-v4">Banca Transilvania</h4>
@@ -579,7 +571,7 @@
 
                         <div class="col-md-2 px-0"
                              data-animation="fadeIn"
-                             data-animation-delay="800"
+                             data-animation-delay="400"
                              data-animation-duration="1000">
                             <div class="  g-brd-gray-light-v4 g-py-40">
                                 <h4 class="h5 g-color-gray-dark-v4">Volksbank</h4>
@@ -588,7 +580,7 @@
 
                         <div class="col-md-2 px-0"
                              data-animation="fadeIn"
-                             data-animation-delay="1000"
+                             data-animation-delay="500"
                              data-animation-duration="1000">
                             <div class="  g-brd-gray-light-v4 g-py-40">
                                 <h4 class="h5 g-color-gray-dark-v4">BRD – Groupe Société Générale</h4>
@@ -597,7 +589,7 @@
 
                         <div class="col-md-2 px-0"
                              data-animation="fadeIn"
-                             data-animation-delay="1200"
+                             data-animation-delay="600"
                              data-animation-duration="1000">
                             <div class="  g-brd-gray-light-v4 g-py-40">
                                 <h4 class="h5 g-color-gray-dark-v4">ProCredit Bank</h4>
@@ -781,7 +773,9 @@
 <!-- JS Implementing Plugins -->
 <script src="../resources/assets/vendor/gmaps/gmaps.min.js"></script>
 <script src="../resources/assets/js/components/gmap/hs.map.js"></script>
+<script src="../resources/assets/js/components/hs.go-to.js"></script>
 <script src="../resources/assets/js/custom.js"></script>
+
 
 
 <script src="../resources/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
