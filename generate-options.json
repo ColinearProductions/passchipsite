@@ -8,6 +8,6 @@
   "destinationFolder": "static",
   "dataSourceFolder":"data",
   "languages":[
-    "en","fr","de"
+    "en"
   ]
 }

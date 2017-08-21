@@ -69,12 +69,12 @@ if os.path.isdir(destination_folder):
         shutil.rmtree(destination_folder)
     except Exception as e:
         print "The destination folder already exists and deleting it failed."
-os.makedirs(destination_folder)
+#os.makedirs(destination_folder) todo remove comment
 
 
 
 for language in languages:
-    language_destination_folder = destination_folder + os.sep + language
+    language_destination_folder = destination_folder #+ os.sep + language todo remove comment
     language_data = read_data(config_data['dataSourceFolder'] + os.sep + language)
     run(source_folder, language_destination_folder, ignored_folders, language_data)
 
