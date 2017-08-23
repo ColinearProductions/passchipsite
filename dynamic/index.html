@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="../resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
     <link rel="stylesheet" href="../resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
 
-
+    <link rel="stylesheet" href="../resources/assets/vendor/tel-input/build/css/intlTelInput.css">
     <!-- CSS Unify -->
     <link rel="stylesheet" href="../resources/assets/css/unify.css">
     <link rel="stylesheet" href="../resources/assets/vendor/flag-icon-css-master/css/flag-icon.min.css">
@@ -681,11 +681,7 @@
                                            type="text" placeholder="Subject">
                                 </div>
 
-                                <div class="col-md-6 form-group g-mb-20">
-                                    <input name="Phone Number"
-                                           class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 g-brd-primary--hover rounded-3 g-py-13 g-px-15"
-                                           type="tel" placeholder=" ${data['words']['yourPhone']}">
-                                </div>
+                                <input id="phone" type="tel" class="form-control g-py-13" name="Phone Number">
 
                                 <div class="col-md-12 form-group g-mb-40">
                                      <textarea name="Message"
@@ -759,6 +755,9 @@
 <script src="../resources/assets/vendor/gmaps/gmaps.min.js"></script>
 <script src="../resources/assets/js/components/gmap/hs.map.js"></script>
 <script src="../resources/assets/js/components/hs.go-to.js"></script>
+
+
+<script src="../resources/assets/vendor/tel-input/build/js/intlTelInput.js"></script>
 <script src="../resources/assets/js/custom.js"></script>
 
 
@@ -829,5 +828,8 @@
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtt1z99GtrHZt_IcnK-wryNsQ30A112J0&callback=initMap" async
         defer></script>
+
+
+<script src="../resources/assets/js/phone.js"></script>
 </body>
 </html>

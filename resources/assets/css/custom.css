@@ -26,3 +26,28 @@
 .btn-link{
     color: #009492;
 }
+
+.iti-flag {
+    background-image: url("../vendor/tel-input/build/img/flags.png");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .iti-flag {
+        background-image: url("../vendor/tel-input/build/img/flags@2x.png");
+    }
+}
+
+.intl-tel-input {
+    display: table-cell;
+}
+
+.intl-tel-input .flag-container {
+    z-index: 4;
+}
+
+.input-group .intl-tel-input .form-control {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 0;
+}
