@@ -189,5 +189,26 @@
       "Die vollständige Verwaltung der Benutzer und Autos",
       "Ausgezeichnete schedule-matrix"
     ]
+  },
+  "qr": {
+    "liteDescription": "QR Code Reader",
+    "shortDescription": "Our QR Code Reader offers automatic QR code reading combined with wiegand communication. The QR Code reader transforms seamlessly QR Code reading into a wiegand card ID reader output",
+    "fulLDescriptionParagraphList": [
+      "Our QR Code Reader offers automatic QR code reading combined with wiegand communication. The QR Code reader transforms seamlessly QR Code reading into a wiegand card ID reader output. It includes all hardware and software required to integrate in standard access control systems, allowing the use of QR codes as temporary cards. It can work in standalone mode or may be connected to any access control platform using the most commonly used data formats like RS232, Clockand Data or Wiegand with up to 64 bits of data. PASSCHIP QR Code can be integrated with a number of Access Control systems, eliminating the need for card double provisioning and allowing QR Code to be invalidated even after distribution to customers. "
+    ],
+    "functionsBulletList": [
+      "Our QR Code Reader is an all-in-one system that embeds QR Code scanner and processing in a compact weatherproof housing.",
+      "No management is required for the QR Code Reader.",
+      "Management of the QR Codes is performed on a dedicated PC, using the QR Manager software solution.",
+      "The QR Code reader decodes the card number information and validity period from the QR code and then sends the card number information to the access control system and trigger a relay used for door unlock.",
+      "The QR code data also includes a cryptographic signature to prevent unauthorized QR code generation."
+    ],
+    "benefitsBulletList": [
+      "The QR Code Reader can work both standalone and as a wiegand standard reader",
+      "It doesn’t require a network connection, all the required information is embedded in the QR code.",
+      "The QR Manager manages the cards used and associated QR codes.",
+      "The QR Manager can communicate with the QR Integration Server to import card numbers defined in  the access control systems and enforce that the cards are active only during the validity period of the QR codes, thus eliminating double provisioning.",
+      "The QR code distribution is performed via locally saved JPEG file or email with JPEG file attached."
+    ]
   }
 }
