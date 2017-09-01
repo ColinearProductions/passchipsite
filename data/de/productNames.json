@@ -1,0 +1,11 @@
+{
+  "passchipReader":" <span class='passchip_font'>PASSCHIP </span> Leser",
+  "passconManagementSoftware":"",
+  "timeAndAttendance":"Taktung",
+  "ipIntercom":"IP-Gegensprechanlage",
+  "lprReader":"Nummernschildleser",
+  "qrReader":"QR Leser",
+  "accessController":"Zugangscontroller",
+  "automotive":"Automotive"
+
+}
