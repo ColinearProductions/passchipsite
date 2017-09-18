@@ -10,17 +10,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
+    <!-- Favicon -->
     <link rel="shortcut icon" href="../../resources/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,500,600,700%7Csubset=cyrillic,latin"
+          rel="stylesheet" type="text/css">
+
+    <!-- CSS Global Compulsory -->
     <link rel="stylesheet" href="../../resources/assets/vendor/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../../resources/assets/vendor/flag-icon-css-master/css/flag-icon.min.css">
 
-    <!-- Icon for header -->
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../../resources/assets/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/icon-line-pro/style.css">
     <link rel="stylesheet" href="../../resources/assets/vendor/icon-hs/style.css">
-
-    <!-- Mobile hamburger -->
     <link rel="stylesheet" href="../../resources/assets/vendor/animate.css">
+    <link rel="stylesheet"
+          href="../../resources/assets/vendor/cubeportfolio-full/cubeportfolio/css/cubeportfolio.min.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/slick-carousel/slick/slick.css">
     <link rel="stylesheet" href="../../resources/assets/vendor/hs-megamenu/src/hs.megamenu.css">
     <link rel="stylesheet" href="../../resources/assets/vendor/hamburgers/hamburgers.min.css">
+
+    <link rel="stylesheet" href="../../resources/assets/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/icon-line/css/simple-line-icons.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/icon-line-pro/style.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/icon-etlinefont/style.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/icon-hs/style.css">
 
     <!-- CSS Unify -->
     <link rel="stylesheet" href="../../resources/assets/css/unify.css">
@@ -29,23 +46,27 @@
     <link rel="stylesheet" href="../../resources/assets/css/custom.css">
 
 
-
     <link rel="stylesheet" href="../../resources/assets/vendor/dzsparallaxer/dzsparallaxer.css">
     <link rel="stylesheet" href="../../resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
     <link rel="stylesheet" href="../../resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
 
 </head>
 
 <body id="mytop">
 <main>
- <%include file="1-in-header.html"/>
 
 
-    <section class="dzsparallaxer g-mt-75 auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall"
-             data-options="{direction: 'reverse', settings_mode_oneelement_max_offset: '150'}">
+    <% product = data["products"]["accessController"] %>
+    <%include file="1-in-header.html"/>
+
+
+    <section
+            class="dzsparallaxer g-mt-75 auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall"
+            data-options="{direction: 'reverse', settings_mode_oneelement_max_offset: '150'}">
         <!-- Parallax Image -->
         <div class="divimage dzsparallaxer--target w-100 g-bg-repeat g-bg-black"
-             style="height: 150%; background-image: url('../../resources/images/circuit.jpeg'); transform: translate3d(0px, -120.362px, 0px);"></div>
+             style="height: 150%; background-image: url('../../resources/images/circuit.jpg'); transform: translate3d(0px, -120.362px, 0px);"></div>
         <!-- End Parallax Image -->
 
         <div class="g-z-index-1 g-py-150" style="background-color:rgba(255,241,248,0);color:black">
@@ -56,25 +77,37 @@
             </div>
         </div>
     </section>
+
+
     <section class="container  g-py-80">
 
         <div class="row">
 
             <div class="col-md-6">
                 <div class="d-inline-block g-width-80 g-height-4 g-bg-black mb-3"></div>
-                <h2 class="g-color-black g-font-weight-700 g-font-size-50 g-line-height-1 mb-4"><span class="passchip_font">PASSCHIP </span>Access Controller</h2>
+                <h2 class="g-color-black g-font-weight-700 g-font-size-50 g-line-height-1"><span class="passchip_font">PASSCHIP </span>Access
+                    Controller</h2>
 
 
-                <div class="">
-                    <div class="mb-5 g-py-50 ">
-                        % for paragraph in data["products"]["accessController"]["fulLDescriptionParagraphList"]:
-                        <p class="g-color-gray-dark-v4 g-font-size-18">
-                            ${paragraph}
-                        </p>
-                        % endfor
-                    </div>
+                <a class="btn btn-link g-ml-0 g-pl-0 smoothscroll" href="#functions"><strong>
+                    Functions
+                </strong></a>
+                <a class="btn btn-link g-ml-0 g-pl-0 smoothscroll" href="#benefits"><strong>
+                    Benefits
+                </strong></a>
+                <a class="btn btn-link g-ml-0 g-pl-0 smoothscroll" href="#downloads"><strong>
+                    Downloads
+                </strong></a>
 
+
+                <div class="mb-5 g-py-20">
+                    % for paragraph in product["fulLDescriptionParagraphList"]:
+                    <p class="g-color-gray-dark-v4 g-font-size-18">
+                        ${paragraph}
+                    </p>
+                    % endfor
                 </div>
+
             </div>
 
             <div class="col-md-5 offset-md-1 g-py-100--lg">
@@ -85,7 +118,8 @@
                         <a class="js-fancybox" href="../../resources/images/controll_board.png"
                            data-fancybox-animate-in="zoomIn" data-fancybox-animate-out="zoomOut"
                            data-fancybox-speed="1000" data-fancybox-blur-bg="blur" data-fancybox-bg="rgba(0,0,0, 1)">
-                            <img class="img-fluid" src="../../resources/images/controll_board.png" alt="Image Description">
+                            <img class="img-fluid" src="../../resources/images/controll_board.png"
+                                 alt="Image Description">
                         </a>
 
                     </div>
@@ -95,102 +129,50 @@
     </section>
 
 
-    <section class="g-py-20 g-mb-100">
-        <div class="container">
-            <!-- Tab v1-1 (slide-up-down) -->
-            <section>
-
-                <div class="row">
-
-                    <div class="col-md-12">
-                        <div id="shortcode7">
-                            <!-- Nav tabs -->
-                            <ul class="nav u-nav-v1-1 u-nav-primary g-brd-bottom--md g-brd-primary g-mb-20"
-                                role="tablist" data-target="nav-1-1-default-hor-left-underline"
-                                data-tabs-mobile-type="slide-up-down"
-                                data-btn-classes="btn btn-md btn-block rounded-0 u-btn-outline-primary g-mb-20">
-                                <li class="nav-item">
-                                    <a class="nav-link g-font-size-20 active" data-toggle="tab"
-                                       href="#nav-1-1-default-hor-left-underline--1" role="tab" aria-expanded="true">Functions</a>
-                                </li>
-
-                                <li class="nav-item  g-font-size-20">
-                                    <a class="nav-link" data-toggle="tab" href="#nav-1-1-default-hor-left-underline--2"
-                                       role="tab" aria-expanded="false">Benefits</a>
-                                </li>
-
-
-                                <li class="nav-item  g-font-size-20">
-                                    <a class="nav-link" data-toggle="tab" href="#nav-1-1-default-hor-left-underline--3"
-                                       role="tab" aria-expanded="false">Downloads</a>
-                                </li>
-
-                            </ul>
-                            <!-- End Nav tabs -->
-
-                            <!-- Tab panes -->
-                            <div id="nav-1-1-default-hor-left-underline" class="tab-content">
-                                <div class="tab-pane fade active show" id="nav-1-1-default-hor-left-underline--1"
-                                     role="tabpanel" aria-expanded="true">
-
-                                    <br><br>
-                                    <h1><strong>Functions</strong></h1><br>
-
-                                    <ul class="g-font-size-20">
-
-                                        % for function in data["products"]["accessController"]["functionsBulletList"]:
-                                        <li>
-                                            ${function}
-                                        </li>
-
-                                        % endfor
-                                    </ul>
-
-
-                                </div>
-
-                                <div class="tab-pane fade show" id="nav-1-1-default-hor-left-underline--2"
-                                     role="tabpanel" aria-expanded="true">
-
-                                    <br><br>
-                                    <h1><strong>Benefits</strong></h1><br>
-
-                                    <ul class="g-font-size-20">
-                                        % for benefit in data["products"]["accessController"]["benefitsBulletList"]:
-                                        <li>
-                                            ${benefit}
-                                        </li>
-
-                                        % endfor
-                                    </ul>
-
-
-                                </div>
-
-                                <div class="tab-pane fade" id="nav-1-1-default-hor-left-underline--3" role="tabpanel"
-                                     aria-expanded="false">
-                                    <br><br>
-
-
-                                    <a href="../../resources/Files/Data_Sheet_EN_PASSCHIP-Acces-Control.pdf" class="g-font-size-27">PASSCHIP Access Control </a>
-                                    <br>
-                                    <br><br><br><br>
-
-
-                                </div>
-
-                                <!-- JS Unify -->
-                                <script type="text/plain" src="../../resources/assets/js/components/hs.tabs.js"></script>
-
-                                <!-- JS Plugins Init. -->
-
-                            </div>
-
-
-                        </div>
-                    </div>
+    <section class="container g-mb-50 ">
+        <div class="row">
+            <div class="fadeIn u-in-viewport" id="functions" data-animation="fadeIn" data-animation-out="zoomOutDown"
+                 data-animation-delay="0" data-animation-duration="1000" style="animation-duration: 1000ms;">
+                <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
+                    <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title"> Functions</h2>
                 </div>
-            </section>
+                <ul class="g-font-size-20">
+                    % for function in product["functionsBulletList"]:
+                    <li>
+                        ${function}
+                    </li>
+                    % endfor
+                </ul>
+            </div>
+        </div>
+        <hr class="g-my-50">
+        <div class="row">
+            <div class="fadeIn u-in-viewport" id="benefits" data-animation="fadeIn" data-animation-out="zoomOutDown"
+                 data-animation-delay="0" data-animation-duration="1000" style="animation-duration: 1000ms;">
+                <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
+                    <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title"> Benefits</h2>
+                </div>
+                <ul class="g-font-size-20">
+                    % for benefit in product["benefitsBulletList"]:
+                    <li>
+                        ${benefit}
+                    </li>
+
+                    % endfor
+                </ul>
+            </div>
+        </div>
+        <hr class="g-my-50">
+
+        <div class="row">
+            <div class="fadeIn u-in-viewport" id="downloads" data-animation="fadeIn" data-animation-out="zoomOutDown"
+                 data-animation-delay="0" data-animation-duration="1000" style="animation-duration: 1000ms;">
+                <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
+                    <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title"> Downloads</h2>
+                </div>
+                <a href="../../resources/Files/Data_Sheet_EN_PASSCHIP-Acces-Control.pdf" class="g-font-size-22">PASSCHIP
+                    Access Control PDF <i class="fa fa-download" aria-hidden="true"></i> </a>
+            </div>
         </div>
     </section>
 
@@ -224,7 +206,6 @@
 <script src="../../resources/assets/js/helpers/hs.focus-state.js"></script>
 <script src="../../resources/assets/js/components/hs.counter.js"></script>
 <script src="../../resources/assets/js/components/hs.go-to.js"></script>
-
 
 
 <!-- JS Implementing Plugins -->
