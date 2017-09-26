@@ -45,6 +45,7 @@
     <link rel="stylesheet" href="../resources/assets/css/unify.css">
     <link rel="stylesheet" href="../resources/assets/vendor/flag-icon-css-master/css/flag-icon.min.css">
 
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <!-- CSS Customization -->
     <link rel="stylesheet" href="../resources/assets/css/custom.css">
 
@@ -130,12 +131,16 @@
                         </div>
                     </div>
 
+                    <div class="text-xs-center">
+                        <div class="g-recaptcha" data-sitekey="6LcjDjIUAAAAAIrH7RsdziPDRTJwPRt8VkeMadpG"></div>
+                    </div>
                     <div class="text-center">
                         <button class="btn u-btn-primary g-font-weight-600 g-font-size-13 text-uppercase g-rounded-25 g-py-15 g-px-30"
                                 type="submit" role="button">${data['words']['sendMessage']}
                         </button>
                     </div>
                 </form>
+
                 <!-- End Contact Form -->
             </div>
 

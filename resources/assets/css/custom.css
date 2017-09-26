@@ -51,3 +51,11 @@
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 0;
 }
+
+.text-xs-center {
+    text-align: center;
+}
+
+.g-recaptcha {
+    display: inline-block;
+}
