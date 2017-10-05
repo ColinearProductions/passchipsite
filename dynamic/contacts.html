@@ -131,9 +131,11 @@
                         </div>
                     </div>
 
+
                     <div class="text-xs-center">
-                        <div class="g-recaptcha" data-sitekey="6LcjDjIUAAAAAIrH7RsdziPDRTJwPRt8VkeMadpG"></div>
+                        <div class="g-recaptcha" data-sitekey="${data['meta']['recaptchaKey']}"  data-callback="correctCaptcha"></div>
                     </div>
+
                     <div class="text-center">
                         <button class="btn u-btn-primary g-font-weight-600 g-font-size-13 text-uppercase g-rounded-25 g-py-15 g-px-30"
                                 type="submit" role="button">${data['words']['sendMessage']}

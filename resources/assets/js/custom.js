@@ -31,6 +31,21 @@ function on_question_clicked(element) {
 }
 
 
+
+
+var cc = false;
+
+function correctCaptcha(response){
+    if(response.length >0)
+        cc = true;
+}
+
 $(document).on('ready', function () {
     $.HSCore.components.HSGoTo.init('.js-go-to');
+
+    $("#message_form").on("submit", function (e) {
+        if(!cc)
+            alert("Incorrect Captcha");
+        return cc;
+    })
 });
