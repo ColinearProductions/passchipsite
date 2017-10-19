@@ -40,12 +40,29 @@ function correctCaptcha(response){
         cc = true;
 }
 
-$(document).on('ready', function () {
-    $.HSCore.components.HSGoTo.init('.js-go-to');
 
-    $("#message_form").on("submit", function (e) {
-        if(!cc)
+
+$(document).on('ready', function () {
+    $("form").on("submit", function (e) {
+        alert($(this).attr("class"));
+        if($(this).attr("class") === "validate")
+            return;
+
+        e.preventDefault();
+        if (!cc)
             alert("Incorrect Captcha");
-        return cc;
+        else {
+            $.ajax({ // create an AJAX call...
+                data: $(this).serialize(), // get the form data
+                type: $(this).attr('method'), // GET or POST
+                url: $(this).attr('action'), // the file to call
+                success: function (response) { // on success..
+                    alert("We have received your message and will be back with an answer soon, Thank you!");
+                    location.reload();
+                }
+            });
+        }
+
     })
 });
+
