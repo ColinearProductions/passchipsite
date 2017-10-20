@@ -80,57 +80,37 @@
             <div class="col-md-7 g-mb-60">
                 <h1>Send us a message</h1>
                 <!-- Contact Form -->
-                <form accept-charset='UTF-8' action="${data['meta']['formesterURL']}" method='POST'>
+                <form accept-charset='UTF-8' id="message_form"
+                      action="${data['meta']['formesterURL']}"
+                      method='POST'>
                     <div class="row">
                         <div class="col-md-6 form-group g-mb-20">
                             <input name="Name"
                                    class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 g-brd-primary--hover rounded-3 g-py-13 g-px-15"
-                                   type="text" placeholder="${data['words']['yourName']}">
+                                   type="text" placeholder="${data['words']['yourName']}" required>
                         </div>
 
                         <div class="col-md-6 form-group g-mb-20">
                             <input name="Email"
                                    class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 g-brd-primary--hover rounded-3 g-py-13 g-px-15"
-                                   type="email" placeholder="${data['words']['yourEmail']}">
+                                   type="email" placeholder="${data['words']['emailAddress']}" required>
                         </div>
 
                         <div class="col-md-6 form-group g-mb-20">
                             <input name="Subject"
-                                   id="form-subject" class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 g-brd-primary--hover rounded-3 g-py-13 g-px-15"
+                                   id="form-subject"
+                                   class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 g-brd-primary--hover rounded-3 g-py-13 g-px-15"
                                    type="text" placeholder="Subject">
                         </div>
 
-                        <input id="phone" type="tel" class="form-control g-py-13" name="Phone Number">
-
-                        <div class="col-md-6   form-group g-mb-20">
-                            <label class="g-color-gray-dark-v2 g-font-size-13">${data['words']['howShouldWeGetInTouch']}</label><br>
-                            <label class="form-check-inline u-check g-pl-25 ml-0 g-mr-25">
-                                <input class="hidden-xs-up g-pos-abs g-top-0 g-left-0" name="Get In Touch By" value="Email" type="radio" checked="">
-                                <div class="u-check-icon-radio-v4 g-absolute-centered--y g-left-0 g-width-18 g-height-18">
-                                    <i class="g-absolute-centered d-block g-width-10 g-height-10 g-bg-primary--checked"></i>
-                                </div>
-                                ${data['words']['byEmail']}
-                            </label>
-
-                            <label class="form-check-inline u-check g-pl-25 ml-0 g-mr-25">
-                                <input class="hidden-xs-up g-pos-abs g-top-0 g-left-0" name="Get In Touch By" value="Phone" type="radio">
-                                <div class="u-check-icon-radio-v4 g-absolute-centered--y g-left-0 g-width-18 g-height-18">
-                                    <i class="g-absolute-centered d-block g-width-10 g-height-10 g-bg-primary--checked"></i>
-                                </div>
-                                ${data['words']['byPhone']}
-                            </label>
-
-
-                        </div>
+                        <input id="phone" type="tel" class="form-control g-py-13" name="Phone Number" required>
 
                         <div class="col-md-12 form-group g-mb-40">
-                             <textarea name="Message"
-                                       class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 g-brd-primary--hover g-resize-none rounded-3 g-py-13 g-px-15"
-                                       rows="7" placeholder="${data['words']['message']}">
-                             </textarea>
+                                     <textarea name="Message"
+                                               class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 g-brd-primary--hover g-resize-none rounded-3 g-py-13 g-px-15"
+                                               rows="7" placeholder="${data['words']['message']}" required></textarea>
                         </div>
                     </div>
-
 
                     <div class="text-xs-center">
                         <div class="g-recaptcha" data-sitekey="${data['meta']['recaptchaKey']}"  data-callback="correctCaptcha"></div>
@@ -142,6 +122,7 @@
                         </button>
                     </div>
                 </form>
+
 
                 <!-- End Contact Form -->
             </div>
@@ -228,14 +209,15 @@
 <script src="../resources/assets/js/helpers/hs.hamburgers.js"></script>
 <script src="../resources/assets/js/components/gmap/hs.map.js"></script>
 <script src="../resources/assets/js/components/hs.go-to.js"></script>
-<script src="../resources/assets/js/custom.js"></script>
+
 
 <script src="../resources/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
 <script src="../resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
 <script src="../resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
 <script src="../resources/assets/vendor/tel-input/build/js/intlTelInput.js"></script>
 <!-- JS Customization -->
-<script src="../resources/assets/js/custom.js"></script> <script src="../resources/assets/js/components/hs.go-to.js"></script>
+<script src="../resources/assets/js/custom.js"></script>
+<script src="../resources/assets/js/components/hs.go-to.js"></script>
 
 <!-- JS Plugins Init. -->
 <script>

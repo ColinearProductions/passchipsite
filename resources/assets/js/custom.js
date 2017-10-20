@@ -9,7 +9,7 @@ function offsetAnchor() {
 
 $('a[href*=\\#].smoothscroll').on('click', function (event) {
     event.preventDefault();
-    $('html,body').animate({scrollTop: $(this.hash).offset().top-70}, 500);
+    $('html,body').animate({scrollTop: $(this.hash).offset().top - 70}, 500);
 });
 
 
@@ -31,34 +31,40 @@ function on_question_clicked(element) {
 }
 
 
-
-
 var cc = false;
 
-function correctCaptcha(response){
-    if(response.length >0)
+function correctCaptcha(response) {
+    if (response.length > 0)
         cc = true;
 }
 
-
+var loader = $("#loader");
 
 $(document).on('ready', function () {
     $("form").on("submit", function (e) {
 
-        if($(this).attr("class") === "validate")
+        $(loader).show();
+        if ($(this).attr("class") === "validate")
             return;
 
         e.preventDefault();
-        if (!cc)
+        if (!cc) {
             alert("Incorrect Captcha");
-        else {
+            $(loader).hide();
+        } else {
             $.ajax({ // create an AJAX call...
                 data: $(this).serialize(), // get the form data
                 type: $(this).attr('method'), // GET or POST
                 url: $(this).attr('action'), // the file to call
                 success: function (response) { // on success..
-                    alert("We have received your message and will be back with an answer soon, Thank you!");
-                    location.reload();
+                    $(loader).hide();
+                    showModal();
+                },
+                error: function (jqXHR, err) {
+                    $(loader).hide();
+                    alert("Something went wrong");
+                    console.log(err);
+
                 }
             });
         }
@@ -66,3 +72,12 @@ $(document).on('ready', function () {
     })
 });
 
+var modal = $("#thankyouModal");
+
+function showModal(){
+    modal.modal('show');
+}
+
+$(modal).on('hidden.bs.modal', function () {
+    location.reload();
+});

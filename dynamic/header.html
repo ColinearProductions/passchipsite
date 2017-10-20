@@ -150,3 +150,24 @@
         </nav>
     </div>
 </header>
+<%include file="modal.html"/>
+
+<div id="loader" style="
+                background-color: rgba(255,255,255,0.95);
+                height:100%;
+                width:100%;
+                top:0;
+                position:fixed;
+                z-index:10000;
+                display:none;
+             ">
+    <div class="spinner" style="margin-top:50vh">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+
+    </div>
+    <h1 class="text-center" style="color:#037175">Loading</h1>
+</div>
