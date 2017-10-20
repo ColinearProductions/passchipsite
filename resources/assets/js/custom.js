@@ -44,7 +44,7 @@ function correctCaptcha(response){
 
 $(document).on('ready', function () {
     $("form").on("submit", function (e) {
-        alert($(this).attr("class"));
+
         if($(this).attr("class") === "validate")
             return;
 
