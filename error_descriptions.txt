@@ -1,2 +1,2 @@
 ValueError: Expecting property name: line 10 column 1 (char 255) :
- - JSON is not formated corectly
+ - JSON is not formatted correctly
