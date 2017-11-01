@@ -59,31 +59,34 @@
     <%include file="header.html"/>
 
 
-    <section class="g-bg-img-hero " style="background-image: url(../resources/images/generic_background.png);">
-        <div class="container g-pos-rel g-z-index-1 g-py-150 g-mt-50">
-            <div class="g-mb-170">
+    <section class="dzsparallaxer auto-init height-is-based-on-content use-loading g-min-height-100vh mode-scroll loaded dzsprx-readyall" data-options="{direction: &quot;reverse&quot;, settings_mode_oneelement_max_offset: &quot;150&quot;}">
+        <div class="divimage dzsparallaxer--target w-100 g-bg-cover g-bg-img-hero g-bg-bluegray-gradient-opacity-v3--after" style="height: 130%; background-image: url(../resources/images/generic_background.png); transform: translate3d(0px, -146px, 0px);"></div>
 
-            </div>
+        <div class="g-absolute-centered--y w-100">
+            <div class="container text-center g-bg-cover__inner g-py-30">
+                <div class="g-absolute-centered w-100">
+                    <div class="container text-center g-width-780"
+                         style="background-color:rgba(255,255,255,0.85);padding:0">
+                        <div class="info-v3-4 g-pa-20 g-pa-60--md">
+                            <div class="g-pos-rel g-z-index-3">
+                                <h3 class="h3 text-uppercase g-letter-spacing-3 g-font-size-default g-color-white g-mb-10"></h3>
+                                <h2 class="h2 text-uppercase g-color-black g-letter-spacing-5 g-font-weight-400 g-font-size-35 g-font-size-76--md passchip_font">
+                                   <img  class="img-fluid" style="height: .6em;margin-bottom:.2em" src="../resources/images/passchip_logo.png"> PASSCHIP</h2>
+                                <p class="g-line-height-1_8 g-letter-spacing-3 g-color-black g-font-size-30--md g-mb-20">
+                                    ${data['indexPage']['motto']}</p>
+                                <a href="#our_main_products"
+                                   class="btn text-uppercase g-font-size-25--md u-btn-outline-black rounded-0 cd-btn cd-modal-trigger smoothscroll">
+                                    ${data['words']['learnMore']}
+                                </a>
 
-            <div class="g-absolute-centered w-100">
-                <div class="container text-center g-width-780"
-                     style="background-color:rgba(255,255,255,0.85);padding:0">
-                    <div class="info-v3-4 g-pa-20 g-pa-60--md">
-                        <div class="g-pos-rel g-z-index-3">
-                            <h3 class="h3 text-uppercase g-letter-spacing-3 g-font-size-default g-color-white g-mb-10"></h3>
-                            <h2 class="h2 text-uppercase g-color-black g-letter-spacing-5 g-font-weight-400 g-font-size-25 g-font-size-76--md passchip_font">
-                                PASSCHIP</h2>
-                            <p class="g-line-height-1_8 g-letter-spacing-3 g-color-black g-font-size-30--md g-mb-20">
-                                ${data['indexPage']['motto']}</p>
-                            <a href="about_us.html"
-                               class="btn text-uppercase g-font-size-25--md u-btn-outline-black rounded-0 cd-btn cd-modal-trigger">
-                                ${data['words']['learnMore']}
-                            </a>
 
-
+                            </div>
                         </div>
                     </div>
                 </div>
+
+
+
             </div>
         </div>
     </section>
@@ -92,7 +95,7 @@
 
 
     <!-- Our Main products title -->
-    <section class="text-center g-py-10 g-pb-40 g-pt-80  g-bg-white">
+    <section class="text-center g-py-10 g-pb-40 g-pt-80  g-bg-white" id="our_main_products">
         <div class="container">
             <div class="u-heading-v2-5--bottom g-brd-primary g-mb-30">
                 <h2 class="u-heading-v2__title text-uppercase g-font-weight-300 mb-0">
@@ -103,6 +106,7 @@
         </div>
     </section>
     <!-- Our Main products title -->
+
 
 
     <!-- PASSCHIP reader -->

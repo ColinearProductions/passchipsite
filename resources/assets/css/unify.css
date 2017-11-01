@@ -21479,7 +21479,7 @@ pre[class*="language-"] .toolbar-item a {
 .g-bg-bluegray-gradient-opacity-v3,
 .g-bg-bluegray-gradient-opacity-v3--after::after {
   background-repeat: repeat-x;
-  background-image: linear-gradient(150deg, rgba(107, 125, 224, 0.85), #2a2734); }
+  background-image: linear-gradient(150deg, rgba(169, 162, 224, 0.3), rgba(138, 193, 194, 0.9)); }
 
 /* Radial Gradients (Ellipse)
 ------------------------------------*/

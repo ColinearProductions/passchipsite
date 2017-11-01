@@ -7,9 +7,10 @@ function offsetAnchor() {
 }
 
 
+
 $('a[href*=\\#].smoothscroll').on('click', function (event) {
     event.preventDefault();
-    $('html,body').animate({scrollTop: $(this.hash).offset().top - 70}, 500);
+    $('html,body').animate({scrollTop: $(this.hash).offset().top}, 500);
 });
 
 
