@@ -28,6 +28,12 @@
     <link  rel="stylesheet" href="../../resources/assets/vendor/fancybox/jquery.fancybox.min.css">
     <link  rel="stylesheet" href="../../resources/assets/vendor/slick-carousel/slick/slick.css">
 
+
+
+
+    <link  rel="stylesheet" href="../../resources/assets/vendor/swiper/css/swiper.css">
+
+
     <!-- CSS Unify -->
     <link rel="stylesheet" href="../../resources/assets/css/unify.css">
 
@@ -43,14 +49,29 @@
 
 
 
-    <section class="g-flex-centered g-bg-pos-center g-bg-img-hero " style="background-image: url(../../resources/images/Razvan_fiverr_2.png); height: calc(100vh - 100px);margin-top:100px;" data-calc-target="#js-header">
-        <div class="container text-center g-z-index-1">
 
 
+    <section class="g-flex-centered g-bg-pos-center g-bg-img-hero " style="background-image: url(../../resources/images/reader/Razvan_fiverr_2.png); height: calc(100vh - 100px);margin-top:100px;" data-calc-target="#js-header">
 
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper" style="width:100vw;height:100vh">
+                <!-- Slides -->
+                <div class="swiper-slide g-flex-centered g-bg-pos-center g-bg-img-hero " style="background-image: url(../../resources/images/reader/1.png);z-index: 100;width:100%; height: calc(100vh);" data-calc-target="#js-header">
+                </div>
+                <div class="swiper-slide g-flex-centered g-bg-pos-center g-bg-img-hero " style="background-image: url(../../resources/images/reader/1.png);z-index: 100;width:100%; height: calc(100vh);" data-calc-target="#js-header">
+                </div>
+                <div class="swiper-slide g-flex-centered g-bg-pos-center g-bg-img-hero " style="background-image: url(../../resources/images/reader/1.png);z-index: 100;width:100%; height: calc(100vh);" data-calc-target="#js-header">
+                </div>
+                <div class="swiper-slide g-flex-centered g-bg-pos-center g-bg-img-hero " style="background-image: url(../../resources/images/reader/1.png);z-index: 100;width:100%; height: calc(100vh);" data-calc-target="#js-header">
+                </div>
+
+            </div>
         </div>
-    </section>
 
+
+
+    </section>
 
 
 
@@ -317,7 +338,7 @@
 <script src="../../resources/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
 <script src="../../resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
 <script src="../../resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
-
+<script src="../../resources/assets/vendor/swiper/js/swiper.js"></script>
 
 <!-- JS Customization -->
 <script src="../../resources/assets/js/custom.js"></script>
@@ -366,6 +387,22 @@
         $.HSCore.components.HSGMap.init('.js-g-map');
     }
 </script>
+
+
+
+<script>
+    var swiper = new Swiper('.swiper-container',{
+        loop:true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+        },
+        fadeEffect: {
+            crossFade: true
+        }
+    });
+</script>
+
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtt1z99GtrHZt_IcnK-wryNsQ30A112J0&callback=initMap" async
         defer></script>
