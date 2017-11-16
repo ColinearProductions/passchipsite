@@ -1,0 +1,11 @@
+{
+  "passchipReader":"Lector <span class='passchip_font'>PASSCHIP </span>",
+  "passconManagementSoftware":"  Software de gestión PASSCON",
+  "timeAndAttendance":"Tiempo y asistencia",
+  "ipIntercom":" Intercomunicador IP",
+  "lprReader":"Lector de reconocimiento de matrículas",
+  "qrReader":"Lector QR",
+  "accessController":"Controlador de accesor",
+  "automotive":"Automotive"
+
+}

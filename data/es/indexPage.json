@@ -1,0 +1,52 @@
+{
+  "motto": "Protegiendo a tus clientes",
+  "motto2": "Ayudar a los bancos a proteger a sus clientes",
+  "faqDescription": "Nuestro objetivo es estar enfocados en construir relaciones con nuestros clientes y la comunidad",
+  "faqs": [
+    {
+      "q": "¿Dónde se puede usar el sistema PASSCHIP?",
+      "a": "El sistema PASSCHIP es ideal para bancos que necesitan una auto-entrada de 24 horas, para instituciones financieras, centros de datos, infraestructuras vitales y agencias militares y policiales"
+    },
+    {
+      "q": "¿En qué se diferencia PASSCHIP de otros sistemas de seguridad?",
+      "a": "PASSCHIP es el primer sistema de acceso del mundo para utilizar una gama de lectores para áreas de autoservicio que funcionarán con tarjetas de crédito con chip"
+    },
+    {
+      "q": "¿Puedo integrarlo con nuestro sistema de control de acceso ya existente?",
+      "a": "El lector PASSCHIP puede funcionar como un lector wiegand estándar de 26 bits"
+    },
+    {
+      "q": "¿Qué tarjetas de crédito son compatibles?",
+      "a": "Se admiten los tipos de tarjetas de crédito estándar (visa, mastercard, etc.) y se pueden agregar nuevos tipos de tarjetas de crédito según sea necesario"
+    },
+    {
+      "q": "¿Puedo configurarlo con un horario?",
+      "a": "PASSCHIP admite programación de tiempo definida por software, así como desencadenadores externos de hardware"
+    },
+    {
+      "q": "¿Se puede personalizar el mensaje de bienvenida?",
+      "a": "PASSCHIP admite todo el conjunto de caracteres Unicode - podemos mostrar mensajes en el alfabeto latino, árabe y chino"
+    }
+  ],
+  "aboutUs":"Cuando CONIC DESIGN se fundó en 2006, sus fundadores concibieron una compañía dedicada a resolver las necesidades de alta seguridad electrónica y soporte integral para sus clientes. Nuestra compañía hizo su primera entrada al mercado con la primera gama de lectores de ID en las áreas de autoservicio. Como recompensa por nuestra amplia investigación técnica, diseño y desarrollo de productos, PASSCHIP sigue siendo la solución de control de acceso de autoservicio más avanzada del mundo ",
+  "ourMission":"Diseñar, desarrollar y entregar alta tecnología que permita a nuestros clientes mejorar su propia seguridad y lograr mejores procedimientos de seguridad. Estamos comprometidos con altos estándares éticos, integridad, honestidad y buena voluntad en nuestras relaciones y trato. Nuestra misión y valores fundamentales son la base sobre la cual estamos construyendo la mejor compañía posible",
+  "counters":[
+    {
+      "label":"Lectores Passchip vendidos",
+      "count":"500"
+    },
+    {
+      "label":"Licencias de software Passchip en uso",
+      "count":"15"
+    },
+    {
+      "label":"% Satisfacción",
+      "count":"100"
+    }
+  ],
+  "testimonial":{
+    "text":"En 2013, nosotros y la empresa rumana independiente CONIC DESIGN sentamos las bases para una asociación sólida en nuestra actividad de seguridad y protección mediante el establecimiento de un acuerdo global para instalar las nuevas soluciones de control de acceso de CONIC DESIGN para asegurar toda nuestra red de agencias , en total más de 200 sucursales. La solución técnica consiste en instalar el sistema de entrada muy sofisticado PASSCHIP desarrollado por CONIC DESIGN para asegurar todas las entradas en las \"zonas de banca privada\" por los lectores de chip de tarjeta inteligente de IP Bank. El proyecto está en la mitad de la fase de implementación, y en esta etapa evaluamos que nuestros requisitos se cumplen completamente, incluso exceden nuestras expectativas iniciales solicitadas en la documentación de la licitación, el feedback de nuestros clientes es muy alentador. Nuestro mayor nivel de seguridad demuestra ahora que nuestra inversión está protegida por una de las plataformas de control de acceso más sólidas y estables que hayamos probado, que nos ofrece informes detallados y control total de IP sobre las transacciones de acceso público en nuestras agencias. Implementando PASSCHIP ofrecido por CONIC DESIGN, contamos con ahorros notables, reduciendo significativamente nuestros costos con guardias, transporte, departamento de atención al cliente y otros gastos relacionados, y al mismo tiempo  mejoramos nuestra seguridad y la comodidad del cliente durante su actividad de autobanco en nuestras agencias. Recomendamos el producto PASSCHIP, que ofrece funciones avanzadas de control de acceso, gran flexibilidad, monitoreo de alarma instantánea y grabada, integración de seguridad de la información y sólidas funcionalidades de administración de IP. ",
+    "by":"- Manager de Seguridad del Banco"
+  },
+  "callbackClarification":"¿Le gustaría hablar con uno de nuestros especialistas por teléfono? Solo envíe sus datos y nos pondremos en contacto con usted en breve. También puede enviarnos un correo electrónico si lo prefiere. ¿Tiene alguna pregunta sobre cómo PASSCHIP puede ayudar a su empresa? Envíenos un mensaje y nos pondremos en contacto en breve "
+}

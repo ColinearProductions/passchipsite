@@ -1,0 +1,217 @@
+{
+  "passchipReader": {
+    "liteDescription": "",
+    "shortDescription": "Este lector de chip de control de acceso está especialmente diseñado para procesos avanzados de filtración de Bank Id a áreas de autoservicio o espacios de alta seguridad. La plataforma de seguridad está diseñada para un proceso de control de acceso seguro usando las tarjetas de acceso CHIP (tarjetas de crédito o simplemente tarjetas inteligentes) solo o combinado con PIN y tecnología biométrica.",
+    "fulLDescriptionParagraphList": [
+      "Este estado de la técnica de control de acceso de lector de chip está especialmente diseñado para advanced ID de la Banca de filtrado de los procesos de auto servicio o áreas de alta seguridad de los espacios. Nuestros algoritmos de filtrado puede permitir el acceso a la programables grupos de usuarios como se decidió por el administrador del sistema.",
+      "La plataforma de seguridad está diseñado para un control de acceso seguro, proceso mediante el CHIP de acceso de tarjetas (tarjetas de crédito o simplemente tarjetas inteligentes) solo o combinado con PIN y tecnología biométrica.",
+      "Este producto es principalmente dedicado a los bancos e instituciones financieras, con posibilidades de uso en cumplimiento de la ley de agencias, proveedores de telecomunicaciones, circuito cerrado, instituciones, clubes y otras organizaciones para un seguro y eficiente de acceso en las zonas sensibles, con avanzados en contacto con lector de chip de la tecnología.",
+      "Puede ser conectado a cualquier control de acceso a la plataforma utilizando el la mayoría de los formatos de datos comúnmente utilizados como RS232, Reloj y de Datos o Wiegand con hasta 64 bits de datos.",
+      "Se entrega con una sólida TCP/IP de la interfaz para una rápida y continua comunicación con el centralizada de la seguridad del centro con el fin estar online actualizados y controlados por el administrador del sistema."
+    ],
+    "functionsBulletList": [
+      "La automatización bancaria filtro contra el acceso no autorizado en la auto-zonas de servicio o cualquier otra de áreas protegidas",
+      "Diseño avanzado para la integración en cualquier clásica o moderna fachada",
+      "Opcionales disponibles slim-line de la instalación de pilar dimensiones Compactas, con a prueba de manipulaciones sólida caja de acero inoxidable-acabado cepillado o pintado",
+      "A todo color o en monocromo pantalla LCD Listo para prácticamente mostrar cualquier idioma del texto, pictogramas y animación en función de la personalización de software",
+      "Una señal óptica y acústica para la interfaz con el usuario",
+      "Red centralizada actualizable mientras se ejecuta utilizando una interfaz de usuario amigable",
+      "Antiskimming de monedas y de construcción a prueba con el obturador mecánico"
+    ],
+    "benefitsBulletList": [
+      "La protección de los clientes durante el auto-procedimientos del servicio",
+      "La protección de los Cajeros automáticos y la banca de los activos contra el uso no autorizado",
+      "Extremadamente fiable de los productos con un excelente rendimiento de la inversión de la tasa de",
+      "Probada con larga vida de servicio Puede ser integrado en las nuevas o existentes de control de acceso a las instalaciones",
+      "Puede ser vinculada e integrada con los sistemas de CCTV, incendio y detección de intrusos a través de cualquiera de los integrados de la plataforma de seguridad",
+      "Excelente sustituto para humanos patrulla de la guardia del servicio de"
+    ]
+  },
+  "accessController": {
+    "liteDescription": "Personalizable solución de Control de Acceso",
+    "shortDescription": "Un módulo de puerta en red con las ventajas de control IP centralizado e informes de eventos. Está dedicado principalmente a grandes edificios de oficinas y plantas industriales, con posibilidades de uso en bancos, agencias comerciales, agencias de aplicación de la ley, telecomunicaciones y otras organizaciones para un acceso seguro y eficiente en áreas sensibles",
+    "fulLDescriptionParagraphList": [
+      "Una red del módulo de la puerta con las ventajas de IP centralizado, control y reporte de eventos. Se dedica principalmente a grandes edificios de oficinas y plantas industriales, con posibilidades de uso en los bancos comerciales , las agencias de la ley de telecomunicaciones y otras organizaciones para el seguro y eficiente de acceso en las zonas sensibles"
+    ],
+    "functionsBulletList": [
+      "Protección automática contra el acceso no autorizado en zonas sensibles o cualquier otras áreas protegidas",
+      "Dimensiones compactas instalado en el interior a prueba de manipulaciones sólida caja de metal con fuente de alimentación de 12V",
+      " Listo en 2 puertas o 4 puertas variantes<ul> <li>Cada puerta puede tener 2 lectores Wiegand (1EN/1OUT)</ul>",
+      "Dedicado poderoso software de gestión",
+      "Centralizada de la red IP",
+      "Interfaz de usuario amigable"
+    ],
+    "benefitsBulletList": [
+      "Protección de personas y bienes",
+      "Extremadamente fiable de los productos con un excelente rendimiento de la inversión de la tasa de",
+      "Probado el servicio de larga vida",
+      "Puede ser integrado en las nuevas o existentes de control de acceso a las instalaciones",
+      "Pueden estar vinculados y directo integrado con PASSCHIP Intercomunicador para una eficiente puerta a puerta o de la puerta del despacho de comunicación del centro",
+      "Integración centralizado con sistema de detección de incendios automático de liberación de la puerta",
+      "Excelente sustituto para humanos patrulla de la guardia de los servicios de Vpn"
+    ]
+  },
+  "passcon": {
+    "liteDescription": "",
+    "shortDescription": "La administración Ethernet centralizada, utiliza las funciones únicas del software PASSCON para toda la red, ahorros importantes en poco tiempo y recursos específicos de los administradores de seguridad. Facilita la integración con CCTV, detección de incendios y de intrusos a través de cualquier plataforma de seguridad integrada a través de Wiegand, Ethernet y la interfaz serial. ",
+    "fulLDescriptionParagraphList": [
+      "Este producto es la completa solución de gestión para el PASSCHIP ATM vestíbulo de entrada/vestíbulo lectores, la integración de la monitorización en tiempo real con el aprovisionamiento y la configuración de funciones.",
+      "Se dedica principalmente al gran número de instalaciones en sitio.",
+      "Permite varios niveles de la jerarquía de clasificaciones (por ejemplo. de área, ciudad, calle y el sitio).",
+      "Proporciona una potente e intuitiva interfaz para administrar y supervisar el PASSCHIP lectores."
+    ],
+    "functionsBulletList": [
+      "La arquitectura cliente-Servidor",
+      "PASSCHIP de monitoreo",
+      "PASSCHIP de configuración",
+      "PASSCHIP Registro Centralizado de recogida y gestión de",
+      "PASSCON derechos de usuario y de gestión",
+      "Alertas De Correo Electrónico"
+    ],
+    "benefitsBulletList": [
+      "La gestión centralizada de PASSCHIP ATM vestíbulo de entrada/vestíbulo",
+      "Fácil configuración de los cambios mediante el uso de PASSCHIP Perfiles de Configuración",
+      "Remota de actualizaciones de firmware Resumen de la información de monitorización",
+      "Diferentes usuarios pueden tener diferentes derechos de acceso",
+      "Comunicaciones seguras entre PASSCON Servidor y PASSSCHIP"
+    ]
+  },
+  "passconBasic": {
+    "liteDescription": "",
+    "shortDescription": "Representa un instrumento de programación y configuración avanzada para la gama PASSCHIP de lectores de chip de ID de autoservicio. Ofrece una interfaz fácil de usar que simplifica el control PASSCHIP",
+    "fulLDescriptionParagraphList": [
+      "Representa un avanzado de programación y configuración de la herramienta para PASSCHIP gama de auto servicio chip de IDENTIFICACIÓN a los lectores. Proporciona una interfaz fácil de usar que simplifica el control PASSCHIP",
+      "Ofrece un sistema centralizado de Ethernet de la administración, mediante únicas funciones de software para toda la red; importantes ahorros en términos de tiempo y recursos específicos de los responsables de la seguridad de",
+      "Facilita PASSCHIP integración con CCTV, incendio y detección de intrusos a través de Wiegand, Ethernet y la interfaz Serial."
+    ],
+    "functionsBulletList": [
+      "Completo de control de IP: Configuración, Administración, Gestión de usuarios, Monitoreo y Grabación",
+      "Centralizado de actualización de la red de lectores mientras se ejecuta utilizando una interfaz de usuario amigable",
+      "El acceso centralizado a la interna PASSCHIP la historia de los recursos, incluyendo sincronized sello de tiempo",
+      "Centralizado de las tarjetas de la gestión, incluyendo la LISTA NEGRA"
+    ],
+    "benefitsBulletList": [
+      "La protección de los clientes durante el auto-procedimientos del servicio",
+      "La protección de los Cajeros automáticos y la banca de los activos contra el uso no autorizado",
+      "Extremadamente fiable de los productos con un excelente rendimiento de la inversión de la tasa de",
+      "Probado el servicio de larga vida",
+      "Puede ser integrado con terceros de seguridad de software, incluyendo aplicaciones biométricas",
+      "Puede ser vinculada e integrada con los sistemas de CCTV, incendio y detección de intrusiones",
+      "Excelente sustituto para humanos patrulla de la guardia del servicio de"
+    ]
+  },
+  "timeAndAttendance": {
+    "liteDescription": "De tiempo de los empleados de la solución de gestión",
+    "shortDescription": "Ofrece una solución de administración potente, moderna y flexible que se conecta a cualquier tipo de sistema de control de acceso",
+    "fulLDescriptionParagraphList": [
+      "Proporciona una potente, moderna y flexible de gestión de la fuerza de la solución que se conecta a cualquier tipo de sistema de control de acceso"
+    ],
+    "functionsBulletList": [
+      "Rastrea las horas de trabajo, de las ausencias y de las horas extraordinarias",
+      "Diseñar y gestionar el horario de trabajo",
+      "Los incidentes (licencia por enfermedad, vacaciones, médico, etc.)",
+      "Da una visión global de la actividad de empleado en el sitio.",
+      "Opcionalmente se permite a los empleados ver su propio horario y la información, o los jefes de equipo para gestionar su equipo de programación.",
+      "Genera informes en los que se pueden ver en la plataforma o exportado .formato xls que se puede personalizar según las necesidades del usuario"
+    ],
+    "benefitsBulletList": [
+      "Solución a medida para la integración con el actual sistema de acceso",
+      "Probado el servicio de larga vida",
+      "Puede ser integrado con terceros, software de seguridad, incluyendo aplicaciones biométricas",
+      "Excelente sustituto para humanos patrulla de la guardia servicios",
+      "Puede ser alojado completamente en el sitio"
+    ]
+  },
+  "intercom": {
+    "liteDescription": "De Vídeo IP Intercom",
+    "shortDescription": "Nuestra línea de productos de intercom IP está dedicada a edificios comerciales, edificios de oficinas y grandes proyectos residenciales, asegura mayores niveles de seguridad y comodidad en comparación con los sistemas de intercom analógicos convencionales debido a su notable flexibilidad y uso de una manera facil",
+    "fulLDescriptionParagraphList": [
+      "Nuestra IP, video portero línea de productos está dedicado a comerciales, edificios de oficinas y residenciales de grandes proyectos, asegura que el aumento de los niveles de seguridad y comodidad en comparación con el convencional analógica sistemas de intercomunicación, debido a su notable flexibilidad y fácil."
+    ],
+    "functionsBulletList": [
+      "Llamadas de voz y Vídeo entre Intercomunicador Paneles dentro de la misma LAN.",
+      "Acero inoxidable cepillado construir",
+      "Aceptar/rechazar llamada entrante",
+      "Inicie la llamada a basic panel / panel de video",
+      "La limitada duración de la llamada – max. 5 min",
+      "<li>cámara de Video:<ul><li>sólo puede ser visto por pares panel de video durante una llamada de Vídeo Paneles</li><li>puede ser visto por varios paneles video</li></ul></li>",
+      "La respuesta automática de llamadas entrantes",
+      "1 salida controlada por pares panel de video durante una llamada",
+      "2 modo de llamada de vídeo con otro panel de video"
+    ],
+    "benefitsBulletList": [
+      "IP Intercomunicador de Video con hasta 1000 Intercomunicador Paneles",
+      "Integración con PASSCHIP sistemas de CONTROL de ACCESO",
+      "Desbloqueo de la puerta del intercomunicador",
+      "Wiegand la integración con cualquier sistema de control de acceso permitiendo el intercomunicador para actuar como un lector wiegand, enviando al sistema de control de acceso de la tarjeta wiegand ID asociado con los pares de intercomunicación panel.",
+      "Sistema de gestión: el control y la configuración",
+      "La seguridad de la red puede lograrse utilizando cifrado Vpn",
+      "La red puede ser extendido a varios sitios utilizando Vpn de capa 2"
+    ]
+  },
+  "lprReader": {
+    "liteDescription": "El Reconocimiento de matrículas del sistema",
+    "shortDescription": "Nuestro lector de matrículas ofrece lectura automática de matrículas combinada con comunicación wiegand. El lector LPR transforma la lectura integrada de matrículas en una salida de lector de tarjetas wiegand",
+    "fulLDescriptionParagraphList": [
+      "Nuestra Licencia Lector de Placas ofrece automático del número de placa de la lectura combinada con wiegand de comunicación. El LPR lector se transforma perfectamente integradas en la placa de la licencia de la lectura una wiegand de la tarjeta de lector de la IDENTIFICACIÓN de la salida"
+    ],
+    "functionsBulletList": [
+      "Es un todo-en-un sistema que incorpora la cámara, proyector y el procesamiento en una compacta carcasa impermeable. ",
+      "La gestión se realiza mediante un navegador web incorporado de la interfaz, a través de la conexión Ethernet disponible",
+      "Alta precisión gracias a la adaptación y altamente capacitado de nuestros algoritmos y de alta calidad de los sensores de imagen",
+      "Instalación sencilla y de fácil implementación"
+    ],
+    "benefitsBulletList": [
+      "La interfaz del explorador web también permite a los integradores de sistemas para configurar la transmisión wiegand cadenas de IDENTIFICACIÓN del lector de reconocimiento automático de matrículas. Tras la lectura de la placa de licencia en el reconocimiento automático de matrículas unidad se refieren a la base de datos y transmitir la correspondiente wiegand ID utilizando la elegida en formato wiegand para el panel de control de acceso.",
+      "Si la wiegand ID está autorizado a continuación, se permite el acceso.",
+      "El LPR lector se contó con una base de datos interna que coincida con la placa de la licencia a un determinado válido Wiegand tarjeta de IDENTIFICACIÓN (es decir, los ya existentes, el número de la tarjeta de la persona que conduce el coche). Esta coincidencia puede hacerse de forma sencilla y desde una ubicación remota mediante la interfaz de explorador web."
+    ]
+  },
+  "automotive": {
+    "liteDescription": "Llave inteligente de software",
+    "shortDescription": "PASSCHIP Automotive is a mobile solution that replaces the need of using a physical car key. The Key is replaced by the smartphone app running on the customer’s phone or tablet that communicates with PASSCHIP – installed inside the cabin.",
+    "fulLDescriptionParagraphList": [
+      "PASSCHIP de la Automoción es una solución móvil que sustituye la necesidad de utilizar un físico de la llave del coche. La Clave es reemplazado por la aplicación de teléfono inteligente que se ejecuta en el teléfono del cliente o de la tableta que se comunica con PASSCHIP – instalado en el interior de la cabina."
+    ],
+    "functionsBulletList": [
+      "Inicio y Parada de motor – Módulo Principal",
+      "Puertas de Bloqueo y Desbloqueo – Módulo Principal",
+      "Autorizar el arranque del Motor Principal del Módulo de",
+      "WiFi AP – Módulo Opcional",
+      "Registro De Eventos – Módulo Opcional",
+      "La gestión de claves se realiza a través de Bluetooth y SMS – Módulo Principal (sin servidor central requerido)"
+    ],
+    "benefitsBulletList": [
+      "Elimina la necesidad de múltiples teclas físicas",
+      "Aumentar el número de posibles usuarios",
+      "La Aplicación Móvil",
+      "Las claves son enviados / recibidos por Teléfono, SMS, WhatsApp -> Alta disponibilidad",
+      "Gestión completa de usuarios y los coches",
+      "Excelente programación de la matriz"
+    ]
+  },
+  "qr": {
+    "liteDescription": "Lector de Código QR",
+    "shortDescription": "Nuestro lector de códigos QR ofrece lectura automática de códigos QR combinada con comunicación wiegand. El lector de códigos QR transforma la lectura de códigos QR sin problemas en una salida de lector de ID de tarjetas wiegand",
+    "fulLDescriptionParagraphList": [
+      "Nuestro Lector de Código QR ofrece automática de código QR de la lectura combinada con wiegand de comunicación.",
+      "El lector de Código QR transforma a la perfección el Código QR de la lectura en un wiegand de la tarjeta de lector de la IDENTIFICACIÓN de la salida. Incluye todo el hardware y el software necesarios para integrar en el estándar de sistemas de control de acceso, permitiendo el uso de los códigos QR como tarjetas temporales.",
+      " Puede funcionar en modo independiente o puede ser conectado a cualquier control de acceso a la plataforma utilizando el la mayoría de los formatos de datos comúnmente utilizados como RS232, Clockand de Datos o Wiegand con hasta 64 bits de datos.",
+      " PASSCHIP Código QR puede ser integrado con una serie de sistemas de Control de Acceso, eliminando la necesidad de tarjetas de doble aprovisionamiento y permitiendo el Código QR para ser invalidado, incluso después de su distribución a los clientes. "
+    ],
+    "functionsBulletList": [
+      "Nuestro Lector de Código QR es un todo-en-un sistema que incorpora escáner de códigos QR y de procesamiento en una compacta carcasa impermeable.",
+      "No se requiere la administración para el Lector de Código QR.",
+      "La gestión de los Códigos QR se realiza en un PC dedicado, el uso de los QR Administrador de la solución de software.",
+      "El lector de Código QR decodifica el número de la tarjeta de la información y el período de validez del código QR y, a continuación, envía el número de la tarjeta de información para el sistema de control de acceso y activar un relé utilizado para el desbloqueo de puerta.",
+      "El código QR de datos también incluye una firma criptográfica para prevenir el uso no autorizado de código QR generación."
+    ],
+    "benefitsBulletList": [
+      "El Lector de Código QR puede trabajar independiente y como un wiegand estándar lector",
+      "No requiere una conexión de red, toda la información necesaria está incrustado en el código QR.",
+      "El QR Manager administra las tarjetas que se usan y se asocia a los códigos QR.",
+      "El QR Administrador puede comunicarse con el QR Integration Server para importar de la tarjeta de números definidos en los sistemas de control de acceso y hacer cumplir que las cartas se activa sólo durante el período de validez de los códigos QR, por lo tanto la eliminación de la doble aprovisionamiento.",
+      "El código QR de la distribución se realiza a través guardada en archivo JPEG o correo electrónico con archivos JPEG adjunto."
+    ]
+  }
+}

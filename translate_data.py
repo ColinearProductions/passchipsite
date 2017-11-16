@@ -4,7 +4,7 @@ from subprocess import call
 "node npm-translate.js dynamic/data/en/footer.json dynamic/data/es/footer.json es"
 
 data_folder_path = "data"
-languages = ["de", "fr"]
+languages = ["es"]
 
 
 def translate(language):
