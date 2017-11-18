@@ -11,6 +11,6 @@
   "lon":"26.071",
   "lat":"44.480",
   "analyticsId":"UA-103088784-2",
-  "formesterURL":"https://app.formester.com/forms/34725d31-8bc4-491d-a418-f6f239c9a1b3/submissions",
-  "recaptchaKey":"6Le8SzMUAAAAADeehX7NsuHU4zZ2GD4-aHKUadzc"
+  "formesterURL":"https://us-central1-static-forms.cloudfunctions.net/logMessage",
+  "recaptchaKey":"6LfZSzMUAAAAALtmC0ZC7BmtwN-eEw3Fs8LjwwSV"
 }
