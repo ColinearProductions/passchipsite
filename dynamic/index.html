@@ -805,8 +805,7 @@
 <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.js"></script>
 
 
-<script src="../resources/assets/js/components/hs.header.js"></script>f
-<script src="../resources/assets/js/helpers/hs.hamburgers.js"></script>
+
 <script src="../resources/assets/js/helpers/hs.focus-state.js"></script>
 <script src="../resources/assets/js/components/hs.counter.js"></script>
 <script src="../resources/assets/js/components/hs.onscroll-animation.js"></script>
@@ -869,6 +868,7 @@
 <script>
     // Toolttips
     $(document).on('ready', function () {
+        $('[data-toggle="tooltip"]').tooltip();
         $('[data-toggle="tooltip"]').tooltip();
 
     });
