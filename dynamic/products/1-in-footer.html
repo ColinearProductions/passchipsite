@@ -14,7 +14,7 @@
 
                 <!-- Begin MailChimp Signup Form -->
                 <div id="mc_embed_signup">
-                    <form action="https://passchip.us16.list-manage.com/subscribe/post?u=d2572892f4d1c1424deb94466&id=eda740b793"
+                    <form action="//passchip.us16.list-manage.com/subscribe/post?u=d2572892f4d1c1424deb94466&amp;id=eda740b793"
                           method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
                           class="validate" target="_blank" novalidate>
 
@@ -150,7 +150,7 @@
                      data-title="Agency"
                      data-styles='[["", "", [{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]], ["", "labels", [{"visibility":"on"}]], ["water", "", [{"color":"#bac6cb"}]] ]'
                      data-pin="true"
-                     data-pin-icon="../../resources/assets/img/icons/pin/teal.png">
+                     data-pin-icon="../resources/assets/img/icons/pin/teal.png">
                 </div>
                 <!-- End Google Map -->
 
@@ -161,8 +161,8 @@
             <!-- End Map Content -->
 
             <!-- needed imports for gmaps:
-            <script src="../../resources/assets/vendor/gmaps/gmaps.min.js"></script>
-            <script src="../../resources/assets/js/components/gmap/hs.map.js"></script>
+            <script src="../resources/assets/vendor/gmaps/gmaps.min.js"></script>
+            <script src="../resources/assets/js/components/gmap/hs.map.js"></script><script src="../resources/assets/js/custom.js"></script> <script src="../resources/assets/js/components/hs.go-to.js"></script>
             <script>
                 $(document).on('ready', function () {
                     $('[data-toggle="tooltip"]').tooltip();
@@ -184,7 +184,7 @@
                 </div>
 
                 <address class="g-bg-no-repeat g-line-height-2 g-mt-minus-4"
-                         style="background: url(../../resources/assets/img/maps/map2.png);   background-position: center; ">
+                         style="background: url(../resources/assets/img/maps/map2.png);   background-position: center; ">
                     ${data['meta']['address']}
                     <br>  ${data['words']['phoneNumber']}: ${data['meta']['phoneNumber']}
                     <br> Email: <a href="mailto:${data['meta']['emailAddress']}" class="">${data['meta']['emailAddress']}</a>
@@ -227,14 +227,14 @@
 <footer class="g-bg-gray-dark-v1 g-color-white-opacity-0_8 text-center g-py-20">
     <div class="container">
         <small class="g-font-size-default g-mr-10 g-mb-10 g-mb-0--md">
-            <span class="passchip_font">PASSCHIP </span> ®  ${data['words']['isARegisteredTrademark']}  <a href="http://conicdesign.ro"><img src="../../resources/images/small_conic.png"></a>
+            <span class="passchip_font">PASSCHIP </span> ®  ${data['words']['isARegisteredTrademark']}  <a href="http://conicdesign.ro"><img src="../../resources/images/logo_small_with_cone.png"></a>
         </small>
     </div>
 </footer>
 <!-- End Copyright Footer -->
 
 
-<a class="js-go-to u-go-to-v1 animated u-animation-was-fired zoomIn" href="#" data-type="fixed" data-position="{
+<a class="js-go-to u-go-to-v1 animated u-animation-was-fired zoomIn smoothscroll" href="#top-for-scroll" data-type="fixed" data-position="{
            &quot;bottom&quot;: 15,
            &quot;right&quot;: 15
          }" data-offset-top="400" data-compensation="#js-header" data-show-effect="zoomIn" style="display: inline-block; position: fixed; bottom: 15px; right: 15px;border-radius:100%";>

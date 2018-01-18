@@ -2,7 +2,7 @@
 <html lang="en" class="font-primary">
 <head>
     <!-- Title -->
-    <title>PASSCHIP</title>
+    <title>ATM Access Control Solution - PASSCHIP</title>
     <meta name="description" content="${data['meta']['description']}">
 
     <!-- Required Meta Tags Always Come First -->
@@ -24,11 +24,13 @@
     <!-- Mobile hamburger -->
     <link rel="stylesheet" href="../../resources/assets/vendor/animate.css">
     <link rel="stylesheet" href="../../resources/assets/vendor/hs-megamenu/src/hs.megamenu.css">
+
+    <link rel="stylesheet" href="../../resources/assets/vendor/slick-carousel/slick/slick.css">
     <link rel="stylesheet" href="../../resources/assets/vendor/hamburgers/hamburgers.min.css">
     <link rel="stylesheet" href="../../resources/assets/vendor/fancybox/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="../../resources/assets/vendor/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="../../resources/assets/vendor/tel-input/build/css/intlTelInput.css">
 
-
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <link rel="stylesheet" href="../../resources/assets/vendor/swiper/css/swiper.css">
 
 
@@ -155,6 +157,7 @@
     </section>
 
 
+    <!-- Description -->
     <section class="container  g-py-80">
 
         <div class="row">
@@ -169,6 +172,9 @@
                 </strong></a>
                 <a class="btn btn-link g-ml-0 g-pl-0 smoothscroll" href="#benefits"><strong>
                     Benefits
+                </strong></a>
+                <a class="btn btn-link g-ml-0 g-pl-0 smoothscroll" href="#galery"><strong>
+                    Galery
                 </strong></a>
                 <a class="btn btn-link g-ml-0 g-pl-0 smoothscroll" href="#downloads"><strong>
                     Downloads
@@ -186,7 +192,7 @@
             </div>
 
             <div class="col-md-5 g-py-150--lg">
-                <div id="carousel-08-1" class="js-carousel text-center g-mb-20" data-autoplay="true" data-speed="800"
+                <div id="carousel-08-1" class="js-carousel text-center g-mb-20" data-autoplay="true" data-speed="1300"
                      data-infinite="1"
                      data-arrows-classes="u-arrow-v1 g-absolute-centered--y g-width-35 g-height-40 g-font-size-18 g-color-gray g-bg-white g-mt-minus-10"
                      data-arrow-left-classes="fa fa-angle-left g-left-0"
@@ -194,147 +200,177 @@
 
                     <div class="js-slide">
                         <a class="js-fancybox d-block g-pos-rel" data-fancybox-gallery="lightbox-gallery--08-1"
-                           href="../../resources/images/passchip/passchip_model%20(2).jpg" title="Lightbox Gallery"
+                           href="../../resources/images/passchip-renderings/rendering-passchip-modelPS1_2.jpg"
+                           title="Lightbox Gallery"
                            data-open-effect="bounceInDown" data-close-effect="bounceOutDown" data-open-speed="1000"
                            data-close-speed="1000" data-blur-bg="true">
-                            <img class="img-fluid w-100" src="../../resources/images/passchip/passchip_model%20(2).jpg"
-                                 alt="Image Description">
+                            <img class="img-fluid w-100"
+                                 src="../../resources/images/passchip-renderings/rendering-passchip-modelPS1_2.jpg"
+                                 alt="Rendering of the PASSCHIP model PS1" title="Rendering of the PASSCHIP model PS1">
                         </a>
                     </div>
                     <div class="js-slide">
                         <a class="js-fancybox d-block g-pos-rel" data-fancybox-gallery="lightbox-gallery--08-1"
-                           href="../../resources/images/passchip/passchip_model%20(3).jpg" title="Lightbox Gallery"
+                           href="../../resources/images/passchip-renderings/rendering-passchip-modelSLIM.jpg"
+                           title="Lightbox Gallery"
                            data-open-effect="bounceInDown" data-close-effect="bounceOutDown" data-open-speed="1000"
                            data-close-speed="1000" data-blur-bg="true">
-                            <img class="img-fluid w-100" src="../../resources/images/passchip/passchip_model%20(3).jpg"
-                                 alt="Image Description">
+                            <img class="img-fluid w-100"
+                                 src="../../resources/images/passchip-renderings/rendering-passchip-modelSLIM.jpg"
+                                 alt="Rendering of the PASSCHIP model SLIM" title="Rendering of the PASSCHIP model SLIM">
                         </a>
                     </div>
                     <div class="js-slide">
                         <a class="js-fancybox d-block g-pos-rel" data-fancybox-gallery="lightbox-gallery--08-1"
-                           href="../../resources/images/passchip/passchip_model%20(4).jpg" title="Lightbox Gallery"
+                           href="../../resources/images/passchip-renderings/rendering-passchip-modelSLIM_2.jpg"
+                           title="Lightbox Gallery"
                            data-open-effect="bounceInDown" data-close-effect="bounceOutDown" data-open-speed="1000"
                            data-close-speed="1000" data-blur-bg="true">
-                            <img class="img-fluid w-100" src="../../resources/images/passchip/passchip_model%20(4).jpg"
-                                 alt="Image Description">
+                            <img class="img-fluid w-100"
+                                 src="../../resources/images/passchip-renderings/rendering-passchip-modelSLIM_2.jpg"
+                                 alt="Rendering of the PASSCHIP model SLIM" title="Rendering of the PASSCHIP model SLIM">
                         </a>
                     </div>
                     <div class="js-slide">
                         <a class="js-fancybox d-block g-pos-rel" data-fancybox-gallery="lightbox-gallery--08-1"
-                           href="../../resources/images/passchip/passchip_model%20(5).jpg" title="Lightbox Gallery"
+                           href="../../resources/images/passchip-renderings/rendering-passchip-modelPS1.jpg"
+                           title="Lightbox Gallery"
                            data-open-effect="bounceInDown" data-close-effect="bounceOutDown" data-open-speed="1000"
                            data-close-speed="1000" data-blur-bg="true">
-                            <img class="img-fluid w-100" src="../../resources/images/passchip/passchip_model%20(5).jpg"
-                                 alt="Image Description">
+                            <img class="img-fluid w-100"
+                                 src="../../resources/images/passchip-renderings/rendering-passchip-modelPS1.jpg"
+                                 alt="Rendering of the PASSCHIP model PS1" title="Rendering of the PASSCHIP model PS1">
                         </a>
                     </div>
                     <div class="js-slide">
                         <a class="js-fancybox d-block g-pos-rel" data-fancybox-gallery="lightbox-gallery--08-1"
-                           href="../../resources/images/passchip/passchip_model%20(6).jpg" title="Lightbox Gallery"
+                           href="../../resources/images/passchip-renderings/rendering-passchip-_modelPS1_2.jpg"
+                           title="Lightbox Gallery"
                            data-open-effect="bounceInDown" data-close-effect="bounceOutDown" data-open-speed="1000"
                            data-close-speed="1000" data-blur-bg="true">
-                            <img class="img-fluid w-100" src="../../resources/images/passchip/passchip_model%20(6).jpg"
-                                 alt="Image Description">
+                            <img class="img-fluid w-100"
+                                 src="../../resources/images/passchip-renderings/rendering-passchip-_modelPS1_2.jpg"
+                                 alt="Rendering of the PASSCHIP model PS1" title="Rendering of the PASSCHIP model PS1">
                         </a>
                     </div>
                     <div class="js-slide">
                         <a class="js-fancybox d-block g-pos-rel" data-fancybox-gallery="lightbox-gallery--08-1"
-                           href="../../resources/images/passchip/passchip_model%20(7).jpg" title="Lightbox Gallery"
+                           href="../../resources/images/passchip-renderings/rendering-passchip-modelPS1_3.jpg"
+                           title="Lightbox Gallery"
                            data-open-effect="bounceInDown" data-close-effect="bounceOutDown" data-open-speed="1000"
                            data-close-speed="1000" data-blur-bg="true">
-                            <img class="img-fluid w-100" src="../../resources/images/passchip/passchip_model%20(7).jpg"
-                                 alt="Image Description">
+                            <img class="img-fluid w-100"
+                                 src="../../resources/images/passchip-renderings/rendering-passchip-modelPS1_3.jpg"
+                                 alt="Rendering of the PASSCHIP model PS1" title="Rendering of the PASSCHIP model PS1">
                         </a>
                     </div>
                     <div class="js-slide">
                         <a class="js-fancybox d-block g-pos-rel" data-fancybox-gallery="lightbox-gallery--08-1"
-                           href="../../resources/images/passchip/passchip_model%20(8).jpg" title="Lightbox Gallery"
+                           href="../../resources/images/passchip-renderings/rendering-passchip-modelPS5.jpg"
+                           title="Lightbox Gallery"
                            data-open-effect="bounceInDown" data-close-effect="bounceOutDown" data-open-speed="1000"
                            data-close-speed="1000" data-blur-bg="true">
-                            <img class="img-fluid w-100" src="../../resources/images/passchip/passchip_model%20(8).jpg"
-                                 alt="Image Description">
+                            <img class="img-fluid w-100"
+                                 src="../../resources/images/passchip-renderings/rendering-passchip-modelPS5.jpg"
+                                 alt="Rendering of the PASSCHIP model PS5" title="Rendering of the PASSCHIP model PS5">
                         </a>
                     </div>
                     <div class="js-slide">
                         <a class="js-fancybox d-block g-pos-rel" data-fancybox-gallery="lightbox-gallery--08-1"
-                           href="../../resources/images/passchip/passchip_model%20(9).jpg" title="Lightbox Gallery"
+                           href="../../resources/images/passchip-renderings/rendering-passchip-modelPS5_2.jpg"
+                           title="Lightbox Gallery"
                            data-open-effect="bounceInDown" data-close-effect="bounceOutDown" data-open-speed="1000"
                            data-close-speed="1000" data-blur-bg="true">
-                            <img class="img-fluid w-100" src="../../resources/images/passchip/passchip_model%20(9).jpg"
-                                 alt="Image Description">
+                            <img class="img-fluid w-100"
+                                 src="../../resources/images/passchip-renderings/rendering-passchip-modelPS5_2.jpg"
+                                 alt="Rendering of the PASSCHIP model PS5" title="Rendering of the PASSCHIP model PS5">
                         </a>
                     </div>
                     <div class="js-slide">
                         <a class="js-fancybox d-block g-pos-rel" data-fancybox-gallery="lightbox-gallery--08-1"
-                           href="../../resources/images/passchip/passchip_model%20(9).jpg" title="Lightbox Gallery"
+                           href="../../resources/images/passchip-renderings/rendering-passchip-modelTOTEM.jpg"
+                           title="Lightbox Gallery"
                            data-open-effect="bounceInDown" data-close-effect="bounceOutDown" data-open-speed="1000"
                            data-close-speed="1000" data-blur-bg="true">
-                            <img class="img-fluid w-100" src="../../resources/images/passchip/passchip_model%20(10).png"
-                                 alt="Image Description">
+                            <img class="img-fluid w-100"
+                                 src="../../resources/images/passchip-renderings/rendering-passchip-modelTOTEM.jpg"
+                                 alt="Rendering of the PASSCHIP model TOTEM" title="Rendering of the PASSCHIP model TOTEM">
                         </a>
                     </div>
                     <div class="js-slide">
                         <a class="js-fancybox d-block g-pos-rel" data-fancybox-gallery="lightbox-gallery--08-1"
-                           href="../../resources/images/passchip/passchip_model%20(9).jpg" title="Lightbox Gallery"
+                           href="../../resources/images/passchip-renderings/rendering-passchip-modelTOTEM_3.jpg"
+                           title="Lightbox Gallery"
                            data-open-effect="bounceInDown" data-close-effect="bounceOutDown" data-open-speed="1000"
                            data-close-speed="1000" data-blur-bg="true">
-                            <img class="img-fluid w-100" src="../../resources/images/passchip/passchip_model%20(11).png"
-                                 alt="Image Description">
+                            <img class="img-fluid w-100"
+                                 src="../../resources/images/passchip-renderings/rendering-passchip-modelTOTEM_3.jpg"
+                                 alt="Rendering of the PASSCHIP model TOTEM" title="Rendering of the PASSCHIP model TOTEM">
                         </a>
                     </div>
                 </div>
 
                 <div id="carousel-08-2" class="js-carousel text-center g-mx-minus-10 u-carousel-v3" data-infinite="1"
-                     data-center-mode="1" data-slides-show="4" data-is-thumbs="1" data-nav-for="#carousel-08-1">
+                     data-center-mode="1" data-slides-show="3" data-is-thumbs="1" data-nav-for="#carousel-08-1">
 
 
                     <div class="js-slide g-px-10">
-                        <img class="img-fluid w-100" src="../../resources/images/passchip/passchip_model%20(2).jpg"
-                             alt="Image Description">
+                        <img class="img-fluid w-100"
+                             src="../../resources/images/passchip-renderings/rendering-passchip-modelPS1_2.jpg"
+                             alt="Rendering of the PASSCHIP model PS1" title="Rendering of the PASSCHIP model PS1">
                     </div>
 
                     <div class="js-slide g-px-10">
-                        <img class="img-fluid w-100" src="../../resources/images/passchip/passchip_model%20(3).jpg"
-                             alt="Image Description">
+                        <img class="img-fluid w-100"
+                             src="../../resources/images/passchip-renderings/rendering-passchip-modelSLIM.jpg"
+                             alt="Rendering of the PASSCHIP model SLIM" title="Rendering of the PASSCHIP model SLIM">
                     </div>
 
                     <div class="js-slide g-px-10">
-                        <img class="img-fluid w-100" src="../../resources/images/passchip/passchip_model%20(4).jpg"
-                             alt="Image Description">
+                        <img class="img-fluid w-100"
+                             src="../../resources/images/passchip-renderings/rendering-passchip-modelSLIM_2.jpg"
+                             alt="Rendering of the PASSCHIP model SLIM" title="Rendering of the PASSCHIP model SLIM">
                     </div>
 
                     <div class="js-slide g-px-10">
-                        <img class="img-fluid w-100" src="../../resources/images/passchip/passchip_model%20(5).jpg"
-                             alt="Image Description">
+                        <img class="img-fluid w-100"
+                             src="../../resources/images/passchip-renderings/rendering-passchip-modelPS1.jpg"
+                             alt="Rendering of the PASSCHIP model PS1" title="Rendering of the PASSCHIP model PS1">
                     </div>
 
                     <div class="js-slide g-px-10">
-                        <img class="img-fluid w-100" src="../../resources/images/passchip/passchip_model%20(6).jpg"
-                             alt="Image Description">
+                        <img class="img-fluid w-100"
+                             src="../../resources/images/passchip-renderings/rendering-passchip-_modelPS1_2.jpg"
+                             alt="Rendering of the PASSCHIP model PS1" title="Rendering of the PASSCHIP model PS1">
                     </div>
                     <div class="js-slide g-px-10">
-                        <img class="img-fluid w-100" src="../../resources/images/passchip/passchip_model%20(7).jpg"
-                             alt="Image Description">
-                    </div>
-
-                    <div class="js-slide g-px-10">
-                        <img class="img-fluid w-100" src="../../resources/images/passchip/passchip_model%20(8).jpg"
-                             alt="Image Description">
+                        <img class="img-fluid w-100"
+                             src="../../resources/images/passchip-renderings/rendering-passchip-modelPS1_3.jpg"
+                             alt="Rendering of the PASSCHIP model PS1" title="Rendering of the PASSCHIP model PS1">
                     </div>
 
                     <div class="js-slide g-px-10">
-                        <img class="img-fluid w-100" src="../../resources/images/passchip/passchip_model%20(9).jpg"
-                             alt="Image Description">
+                        <img class="img-fluid w-100"
+                             src="../../resources/images/passchip-renderings/rendering-passchip-modelPS5.jpg"
+                             alt="Rendering of the PASSCHIP model PS5" title="Rendering of the PASSCHIP model PS5">
                     </div>
 
                     <div class="js-slide g-px-10">
-                        <img class="img-fluid w-100" src="../../resources/images/passchip/passchip_model%20(10).png"
-                             alt="Image Description">
+                        <img class="img-fluid w-100"
+                             src="../../resources/images/passchip-renderings/rendering-passchip-modelPS5_2.jpg"
+                             alt="Rendering of the PASSCHIP model PS5.2" title="Rendering of the PASSCHIP model PS5.2">
                     </div>
 
                     <div class="js-slide g-px-10">
-                        <img class="img-fluid w-100" src="../../resources/images/passchip/passchip_model%20(11).png"
-                             alt="Image Description">
+                        <img class="img-fluid w-100"
+                             src="../../resources/images/passchip-renderings/rendering-passchip-modelTOTEM.jpg"
+                             alt="Rendering of the PASSCHIP model TOTEM" title="Rendering of the PASSCHIP model TOTEM">
+                    </div>
+
+                    <div class="js-slide g-px-10">
+                        <img class="img-fluid w-100"
+                             src="../../resources/images/passchip-renderings/rendering-passchip-modelTOTEM_3.jpg"
+                             alt="Rendering of the PASSCHIP model TOTEM" title="Rendering of the PASSCHIP model TOTEM">
                     </div>
 
 
@@ -345,6 +381,7 @@
     </section>
 
 
+    <!--Functions -->
     <section class="container g-mb-50">
         <div class="row">
             <div class="fadeIn u-in-viewport" id="functions" data-animation="fadeIn" data-animation-out="zoomOutDown"
@@ -362,6 +399,11 @@
             </div>
         </div>
         <hr class="g-my-50">
+
+
+    </section>
+    <!--Benefits  -->
+    <section class="container g-mb-75">
         <div class="row">
             <div class="fadeIn u-in-viewport" id="benefits" data-animation="fadeIn" data-animation-out="zoomOutDown"
                  data-animation-delay="0" data-animation-duration="1000" style="animation-duration: 1000ms;">
@@ -378,12 +420,355 @@
                 </ul>
             </div>
         </div>
-        <hr class="g-my-50">
+
+    </section>
+
+    <!--Galery -->
+    <section class="container g-mb-75" id="galery">
+        <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30 text-center">
+            <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title"> Gallery</h2>
+        </div>
+
+
+        <div class="js-carousel text-center" data-infinite="true" data-center-mode="true" data-center-padding="60px"
+             data-slides-show="4"
+             data-arrows-classes="u-arrow-v1 g-absolute-centered--y g-width-35 g-height-40 g-font-size-18 g-color-gray g-bg-white"
+             data-arrow-left-classes="fa fa-angle-left g-left-0" data-arrow-right-classes="fa fa-angle-right g-right-0"
+             data-responsive="[{
+       'breakpoint': 768,
+       'settings': {
+         'slidesToShow': 1,
+         'slidesToScroll': 1,
+         'centerPadding': 0
+       }
+     }]">
+
+
+            <div class="js-slide g-px-10">
+                <a class="js-fancybox d-block u-block-hover g-pos-rel"
+                   data-fancybox-gallery="lightbox-gallery--08-1" href="../../resources/images/PASSCHIP_GALERY/ATM-Lobby-Access-Control_1.jpg"
+                   data-speed="350" data-caption="Lightbox Gallery">
+                    <img class="img-fluid u-block-hover__main--zoom-v1"
+                         src="../../resources/images/PASSCHIP_GALERY/ATM-Lobby-Access-Control_1-thumbnail.jpg"
+                         alt="ATM Lobby Access Control With NFC" title="Controll Access to ATM lobbies with Chip Card or NFC">
+
+                </a>
+            </div>
+
+            <div class="js-slide g-px-10">
+                <a class="js-fancybox d-block u-block-hover g-pos-rel"
+                   data-fancybox-gallery="lightbox-gallery--08-1" href="../../resources/images/PASSCHIP_GALERY/ATM-Lobby-Access-Control_2.jpg"
+                   data-speed="350" data-caption="Lightbox Gallery">
+                    <img class="img-fluid u-block-hover__main--zoom-v1"
+                         src="../../resources/images/PASSCHIP_GALERY/ATM-Lobby-Access-Control_2-thumbnail.jpg"
+                         alt="ATM Lobby Access Control With NFC" title="Controll Access to ATM lobbies with Chip Card or NFC">
+
+                </a>
+            </div>
+
+            <div class="js-slide g-px-10">
+                <a class="js-fancybox d-block u-block-hover g-pos-rel"
+                   data-fancybox-gallery="lightbox-gallery--08-1" href="../../resources/images/PASSCHIP_GALERY/ATM-Lobby-Access-Control_3.jpg"
+                   data-speed="350" data-caption="Lightbox Gallery">
+                    <img class="img-fluid u-block-hover__main--zoom-v1"
+                         src="../../resources/images/PASSCHIP_GALERY/ATM-Lobby-Access-Control_3-thumbnail.jpg"
+                         alt="ATM Lobby Access Control With NFC" title="Controll Access to ATM lobbies with Chip Card or NFC">
+
+                </a>
+            </div>
+
+            <div class="js-slide g-px-10">
+                <a class="js-fancybox d-block u-block-hover g-pos-rel"
+                   data-fancybox-gallery="lightbox-gallery--08-1" href="../../resources/images/PASSCHIP_GALERY/ATM-Lobby-Access-Control_4.jpg"
+                   data-speed="350" data-caption="Lightbox Gallery">
+                    <img class="img-fluid u-block-hover__main--zoom-v1"
+                         src="../../resources/images/PASSCHIP_GALERY/ATM-Lobby-Access-Control_4-thumbnail.jpg"
+                         alt="ATM Lobby Access Control With NFC" title="Controll Access to ATM lobbies with Chip Card or NFC">
+
+                </a>
+            </div>
+
+            <div class="js-slide g-px-10">
+                <a class="js-fancybox d-block u-block-hover g-pos-rel"
+                   data-fancybox-gallery="lightbox-gallery--08-1" href="../../resources/images/PASSCHIP_GALERY/ATM-Lobby-Access-Control_5.jpg"
+                   data-speed="350" data-caption="Lightbox Gallery">
+                    <img class="img-fluid u-block-hover__main--zoom-v1"
+                         src="../../resources/images/PASSCHIP_GALERY/ATM-Lobby-Access-Control_5-thumbnail.jpg"
+                         alt="ATM Lobby Access Control With NFC" title="Controll Access to ATM lobbies with Chip Card or NFC">
+
+                </a>
+            </div>
+
+            <div class="js-slide g-px-10">
+                <a class="js-fancybox   d-block g-pos-rel"  data-fancybox-gallery="lightbox-gallery--08-1"
+                   href="../../resources/images/PASSCHIP_GALERY/ATM-Lobby-Access-Control-With-NFC.jpg"
+                    data-src="../../resources/images/PASSCHIP_GALERY/6.jpg"
+                   data-speed="350" data-caption="Lightbox Gallery">
+                    <img class="img-fluid u-block-hover__main--zoom-v1"
+                         src="../../resources/images/PASSCHIP_GALERY/ATM-Lobby-Access-Control-With-NFC-thumbnail.jpg"
+                         alt="ATM Lobby Access Control With NFC" title="Controll Access to ATM lobbies with Chip Card or NFC">
+
+                </a>
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+    <!-- Models -->
+    <section class="container g-mb-50" style="padding:20px;" id="models">
+        <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30 text-center">
+            <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title"> Passchip Models</h2>
+        </div>
+
+
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th class="">Model</th>
+                    <th class="text-center">Case Dimensions <br> H x L x D mm</th>
+                    <th class="text-center">Stainless Steel Case</th>
+                    <th class="text-center">Contact CHIP Reader</th>
+                    <th class="text-center">NFC Reader</th>
+                    <th class="text-center">4.2" Display</th>
+                    <th class="text-center">Power Source 12V</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="bold">PS0</td>
+                    <td class="text-center">
+                        Without Case
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-times-circle-o g-font-size-27 g-color-gray-light-v1" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="bold">PS1</td>
+                    <td class="text-center">
+                        330x138x124
+
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="bold">PS5</td>
+                    <td class="text-center">
+                        255x138x124
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-times-circle-o g-font-size-27 g-color-gray-light-v1" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="bold">PS1.1</td>
+                    <td class="text-center">
+                        500x90x120
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="bold">PS5.1</td>
+                    <td class="text-center">
+                        500x90x120
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-times-circle-o g-font-size-27 g-color-gray-light-v1" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="bold">PS1.2</td>
+                    <td class="text-center">
+                        380x90x120
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="bold">PS5.2</td>
+                    <td class="text-center">
+                        300x90x120
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-times-circle-o g-font-size-27 g-color-gray-light-v1" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="bold">TOTEM</td>
+                    <td class="text-center">
+                        1500x300x200
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+
+                </tr>
+                <tr class="">
+                    <td class="bold">PILLAR</td>
+                    <td class="text-center">
+                        1500x138x180
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+                    <td class="text-center">
+                        <i class="fa fa-check-circle-o g-color-primary g-font-size-27" aria-hidden="true"></i>
+                    </td>
+
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <h6>For a more detailed view <a href="../../resources/Files/PASSCHIP%20Models%20v8.pdf" class="g-font-size-22">
+            Click here </a></h6>
+
+        <h4 class="g-mt-20">Dimensions of parts:</h4>
+        <h6>
+            <span class="g-color-primary">Display </span>: 76x120x20
+        </h6>
+        <h6>
+            <span class="g-color-primary">NFC Reader </span>: 76x120x20
+            <small> *Only on models that are configured with NFC</small>
+        </h6>
+        <h6>
+            <span class="g-color-primary">CHIP Reader</span>: 76x120x20
+        </h6>
+        <h6>
+            <span class="g-color-primary">Controller (Includes Power source) </span>: 76x120x20
+        </h6>
+
+
+    </section>
+
+
+    <!-- Downloads -->
+    <section class="container">
 
         <div class="row">
             <div class="fadeIn u-in-viewport" id="downloads" data-animation="fadeIn" data-animation-out="zoomOutDown"
                  data-animation-delay="0" data-animation-duration="1000" style="animation-duration: 1000ms;">
-                <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
+                <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30 text-center">
                     <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title"> Downloads</h2>
                 </div>
 
@@ -393,36 +778,43 @@
 
 
                         <a href="../../resources/Files/Data-Sheet_EN%20PASSCHIP.pdf" class="g-font-size-22">PASSCHIP
-                            Reader Data Sheet </a> <br>
+                            Reader Data Sheet
+                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a> <br>
                         <a href="../../resources/Files/Data-Sheet_EN%20PASSCHIP%20Slim%20Line.pdf"
-                           class="g-font-size-22">PASSCHIP Reader Slim Line </a> <br>
+                           class="g-font-size-22">PASSCHIP Reader Slim Line
+                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a> <br>
                         <a href="../../resources/Files/Technical-Description_EN%20PASSCHIP.pdf"
-                           class="g-font-size-22">PASSCHIP Reader Technical Description </a> <br>
+                           class="g-font-size-22">PASSCHIP Reader Technical Description
+                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a> <br>
                         <a href="../../resources/Files/PASSCHIP-_-SOLUTION-PRESENTATION-BT.pdf"
-                           class="g-font-size-22">PASSCHIP solution presentation </a> <br>
+                           class="g-font-size-22">PASSCHIP solution presentation
+                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a> <br>
 
 
-                        <a href="../../resources/Files/RPiShield-Pinout.pdf" class="g-font-size-22"> RPiShield
-                            PINOUT </a> <br>
+                        <a href="../../resources/Files/RPiShield-Pinout.pdf" class="g-font-size-22">
+                            PINOUT Documentation <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a> <br>
                         <a href="../../resources/Files/CHIP-READER-AE-DOCUMENTATION.pdf"
-                           class="g-font-size-22"> Chip Reader Documentation </a> <br>
+                           class="g-font-size-22"> Chip Reader Documentation <i class="fa fa-file-pdf-o"
+                                                                                aria-hidden="true"></i></a> <br>
                         <a href="../../resources/Files/PASSCHIP%20Models%20v8.pdf" class="g-font-size-22">PASSCHIP
-                            Reader Configuration </a> <br><br><br><br>
+                            Reader Configuration <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                        <br><br><br><br>
 
                     </div>
 
                     <div class="col-md-6 col-xs-12">
                         <h3><strong>Deutsche</strong></h3>
                         <a href="../../resources/Files/Data-Sheet_DE%20PASSCHIP.pdf" class="g-font-size-22">PASSCHIP
-                            Leser Datenblatt </a>
+                            Leser Datenblatt <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
                         <br>
                         <a href="../../resources/Files/Data-Sheet_DE%20PASSCHIP%20Slim%20Line.pdf"
-                           class="g-font-size-22">PASSCHIP Leser Datenblatt SLIM </a>
+                           class="g-font-size-22">PASSCHIP Leser Datenblatt SLIM <i class="fa fa-file-pdf-o"
+                                                                                    aria-hidden="true"></i></a>
                         <br>
                         <a href="../../resources/Files/Technical_Description_DE%20PASSCHIP.pdf" class="g-font-size-22">PASSCHIP
-                            Leser Technische Beschreibung </a> <br>
+                            Leser Technische Beschreibung <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a> <br>
                         <a href="../../resources/Files/PASSCHIP%20Models%20v8.pdf" class="g-font-size-22">PASSCHIP Leser
-                            Konfiguration </a> <br><br><br><br>
+                            Konfiguration <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a> <br><br><br><br>
 
                     </div>
 
@@ -430,13 +822,15 @@
                     <div class="col-md-6 col-xs-12">
                         <h3><strong>Français</strong></h3>
                         <a href="../../resources/Files/Data-Sheet_FR%20PASSCHIP.pdf"
-                           class="g-font-size-22">Lecteur PASSCHIP Description technique du produit </a> <br>
+                           class="g-font-size-22">Lecteur PASSCHIP Description technique du produit
+                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a> <br>
                         <a href="../../resources/Files/Data-Sheet_FR%20PASSCHIP%20Slim%20Line.pdf"
-                           class="g-font-size-22">Lecteur PASSCHIP Description technique du produit - SLIM </a> <br>
+                           class="g-font-size-22">Lecteur PASSCHIP Description technique du produit - SLIM
+                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a> <br>
                         <a href="../../resources/Files/Technical-Description_FR%20PASSCHIP.pdf" class="g-font-size-22">Lecteur
-                            PASSCHIP Fiche technique </a> <br>
+                            PASSCHIP Fiche technique <i class="fa fa-file-pdf-o" aria-hidden="true"></i> </a> <br>
                         <a href="../../resources/Files/PASSCHIP%20Models%20v8.pdf" class="g-font-size-22">Lecteur
-                            PASSCHIP Configuration </a> <br><br><br><br>
+                            PASSCHIP Configuration <i class="fa fa-file-pdf-o" aria-hidden="true"></i> </a> <br><br><br><br>
                     </div>
 
 
@@ -465,8 +859,66 @@
     </section>
 
 
-    <%include file="1-in-footer.html"/>
+    <!-- Contacts -->
+    <section class="container  g-pb-40">
+        <div class="row justify-content-between">
+            <div class="col-md-8 offset-md-2 g-mb-60">
+                <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30 text-center">
+                    <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title"> Got a question?</h2>
+                </div>
 
+                <!-- Contact Form -->
+                <form accept-charset='UTF-8' id="message_form"
+                      action="${data['meta']['formesterURL']}"
+                      method='POST'>
+                    <div class="row">
+                        <div class="col-md-6 form-group g-mb-20">
+                            <input name="Name"
+                                   class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 g-brd-primary--hover rounded-3 g-py-13 g-px-15"
+                                   type="text" placeholder="${data['words']['yourName']}" required>
+                        </div>
+
+                        <div class="col-md-6 form-group g-mb-20">
+                            <input name="Email"
+                                   class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 g-brd-primary--hover rounded-3 g-py-13 g-px-15"
+                                   type="email" placeholder="${data['words']['emailAddress']}" required>
+                        </div>
+
+                        <div class="col-md-6 form-group g-mb-20">
+                            <input name="Subject"
+                                   id="form-subject"
+                                   class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 g-brd-primary--hover rounded-3 g-py-13 g-px-15"
+                                   type="text" placeholder="Subject">
+                        </div>
+
+                        <input id="phone" type="tel" class="form-control g-py-13" name="Phone Number" required>
+
+                        <div class="col-md-12 form-group g-mb-40">
+                                     <textarea name="Message"
+                                               class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 g-brd-primary--hover g-resize-none rounded-3 g-py-13 g-px-15"
+                                               rows="7" placeholder="${data['words']['message']}" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="text-xs-center">
+                        <div class="g-recaptcha" data-sitekey="${data['meta']['recaptchaKey']}"
+                             data-callback="correctCaptcha"></div>
+                    </div>
+
+                    <div class="text-center">
+                        <button class="btn u-btn-primary g-font-weight-600 g-font-size-13 text-uppercase g-rounded-25 g-py-15 g-px-30"
+                                type="submit" role="button">${data['words']['sendMessage']}
+                        </button>
+                    </div>
+                </form>
+
+
+                <!-- End Contact Form -->
+            </div>
+        </div>
+    </section>
+
+    <%include file="1-in-footer.html"/>
 </main>
 
 <!-- JS Global Compulsory -->
@@ -496,6 +948,11 @@
 <script src="../../resources/assets/js/components/hs.counter.js"></script>
 <script src="../../resources/assets/js/components/hs.go-to.js"></script>
 
+
+
+
+
+
 <!-- JS Implementing Plugins -->
 <script src="../../resources/assets/vendor/gmaps/gmaps.min.js"></script>
 <script src="../../resources/assets/js/components/gmap/hs.map.js"></script>
@@ -505,7 +962,7 @@
 <script src="../../resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
 <script src="../../resources/assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
 <script src="../../resources/assets/vendor/swiper/js/swiper.js"></script>
-
+<script src="../../resources/assets/vendor/tel-input/build/js/intlTelInput.js"></script>
 <!-- JS Customization -->
 <script src="../../resources/assets/js/custom.js"></script>
 
@@ -529,6 +986,9 @@
             $.HSCore.components.HSCubeportfolio.init('.cbp');
 
             // initialization of carousel
+
+
+
             $.HSCore.components.HSCarousel.init('.js-carousel');
 
             $.HSCore.components.HSPopup.init('.js-fancybox');
@@ -571,5 +1031,7 @@
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtt1z99GtrHZt_IcnK-wryNsQ30A112J0&callback=initMap" async
         defer></script>
+
+<script src="../../resources/assets/js/phone.js"></script>
 </body>
 </html>

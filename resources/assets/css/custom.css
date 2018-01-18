@@ -118,3 +118,13 @@
 .hidden{
     display: none;
 }
+
+.table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: none;
+}
+
+.bold{
+    font-weight: bold;
+}
