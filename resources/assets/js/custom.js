@@ -116,6 +116,8 @@ ga('send', 'pageview');
 
 
 
+
+
 $("a.download").on("click",function(){
 
     ga('send','event','File','Download',this.href);
