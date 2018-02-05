@@ -65,7 +65,7 @@ $(document).on('ready', function () {
                 },
                 error: function (jqXHR, err) {
                     $(loader).hide();
-                    alert("Something went wrong");
+                    //alert("Something went wrong");
                     console.log(err);
 
                 }
