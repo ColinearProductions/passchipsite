@@ -87,6 +87,18 @@ $(modal).on('hidden.bs.modal', function () {
 
 
 
+var votingModal = $("#invitationToVoteModal");
+
+function showVotingModal(){
+    votingModal.modal().show()
+}
+
+$(document).on('ready', function() {
+    setTimeout(function(){
+        showVotingModal();
+    }, 6000)
+});
+
 
 
 

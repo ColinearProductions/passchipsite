@@ -57,33 +57,33 @@
              style="background-image: url(../resources/images/generic_bg_gradient.jpg); height: calc(100vh - 75px);"
              data-calc-target="#js-header">
 
-            <div class="g-absolute-centered--y w-100">
-                <div class="container text-center g-bg-cover__inner g-py-30">
-                    <div class="g-absolute-centered w-100">
-                        <div class="container text-center g-width-780"
-                             style="background-color:rgba(255,255,255,0.85);padding:0">
-                            <div class="info-v3-4 g-pa-20 g-pa-60--md">
-                                <div class="g-pos-rel g-z-index-3">
-                                    <h3 class="h3 text-uppercase g-letter-spacing-3 g-font-size-default g-color-white g-mb-10"></h3>
-                                    <h2 class="h2 text-uppercase g-color-black g-letter-spacing-5 g-font-weight-400 g-font-size-35 g-font-size-76--md passchip_font">
-                                        <img class="img-fluid" style="height: .6em;margin-bottom:.2em"
-                                             src="../resources/images/passchip_logo.png"> PASSCHIP</h2>
-                                    <p class="g-line-height-1_8 g-letter-spacing-3 g-color-black g-font-size-30--md g-mb-20">
-                                        ${data['indexPage']['motto']}</p>
-                                    <a href="#our_main_products"
-                                       class="btn text-uppercase g-font-size-25--md u-btn-outline-black rounded-0 cd-btn cd-modal-trigger smoothscroll">
-                                        ${data['words']['learnMore']}
-                                    </a>
+        <div class="g-absolute-centered--y w-100">
+            <div class="container text-center g-bg-cover__inner g-py-30">
+                <div class="g-absolute-centered w-100">
+                    <div class="container text-center g-width-780"
+                         style="background-color:rgba(255,255,255,0.85);padding:0">
+                        <div class="info-v3-4 g-pa-20 g-pa-60--md">
+                            <div class="g-pos-rel g-z-index-3">
+                                <h3 class="h3 text-uppercase g-letter-spacing-3 g-font-size-default g-color-white g-mb-10"></h3>
+                                <h2 class="h2 text-uppercase g-color-black g-letter-spacing-5 g-font-weight-400 g-font-size-35 g-font-size-76--md passchip_font">
+                                    <img class="img-fluid" style="height: .6em;margin-bottom:.2em"
+                                         src="../resources/images/passchip_logo.png"> PASSCHIP</h2>
+                                <p class="g-line-height-1_8 g-letter-spacing-3 g-color-black g-font-size-30--md g-mb-20">
+                                    ${data['indexPage']['motto']}</p>
+                                <a href="#our_main_products"
+                                   class="btn text-uppercase g-font-size-25--md u-btn-outline-black rounded-0 cd-btn cd-modal-trigger smoothscroll">
+                                    ${data['words']['learnMore']}
+                                </a>
 
 
-                                </div>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
+
+
             </div>
+        </div>
 
     </section>
 
@@ -175,12 +175,12 @@
         </div>
 
         <div class="row">
-            <div class="col-lg-6 col-md-12 g-py-10">
+            <div class="col-lg-12 col-md-12 g-py-10">
                 <div class="container u-shadow-v21 g-bg-white rounded g-pa-60--lg">
 
                     <div class="row g-pa-20">
 
-                        <div class="col-md-12 align-self-center g-mb-50--md g-mb-0--md">
+                        <div class="col-md-6 align-self-center g-mb-50--md g-mb-0--md">
                             <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
                                 <h2 class="h2 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-700">
                                     ${data['productNames']['timeAndAttendance']}
@@ -188,30 +188,39 @@
                             </div>
 
                             <div class="g-font-size-18 g-line-height-2 g-mb-30">
-                                <p  style="min-height:280px;">
+                                <p style="min-height:280px;">
                                     ${data["products"]["timeAndAttendance"]["shortDescription"]}</p>
                             </div>
 
+
+
+                        </div>
+
+                        <div class="col-md-6  g-mt-50">
+                            <img class="img-fluid" src="../resources/images/time-and-attendance-full.png"
+                                 alt="Image Description">
+                        </div>
+
+                        <div class="col-md-12" style="margin-top:15px;">
                             <a href="products/time-and-attendance.html"
                                class="btn u-btn-primary g-font-size-12 text-uppercase g-font-weight-600 g-rounded-50 g-py-15 g-px-25 g-mr-15 g-mb-10 g-mb-0--sm">
                                 ${data['words']['readMore']}
                             </a>
-
                         </div>
 
 
-                    </div>
+                        </div>
 
 
                 </div>
             </div>
 
-            <div class="col-lg-6 col-md-12  g-py-10">
+            <div class="col-lg-12 col-md-12  g-py-10">
                 <div class="container u-shadow-v21 g-bg-white rounded g-pa-60--lg">
 
                     <div class="row g-pa-20">
 
-                        <div class="col-md-12 align-self-center g-mb-50--md g-mb-0--md">
+                        <div class="col-md-6 align-self-center g-mb-50--md g-mb-0--md">
                             <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
                                 <h2 class="h2 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-700">
                                     ${data['productNames']['ipIntercom']}
@@ -219,15 +228,23 @@
                             </div>
 
                             <div class="g-font-size-18 g-line-height-2 g-mb-30">
-                                <p  style="min-height:280px;">
+                                <p style="min-height:280px;">
                                     ${data["products"]["intercom"]["shortDescription"]}</p>
                             </div>
 
+
+
+                        </div>
+
+                        <div class="col-md-6  g-mt-50">
+                            <img class="img-fluid" src="../resources/images/intercom_900x600.png"
+                                 alt="Image Description">
+                        </div>
+                        <div class="col-md-12" style="margin-top:15px;">
                             <a href="products/intercom.html"
                                class="btn u-btn-primary g-font-size-12 text-uppercase g-font-weight-600 g-rounded-50 g-py-15 g-px-25 g-mr-15 g-mb-10 g-mb-0--sm">
                                 ${data['words']['readMore']}
                             </a>
-
                         </div>
 
 
@@ -237,12 +254,12 @@
             </div>
 
 
-            <div class="col-lg-6 col-md-12  g-py-10">
+            <div class="col-lg-12 col-md-12  g-py-10">
                 <div class="container u-shadow-v21 g-bg-white rounded g-pa-60--lg">
 
                     <div class="row g-pa-20">
 
-                        <div class="col-md-12 align-self-center g-mb-50--md g-mb-0--md">
+                        <div class="col-md-6 align-self-center g-mb-50--md g-mb-0--md">
                             <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
                                 <h2 class="h2 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-700">
                                     ${data['productNames']['lprReader']}
@@ -250,10 +267,21 @@
                             </div>
 
                             <div class="g-font-size-18 g-line-height-2 g-mb-30">
-                                <p  style="min-height:280px;">
+                                <p style="min-height:280px;">
                                     ${data["products"]["lprReader"]["shortDescription"]}</p>
                             </div>
 
+
+                        </div>
+
+
+
+                        <div class="col-md-6  g-mt-50">
+                            <img class="img-fluid" src="../resources/images/lpr_900x600.png"
+                                 alt="Image Description">
+                        </div>
+
+                        <div class="col-md-12" style="margin-top:15px;">
                             <a href="products/lpr-reader.html"
                                class="btn u-btn-primary g-font-size-12 text-uppercase g-font-weight-600 g-rounded-50 g-py-15 g-px-25 g-mr-15 g-mb-10 g-mb-0--sm">
                                 ${data['words']['readMore']}
@@ -268,12 +296,12 @@
             </div>
 
 
-            <div class="col-lg-6 col-md-12 g-py-10">
+            <div class="col-lg-12 col-md-12 g-py-10">
                 <div class="container u-shadow-v21 g-bg-white rounded g-pa-60--lg">
 
                     <div class="row g-pa-20">
 
-                        <div class="col-md-12 align-self-center g-mb-50--md g-mb-0--md">
+                        <div class="col-md-6 align-self-center g-mb-50--md g-mb-0--md">
                             <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
                                 <h2 class="h2 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-700">
                                     ${data['productNames']['qrReader']}
@@ -281,15 +309,23 @@
                             </div>
 
                             <div class="g-font-size-18 g-line-height-2 g-mb-30">
-                                <p  style="min-height:280px;">
+                                <p style="min-height:280px;">
                                     ${data["products"]["qr"]["shortDescription"]}</p>
                             </div>
 
+
+                        </div>
+
+                        <div class="col-md-6  g-mt-50">
+                            <img class="img-fluid" src="../resources/images/qr.png"
+                                 alt="Image Description">
+                        </div>
+
+                        <div class="col-md-12" style="margin-top:15px;">
                             <a href="products/qr-reader.html"
                                class="btn u-btn-primary g-font-size-12 text-uppercase g-font-weight-600 g-rounded-50 g-py-15 g-px-25 g-mr-15 g-mb-10 g-mb-0--sm">
                                 ${data['words']['readMore']}
                             </a>
-
                         </div>
 
 
@@ -299,12 +335,12 @@
             </div>
 
 
-            <div class="col-lg-6 col-md-12 g-py-10">
+            <div class="col-lg-12 col-md-12 g-py-10">
                 <div class="container u-shadow-v21 g-bg-white rounded g-pa-60--lg">
 
                     <div class="row g-pa-20">
 
-                        <div class="col-md-12 align-self-center g-mb-50--md g-mb-0--md">
+                        <div class="col-md-6 align-self-center g-mb-50--md g-mb-0--md">
                             <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
                                 <h2 class="h2 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-700">
                                     ${data['productNames']['accessController']}
@@ -312,15 +348,21 @@
                             </div>
 
                             <div class="g-font-size-18 g-line-height-2 g-mb-30">
-                                <p  style="min-height:280px;">
+                                <p style="min-height:280px;">
                                     ${data["products"]["accessController"]["shortDescription"]}</p>
                             </div>
 
+
+                        </div>
+                        <div class="col-md-6  g-mt-50">
+                            <img class="img-fluid" src="../resources/images/access_control_900x600.png"
+                                 alt="Image Description">
+                        </div>
+                        <div class="col-md-12" style="margin-top:15px;">
                             <a href="products/access-control.html"
                                class="btn u-btn-primary g-font-size-12 text-uppercase g-font-weight-600 g-rounded-50 g-py-15 g-px-25 g-mr-15 g-mb-10 g-mb-0--sm">
                                 ${data['words']['readMore']}
                             </a>
-
                         </div>
 
 
@@ -330,30 +372,37 @@
             </div>
 
 
-            <div class=" col-lg-6 col-md-12 g-pb-50 g-py-10">
+            <div class=" col-lg-12 col-md-12 g-pb-50 g-py-10">
                 <div class="container u-shadow-v21 g-bg-white rounded g-pa-60--lg">
 
                     <div class="row g-pa-20">
 
-                        <div class="col-md-12 align-self-center g-mb-50--md g-mb-0--md">
+                        <div class="col-md-6 align-self-center g-mb-50--md g-mb-0--md">
                             <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
                                 <h2 class="h2 u-heading-v2__title g-color-gray-dark-v2 text-uppercase g-font-weight-700">
                                     ${data['productNames']['automotive']}
                                 </h2>
                             </div>
 
-                            <div class="g-font-size-18 g-line-height-2 g-mb-30">
-                                <p  style="min-height:280px;">
+                            <div class="g-font-size-18 g-line-height-2 ">
+                                <p style="min-height:280px;">
                                     ${data["products"]["automotive"]["shortDescription"]}</p>
                             </div>
+
+
+                        </div>
+                        <div class="col-md-6  g-mt-50">
+                            <img class="img-fluid" src="../resources/images/automotive_900x600_gray.png"
+                                 alt="Image Description">
+                        </div>
+
+                        <div class="col-md-12" style="margin-top:15px;">
 
                             <a href="products/automotive.html"
                                class="btn u-btn-primary g-font-size-12 text-uppercase g-font-weight-600 g-rounded-50 g-py-15 g-px-25 g-mr-15 g-mb-10 g-mb-0--sm">
                                 ${data['words']['readMore']}
                             </a>
-
                         </div>
-
 
                     </div>
 
@@ -632,7 +681,6 @@
 <script src="../resources/assets/js/components/hs.header.js"></script>
 <script src="../resources/assets/js/helpers/hs.hamburgers.js"></script>
 <script src="../resources/assets/js/components/hs.tabs.js"></script>
-
 
 
 <script src="../resources/assets/js/helpers/hs.focus-state.js"></script>
