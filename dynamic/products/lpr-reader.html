@@ -177,7 +177,6 @@
 <!-- JS Implementing Plugins -->
 <script src="../../resources/assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
 <script src="../../resources/assets/vendor/cubeportfolio-full/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
-<script src="../../resources/assets/vendor/gmaps/gmaps.min.js"></script>
 <script src="../../resources/assets/vendor/slick-carousel/slick/slick.js"></script>
 <script src="../../resources/assets/vendor/fancybox/jquery.fancybox.min.js"></script>
 <script src="../../resources/assets/vendor/appear.js"></script>
@@ -196,10 +195,6 @@
 <script src="../../resources/assets/js/components/hs.counter.js"></script>
 
 <script src="../../resources/assets/js/components/hs.go-to.js"></script>
-
-<!-- JS Implementing Plugins -->
-<script src="../../resources/assets/vendor/gmaps/gmaps.min.js"></script>
-<script src="../../resources/assets/js/components/gmap/hs.map.js"></script>
 
 
 <script src="../../resources/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
@@ -250,13 +245,9 @@
         $('[data-toggle="tooltip"]').tooltip();
     });
 
-    // Maps
-    function initMap() {
-        $.HSCore.components.HSGMap.init('.js-g-map');
-    }
+
 </script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtt1z99GtrHZt_IcnK-wryNsQ30A112J0&callback=initMap" async
-        defer></script>
+
 </body>
 </html>

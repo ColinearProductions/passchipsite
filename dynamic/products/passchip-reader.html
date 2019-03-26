@@ -893,10 +893,17 @@
 
                         <input id="phone" type="tel" class="form-control g-py-13" name="Phone Number" required>
 
-                        <div class="col-md-12 form-group g-mb-40">
+                        <div class="col-md-12 form-group ">
                                      <textarea name="Message"
                                                class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v3 g-brd-primary--hover g-resize-none rounded-3 g-py-13 g-px-15"
                                                rows="7" placeholder="${data['words']['message']}" required></textarea>
+                        </div>
+                        <div class="col-md-12 form-group g-mb-20">
+                            <label class="form-check-inline u-check g-pl-25">
+
+                                This form collects your Name, Email and Phone Number in order to adequately respond do you request. Please check out our <a href="privacy_policy.html">privacy policy</a> for the full story on how we protect and manage your submitted data!
+                            </label>
+
                         </div>
                     </div>
 
@@ -954,8 +961,7 @@
 
 
 <!-- JS Implementing Plugins -->
-<script src="../../resources/assets/vendor/gmaps/gmaps.min.js"></script>
-<script src="../../resources/assets/js/components/gmap/hs.map.js"></script>
+
 
 
 <script src="../../resources/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
@@ -1008,10 +1014,7 @@
         $('[data-toggle="tooltip"]').tooltip();
     });
 
-    // Maps
-    function initMap() {
-        $.HSCore.components.HSGMap.init('.js-g-map');
-    }
+
 </script>
 
 
@@ -1028,10 +1031,5 @@
     });
 </script>
 
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtt1z99GtrHZt_IcnK-wryNsQ30A112J0&callback=initMap" async
-        defer></script>
-
-<script src="../../resources/assets/js/phone.js"></script>
 </body>
 </html>
