@@ -36,6 +36,9 @@ def parse_mako_file(input_file_path, output_file_path, mylookup, data):
 
 
 def run(src_folder, dst_folder, ignored_folders, trasnalted_data):
+    if os.path.isdir(dst_folder): #if destination file exists, remove it
+        shutil.rmtree(dst_folder)
+
     shutil.copytree(src_folder, dst_folder)
     for root, dirs, files in os.walk(src_folder):
         for filez in files:
@@ -63,14 +66,6 @@ source_folder = config_data['sourceFolder']
 destination_folder = config_data['destinationFolder']
 
 languages = config_data['languages']
-
-if os.path.isdir(destination_folder):
-    try:
-        shutil.rmtree(destination_folder)
-    except Exception as e:
-        print "The destination folder already exists and deleting it failed."
-os.makedirs(destination_folder) #todo remove comment
-
 
 
 for language in languages:

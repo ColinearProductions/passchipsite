@@ -5,7 +5,7 @@
     "resources"
   ],
   "sourceFolder": "dynamic",
-  "destinationFolder": "static",
+  "destinationFolder": "public",
   "dataSourceFolder":"data",
   "languages":[
     "en","fr","de","es"
