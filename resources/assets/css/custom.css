@@ -22,6 +22,9 @@
     display: flex;
 }
 
+.bold{
+    font-weight:bold
+}
 
 .btn-link{
     color: #009492;
@@ -117,14 +120,4 @@
 
 .hidden{
     display: none;
-}
-
-.table th {
-    padding: .75rem;
-    vertical-align: top;
-    border-top: none;
-}
-
-.bold{
-    font-weight: bold;
 }
