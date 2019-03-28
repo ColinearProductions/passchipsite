@@ -40,11 +40,11 @@
             "position": "bottom-right",
             "type": "opt-out",
             "content": {
-                "message": "Această pagină foloseşte cookie-uri în contextul vânzarii de produse. Continuând să vizitezi website-ul, ești de acord cu folosirea lor. Pentru mai multe detalii ",
-                "dismiss": "Ignora",
-                "deny": "Refuz",
-                "link": "clic aici",
-                "href": "https://passchip.com/en/privacy_policy.html"
+                "message": "${data['cookie_popup']['message']}",
+                "dismiss": "${data['cookie_popup']['dismiss']}",
+                "deny": "${data['cookie_popup']['deny']}",
+                "link": "${data['cookie_popup']['link']}",
+                "href": "${data['cookie_popup']['href']}"
             },
             onInitialise: function (status) {
 
