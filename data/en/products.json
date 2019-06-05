@@ -232,5 +232,23 @@
       "The QR Manager can communicate with the QR Integration Server to import card numbers defined in  the access control systems and enforce that the cards are active only during the validity period of the QR codes, thus eliminating double provisioning.",
       "The QR code distribution is performed via locally saved JPEG file or email with JPEG file attached."
     ]
+  },
+  "ace": {
+    "liteDescription": "ACE Integration System",
+    "shortDescription": "Our Access Control Elevator Integration system offers seamless integration between Access Control systems and Elevator systems. ",
+    "fulLDescriptionParagraphList": [
+      "Our Access Control Elevator Integration system offers seamless integration between Access Control systems and Elevator systems. ",
+      "By integrating multiple systems in a single interface, we remove the need for the double provisioning of the data, thus reducing the likelihood of human error and other inconsistencies",
+      "We provide a web interface that can be accessed on the network, with a descriptive image of the building where users can configure access profiles. A code is then generated that can be added to custom fields in the control access system, then our integration software ensures the enforcement of the access rights defined in the web interface seamlessly across systems "
+    ],
+    "functionsBulletList": [
+      "Our Access Control Elevator Integration system has a modular desig",
+      "Management is simple using web browser interface for profile configuration and the standard access control system interface for card and cardholder management. "
+    ],
+    "benefitsBulletList": [
+      "Single configuration point, no double provisioning Assignment of elevator access rights is done in the access control system ",
+      "Deleting a card in the access control system leads to automatic deletion in the Elevator system as well Unified reports with access control events from all Access Control and Elevator systems.",
+      "Multiple elevator systems can be configured at the same time. "
+    ]
   }
 }

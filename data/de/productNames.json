@@ -6,6 +6,7 @@
   "lprReader":"Nummernschildleser",
   "qrReader":"QR Leser",
   "accessController":"Zugangscontroller",
-  "automotive":"Automotive"
+  "automotive":"Automotive",
+  "ace": "ACE Integration System"
 
 }
