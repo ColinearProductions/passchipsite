@@ -22,7 +22,7 @@ def read_data(data_folder_path):
 
 
 def parse_mako_file(input_file_path, output_file_path, mylookup, data):
-    print input_file_path
+    print(input_file_path)
     mytemplate = mylookup.get_template("/" + input_file_path)
 
     input_file = open(output_file_path, "r")
@@ -47,7 +47,7 @@ def run(src_folder, dst_folder, ignored_folders, trasnalted_data):
                 # print f,src_folder+"/"+f, root
                 if src_folder + "\\" + f in root:
                     consider = False
-                    print "Dont consider ", root, filez
+                    print("Dont consider ", root, filez)
                     break
 
             if ".html" in filez and consider:

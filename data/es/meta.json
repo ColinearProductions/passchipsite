@@ -11,6 +11,6 @@
   "lon":"26.071",
   "lat":"44.480",
   "analyticsId":"UA-103088784-2",
-  "formesterURL":"https://us-central1-static-forms.cloudfunctions.net/logMessage",
+  "formesterURL":"https://glacial-stream-75477.herokuapp.com/passchip/message",
   "recaptchaKey":"6LfZSzMUAAAAALtmC0ZC7BmtwN-eEw3Fs8LjwwSV"
 }

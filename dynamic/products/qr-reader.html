@@ -44,6 +44,14 @@
     <!-- CSS Customization -->
     <link rel="stylesheet" href="../../resources/assets/css/custom.css">
 
+    <style>
+        .boxshadow{
+            -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.54);
+            -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.54);
+            box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.54);
+        }
+    </style>
+
 
     <link rel="stylesheet" href="../../resources/assets/vendor/dzsparallaxer/dzsparallaxer.css">
     <link rel="stylesheet" href="../../resources/assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
@@ -79,7 +87,7 @@
 
     <section class="container  g-py-80">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <div class="d-inline-block g-width-80 g-height-4 g-bg-black mb-3"></div>
                 <h2 class="g-color-black g-font-weight-700 g-font-size-50 g-line-height-1 mb-4"><span class="passchip_font">PASSCHIP </span> QR Code Reader</h2>
                 <a class="btn btn-link g-ml-0 g-pl-0 smoothscroll" href="#functions"><strong>
@@ -91,8 +99,28 @@
                 <a class="btn btn-link g-ml-0 g-pl-0 smoothscroll" href="#downloads"><strong>
                     Downloads
                 </strong></a>
+
+                <div class="col-md-12   g-py-25--lg">
+
+
+                    <div class="shortcode-html">
+                        <!-- HTML5 Example -->
+                        <div class="embed-responsive embed-responsive-16by9 g-mb-60 boxshadow" style="border:1px solid rgba(128,128,128,0.46)">
+                            <video preload="auto"  controls="controls">
+                                <source src="../../resources/video/qr.mp4" type="video/mp4;">
+                            </video>
+                        </div>
+                        <!-- End HTML5 Example -->
+                    </div>
+
+
+
+
+
+                </div>
+
                 <div class="">
-                    <div class="mb-5 g-py-50 ">
+                    <div class="mb-5 g-pb-25 ">
                         % for paragraph in product["fulLDescriptionParagraphList"]:
                         <p class="g-color-gray-dark-v4 g-font-size-18">
                             ${paragraph}
@@ -103,18 +131,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4 offset-md-2 g-py-100--lg">
-                <div class="  ">
-                    <div class="u-shadow-v19 g-bg-white text-center">
-                        <a class="js-fancybox" href="../../resources/images/qr.png"
-                           data-fancybox-animate-in="zoomIn" data-fancybox-animate-out="zoomOut"
-                           data-fancybox-speed="1000" data-fancybox-blur-bg="blur" data-fancybox-bg="rgba(0,0,0, 1)">
-                            <img class="img-fluid" src="../../resources/images/qr.png" alt="Image Description">
-                        </a>
 
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -160,7 +177,8 @@
                 <div class="u-heading-v2-3--bottom g-brd-primary g-mb-30">
                     <h2 class="h3 text-uppercase g-font-weight-300 u-heading-v2__title"> Downloads</h2>
                 </div>
-                <a href="../../resources/Files/Data_Sheet_EN_PASSCHIP%20QR.pdf" class="g-font-size-22">PASSCHIP QR Reader PDF </a>
+                <a href="../../resources/Files/Data_Sheet_EN_PASSCHIP%20QR.pdf" class="g-font-size-22">PASSCHIP QR Reader PDF </a><br>
+                <a href="../../resources/Files/Data_Sheet_EN_PASSCHIP%20QR%20Android.pdf" class="g-font-size-22">PASSCHIP QR Reader with Android PDF </a>
             </div>
         </div>
     </section>
