@@ -76,6 +76,17 @@
       "Sécuriser les communications entre les PASSCON Serveur et PASSSCHIP"
     ]
   },
+
+  "thermalGate": {
+    "liteDescription": "",
+    "shortDescription": "La solution de détection de température Passchip, avec plusieurs types de produits et une large gamme d'applications, est conçue pour détecter la température de surface de la peau afin que des données préliminaires, rapides et sûres puissent être obtenues dans les espaces publics. ConicDesign peut être appliqué dans une variété de scénarios, vous offrant une grande efficacité\n",
+    "fulLDescriptionParagraphList": [
+
+      "La technologie AI garantit que ces caméras détectent uniquement la température de la surface de la peau et réduisent les fausses alarmes causées par d'autres sources de chaleur.",
+      "L'algorithme de compensation garantit que la température est compensée par la température ambiante et la distance de la cible de mesure pour une meilleure précision. ",
+      "La technologie thermique a été largement appliquée dans divers scénarios de détection de température, car elle offre une plus grande flexibilité et efficacité dans la détection préliminaire de la température anormale de la surface de la peau."
+    ]
+  },
   "passconBasic": {
     "liteDescription": "",
     "shortDescription": "Représente une avancée de la programmation et de l'outil de configuration pour PASSCHIP gamme de libre service de la puce d'identification de lecteurs. Il fournit une interface utilisateur conviviale qui simplifie le contrôle PASSCHIP",

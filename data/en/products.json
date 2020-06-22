@@ -1,15 +1,15 @@
 {
   "passchipReader": {
-    "liteDescription":"",
+    "liteDescription": "",
     "shortDescription": "This state of the art access control chip reader is specially designed for advanced ID Banking filtering processes to self service areas or high security spaces. The security platform is designed for a secure access control process using the CHIP acces cards (credit cards or simply smart cards) alone or combined with PIN and biometric technology.",
-    "fulLDescriptionParagraphList":[
+    "fulLDescriptionParagraphList": [
       "This state of the art access control chip reader is specially designed for advanced ID Banking filtering processes to self service areas ( ATM Lobbies or ATM Vestibules). Our filtering algorithms may let access to programmable groups of users as decided by system’s administrator.",
       "The security platform is designed for a secure access control process using the CHIP acces cards (credit cards or simply smart cards) alone or combined with PIN and biometric technology.",
       "This product is mainly dedicated to banks and financial institutions, with possibilities of usage in law enforcement agencies, telecom providers, closed circuit institutions/clubs and other organizations for a secure and efficient access in sensitive areas using advanced contact chip reader technology.",
       "It can be connected to any access control platform using the most commonly used data formats like RS232, Clock and Data or Wiegand with up to 64 bits of data.",
       "It is standard delivered with a solid TCP/IP interface for fast and continuous communication with the centralized security center in order to be online updated and controlled by system’s administrator."
     ],
-    "functionsBulletList":[
+    "functionsBulletList": [
       "Banking automation filter against unauthorized access in the self-service zones or any other protected areas",
       "Advanced design for integration in any classical or modern façade",
       "Available optional slim-line installing pillar Compact dimensions with tamper-proof solid stainless steel case-brush finishing or painted",
@@ -18,25 +18,22 @@
       "Centralized network upgradable while running using an user friendly interface",
       "Antiskimming and coin proof construction with mechanical shutter"
     ],
-    "benefitsBulletList":[
+    "benefitsBulletList": [
       "Protection of customers during self-service procedures",
       "Protection of ATMs and banking assets against unauthorized usage",
       "Extremely reliable product with an excellent ROI rate",
       "Proven long life service May be integrated in new or existing access control installations",
       "May be linked and integrated with CCTV, fire and intrusion detection through any integrated security platform",
       "Excellent substitute to human guard patrol service"
-
     ]
   },
-
   "accessController": {
-    "liteDescription":"Customisable Access Control solution",
+    "liteDescription": "Customisable Access Control solution",
     "shortDescription": "A networked door module with the advantages of IP centralized control and event reporting. It is mainly dedicated to large office buildings and industrial plants, with possibilities of usage in banks, commercial , law enforcement agencies, telecom and other organizations for secure and efficient access in sensitive areas",
-
-    "fulLDescriptionParagraphList":[
+    "fulLDescriptionParagraphList": [
       "A networked door module with the advantages of IP centralized control and event reporting. It is mainly dedicated to large office buildings and industrial plants, with possibilities of usage in banks, commercial , law enforcement agencies, telecom and other organizations for secure and efficient access in sensitive areas"
-     ],
-    "functionsBulletList":[
+    ],
+    "functionsBulletList": [
       "Automatic protection against unauthorized access in sensitive zones or any other protected areas",
       "Compact dimensions installed inside tamper-proof solid metal case with 12V power source",
       " Ready in 2 doors or 4 doors variants<ul> <li>Each door may have 2 Wiegand card readers (1IN/1OUT)</ul>",
@@ -44,7 +41,7 @@
       "Centralized IP network",
       "User friendly interface"
     ],
-    "benefitsBulletList":[
+    "benefitsBulletList": [
       "Protection of people and assets",
       "Extremely reliable product with an excellent ROI rate",
       "Proven long life service",
@@ -54,18 +51,16 @@
       "Excellent substitute to human guard patrol services VPNs"
     ]
   },
-
   "passcon": {
-    "liteDescription":"",
+    "liteDescription": "",
     "shortDescription": "Centralized Ethernet administration, using the unique PASSCON software functions for all the network; important savings are made in terms of time and specific resources of the security managers. Facilitates integration with CCTV, fire and intrusion detection through any integrated security platform through Wiegand, Ethernet and Serial interface.",
-
-    "fulLDescriptionParagraphList":[
+    "fulLDescriptionParagraphList": [
       "This product is the complete management solution for PASSCHIP ATM entry lobby/vestibule readers, integrating the real time monitoring with the provisioning and configuration functions.",
       "It is mainly dedicated to large number of site installations.",
       "It allows multiple level hierarchy classifications (eg. area, city, street and site).",
       "Provides a powerful yet intuitive interface to manage and monitor the PASSCHIP readers."
     ],
-    "functionsBulletList":[
+    "functionsBulletList": [
       "Client Server architecture",
       "PASSCHIP monitoring",
       "PASSCHIP configuration",
@@ -73,32 +68,38 @@
       "PASSCON user rights and management",
       "Email Alerts"
     ],
-    "benefitsBulletList":[
+    "benefitsBulletList": [
       "Centralized management of PASSCHIP ATM entry lobby/vestibule",
       "Easy configuration changes by using PASSCHIP Configuration Profiles",
       "Remote firmware updates Summarized monitoring information",
       "Different users can have different access rights",
       "Secure communications between PASSCON Server and PASSSCHIP"
-
     ]
   },
-
+  "thermalGate": {
+    "liteDescription": "",
+    "shortDescription": "The Passchip temperature detection solution, with several types of products and a wide range of applications, is designed to detect skin surface temperature so that preliminary, fast and safe data can be obtained in public areas. ConicDesign can be applied in a variety of scenarios, giving you high efficiency",
+    "fulLDescriptionParagraphList": [
+      "AI technology ensures that these cameras only detect skin surface temperature and reduce false alarms caused by other heat sources.",
+      "The compensation algorithm ensures that the temperature is compensated with the ambient temperature and the distance of the measurement target for better accuracy.\n\n",
+      "Thermal technology has been widely applied in various temperature sensing scenarios, as it provides greater flexibility and efficiency in the preliminary detection of abnormal skin surface temperature.\n\n"
+    ]
+  },
   "passconBasic": {
-    "liteDescription":"",
+    "liteDescription": "",
     "shortDescription": "Represents an advanced programming and configuration tool for PASSCHIP range of self service ID chip readers. It provides an user friendly interface that simplifies the PASSCHIP control",
-
-    "fulLDescriptionParagraphList":[
+    "fulLDescriptionParagraphList": [
       "Represents an advanced programming and configuration tool for PASSCHIP range of self service ID chip readers. It provides an user friendly interface that simplifies the PASSCHIP control",
       "Offers a centralized Ethernet administration, using unique software functions for all the network; important savings are made in terms of time and specific resources of the security managers",
       "Facilitates PASSCHIP integration with CCTV, fire and intrusion detection through Wiegand, Ethernet and Serial interface."
     ],
-    "functionsBulletList":[
+    "functionsBulletList": [
       "Complete IP control: Configuration, Administration, User Management, Monitoring and Recording",
       "Centralized network upgrade of readers while running using an user friendly interface",
       "Centralized access to internal PASSCHIP history resources, including sincronized time stamp",
       "Centralized cards’ management, including BLACK LIST"
     ],
-    "benefitsBulletList":[
+    "benefitsBulletList": [
       "Protection of customers during self-service procedures",
       "Protection of ATMs and banking assets against unauthorized usage",
       "Extremely reliable product with an excellent ROI rate",
@@ -108,15 +109,13 @@
       "Excellent substitute to human guard patrol service"
     ]
   },
-
   "timeAndAttendance": {
-    "liteDescription":"Employee time management solution",
+    "liteDescription": "Employee time management solution",
     "shortDescription": "Provides a powerful, modern and flexible workforce management solution that connects to any type of access control system",
-
-    "fulLDescriptionParagraphList":[
+    "fulLDescriptionParagraphList": [
       "Provides a powerful, modern and flexible workforce management solution that connects to any type of access control system"
     ],
-    "functionsBulletList":[
+    "functionsBulletList": [
       "Tracks working hours, absences and overtime",
       "Design and manage work schedule",
       "Incidents (sick leave, vacation, doctor, etc.)",
@@ -124,24 +123,21 @@
       "Optionally it allows employees to see their own schedule and information, or team managers to manage their team’s schedule.",
       "Generates reports that can be viewed on the platform or exported in .xls format that can be customized to the user’s needs"
     ],
-    "benefitsBulletList":[
+    "benefitsBulletList": [
       "Tailored solution for integrating with the current control access system",
       "Proven long life service",
       "May be integrated with third parties security software, including biometric applications",
       "Excellent substitute to human guard patrol services",
       "Can be hosted completely on-site"
-
     ]
   },
-
   "intercom": {
-    "liteDescription":"IP Video Intercom Solution",
+    "liteDescription": "IP Video Intercom Solution",
     "shortDescription": "Our IP video intercom product line is dedicated to commercial, office buildings and residential large projects, ensures increased levels of security and comfort compared to conventional analog intercom systems due to its remarkable flexibility and friendly use.",
-
-    "fulLDescriptionParagraphList":[
+    "fulLDescriptionParagraphList": [
       "Our IP video intercom product line is dedicated to commercial, office buildings and residential large projects, ensures increased levels of security and comfort compared to conventional analog intercom systems due to its remarkable flexibility and friendly use."
     ],
-    "functionsBulletList":[
+    "functionsBulletList": [
       "Voice and Video calls between Intercom Panels within the same LAN.",
       "Brushed stainless steel build",
       "Accept/reject incoming call",
@@ -152,7 +148,7 @@
       "1 output controlled by peer video panel during call",
       "2 way video call with another video panel"
     ],
-    "benefitsBulletList":[
+    "benefitsBulletList": [
       "IP Video Intercom with up to 1000 Intercom Panels",
       "Integration with PASSCHIP ACCESS CONTROL systems",
       "Unlock door from intercom",
@@ -162,36 +158,31 @@
       "Network can be extended to multiple sites using layer2 VPNs"
     ]
   },
-
   "lprReader": {
-    "liteDescription":"Licence Plate Recognition system",
+    "liteDescription": "Licence Plate Recognition system",
     "shortDescription": "Our License Plate Reader offers automatic number plate reading combined with wiegand communication. The LPR reader transforms seamlessly integrated license plate reading into a wiegand card ID reader output",
-
-    "fulLDescriptionParagraphList":[
+    "fulLDescriptionParagraphList": [
       "Our License Plate Reader offers automatic number plate reading combined with wiegand communication. The LPR reader transforms seamlessly integrated license plate reading into a wiegand card ID reader output"
     ],
-    "functionsBulletList":[
+    "functionsBulletList": [
       "Is an all-in-one system that embeds the camera, projector and processing in a compact weatherproof housing. ",
       "Management is done using an embedded web browser interface, through the available Ethernet connection",
       "High accuracy due to the adaptive and highly trained of our algorithms and high quality image sensors",
       "Simple setup and easy deployment"
     ],
-    "benefitsBulletList":[
+    "benefitsBulletList": [
       "The web browser interface also allows the integrator to configure the transmitted wiegand ID strings of the ALPR reader. Upon reading of the license plate the ALPR unit will refer to the database and transmit the corresponding wiegand ID using chosen wiegand format to the access control panel.",
       "If the wiegand ID is authorized then access is permitted.",
       "The LPR reader is featured with an internal database that matches the license plate to a specific valid Wiegand card ID (i.e. the already existing card number of the person that drives the car). This matching can be done easily and from a remote location using the web browser interface."
-
     ]
   },
-
   "automotive": {
-    "liteDescription":"Smart key software",
+    "liteDescription": "Smart key software",
     "shortDescription": "PASSCHIP Automotive is a mobile solution that replaces the need of using a physical car key. The Key is replaced by the smartphone app running on the customer’s phone or tablet that communicates with PASSCHIP – installed inside the cabin.",
-
-    "fulLDescriptionParagraphList":[
+    "fulLDescriptionParagraphList": [
       "PASSCHIP Automotive is a mobile solution that replaces the need of using a physical car key. The Key is replaced by the smartphone app running on the customer’s phone or tablet that communicates with PASSCHIP – installed inside the cabin."
     ],
-    "functionsBulletList":[
+    "functionsBulletList": [
       "Start and Stop of engine – Main Module",
       "Doors Lock and Unlock – Main Module",
       "Authorize Engine start – Main Module",
@@ -199,14 +190,13 @@
       "Event Log – Optional Module",
       "Key management is performed via Bluetooth and SMS – Main Module (no central server required)"
     ],
-    "benefitsBulletList":[
+    "benefitsBulletList": [
       "Eliminates the need for multiple physical keys",
       "Increase the number of possible users",
       "Mobile App",
       "The keys are sent / received by Phone, SMS, WhatsApp -> High availability",
       "Full management of users and cars",
       "Excellent schedule matrix"
-
     ]
   },
   "qr": {

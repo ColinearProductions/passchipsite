@@ -76,6 +76,17 @@
       "Die sichere Kommunikation zwischen PASSCON Server und PASSSCHIP"
     ]
   },
+
+  "thermalGate": {
+    "liteDescription": "",
+    "shortDescription": "Die Passchip-Temperaturerfassungslösung mit verschiedenen Produkttypen und einer Vielzahl von Anwendungen wurde zur Erfassung der Hautoberflächentemperatur entwickelt, sodass vorläufige, schnelle und sichere Daten in öffentlichen Bereichen abgerufen werden können. ConicDesign kann in einer Vielzahl von Szenarien angewendet werden, wodurch Sie eine hohe Effizienz erzielen\n",
+    "fulLDescriptionParagraphList": [
+      "Die KI-Technologie stellt sicher, dass diese Kameras nur die Hautoberflächentemperatur erfassen und Fehlalarme reduzieren, die durch andere Wärmequellen verursacht werden.",
+      "Der Kompensationsalgorithmus stellt sicher, dass die Temperatur mit der Umgebungstemperatur und dem Abstand des Messziels kompensiert wird, um eine bessere Genauigkeit zu erzielen.",
+      "Die thermische Technologie wurde in verschiedenen Temperaturerfassungsszenarien in großem Umfang eingesetzt, da sie eine größere Flexibilität und Effizienz bei der vorläufigen Erkennung abnormaler Hautoberflächentemperaturen bietet."
+     ]
+  },
+
   "passconBasic": {
     "liteDescription": "",
     "shortDescription": "Stellt eine erweiterte Programmier-und Konfigurationstool für PASSCHIP Reihe von self-service-ID-chip-Leser. Es bietet eine benutzerfreundliche Schnittstelle, die vereinfacht die Kontrolle PASSCHIP",
