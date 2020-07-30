@@ -48,15 +48,15 @@
     <%include file="1-in-header.html"/>
 
 
-    <!-- DESKTOP -->
+    <!--
     <section class="g-flex-centered g-bg-pos-center g-bg-img-hero hidden-lg-down"
              style="background-image: url(../../resources/images/reader/Razvan_fiverr_2.png); height: calc(100vh - 85px);margin-top:85px;"
              data-calc-target="#js-header">
 
         <div class="swiper-container">
-            <!-- Additional required wrapper -->
+
             <div class="swiper-wrapper" style="width:100vw;height:100vh">
-                <!-- Slides -->
+
                 <div class="swiper-slide g-flex-centered g-bg-pos-center g-bg-img-hero "
                      style="background-image: url(../../resources/images/reader/1.png);z-index: 100;width:100%; height: calc(100vh);"
                      data-calc-target="#js-header">
@@ -84,15 +84,15 @@
 
     </section>
 
-    <!-- Tablet -->
+
     <section class="g-flex-centered g-bg-pos-center g-bg-img-hero hidden-sm-down hidden-xl-up"
              style="background-image: url(../../resources/images/reader/Razvan_fiverr_2.png); height: calc(45vh);margin-top:33px;"
              data-calc-target="#js-header">
 
         <div class="swiper-container">
-            <!-- Additional required wrapper -->
+
             <div class="swiper-wrapper" style="width:100vw;height:calc(45vh)">
-                <!-- Slides -->
+
                 <div class="swiper-slide g-flex-centered g-bg-pos-center g-bg-img-hero "
                      style="background-image: url(../../resources/images/reader/1.png);z-index: 100;width:100%; height: calc(45vh);"
                      data-calc-target="#js-header">
@@ -120,15 +120,15 @@
 
     </section>
 
-    <!-- Mobile -->
+
     <section class="g-flex-centered g-bg-pos-center g-bg-img-hero hidden-sm-up"
              style="background-image: url(../../resources/images/reader/Razvan_fiverr_2.png); height: calc(45vh);margin-top:33px;"
              data-calc-target="#js-header">
 
         <div class="swiper-container">
-            <!-- Additional required wrapper -->
+
             <div class="swiper-wrapper" style="width:100vw;height:calc(45vh)">
-                <!-- Slides -->
+
                 <div class="swiper-slide g-flex-centered g-bg-pos-center g-bg-img-hero "
                      style="background-image: url(../../resources/images/reader/1.png);z-index: 100;width:100%; height: calc(45vh);"
                      data-calc-target="#js-header">
@@ -155,10 +155,10 @@
 
 
     </section>
-
+    -->
 
     <!-- Description -->
-    <section class="container  g-py-80 g-py-200--lg">
+    <section class="container  g-py-80 g-py-100--lg">
 
         <div class="row">
 
@@ -910,7 +910,7 @@
                         <div class="col-md-12 form-group g-mb-20">
                             <label class="form-check-inline u-check g-pl-25">
 
-                                This form collects your Name, Email and Phone Number in order to adequately respond do you request. Please check out our <a href="../privacy_policy.html">privacy policy</a> for the full story on how we protect and manage your submitted data!
+                                ${data['meta']['formDisclosure']}
                             </label>
 
                         </div>

@@ -58,8 +58,11 @@
                 } else {
                     window['ga-disable-' + analytics_ID] = true;
                 }
+                try {
+                    initPhoneInput(didConsent);
+                }catch (e) {
 
-                initPhoneInput(didConsent);
+                }
             },
 
             onStatusChange: function (status, chosenBefore) {
@@ -73,9 +76,11 @@
                 } else {
                     window['ga-disable-' + analytics_ID] = true;
                 }
+                try {
+                    initPhoneInput(didConsent);
+                }catch (e) {
 
-                initPhoneInput(didConsent);
-
+                }
             }
         });
 

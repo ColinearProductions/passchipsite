@@ -12,5 +12,6 @@
   "lat":"44.480",
   "analyticsId":"UA-103088784-2",
   "formesterURL":"https://glacial-stream-75477.herokuapp.com/passchip/message",
-  "recaptchaKey":"6LfZSzMUAAAAALtmC0ZC7BmtwN-eEw3Fs8LjwwSV"
+  "recaptchaKey":"6LfZSzMUAAAAALtmC0ZC7BmtwN-eEw3Fs8LjwwSV",
+  "formDisclosure": "Ce formulaire recueille votre nom, e-mail et numéro de téléphone afin de répondre adéquatement à votre demande. Veuillez consulter notre <a href=\"privacy_policy.html\"> politique de confidentialité </a> pour en savoir plus sur la façon dont nous protégeons et gérons vos données soumises!"
 }

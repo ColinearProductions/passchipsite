@@ -8,6 +8,6 @@
   "destinationFolder": "public",
   "dataSourceFolder":"data",
   "languages":[
-    "en","fr","de","es"
+    "en","fr","de","es","ro"
   ]
 }

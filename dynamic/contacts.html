@@ -60,7 +60,7 @@
 
 
 
-    <!-- Google Map -->
+    <!-- Google Map
     <div id="GMapCustomized-light" class="js-g-map embed-responsive embed-responsive-21by9 g-height-400"
          data-type="custom"
          data-lat="44.480"
@@ -71,14 +71,14 @@
          data-pin="true"
          data-pin-icon="../resources/assets/img/icons/pin/teal.png">
     </div>
-    <!-- End Google Map -->
+ End Google Map -->
 
     <section class="container g-pt-100 g-pb-40">
         <div class="row justify-content-between">
 
             <!-- Form -->
             <div class="col-md-7 g-mb-60">
-                <h1>Send us a message</h1>
+                <h1>${data['words']['contactUs']}</h1>
                 <!-- Contact Form -->
                 <form accept-charset='UTF-8' id="message_form"
                       action="${data['meta']['formesterURL']}"
@@ -113,8 +113,7 @@
 
                         <div class="col-md-12 form-group g-mb-20">
                             <label class="form-check-inline u-check g-pl-25">
-
-                                This form collects your Name, Email and Phone Number in order to adequately respond do you request. Please check out our <a href="privacy_policy.html">privacy policy</a> for the full story on how we protect and manage your submitted data!
+                                ${data['meta']['formDisclosure']}
                             </label>
 
                         </div>

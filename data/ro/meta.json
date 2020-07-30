@@ -1,6 +1,6 @@
 {
   "description":"Access Control solution with Credit cards for ATM Lobbies ",
-  "language":"en",
+  "language":"ro",
   "address":"1 Piata Presei Libere<br>  C1 Building, 2nd Floor<br>  1st District Bucharest, Romania",
   "phoneNumber":"004 0754039626",
   "emailAddress":"office@passchip.com",
@@ -13,5 +13,5 @@
   "analyticsId":"UA-103088784-2",
   "formesterURL":"https://glacial-stream-75477.herokuapp.com/passchip/message",
   "recaptchaKey":"6LfZSzMUAAAAALtmC0ZC7BmtwN-eEw3Fs8LjwwSV",
-  "formDisclosure": " This form collects your Name, Email and Phone Number in order to adequately do you request. Please check out our <a href=\"privacy_policy.html\">privacy policy</a> for the full story on how we protect and manage your submitted data!"
+  "formDisclosure": "Acest formular colectează numele, e-mailul și numărul dvs. de telefon pentru a fi adecvat răspundeți solicitați Vă rugăm să consultați <a href=\"privacy_policy.html\"> confidențialitatea noastră  politică </a> pentru povestea completă despre cum vă protejăm și gestionăm datele trimise!"
 }
