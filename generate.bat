@@ -1,1 +1,1 @@
-python generate.py
+C:\Python27\python generate.py
