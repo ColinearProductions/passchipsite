@@ -58,7 +58,7 @@
       "This product is the complete management solution for PASSCHIP ATM entry lobby/vestibule readers, integrating the real time monitoring with the provisioning and configuration functions.",
       "It is mainly dedicated to large number of site installations.",
       "It allows multiple level hierarchy classifications (eg. area, city, street and site).",
-      "Provides a powerful yet intuitive interface to manage and monitor the PASSCHIP readers."
+      "Provides a powerful yet intuitive interface to manage and monitor PASSCHIPs."
     ],
     "functionsBulletList": [
       "Client Server architecture",
@@ -69,11 +69,15 @@
       "Email Alerts"
     ],
     "benefitsBulletList": [
-      "Centralized management of PASSCHIP ATM entry lobby/vestibule",
-      "Easy configuration changes by using PASSCHIP Configuration Profiles",
-      "Remote firmware updates Summarized monitoring information",
-      "Different users can have different access rights",
-      "Secure communications between PASSCON Server and PASSSCHIP"
+      "Centralized management of PASSCHIPs",
+      "Easy bulk configuration updates by using",
+      "PASSCHIP Configuration Profiles",
+      "Remote firmware updates",
+      "Summarized monitoring information",
+      "User roles: admin, operator",
+      "Secure communication between PASSCON Server and PASSSCHIPs",
+      "Web application, Chrome and Firefox browsers supported",
+      "Time synchronization between PASSCHIPs and server"
     ]
   },
   "thermalGate": {
