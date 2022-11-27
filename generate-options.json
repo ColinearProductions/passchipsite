@@ -1,13 +1,7 @@
 {
-  "ignoreFolders": [
-    ".git",
-    ".idea",
-    "resources"
-  ],
+  "ignoreFolders": [".git", ".idea", "resources"],
   "sourceFolder": "dynamic",
   "destinationFolder": "public",
-  "dataSourceFolder":"data",
-  "languages":[
-    "en","fr","de","es","ro"
-  ]
+  "dataSourceFolder": "data",
+  "languages": ["en", "fr", "de", "es"]
 }
