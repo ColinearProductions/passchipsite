@@ -10,7 +10,7 @@
   "lon": "26.071",
   "lat": "44.480",
   "analyticsId": "UA-103088784-2",
-  "formesterURL": "http://server.conicdesign.ro:5000/passchip/message",
+  "formesterURL": "https://server.conicdesign.ro:5000/passchip/message",
   "recaptchaKey": "6LfZSzMUAAAAALtmC0ZC7BmtwN-eEw3Fs8LjwwSV",
   "formDisclosure": "Acest formular colectează numele, e-mailul și numărul dvs. de telefon pentru a fi adecvat răspundeți solicitați Vă rugăm să consultați <a href=\"privacy_policy.html\"> confidențialitatea noastră  politică </a> pentru povestea completă despre cum vă protejăm și gestionăm datele trimise!"
 }
