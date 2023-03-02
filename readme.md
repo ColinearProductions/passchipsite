@@ -8,7 +8,9 @@
 
 ### Pre-deploy
 
+
 Run `setup_workspace_windows.bat` or linux alternative
+
 Run `python generate.py`. This will parse the dynamic mako templates and spit out the static page, with translations included.
 
 ### Deploy
