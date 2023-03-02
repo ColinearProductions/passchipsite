@@ -13,11 +13,4 @@ Run `python generate.py`. This will parse the dynamic mako templates and spit ou
 
 ### Deploy
 
-Push commit to remote master, the steps in `.github\workflows\firebase-hosting-pull-request.yml` will be executed
-
-`git commit -am "chore: x"`
-`git push`
-
-On auto deployment failure
-
-Run `fireabase login` and then `firebase deploy`
+Run `cd public` and `fireabase login` (most only be done once) and then `firebase deploy`

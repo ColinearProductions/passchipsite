@@ -4,3 +4,6 @@ public/fr
 public/es
 public/ro
 public/resources
+
+*.cache
+public/.firebase/hosting..cache
