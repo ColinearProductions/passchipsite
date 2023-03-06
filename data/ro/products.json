@@ -78,7 +78,7 @@
   },
   "thermalGate": {
     "liteDescription": "",
-    "shortDescription": "The Passchip temperature detection solution, with several types of products and a wide range of applications, is designed to detect skin surface temperature so that preliminary, fast and safe data can be obtained in public areas. The solution can be applied in a variety of scenarios, giving you high efficiency",
+    "shortDescription": "The Passchip temperature detection solution, with several types of products and a wide range of applications, is designed to detect skin surface temperature so that preliminary, fast and safe data can be obtained in public areas. This solution can be applied in a variety of scenarios, giving you high efficiency",
     "fulLDescriptionParagraphList": [
       "AI technology ensures that these cameras only detect skin surface temperature and reduce false alarms caused by other heat sources.",
       "The compensation algorithm ensures that the temperature is compensated with the ambient temperature and the distance of the measurement target for better accuracy.\n\n",
