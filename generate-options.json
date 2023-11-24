@@ -3,5 +3,5 @@
   "sourceFolder": "dynamic",
   "destinationFolder": "public",
   "dataSourceFolder": "data",
-  "languages": ["en", "fr", "de", "es"]
+  "languages": ["en"] 
 }

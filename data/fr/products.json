@@ -79,7 +79,7 @@
 
   "thermalGate": {
     "liteDescription": "",
-    "shortDescription": "La solution de détection de température Passchip, avec plusieurs types de produits et une large gamme d'applications, est conçue pour détecter la température de surface de la peau afin que des données préliminaires, rapides et sûres puissent être obtenues dans les espaces publics. ConicDesign peut être appliqué dans une variété de scénarios, vous offrant une grande efficacité\n",
+    "shortDescription": "La solution de détection de température Passchip, avec plusieurs types de produits et une large gamme d'applications, est conçue pour détecter la température de surface de la peau afin que des données préliminaires, rapides et sûres puissent être obtenues dans les espaces publics. Cette solution peut être appliqué dans une variété de scénarios, vous offrant une grande efficacité\n",
     "fulLDescriptionParagraphList": [
 
       "La technologie AI garantit que ces caméras détectent uniquement la température de la surface de la peau et réduisent les fausses alarmes causées par d'autres sources de chaleur.",
@@ -223,7 +223,7 @@
     ]
   },
   "ace": {
-    "liteDescription": "ACE Integration System",
+    "liteDescription": "EAC Integration System",
     "shortDescription": "Our Access Control Elevator Integration system offers seamless integration between Access Control systems and Elevator systems. ",
     "fulLDescriptionParagraphList": [
       "Our Access Control Elevator Integration system offers seamless integration between Access Control systems and Elevator systems. ",

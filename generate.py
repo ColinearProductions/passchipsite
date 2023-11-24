@@ -64,6 +64,7 @@ languages = config_data['languages']
 
 
 for language in languages:
+    print(language)
     language_destination_folder = destination_folder + \
         os.sep + language  # todo remove comment
     language_data = read_data(

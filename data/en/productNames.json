@@ -1,13 +1,13 @@
 {
   "passchipReader":" <span class='passchip_font'>PASSCHIP </span> Reader",
   "passconManagementSoftware":"PASSCON Management Software",
-  "timeAndAttendance":"Time and Attendance",
+  "timeAndAttendance":"PASSCHIP Time & Attendance",
   "ipIntercom":"IP Intercom",
-  "lprReader":"LPR Reader",
-  "qrReader":"QR Reader",
+  "lprReader":"PASSCHIP LPR Reader",
+  "qrReader":"PASSCHIP QR Reader",
   "accessController":"Access Controller",
   "automotive":"Automotive",
-  "ace": "ACE Integration System",
+  "ace": "EAC Integration System",
   "thermalGate": "Temperature detection solutions"
 
 }

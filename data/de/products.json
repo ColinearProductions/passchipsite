@@ -79,7 +79,7 @@
 
   "thermalGate": {
     "liteDescription": "",
-    "shortDescription": "Die Passchip-Temperaturerfassungslösung mit verschiedenen Produkttypen und einer Vielzahl von Anwendungen wurde zur Erfassung der Hautoberflächentemperatur entwickelt, sodass vorläufige, schnelle und sichere Daten in öffentlichen Bereichen abgerufen werden können. ConicDesign kann in einer Vielzahl von Szenarien angewendet werden, wodurch Sie eine hohe Effizienz erzielen\n",
+    "shortDescription": "Die Passchip-Temperaturerfassungslösung mit verschiedenen Produkttypen und einer Vielzahl von Anwendungen wurde zur Erfassung der Hautoberflächentemperatur entwickelt, sodass vorläufige, schnelle und sichere Daten in öffentlichen Bereichen abgerufen werden können. Diese lösung kann in einer Vielzahl von Szenarien angewendet werden, wodurch Sie eine hohe Effizienz erzielen\n",
     "fulLDescriptionParagraphList": [
       "Die KI-Technologie stellt sicher, dass diese Kameras nur die Hautoberflächentemperatur erfassen und Fehlalarme reduzieren, die durch andere Wärmequellen verursacht werden.",
       "Der Kompensationsalgorithmus stellt sicher, dass die Temperatur mit der Umgebungstemperatur und dem Abstand des Messziels kompensiert wird, um eine bessere Genauigkeit zu erzielen.",
@@ -223,7 +223,7 @@
     ]
   },
   "ace": {
-    "liteDescription": "ACE Integration System",
+    "liteDescription": "EAC Integration System",
     "shortDescription": "Our Access Control Elevator Integration system offers seamless integration between Access Control systems and Elevator systems. ",
     "fulLDescriptionParagraphList": [
       "Our Access Control Elevator Integration system offers seamless integration between Access Control systems and Elevator systems. ",
