@@ -10,11 +10,11 @@
     ],
     "headers": [
       {
-        "source": "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
+        "source": "*/*",
         "headers": [
           {
             "key": "Access-Control-Allow-Origin",
-            "value": "*"
+            "value": "https://server.conicdesign.ro"
           }
         ]
       },
